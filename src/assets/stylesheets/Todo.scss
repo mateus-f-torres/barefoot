@@ -1,0 +1,7 @@
+li {
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  &:nth-child(2n) { background-color: #f7f7f7; }
+}

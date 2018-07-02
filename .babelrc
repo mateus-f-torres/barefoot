@@ -1,0 +1,32 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "env",
+        "react",
+	      "stage-3",
+        "flow",
+      ]
+    },
+    "production": {
+      "presets": [
+        "env",
+        "react",
+        "stage-3",
+        "flow"
+      ],
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-react-remove-prop-types"
+      ]
+    },
+    "test": {
+      "presets": [
+        "env",
+        "react",
+        "stage-3",
+        "flow"
+      ]
+    }
+  }
+}

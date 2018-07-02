@@ -1,0 +1,10 @@
+# Dont lint compiled code
+dist/*
+lib/*
+dev_server.js
+prod_server.js
+
+# Dont lint other config files
+# in case of root linting
+postcss.*.js
+webpack.*.js

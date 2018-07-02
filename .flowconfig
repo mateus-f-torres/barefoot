@@ -1,0 +1,13 @@
+[ignore]
+# ignore all modules that dont start with r
+# to allow flow to resolve react modules on app require
+<PROJECT_ROOT>/node_modules/[abcdefghijklmnopqstuvxwyz].*
+<PROJECT_ROOT>/__test__/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
