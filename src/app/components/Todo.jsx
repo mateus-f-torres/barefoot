@@ -1,6 +1,5 @@
 //@flow
 import * as React from 'react';
-import 'Styles/Todo.scss';
 
 type Props = {
   onClick: () => mixed,
@@ -9,10 +8,15 @@ type Props = {
 };
 
 const Todo = (props: Props) => (
-  <li onClick={props.onClick} style={
+  <li
+    id={props.id}
+    style={
     {textDecoration: props.completed ? 'line-through' : 'none'}
-  }>
+    }
+    onClick={props.toggleTodo}
+  >
   {props.text}
+  <button onClick={props.deleteTodo}>delete</button>
   </li>
 )
 

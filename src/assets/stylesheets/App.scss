@@ -7,8 +7,6 @@ body {
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
 h1 {
 	background: #2980b9;
 	color: white;
@@ -20,8 +18,8 @@ h1 {
 }
 
 #app {
-  width: 360px;
-  margin: 100px auto;
+  width: 79%;
+  margin: 10vh auto 0 auto;
   background-color: #f7f7f7;
   box-shadow: 0 0 3px rgba(0,0,0, 0.1);
   img {
@@ -30,7 +28,7 @@ h1 {
     margin: 0 auto;
   }
 }
-            
+           
 /* for-phone-only */
 @media (max-width: 320px) {}
   /* default here, mobile 1st without grid */
@@ -39,7 +37,11 @@ h1 {
 @media only screen and (min-width: 600px) {}
 
 /* for-tablet-landscape-up */
-@media only screen and (min-width: 900px) {}
+@media only screen and (min-width: 900px) {
+  #app {
+    width: 30%;
+  }
+}
 
 /* for-desktop-up */
 @media only screen and (min-width: 1200px) {}

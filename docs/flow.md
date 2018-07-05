@@ -4,6 +4,7 @@
 * add //@flow at top of file
 
 ## When to look or stop looking
+* yarn run [command]
 * flow start (server)
 * flow status (show errors)
 * flow check (full Flow check)
