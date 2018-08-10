@@ -1,9 +1,5 @@
 const path = require('path');
 
-const DashboardPlugin = require('webpack-dashboard/plugin');
-const dashboard =
-  new DashboardPlugin();
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const cssPlugin =
   new MiniCssExtractPlugin({
@@ -50,6 +46,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           "style-loader",
+          "css-hot-loader",
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
@@ -90,7 +87,6 @@ module.exports = {
     ]
   },
   plugins: [
-    dashboard,
     cleanPlugin,
     cssPlugin,
     htmlPlugin

@@ -8,16 +8,13 @@ type Props = {
 };
 
 const Todo = (props: Props) => (
-  <li
-    id={props.id}
+  <li id={props.id} onClick={props.toggleTodo}
     style={
     {textDecoration: props.completed ? 'line-through' : 'none'}
-    }
-    onClick={props.toggleTodo}
-  >
+    }>
   {props.text}
   <button onClick={props.deleteTodo}>delete</button>
   </li>
-)
+);
 
 export default Todo;

@@ -14,7 +14,7 @@
 
 ### Example
 ```javascript
-//        param type   return type
+// param type   return type
 function foo(x: number): string {}
 ```
 
@@ -36,6 +36,7 @@ function foo(x: number): string {}
 * either type `value: string | number`
 * based on another `function foo<T>(value: T) : T {}`
 * any primitive or function `value: mixed`
+* Arrays `Array<Type> or type[]`
 
 ## Setting types with React
 Currently you can't use object destruc

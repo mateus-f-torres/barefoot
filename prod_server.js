@@ -1,19 +1,12 @@
-'use strict';
+import express from 'express';
 
-var _express = require('express');
+const app = express();
 
-var _express2 = _interopRequireDefault(_express);
+// serve the correct static files
+app.use(express.static(__dirname + '/dist'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var app = (0, _express2.default)();
-
-app.use(_express2.default.static(__dirname + '/dist'));
-
-app.get('/', function (req, res) {
+app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html');
 });
 
-app.listen(process.env.PORT, process.env.IP, function () {
-  console.log('Server for C9 Running in PRODUCTION MODE');
-});
+app.listen(process.env.PORT, process.env.IP);

@@ -1,7 +1,4 @@
 [ignore]
-# ignore all modules that dont start with r
-# to allow flow to resolve react modules on app require
-<PROJECT_ROOT>/node_modules/[abcdefghijklmnopqstuvxwyz].*
 <PROJECT_ROOT>/__test__/.*
 
 [include]
@@ -11,3 +8,6 @@
 [lints]
 
 [options]
+# add module wrappers for webpack alias and scss imports
+module.name_mapper='.*\(.scss\)' -> 'empty/object'
+module.name_mapper='^Images' -> '<PROJECT_ROOT>/src/assets/images'

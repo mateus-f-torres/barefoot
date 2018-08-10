@@ -1,31 +1,28 @@
 {
-  "name": "react_redux_template",
-  "version": "0.1.0",
-  "description": "react_redux_app template",
+  "name": "barefoot",
+  "version": "0.2.0",
+  "description": "boilerplate for M.E.R.N SPAs",
   "author": "mateus-f-torres",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "prepare": "nsp check",
-    "predashboard": "NODE_ENV=development",
-    "dashboard": "webpack-dashboard -- webpack-dev-server --config  webpack.development.config.js --hot --open",
-    "predev": "NODE_ENV=development",
+    "predev": "NODE_ENV=development && yarn lint && yarn test && yarn run babel dev_server.js -o server.js",
     "dev": "webpack --progress --config webpack.development.config.js",
-    "prestart": "NODE_ENV=development",
+    "prestart": "NODE_ENV=development && yarn lint && yarn test",
     "start": "webpack-dev-server --config  webpack.development.config.js --hot --open",
-    "prebuild": "NODE_ENV=production",
+    "prebuild": "NODE_ENV=production && yarn lint && yarn test && yarn run babel prod_server -o server.js",
     "build": "webpack --progress --config webpack.production.config.js",
-    "serve": "node prod_server.js",
+    "serve": "node server.js",
     "eject": "",
-    "lint": "eslint src/",
+    "lint": "eslint src/ --ext .js",
     "test": "jest"
   },
   "dependencies": {
     "express": "^4.16.3",
-    "helmet": "^3.12.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.0"
   },
   "devDependencies": {
@@ -42,7 +39,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
+    "css-hot-loader": "^1.4.0",
     "css-loader": "^0.28.11",
+    "empty": "^0.10.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^5.0.1",
@@ -55,7 +54,6 @@
     "jest": "^23.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
-    "nsp": "^3.2.1",
     "optimize-css-assets-webpack-plugin": "^4.0.3",
     "postcss-loader": "^2.1.5",
     "redux-devtools": "^3.4.1",
@@ -64,7 +62,6 @@
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dashboard": "^2.0.0",
     "webpack-dev-server": "^3.1.4"
   }
 }

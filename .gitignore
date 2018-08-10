@@ -3,3 +3,4 @@ coverage
 dist
 lib
 yarn*
+src/assets/images/*
