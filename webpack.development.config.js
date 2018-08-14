@@ -1,9 +1,5 @@
 const path = require('path');
 
-const DashboardPlugin = require('webpack-dashboard/plugin');
-const dashboard =
-  new DashboardPlugin();
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const cssPlugin =
   new MiniCssExtractPlugin({
@@ -13,7 +9,6 @@ const cssPlugin =
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin = 
   new HtmlWebpackPlugin ({
-    title: 'R_R template DEV',
     filename: 'index.html',
     template: 'src/index.html'
 });
@@ -50,6 +45,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           "style-loader",
+          "css-hot-loader",
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
@@ -90,7 +86,6 @@ module.exports = {
     ]
   },
   plugins: [
-    dashboard,
     cleanPlugin,
     cssPlugin,
     htmlPlugin

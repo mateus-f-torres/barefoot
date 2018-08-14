@@ -14,7 +14,7 @@
 
 ### Example
 ```javascript
-//        param type   return type
+// param type   return type
 function foo(x: number): string {}
 ```
 
@@ -34,11 +34,12 @@ function foo(x: number): string {}
 ### Declaring
 * one type `n: number`
 * either type `value: string | number`
+* maybe type `{ value?: boolean }`
 * based on another `function foo<T>(value: T) : T {}`
 * any primitive or function `value: mixed`
-
-## Setting types with React
-Currently you can't use object destruc
+* unsafe anything goes `value: any`
+* Arrays, unknown lenght, known types `Array<Type> or type[]`
+* Tuple, known lenght and each type at each index `[number, string, boolean]`
 
 ### In Stateless Functional Components
 ```javascript
@@ -66,6 +67,7 @@ type Props = {
 };
 
 class MyComponent extends React.Component<Props> {
+  constructor(props: Props)
   // ...
 ```
 
@@ -93,3 +95,13 @@ class myComponent extends React.Component<Props> {
   };
 };
 ```
+
+### Importing and Exporting Types
+
+* in types/actions.js `export type AddAction = type: 'ADD_ONE';`
+
+* in actions/index.js `import type { AddAction } from ../types/actions.js;`
+
+### Ignoring Errors
+
+* to ignore errors in following line `// $FlowFixMe`
