@@ -9,7 +9,6 @@ const cssPlugin =
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin = 
   new HtmlWebpackPlugin ({
-    title: 'R_R template DEV',
     filename: 'index.html',
     template: 'src/index.html'
 });

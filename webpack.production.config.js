@@ -21,7 +21,6 @@ const cssPlugin =
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin = 
   new HtmlWebpackPlugin ({
-    title: 'R_R template PROD',
     filename: 'index.html',
     template: 'src/index.html',
     minify: {

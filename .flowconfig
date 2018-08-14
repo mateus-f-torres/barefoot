@@ -1,5 +1,6 @@
 [ignore]
-<PROJECT_ROOT>/__test__/.*
+# intensionally broken json will trigger flow error
+<PROJECT_ROOT>/node_modules/config-chain/test/broken.json
 
 [include]
 
@@ -8,6 +9,10 @@
 [lints]
 
 [options]
+# ignore next line flow error
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 # add module wrappers for webpack alias and scss imports
 module.name_mapper='.*\(.scss\)' -> 'empty/object'
 module.name_mapper='^Images' -> '<PROJECT_ROOT>/src/assets/images'
+
+[strict]

@@ -1,20 +1,19 @@
+//@flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
-import rootReducer from './app/reducers/index.js';
+import store from './store/configureStore.js';
 
-import App from './app/components/App.jsx';
+import App from './components/App.jsx';
 
 // 1st stylesheet called, resets here
 import './index.scss';
 
-const store = createStore(rootReducer);
-
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={store()}>
     <App />
   </Provider>,
+  // $FlowFixMe
   document.getElementById('root')
 );
