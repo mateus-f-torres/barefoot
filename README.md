@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/mateus-f-torres/barefoot.svg?branch=master)](https://travis-ci.com/mateus-f-torres/barefoot)
 # Barefoot
 Barefoot is an experiment in creating a minimalist but efficient boilerplate for React Redux SPAs.
 
