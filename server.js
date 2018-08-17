@@ -1,20 +1,18 @@
-import express from 'express';
-import helmet from 'helmet';
+'use strict';
 
-const app = express();
+var _express = require('express');
 
-// setup basic security with HelmetJs middleware
-app.use(helmet({
-  frameguard: { action: 'deny' }
-}));
+var _express2 = _interopRequireDefault(_express);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var app = (0, _express2.default)();
 
 // serve the correct static files
-app.use(express.static(__dirname + '/lib'));
+app.use(_express2.default.static(__dirname + '/dist'));
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/lib/index.html');
+app.get('*', function (req, res) {
+  res.sendFile(__dirname + '/dist/index.html');
 });
 
-app.listen(process.env.PORT, process.env.IP, () => {
-  console.log('Server for C9 Running in DEVELOPMENT MODE');
-});
+app.listen(process.env.PORT, process.env.IP);

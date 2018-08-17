@@ -22,20 +22,21 @@ class TodoList extends React.Component<Props> {
   handleSubmit(e: SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     e.stopPropagation();
-    if (e.currentTarget[0]) {
-      // $FlowFixMe
-      let text = e.currentTarget[0].value;
+    if (e.currentTarget) {
+      // $FlowFixMe, 'maybe-there' flow error
+      let text = e.currentTarget.childNodes[0].value;
       if (!text.trim()) return;
       this.props.addTodo(text);
-      // $FlowFixMe
-      e.currentTarget[0].value = '';
+      // $FlowFixMe, 'maybe-there' flow error
+      e.currentTarget.childNodes[0].value = '';
     }
   }
 
-  toggleTodo(e: SyntheticEvent<HTMLUListElement>) {
+  toggleTodo(e: SyntheticEvent<HTMLParagraphElement>) {
     e.preventDefault();
     e.stopPropagation();
-    let id = e.currentTarget.id;
+    // $FlowFixMe, 'maybe-there' flow error
+    let id = e.currentTarget.parentNode.id;
     id = Number.parseInt(id);
     this.props.toggleTodo(id);
   }
@@ -43,7 +44,7 @@ class TodoList extends React.Component<Props> {
   deleteTodo(e: SyntheticEvent<HTMLButtonElement>) {
     e.preventDefault();
     e.stopPropagation();
-    // $FlowFixMe
+    // $FlowFixMe, 'maybe-there' flow error
     let id = e.currentTarget.parentNode.id;
     id = Number.parseInt(id);
     this.props.removeTodo(id);
@@ -51,10 +52,10 @@ class TodoList extends React.Component<Props> {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input type="text" placeholder="Add todo" />
+      <form data-test="todo-submit" onSubmit={this.handleSubmit}>
+        <input data-test="todo-input" type="text" placeholder="Add todo" />
         <button type="submit" />
-        <ul>
+        <ul data-test="todo-list">
           {
             this.props.todos.map((todo) => (
               <TodoItem

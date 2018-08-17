@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] = `
+<TodoList
+  addTodo={[Function]}
+  removeTodo={[Function]}
+  todos={
+    Array [
+      Object {
+        "completed": false,
+        "id": 0,
+        "text": "mock1",
+      },
+      Object {
+        "completed": true,
+        "id": 1,
+        "text": "mock2",
+      },
+      Object {
+        "completed": false,
+        "id": 2,
+        "text": "mock3",
+      },
+    ]
+  }
+  toggleTodo={[Function]}
+/>
+`;

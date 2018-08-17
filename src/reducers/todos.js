@@ -2,7 +2,7 @@
 import type {Todo} from '../types/props.js';
 import type {Action} from '../types/actions.js';
 
-let nextID = 3;
+let ID = 3;
 
 type State = Array<Todo>;
 
@@ -31,7 +31,7 @@ const todos = (state: State = defaultState, action: Action) => {
     return [
       ...state,
       {
-        id: nextID++,
+        id: ID++,
         text: action.payload,
         completed: false,
       },

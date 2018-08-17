@@ -7,6 +7,13 @@ module.exports = {
     "jquery": true,
     "jest": true
   },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.4.1",
+      "flowVersion": "0.75",
+    },
+  },
   "extends": [
     "eslint:recommended",
     "google", 

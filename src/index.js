@@ -14,6 +14,6 @@ ReactDOM.render(
   <Provider store={store()}>
     <App />
   </Provider>,
-  // $FlowFixMe
+  // $FlowFixMe, 'maybe-there' flow error
   document.getElementById('root')
 );

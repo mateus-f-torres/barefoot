@@ -1,12 +1,17 @@
 [ignore]
-# intensionally broken json will trigger flow error
-<PROJECT_ROOT>/node_modules/config-chain/test/broken.json
+# e => empty
+# r => react*
+<PROJECT_ROOT>/node_modules/[^er]
 
 [include]
 
 [libs]
 
 [lints]
+# all=off by default
+sketchy-null=warn
+untyped-import=warn
+unclear-type=warn
 
 [options]
 # ignore next line flow error
