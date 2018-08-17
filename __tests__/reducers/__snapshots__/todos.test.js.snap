@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos Reducer Snapshot Test ADD_TODO matches current production snapshot 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Buy bread",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Take dog for a walk",
+  },
+  Object {
+    "completed": false,
+    "id": 2,
+    "text": "Comment codebase",
+  },
+  Object {
+    "completed": false,
+    "id": 4,
+    "text": "snapshot test reducer",
+  },
+]
+`;
+
+exports[`Todos Reducer Snapshot Test INITIAL STATE matches current production snapshot 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Buy bread",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Take dog for a walk",
+  },
+  Object {
+    "completed": false,
+    "id": 2,
+    "text": "Comment codebase",
+  },
+]
+`;
+
+exports[`Todos Reducer Snapshot Test REMOVE_TODO matches current production snapshot 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Buy bread",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Take dog for a walk",
+  },
+]
+`;
+
+exports[`Todos Reducer Snapshot Test TOGGLE_TODO matches current production snapshot 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "Buy bread",
+  },
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Take dog for a walk",
+  },
+  Object {
+    "completed": true,
+    "id": 2,
+    "text": "Comment codebase",
+  },
+]
+`;

@@ -1,6 +1,7 @@
 # Dont lint compiled code
-dist/*
-lib/*
+dist/
+lib/
+coverage/
 server.js
 
 # Dont lint other config files

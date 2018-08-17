@@ -1,18 +1,22 @@
+@import '../partials/_variables';
+
+form {
+  display: flex;
+  flex-direction: column;
+}
 
 input {
 	font-size: 18px;
-	color: #2980b9;
+	color: $main-text;
 	background-color: #f7f7f7;
 	width: 100%;
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
 	border: 3px solid rgba(0,0,0,0);
-}
-
-input:focus{
-	background: #fff;
-	border: 3px solid #2980b9;
-	outline: none;
+  &:focus {
+    border: 3px solid $header-back;
+    outline: none;
+  }
 }
 
 ul {
@@ -20,38 +24,44 @@ ul {
   margin: 0;
   padding: 0;
   li {
-    background-color: #fff;
-    height: 40px;
-    line-height: 40px;
-    color: #666;
-    &:nth-child(2n) { background-color: #f7f7f7; }
+    display: flex;
+    background-color: darkgrey;
+    color: $main-text;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    line-height: 45px;
+    &:nth-child(2n) { 
+      background-color: white;
+      color: #666;
+    }
   }
 }
 
+p {
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover { cursor: pointer; }
+}
+
+.done {text-decoration: line-through;}
+
 button {
-  background-color: #2980b9;
-  border: 1px solid tomato;
+  background-color: lighten($header-back, 5%);
+  border: 1px solid $header-text;
   color: white;
   margin: 0 0 1.3em 0;
-  padding: 0.8em 1.6em;
+  padding: 0.8em 0.8em;
+  height: 100%;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   display: inline-block;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15),0 5px 15px 0 rgba(0,0,0,0.25);
-  &:hover {background-color: teal;}
-  &:focus { background-color: green; outline: none;}
-  &:disabled {background-color: green;}
+  &:focus { outline: none; border: none;}
+  &:hover { cursor: pointer; background-color: lighten($header-back, 15%); }
+  &[type=submit] { display: none; }
 }
-
-button[type=submit] {
-  background-color: red;
-  width: 100%;
-}
-
-#filter-view {
-  display: flex;
-  width: 100%;
-  align-content: stretch;
-}
- 
