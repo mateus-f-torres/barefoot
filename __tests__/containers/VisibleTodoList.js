@@ -35,7 +35,7 @@ describe('VisibleTodoList', () => {
   // console.log(container.debug()); for more info
 
   describe('Unit Test', () => {
-    test('render TodoList container', () => {
+    test('render TodoList component', () => {
       expect(typeof container.find('TodoList')).toBe('object');
     });
 
