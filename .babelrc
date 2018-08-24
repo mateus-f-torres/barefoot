@@ -4,29 +4,38 @@
       "presets": [
         "env",
         "react",
-	      "stage-3",
         "flow",
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
       ],
     },
     "production": {
       "presets": [
         "env",
         "react",
-        "stage-3",
         "flow",
       ],
       "plugins": [
-        ["react-remove-properties", {"properties": ["data-test"]}],
+        "transform-object-rest-spread",
+        "transform-class-properties",
         "transform-react-constant-elements",
-        "transform-react-remove-prop-types",
+        "remove-test-ids",
+        {
+          "attributes": ["data-test"]
+        }
       ],
     },
     "test": {
       "presets": [
         "env",
         "react",
-        "stage-3",
         "flow",
+      ],
+      "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
       ],
     },
   },

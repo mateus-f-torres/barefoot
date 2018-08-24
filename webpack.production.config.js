@@ -39,6 +39,10 @@ const htmlPlugin =
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const cleanPlugin = 
   new CleanWebpackPlugin('dist', {});
+
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const analyzerPlugin =
+  new BundleAnalyzerPlugin();
  
 module.exports = { 
   mode: 'production',
@@ -116,6 +120,7 @@ module.exports = {
     ]
   },
   plugins: [
+    analyzerPlugin,
     cleanPlugin,
     cssPlugin,
     htmlPlugin

@@ -31,6 +31,7 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
+    "babel",
     "react",
     "flowtype"
   ],
@@ -56,6 +57,12 @@ module.exports = {
     ],
     "require-jsdoc": [
       "off"
-    ]
+    ],
+    "babel/no-invalid-this": [
+      "error"
+    ],
+    "no-invalid-this": [
+      "off"
+    ],
   }
 }

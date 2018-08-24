@@ -12,14 +12,7 @@ type Props = {
 };
 
 class TodoList extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-    (this: any).handleSubmit = this.handleSubmit.bind(this);
-    (this: any).toggleTodo = this.toggleTodo.bind(this);
-    (this: any).deleteTodo = this.deleteTodo.bind(this);
-  }
-
-  handleSubmit(e: SyntheticEvent<HTMLFormElement>) {
+  handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
     if (e.currentTarget) {
@@ -32,7 +25,7 @@ class TodoList extends React.Component<Props> {
     }
   }
 
-  toggleTodo(e: SyntheticEvent<HTMLParagraphElement>) {
+  toggleTodo = (e: SyntheticEvent<HTMLParagraphElement>) => {
     e.preventDefault();
     e.stopPropagation();
     // $FlowFixMe, 'maybe-there' flow error
@@ -41,7 +34,7 @@ class TodoList extends React.Component<Props> {
     this.props.toggleTodo(id);
   }
 
-  deleteTodo(e: SyntheticEvent<HTMLButtonElement>) {
+  deleteTodo = (e: SyntheticEvent<HTMLButtonElement>) => {
     e.preventDefault();
     e.stopPropagation();
     // $FlowFixMe, 'maybe-there' flow error

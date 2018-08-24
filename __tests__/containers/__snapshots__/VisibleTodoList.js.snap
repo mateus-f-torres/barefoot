@@ -1,28 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] = `
-<TodoList
-  addTodo={[Function]}
-  removeTodo={[Function]}
-  todos={
-    Array [
-      Object {
-        "completed": false,
-        "id": 0,
-        "text": "mock1",
-      },
-      Object {
-        "completed": true,
-        "id": 1,
-        "text": "mock2",
-      },
-      Object {
-        "completed": false,
-        "id": 2,
-        "text": "mock3",
-      },
-    ]
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
   }
-  toggleTodo={[Function]}
-/>
+>
+  <Connect(TodoList)>
+    <TodoList
+      addTodo={[Function]}
+      removeTodo={[Function]}
+      todos={
+        Array [
+          Object {
+            "completed": false,
+            "id": 0,
+            "text": "mock1",
+          },
+          Object {
+            "completed": true,
+            "id": 1,
+            "text": "mock2",
+          },
+          Object {
+            "completed": false,
+            "id": 2,
+            "text": "mock3",
+          },
+        ]
+      }
+      toggleTodo={[Function]}
+    >
+      <form
+        data-test="todo-submit"
+        onSubmit={[Function]}
+      >
+        <input
+          data-test="todo-input"
+          placeholder="Add todo"
+          type="text"
+        />
+        <button
+          type="submit"
+        />
+        <ul
+          data-test="todo-list"
+        >
+          <TodoItem
+            completed={false}
+            deleteTodo={[Function]}
+            id={0}
+            key="0"
+            text="mock1"
+            toggleTodo={[Function]}
+          >
+            <li
+              id={0}
+            >
+              <p
+                className={null}
+                data-test="todo-text"
+                onClick={[Function]}
+              >
+                mock1
+              </p>
+              <button
+                data-test="todo-delete"
+                onClick={[Function]}
+              >
+                delete
+              </button>
+            </li>
+          </TodoItem>
+          <TodoItem
+            completed={true}
+            deleteTodo={[Function]}
+            id={1}
+            key="1"
+            text="mock2"
+            toggleTodo={[Function]}
+          >
+            <li
+              id={1}
+            >
+              <p
+                className="done"
+                data-test="todo-text"
+                onClick={[Function]}
+              >
+                mock2
+              </p>
+              <button
+                data-test="todo-delete"
+                onClick={[Function]}
+              >
+                delete
+              </button>
+            </li>
+          </TodoItem>
+          <TodoItem
+            completed={false}
+            deleteTodo={[Function]}
+            id={2}
+            key="2"
+            text="mock3"
+            toggleTodo={[Function]}
+          >
+            <li
+              id={2}
+            >
+              <p
+                className={null}
+                data-test="todo-text"
+                onClick={[Function]}
+              >
+                mock3
+              </p>
+              <button
+                data-test="todo-delete"
+                onClick={[Function]}
+              >
+                delete
+              </button>
+            </li>
+          </TodoItem>
+        </ul>
+      </form>
+    </TodoList>
+  </Connect(TodoList)>
+</Provider>
 `;

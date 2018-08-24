@@ -1,7 +1,9 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import {Provider} from 'react-redux';
+import {mount} from 'enzyme';
 import configureStore from 'redux-mock-store';
 import VisibleTodoList from '../../src/containers/VisibleTodoList.js';
+import TodoList from '../../src/components/TodoList.jsx';
 
 const mockState = {
   todos: [
@@ -31,12 +33,16 @@ describe('VisibleTodoList', () => {
     store.clearActions();
   });
 
-  const container = shallow(<VisibleTodoList />, {context: {store}});
+  const container = mount(
+    <Provider store={store}>
+      <VisibleTodoList />
+    </Provider>
+  );
   // console.log(container.debug()); for more info
 
   describe('Unit Test', () => {
     test('render TodoList component', () => {
-      expect(typeof container.find('TodoList')).toBe('object');
+      expect(container.containsMatchingElement(<TodoList />)).toBe(true);
     });
 
     test('receive store.todos', () => {
@@ -45,17 +51,11 @@ describe('VisibleTodoList', () => {
     });
 
     test('render all todos', () => {
-      expect(container.dive().find('[data-test="todo-list"]')
+      expect(container.find('TodoList').find('[data-test="todo-list"]')
         .children().length).toEqual(mockState.todos.length);
     });
 
     test('dispatch correct addTodo', () => {
-      const mockEvent = {
-        preventDefault() {},
-        stopPropagation() {},
-        currentTarget: {childNodes: [{value: 'Hello World'}]},
-      };
-
       const expectedActions = [
         {
           'type': 'ADD_TODO',
@@ -63,57 +63,38 @@ describe('VisibleTodoList', () => {
         },
       ];
 
-      container.dive().find('[data-test="todo-submit"]')
-        .simulate('submit', mockEvent);
+      container.find('TodoList').find('[data-test="todo-input"]')
+        .instance().value = 'Hello World';
+
+      container.find('TodoList').find('[data-test="todo-submit"]')
+        .simulate('submit');
 
       expect(store.getActions()).toEqual(expectedActions);
     });
 
     test('dont dispatch addTodo without value', () => {
-      const mockEvent = {
-        preventDefault() {},
-        stopPropagation() {},
-        currentTarget: {childNodes: [{value: '    '}]},
-      };
+      container.find('TodoList').find('[data-test="todo-input"]')
+        .instance().value = '    ';
 
-      container.dive().find('[data-test="todo-submit"]')
-        .simulate('submit', mockEvent);
-
-      expect(store.getActions()).toEqual([]);
-    });
-
-    test('dont dispatch addTodo without currentTarget', () => {
-      const mockEvent = {
-        preventDefault() {},
-        stopPropagation() {},
-      };
-
-      container.dive().find('[data-test="todo-submit"]')
-        .simulate('submit', mockEvent);
+      container.find('TodoList').find('[data-test="todo-submit"]')
+        .simulate('submit');
 
       expect(store.getActions()).toEqual([]);
     });
 
     test('reset input value after addTodo', () => {
-      const mockEvent = {
-        preventDefault() {},
-        stopPropagation() {},
-        currentTarget: {childNodes: [{value: 'Hello World'}]},
-      };
+      let mockInput = container.find('TodoList')
+        .find('[data-test="todo-input"]')
+        .instance();
+      mockInput.value = 'Hello World';
 
-      container.dive().find('[data-test="todo-submit"]')
-        .simulate('submit', mockEvent);
+      container.find('TodoList').find('[data-test="todo-submit"]')
+        .simulate('submit');
 
-      expect(mockEvent.currentTarget.childNodes[0].value).toBe('');
+      expect(mockInput.value).toBe('');
     });
 
     test('dispatch correct toggleTodo', () => {
-      const mockEvent = {
-        preventDefault() {},
-        stopPropagation() {},
-        currentTarget: {parentNode: {id: '1'}},
-      };
-
       const expectedActions = [
         {
           'type': 'TOGGLE_TODO',
@@ -121,19 +102,13 @@ describe('VisibleTodoList', () => {
         },
       ];
 
-      container.dive().find('[data-test="todo-list"]')
-        .childAt(1).dive().find('p').simulate('click', mockEvent);
+      container.find('TodoList').find('[data-test="todo-list"]')
+        .childAt(1).find('p').simulate('click');
 
       expect(store.getActions()).toEqual(expectedActions);
     });
 
     test('dispatch correct removeTodo', () => {
-      const mockEvent = {
-        preventDefault() {},
-        stopPropagation() {},
-        currentTarget: {parentNode: {id: '2'}},
-      };
-
       const expectedActions = [
         {
           'type': 'REMOVE_TODO',
@@ -141,8 +116,8 @@ describe('VisibleTodoList', () => {
         },
       ];
 
-      container.dive().find('[data-test="todo-list"]')
-        .childAt(1).dive().find('button').simulate('click', mockEvent);
+      container.find('TodoList').find('[data-test="todo-list"]')
+        .childAt(2).find('button').simulate('click');
 
       expect(store.getActions()).toEqual(expectedActions);
     });

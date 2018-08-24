@@ -8,6 +8,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var app = (0, _express2.default)();
 
+var port = 3000;
+
 // serve the correct static files
 app.use(_express2.default.static(__dirname + '/dist'));
 
@@ -15,4 +17,5 @@ app.get('*', function (req, res) {
   res.sendFile(__dirname + '/dist/index.html');
 });
 
-app.listen(process.env.PORT, process.env.IP);
+// app.listen(process.env.PORT, process.env.IP);
+app.listen(port);
