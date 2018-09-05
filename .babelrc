@@ -21,10 +21,6 @@
         "transform-object-rest-spread",
         "transform-class-properties",
         "transform-react-constant-elements",
-        "remove-test-ids",
-        {
-          "attributes": ["data-test"]
-        }
       ],
     },
     "test": {
