@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "skipAll": "NODE_ENV=development && webpack-dev-server --config  webpack.development.config.js --hot --open",
     "checkAll": "yarn lint && yarn flow:status && yarn test",
     "predev": "NODE_ENV=development && yarn checkAll && yarn babel:dev",
     "dev": "webpack --progress --config webpack.development.config.js",
