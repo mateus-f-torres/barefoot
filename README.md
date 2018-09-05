@@ -51,6 +51,7 @@ cd barefoot/
 ```
 2. Check default configuration files and premade scripts
 
+- [ ] .nvmrc
 - [ ] package.json
 - [ ] .gitignore
 - [ ] .editorconfig
