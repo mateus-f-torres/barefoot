@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "skipAll": "NODE_ENV=development && webpack-dev-server --config  webpack.development.config.js --hot --open",
+    "forceBuild": "NODE_ENV=production && yarn babel:prod && webpack --progress --config webpack.production.config.js",
     "checkAll": "yarn lint && yarn flow:status && yarn test",
     "predev": "NODE_ENV=development && yarn checkAll && yarn babel:dev",
     "dev": "webpack --progress --config webpack.development.config.js",
