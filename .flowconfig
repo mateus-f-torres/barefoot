@@ -1,7 +1,5 @@
 [ignore]
-# r => react*
-# s => styled-components
-# <PROJECT_ROOT>/node_modules/[^rs]
+# <PROJECT_ROOT>/node_modules/{module}
 
 [include]
 
@@ -16,6 +14,7 @@ unclear-type=warn
 [options]
 # ignore next line flow error
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+
 # add module wrappers for webpack alias
 # e.g.
 # module.name_mapper='^Images' -> '<PROJECT_ROOT>/src/assets/images'
