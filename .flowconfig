@@ -1,7 +1,7 @@
 [ignore]
 # r => react*
 # s => styled-components
-<PROJECT_ROOT>/node_modules/[^rs]
+# <PROJECT_ROOT>/node_modules/[^rs]
 
 [include]
 

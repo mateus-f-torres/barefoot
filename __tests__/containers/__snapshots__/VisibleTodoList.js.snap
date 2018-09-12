@@ -1,6 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] = `
+.c2 {
+  background-color: #233f4a;
+  border: 1px solid #f1f1f1;
+  color: white;
+  margin: 0;
+  padding: 0.8em 0.8em;
+  height: 100%;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.c2:focus {
+  outline: none;
+  border: none;
+}
+
+.c2:hover {
+  cursor: pointer;
+  background-color: #345c6d;
+}
+
+.c2[type='submit'] {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: darkgrey;
+  color: #1b1b1e;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 45px;
+  line-height: 45px;
+}
+
+.c4:nth-child(2n) {
+  background-color: white;
+  color: #666;
+}
+
+.c5 {
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover {
+  cursor: pointer;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.c6:hover {
+  cursor: pointer;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  font-size: 18px;
+  color: #1b1b1e;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.c1:focus {
+  border: 3px solid #1b3039;
+  outline: none;
+}
+
+.c3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 <Provider
   store={
     Object {
@@ -43,7 +156,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
         onSubmit={[Function]}
       >
         <form
-          className="TodoList__Form-sc-1j03qry-0 jNQvYo"
+          className="c0"
           data-test="todo-submit"
           onSubmit={[Function]}
         >
@@ -53,7 +166,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
             type="text"
           >
             <input
-              className="TodoList__Input-sc-1j03qry-1 jQTyHx"
+              className="c1"
               data-test="todo-input"
               placeholder="Add todo"
               type="text"
@@ -63,7 +176,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
             type="submit"
           >
             <button
-              className="Button-sc-1wm1azg-0 jVbsOG"
+              className="c2"
               type="submit"
             />
           </Button>
@@ -71,7 +184,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
             data-test="todo-list"
           >
             <ul
-              className="TodoList__List-sc-1j03qry-2 fKMyjZ"
+              className="c3"
               data-test="todo-list"
             >
               <TodoItem
@@ -86,7 +199,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                   id={0}
                 >
                   <li
-                    className="TodoItem__ListItem-sc-1ypk56u-0 flBhqY"
+                    className="c4"
                     id={0}
                   >
                     <TodoItem__ListItemText
@@ -95,7 +208,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <p
-                        className="TodoItem__ListItemText-sc-1ypk56u-1 kSyGKi"
+                        className="c5"
                         data-test="todo-text"
                         onClick={[Function]}
                       >
@@ -107,7 +220,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <button
-                        className="Button-sc-1wm1azg-0 jVbsOG"
+                        className="c2"
                         data-test="todo-delete"
                         onClick={[Function]}
                       >
@@ -129,7 +242,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                   id={1}
                 >
                   <li
-                    className="TodoItem__ListItem-sc-1ypk56u-0 flBhqY"
+                    className="c4"
                     id={1}
                   >
                     <TodoItem__ListItemText
@@ -138,7 +251,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <p
-                        className="TodoItem__ListItemText-sc-1ypk56u-1 fFNavx"
+                        className="c6"
                         data-test="todo-text"
                         onClick={[Function]}
                       >
@@ -150,7 +263,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <button
-                        className="Button-sc-1wm1azg-0 jVbsOG"
+                        className="c2"
                         data-test="todo-delete"
                         onClick={[Function]}
                       >
@@ -172,7 +285,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                   id={2}
                 >
                   <li
-                    className="TodoItem__ListItem-sc-1ypk56u-0 flBhqY"
+                    className="c4"
                     id={2}
                   >
                     <TodoItem__ListItemText
@@ -181,7 +294,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <p
-                        className="TodoItem__ListItemText-sc-1ypk56u-1 kSyGKi"
+                        className="c5"
                         data-test="todo-text"
                         onClick={[Function]}
                       >
@@ -193,7 +306,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <button
-                        className="Button-sc-1wm1azg-0 jVbsOG"
+                        className="c2"
                         data-test="todo-delete"
                         onClick={[Function]}
                       >

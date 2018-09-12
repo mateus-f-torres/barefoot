@@ -1,5 +1,5 @@
 node_modules
 coverage
-./server.js
+flow-typed
 dist
 yarn*
