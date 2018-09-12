@@ -5,7 +5,5 @@ module.exports = {
   moduleNameMapper: {
     // e.g.
     // "^Styles/(.*)$": "<rootDir>/src/assets/stylesheets/$1",
-    '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',
-    '\\.(css|sass|scss|less)$': 'identity-obj-proxy',
   },
 };

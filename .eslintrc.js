@@ -11,7 +11,7 @@ module.exports = {
     "react": {
       "pragma": "React",
       "version": "16.4.1",
-      "flowVersion": "0.75",
+      "flowVersion": "0.80.0",
     },
   },
   "extends": [

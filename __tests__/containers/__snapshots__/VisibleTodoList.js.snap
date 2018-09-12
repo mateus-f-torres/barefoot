@@ -38,101 +38,175 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
       }
       toggleTodo={[Function]}
     >
-      <form
+      <TodoList__Form
         data-test="todo-submit"
         onSubmit={[Function]}
       >
-        <input
-          data-test="todo-input"
-          placeholder="Add todo"
-          type="text"
-        />
-        <button
-          type="submit"
-        />
-        <ul
-          data-test="todo-list"
+        <form
+          className="TodoList__Form-sc-1j03qry-0 jNQvYo"
+          data-test="todo-submit"
+          onSubmit={[Function]}
         >
-          <TodoItem
-            completed={false}
-            deleteTodo={[Function]}
-            id={0}
-            key="0"
-            text="mock1"
-            toggleTodo={[Function]}
+          <TodoList__Input
+            data-test="todo-input"
+            placeholder="Add todo"
+            type="text"
           >
-            <li
-              id={0}
-            >
-              <p
-                className={null}
-                data-test="todo-text"
-                onClick={[Function]}
-              >
-                mock1
-              </p>
-              <button
-                data-test="todo-delete"
-                onClick={[Function]}
-              >
-                delete
-              </button>
-            </li>
-          </TodoItem>
-          <TodoItem
-            completed={true}
-            deleteTodo={[Function]}
-            id={1}
-            key="1"
-            text="mock2"
-            toggleTodo={[Function]}
+            <input
+              className="TodoList__Input-sc-1j03qry-1 jQTyHx"
+              data-test="todo-input"
+              placeholder="Add todo"
+              type="text"
+            />
+          </TodoList__Input>
+          <Button
+            type="submit"
           >
-            <li
-              id={1}
-            >
-              <p
-                className="done"
-                data-test="todo-text"
-                onClick={[Function]}
-              >
-                mock2
-              </p>
-              <button
-                data-test="todo-delete"
-                onClick={[Function]}
-              >
-                delete
-              </button>
-            </li>
-          </TodoItem>
-          <TodoItem
-            completed={false}
-            deleteTodo={[Function]}
-            id={2}
-            key="2"
-            text="mock3"
-            toggleTodo={[Function]}
+            <button
+              className="Button-sc-1wm1azg-0 jVbsOG"
+              type="submit"
+            />
+          </Button>
+          <TodoList__List
+            data-test="todo-list"
           >
-            <li
-              id={2}
+            <ul
+              className="TodoList__List-sc-1j03qry-2 fKMyjZ"
+              data-test="todo-list"
             >
-              <p
-                className={null}
-                data-test="todo-text"
-                onClick={[Function]}
+              <TodoItem
+                completed={false}
+                deleteTodo={[Function]}
+                id={0}
+                key="0"
+                text="mock1"
+                toggleTodo={[Function]}
               >
-                mock3
-              </p>
-              <button
-                data-test="todo-delete"
-                onClick={[Function]}
+                <TodoItem__ListItem
+                  id={0}
+                >
+                  <li
+                    className="TodoItem__ListItem-sc-1ypk56u-0 flBhqY"
+                    id={0}
+                  >
+                    <TodoItem__ListItemText
+                      data-test="todo-text"
+                      done={false}
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="TodoItem__ListItemText-sc-1ypk56u-1 kSyGKi"
+                        data-test="todo-text"
+                        onClick={[Function]}
+                      >
+                        mock1
+                      </p>
+                    </TodoItem__ListItemText>
+                    <Button
+                      data-test="todo-delete"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="Button-sc-1wm1azg-0 jVbsOG"
+                        data-test="todo-delete"
+                        onClick={[Function]}
+                      >
+                        delete
+                      </button>
+                    </Button>
+                  </li>
+                </TodoItem__ListItem>
+              </TodoItem>
+              <TodoItem
+                completed={true}
+                deleteTodo={[Function]}
+                id={1}
+                key="1"
+                text="mock2"
+                toggleTodo={[Function]}
               >
-                delete
-              </button>
-            </li>
-          </TodoItem>
-        </ul>
-      </form>
+                <TodoItem__ListItem
+                  id={1}
+                >
+                  <li
+                    className="TodoItem__ListItem-sc-1ypk56u-0 flBhqY"
+                    id={1}
+                  >
+                    <TodoItem__ListItemText
+                      data-test="todo-text"
+                      done={true}
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="TodoItem__ListItemText-sc-1ypk56u-1 fFNavx"
+                        data-test="todo-text"
+                        onClick={[Function]}
+                      >
+                        mock2
+                      </p>
+                    </TodoItem__ListItemText>
+                    <Button
+                      data-test="todo-delete"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="Button-sc-1wm1azg-0 jVbsOG"
+                        data-test="todo-delete"
+                        onClick={[Function]}
+                      >
+                        delete
+                      </button>
+                    </Button>
+                  </li>
+                </TodoItem__ListItem>
+              </TodoItem>
+              <TodoItem
+                completed={false}
+                deleteTodo={[Function]}
+                id={2}
+                key="2"
+                text="mock3"
+                toggleTodo={[Function]}
+              >
+                <TodoItem__ListItem
+                  id={2}
+                >
+                  <li
+                    className="TodoItem__ListItem-sc-1ypk56u-0 flBhqY"
+                    id={2}
+                  >
+                    <TodoItem__ListItemText
+                      data-test="todo-text"
+                      done={false}
+                      onClick={[Function]}
+                    >
+                      <p
+                        className="TodoItem__ListItemText-sc-1ypk56u-1 kSyGKi"
+                        data-test="todo-text"
+                        onClick={[Function]}
+                      >
+                        mock3
+                      </p>
+                    </TodoItem__ListItemText>
+                    <Button
+                      data-test="todo-delete"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="Button-sc-1wm1azg-0 jVbsOG"
+                        data-test="todo-delete"
+                        onClick={[Function]}
+                      >
+                        delete
+                      </button>
+                    </Button>
+                  </li>
+                </TodoItem__ListItem>
+              </TodoItem>
+            </ul>
+          </TodoList__List>
+        </form>
+      </TodoList__Form>
     </TodoList>
   </Connect(TodoList)>
 </Provider>

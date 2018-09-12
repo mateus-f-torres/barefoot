@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import TodoItem from '../../src/components/TodoItem.jsx';
+import TodoItem from '../../src/components/TodoItem.js';
 
 describe('<TodoItem />', () => {
   const mockProps = {
@@ -12,9 +12,16 @@ describe('<TodoItem />', () => {
   describe('Unit Test', () => {
     test('render props.text', () => {
       const wrapper = shallow(<TodoItem {...mockProps}/>);
+      // console.log(wrapper.debug());
 
-      expect(wrapper.find('[data-test="todo-text"]')
-        .text()).toMatch(/^Hello\sWorld$/);
+      expect(
+        wrapper
+        // find element matching key-value pair attribute
+          .find('[data-test="todo-text"]')
+        // dive through styled-component
+          .dive()
+        // to find real component
+          .text()).toMatch(/^Hello\sWorld$/);
     });
 
     test('li id matches props.id', () => {
@@ -23,19 +30,19 @@ describe('<TodoItem />', () => {
       expect(wrapper.prop('id')).toBe(mockProps.id);
     });
 
-    test('className === null if (props.completed === false)', () => {
+    test('done === false if (props.completed === false)', () => {
       const wrapper = shallow(<TodoItem {...mockProps}/>);
 
       expect(wrapper.find('[data-test="todo-text"]')
-        .prop('className')).toBeNull();
+        .prop('done')).toBe(false);
     });
 
-    test('className === "done" if (props.completed === true)', () => {
+    test('done === true if (props.completed === true)', () => {
       const mockCompleted = Object.assign({}, mockProps, {completed: true});
       const wrapper = shallow(<TodoItem {...mockCompleted}/>);
 
       expect(wrapper.find('[data-test="todo-text"]')
-        .prop('className')).toMatch(/^done$/);
+        .prop('done')).toBe(true);
     });
 
     it('calls toggleTodo only when p is clicked', () => {

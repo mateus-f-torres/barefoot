@@ -1,0 +1,57 @@
+//@flow
+import * as React from 'react';
+import styled from 'styled-components';
+import type {Todo} from '../types/props.js';
+import Button from './common/Button';
+
+const MAIN_TEXT= '#1b1b1e';
+
+const ListItem = styled.li`
+  display: flex;
+  background-color: darkgrey;
+  color: ${MAIN_TEXT};
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  line-height: 45px;
+  &:nth-child(2n) { 
+    background-color: white;
+    color: #666;
+  }
+`;
+
+const ListItemText = styled.p`
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: ${(props) => props.done ? 'line-through' : 'none'};
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+type Props = Todo & {
+  toggleTodo: (SyntheticEvent<HTMLParagraphElement>) => void,
+  deleteTodo: (SyntheticEvent<HTMLButtonElement>) => void,
+};
+
+const TodoItem = (props: Props) => (
+  <ListItem id={props.id}>
+    <ListItemText
+      done={props.completed ? true : false}
+      data-test="todo-text"
+      onClick={props.toggleTodo}>
+      {props.text}
+    </ListItemText>
+    <Button
+      data-test="todo-delete"
+      onClick={props.deleteTodo}>
+      delete
+    </Button>
+  </ListItem>
+);
+
+export default TodoItem;
