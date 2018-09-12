@@ -7,3 +7,6 @@
 # in case of root linting
 /webpack.*.js
 /jest.config.js
+
+# Dont lint flow-typed
+/flow-typed/
