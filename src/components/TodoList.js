@@ -1,8 +1,37 @@
 //@flow
 import * as React from 'react';
+import styled from 'styled-components';
 import type {Todo} from '../types/props.js';
-import TodoItem from './TodoItem.jsx';
-import 'Styles/TodoList.scss';
+import TodoItem from './TodoItem.js';
+import Button from './common/Button';
+
+const MAIN_TEXT= '#1b1b1e';
+const HEADER_BACK= '#1b3039';
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Input = styled.input`
+  font-size: 18px;
+  color: ${MAIN_TEXT};
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+  &:focus {
+    border: 3px solid ${HEADER_BACK};
+    outline: none;
+  }
+`;
+
+const List = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+`;
 
 type Props = {
   todos: Array<Todo>,
@@ -45,10 +74,15 @@ class TodoList extends React.Component<Props> {
 
   render() {
     return (
-      <form data-test="todo-submit" onSubmit={this.handleSubmit}>
-        <input data-test="todo-input" type="text" placeholder="Add todo" />
-        <button type="submit" />
-        <ul data-test="todo-list">
+      <Form
+        data-test="todo-submit"
+        onSubmit={this.handleSubmit}>
+        <Input
+          data-test="todo-input"
+          type="text"
+          placeholder="Add todo" />
+        <Button type="submit" />
+        <List data-test="todo-list">
           {
             this.props.todos.map((todo) => (
               <TodoItem
@@ -59,8 +93,8 @@ class TodoList extends React.Component<Props> {
               />
             ))
           }
-        </ul>
-      </form>
+        </List>
+      </Form>
     );
   }
 }

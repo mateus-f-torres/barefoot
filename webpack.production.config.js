@@ -5,17 +5,7 @@ const uglyJs =
   new UglifyJsPlugin({
     cache: true,
     parallel: true,
-    sourceMap: true
-});
-
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin'); 
-const optimizeCss =
-  new OptimizeCSSAssetsPlugin({});
-
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const cssPlugin =
-  new MiniCssExtractPlugin({
-    filename: "styles.css"  
+    sourceMap: true,
 });
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -35,6 +25,16 @@ const htmlPlugin =
       minifyURLs: true
     }
 });
+
+const CompressionPlugin = require('compression-webpack-plugin');
+const gzipPlugin =
+  new CompressionPlugin({
+    test: /\.js$/,
+    filename: '[path].gz[query]',
+    algorithm: 'gzip',
+    threshold: 0,
+    minRatio: 0.8,
+  });
   
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const cleanPlugin = 
@@ -51,24 +51,17 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
-  },
-  resolve: {
-    alias: {
-      Styles: path.resolve(__dirname, 'src/assets/stylesheets'),
-      Images: path.resolve(__dirname, 'src/assets/images')
-    }
+    filename: 'bundle.[hash].js'
   },
   optimization: {
     minimizer: [
       uglyJs,
-      optimizeCss
     ]
   },
   module: {
     rules: [ 
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -77,52 +70,12 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
-        ]
-      },
-      {
-        test: /\.(jpg|jpeg|png|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "images/[path][name].[ext]",
-              context: "src/assets/images/" 
-            }
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 65
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              optipng: {
-                optimizationLevel: 4,
-              },
-              pngquant: {
-                quality: '75-90',
-                speed: 3,
-              },
-            },
-          }
-        ]
-      }
     ]
   },
   plugins: [
     analyzerPlugin,
     cleanPlugin,
-    cssPlugin,
+    gzipPlugin,
     htmlPlugin
   ]
 };

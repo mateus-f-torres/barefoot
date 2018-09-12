@@ -1,6 +1,5 @@
 node_modules
 coverage
+./server.js
 dist
-lib
 yarn*
-src/assets/images/*
