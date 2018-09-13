@@ -1,8 +1,8 @@
 //@flow
 import {connect} from 'react-redux';
-import {addTodo, toggleTodo, removeTodo} from '../actions';
-import TodoList from '../components/TodoList.js';
-import type {State} from '../types/state.js';
+import {addTodo, toggleTodo, removeTodo} from 'Store/todos/actions.js';
+import TodoList from './VisibleTodoList/TodoList.js';
+import type {State} from 'Types/state.js';
 
 const mapStateToProps = (state: State) => {
   return {

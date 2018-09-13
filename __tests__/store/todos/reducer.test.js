@@ -1,4 +1,4 @@
-import todosReducer from '../../src/reducers/todos.js';
+import todosReducer from 'Store/todos/reducer.js';
 
 describe('Todos Reducer', () => {
   const defaultState = [

@@ -53,6 +53,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[hash].js'
   },
+  resolve: {
+    alias: {
+      Store: path.resolve(__dirname, 'src/store/'),
+      Component: path.resolve(__dirname, 'src/components/'),
+      Types: path.resolve(__dirname, '__types__/'),
+    },
+  },
   optimization: {
     minimizer: [
       uglyJs,

@@ -8,7 +8,8 @@ module.exports = {
     'setupEnzyme.js'
   ],
   moduleNameMapper: {
-    // e.g.
-    // "^Styles/(.*)$": "<rootDir>/src/assets/stylesheets/$1",
+    "^Store/(.*)$": "<rootDir>/src/store/$1",
+    "^Component/(.*)$": "<rootDir>/src/components/$1",
+    "^Types/(.*)$": "<rootDir>/__types__/$1",
   },
 };

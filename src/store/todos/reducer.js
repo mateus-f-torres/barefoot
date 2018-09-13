@@ -1,6 +1,6 @@
 //@flow
-import type {Todo} from '../types/props.js';
-import type {Action} from '../types/actions.js';
+import type {Todo} from 'Types/props.js';
+import type {Action} from 'Types/actions.js';
 
 let ID = 3;
 

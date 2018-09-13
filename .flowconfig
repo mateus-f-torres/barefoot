@@ -16,7 +16,8 @@ unclear-type=warn
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 
 # add module wrappers for webpack alias
-# e.g.
-# module.name_mapper='^Images' -> '<PROJECT_ROOT>/src/assets/images'
+module.name_mapper='^Store/\(.*\)$' -> '<PROJECT_ROOT>/src/store/\1'
+module.name_mapper='^Component/\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^Types/\(.*\)$' -> '<PROJECT_ROOT>/__types__/\1'
 
 [strict]

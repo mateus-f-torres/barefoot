@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled, {injectGlobal} from 'styled-components';
 import styledNormalize from 'styled-normalize';
-import VisibleTodoList from '../containers/VisibleTodoList.js';
+import VisibleTodoList from './VisibleTodoList.js';
 
 const MAIN_BACK = '#445963';
 const MAIN_TEXT= '#1b1b1e';

@@ -2,8 +2,8 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import {mount} from 'enzyme';
 import configureStore from 'redux-mock-store';
-import VisibleTodoList from '../../src/containers/VisibleTodoList.js';
-import TodoList from '../../src/components/TodoList.js';
+import VisibleTodoList from 'Component/VisibleTodoList.js';
+import TodoList from 'Component/VisibleTodoList/TodoList.js';
 
 const mockState = {
   todos: [
