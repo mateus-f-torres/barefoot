@@ -15,6 +15,11 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const analyzerPlugin =
   new BundleAnalyzerPlugin();
  
+const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
+const progressPlugin =
+  new SimpleProgressWebpackPlugin({
+    format: 'expanded',
+  });
 
 module.exports = { 
   mode: 'development',
@@ -22,13 +27,14 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.[hash].js'
+    filename: '[name].[hash].js',
   },
   resolve: {
     alias: {
       Store: path.resolve(__dirname, 'src/store/'),
-      Component: path.resolve(__dirname, 'src/components/'),
-      Types: path.resolve(__dirname, '__types__/'),
+      Components: path.resolve(__dirname, 'src/components/'),
+      Types: path.resolve(__dirname, 'types/'),
+      Mocks: path.resolve(__dirname, '__mocks__/'),
     },
   },
   module: {
@@ -43,6 +49,7 @@ module.exports = {
     ]
   },
   plugins: [
+    progressPlugin,
     analyzerPlugin,
     cleanPlugin,
     htmlPlugin

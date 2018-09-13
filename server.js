@@ -15,11 +15,12 @@ app.use(_express.default.static(__dirname + '/dist/assets')); // root route
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/dist/index.html');
 });
-app.get('/bundle.*.js', function (req, res, next) {
+app.get('/*.js', function (req, res, next) {
   // serve .js.gz file instead of .js
   req.url = "".concat(req.url, ".gz");
   res.set('Content-Encoding', 'gzip');
   res.set('Content-Type', 'text/javascript');
+  res.set('Cache-Control', 'public, max-age=31536000');
   res.sendFile(__dirname + '/dist' + req.url);
 }); // handle 404
 // always reroute to react root
@@ -27,5 +28,6 @@ app.get('/bundle.*.js', function (req, res, next) {
 app.use(function (req, res) {
   res.status(400);
   res.sendFile(__dirname + '/dist/index.html');
-});
-app.listen(process.env.PORT, process.env.IP);
+}); // app.listen(process.env.PORT, process.env.IP);
+
+app.listen(3000);

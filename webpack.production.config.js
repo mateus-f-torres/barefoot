@@ -43,6 +43,12 @@ const cleanPlugin =
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const analyzerPlugin =
   new BundleAnalyzerPlugin();
+
+const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
+const progressPlugin =
+  new SimpleProgressWebpackPlugin({
+    format: 'compact',
+  });
  
 module.exports = { 
   mode: 'production',
@@ -51,19 +57,30 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.[hash].js'
+    filename: '[name].[contenthash].js',
+    chunkFilename: '[name].[chunkhash].js',
   },
   resolve: {
     alias: {
       Store: path.resolve(__dirname, 'src/store/'),
-      Component: path.resolve(__dirname, 'src/components/'),
-      Types: path.resolve(__dirname, '__types__/'),
+      Components: path.resolve(__dirname, 'src/components/'),
+      Types: path.resolve(__dirname, 'types/'),
+      Mocks: path.resolve(__dirname, '__mocks__/'),
     },
   },
   optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          name: 'vendors',
+        },
+      },
+    },
     minimizer: [
       uglyJs,
-    ]
+    ],
   },
   module: {
     rules: [ 
@@ -80,6 +97,7 @@ module.exports = {
     ]
   },
   plugins: [
+    progressPlugin,
     analyzerPlugin,
     cleanPlugin,
     gzipPlugin,
