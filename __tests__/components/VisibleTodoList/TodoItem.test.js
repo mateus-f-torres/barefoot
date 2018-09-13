@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import TodoItem from 'Component/VisibleTodoList/TodoItem.js';
+import TodoItem from 'Components/VisibleTodoList/TodoItem.js';
 
 describe('<TodoItem />', () => {
   const mockProps = {

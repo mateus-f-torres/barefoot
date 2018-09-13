@@ -2,7 +2,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import type {Todo} from 'Types/props.js';
-import Button from 'Component/common/Button';
+import Button from 'Components/common/Button';
 
 const MAIN_TEXT= '#1b1b1e';
 

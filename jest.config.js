@@ -9,7 +9,8 @@ module.exports = {
   ],
   moduleNameMapper: {
     "^Store/(.*)$": "<rootDir>/src/store/$1",
-    "^Component/(.*)$": "<rootDir>/src/components/$1",
-    "^Types/(.*)$": "<rootDir>/__types__/$1",
+    "^Components/(.*)$": "<rootDir>/src/components/$1",
+    "^Types/(.*)$": "<rootDir>/types/$1",
+    "^Mocks/(.*)$": "<rootDir>/__mocks__/$1",
   },
 };
