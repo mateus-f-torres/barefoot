@@ -22,8 +22,8 @@ const htmlPlugin =
       keepClosingSlash: true,
       minifyJS: true,
       minifyCSS: true,
-      minifyURLs: true
-    }
+      minifyURLs: true,
+    },
 });
 
 const CompressionPlugin = require('compression-webpack-plugin');
@@ -62,10 +62,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Store: path.resolve(__dirname, 'src/store/'),
-      Components: path.resolve(__dirname, 'src/components/'),
-      Types: path.resolve(__dirname, 'types/'),
-      Mocks: path.resolve(__dirname, '__mocks__/'),
+      'Store': path.resolve(__dirname, 'src/store/'),
+      'Components': path.resolve(__dirname, 'src/components/'),
+      'Types': path.resolve(__dirname, 'types/'),
+      'Mocks': path.resolve(__dirname, '__mocks__/'),
     },
   },
   optimization: {
@@ -90,17 +90,17 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            compact: true
-          }
-        }
+            compact: true,
+          },
+        },
       },
-    ]
+    ],
   },
   plugins: [
     progressPlugin,
     analyzerPlugin,
     cleanPlugin,
     gzipPlugin,
-    htmlPlugin
-  ]
+    htmlPlugin,
+  ],
 };

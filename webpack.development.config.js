@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin = 
   new HtmlWebpackPlugin ({
     filename: 'index.html',
-    template: 'src/index.html'
+    template: 'src/index.html',
 });
   
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -31,10 +31,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Store: path.resolve(__dirname, 'src/store/'),
-      Components: path.resolve(__dirname, 'src/components/'),
-      Types: path.resolve(__dirname, 'types/'),
-      Mocks: path.resolve(__dirname, '__mocks__/'),
+      'Store': path.resolve(__dirname, 'src/store/'),
+      'Components': path.resolve(__dirname, 'src/components/'),
+      'Types': path.resolve(__dirname, 'types/'),
+      'Mocks': path.resolve(__dirname, '__mocks__/'),
     },
   },
   module: {
@@ -43,15 +43,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
-    ]
+    ],
   },
   plugins: [
     progressPlugin,
     analyzerPlugin,
     cleanPlugin,
-    htmlPlugin
-  ]
+    htmlPlugin,
+  ],
 };
