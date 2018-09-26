@@ -4,6 +4,9 @@ import styled, {injectGlobal} from 'styled-components';
 import styledNormalize from 'styled-normalize';
 import VisibleTodoList from './VisibleTodoList.js';
 
+import list from 'Assets/images/list.svg';
+import RobotoRegular from 'Assets/fonts/Roboto-Regular.ttf';
+
 const MAIN_BACK = '#445963';
 const MAIN_TEXT= '#1b1b1e';
 const HEADER_BACK= '#1b3039';
@@ -12,11 +15,18 @@ const HEADER_TEXT= '#f1f1f1';
 injectGlobal`
   ${styledNormalize}
 
+  @font-face {
+    font-family: Roboto;
+    src: url("${RobotoRegular}") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
   body {
   background: ${MAIN_BACK};
   color: ${MAIN_TEXT};
   font-size: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   }
 `;
 
@@ -25,9 +35,19 @@ const Header = styled.h1`
   color: ${HEADER_TEXT};
   margin: 0 !important;
   padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: normal;
+`;
+
+const SVG = styled.img`
+  max-width: 30px;
+  height: 30px;
+  position: relative;
+  left: 5px;
 `;
 
 const Container = styled.div`
@@ -42,7 +62,7 @@ const Container = styled.div`
 
 const App = () => (
   <Container>
-    <Header>ToDo App</Header>
+    <Header>Todo App<SVG src={list}/></Header>
     <VisibleTodoList />
   </Container>
 );

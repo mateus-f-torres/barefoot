@@ -13,7 +13,13 @@ exports[`<TodoItem /> Snapshot Test matches current production snapshot 1`] = `
   <Button
     data-test="todo-delete"
   >
-    delete
+    <TodoItem__ListItemIcon
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
   </Button>
 </TodoItem__ListItem>
 `;

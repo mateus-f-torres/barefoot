@@ -25,6 +25,11 @@ app.get('/*.js', (req, res, next) => {
   res.sendFile(__dirname + '/dist' + req.url);
 });
 
+app.get('/fonts/*.ttf', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31536000');
+  res.sendFile(__dirname + '/dist' + req.url);
+});
+
 // handle 404
 // always reroute to react root
 app.use((req, res) => {

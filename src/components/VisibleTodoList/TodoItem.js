@@ -3,6 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import type {Todo} from 'Types/props.js';
 import Button from 'Components/common/Button';
+import trash from 'Assets/images/trash.png';
 
 const MAIN_TEXT= '#1b1b1e';
 
@@ -33,6 +34,13 @@ const ListItemText = styled.p`
   }
 `;
 
+const ListItemIcon = styled.img`
+  width: 30px;
+  heigth: 30px;
+  position: relative;
+  bottom: 5px;
+`;
+
 type Props = Todo & {
   toggleTodo: (SyntheticEvent<HTMLParagraphElement>) => void,
   deleteTodo: (SyntheticEvent<HTMLButtonElement>) => void,
@@ -49,7 +57,7 @@ const TodoItem = (props: Props) => (
     <Button
       data-test="todo-delete"
       onClick={props.deleteTodo}>
-      delete
+      <ListItemIcon src={trash}/>
     </Button>
   </ListItem>
 );

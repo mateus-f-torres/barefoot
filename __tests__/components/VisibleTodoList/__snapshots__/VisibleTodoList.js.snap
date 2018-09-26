@@ -68,7 +68,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
   cursor: pointer;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   width: 100%;
   padding-left: 10px;
@@ -79,8 +79,15 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
   text-decoration: line-through;
 }
 
-.c6:hover {
+.c7:hover {
   cursor: pointer;
+}
+
+.c6 {
+  width: 30px;
+  heigth: 30px;
+  position: relative;
+  bottom: 5px;
 }
 
 .c0 {
@@ -224,7 +231,22 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                         data-test="todo-delete"
                         onClick={[Function]}
                       >
-                        delete
+                        <TodoItem__ListItemIcon
+                          src={
+                            Object {
+                              "process": [Function],
+                            }
+                          }
+                        >
+                          <img
+                            className="c6"
+                            src={
+                              Object {
+                                "process": [Function],
+                              }
+                            }
+                          />
+                        </TodoItem__ListItemIcon>
                       </button>
                     </Button>
                   </li>
@@ -251,7 +273,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                       onClick={[Function]}
                     >
                       <p
-                        className="c6"
+                        className="c7"
                         data-test="todo-text"
                         onClick={[Function]}
                       >
@@ -267,7 +289,22 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                         data-test="todo-delete"
                         onClick={[Function]}
                       >
-                        delete
+                        <TodoItem__ListItemIcon
+                          src={
+                            Object {
+                              "process": [Function],
+                            }
+                          }
+                        >
+                          <img
+                            className="c6"
+                            src={
+                              Object {
+                                "process": [Function],
+                              }
+                            }
+                          />
+                        </TodoItem__ListItemIcon>
                       </button>
                     </Button>
                   </li>
@@ -310,7 +347,22 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
                         data-test="todo-delete"
                         onClick={[Function]}
                       >
-                        delete
+                        <TodoItem__ListItemIcon
+                          src={
+                            Object {
+                              "process": [Function],
+                            }
+                          }
+                        >
+                          <img
+                            className="c6"
+                            src={
+                              Object {
+                                "process": [Function],
+                              }
+                            }
+                          />
+                        </TodoItem__ListItemIcon>
                       </button>
                     </Button>
                   </li>
