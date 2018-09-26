@@ -19,7 +19,12 @@ app.get('/*.js', function (req, res, next) {
   // serve .js.gz file instead of .js
   req.url = "".concat(req.url, ".gz");
   res.set('Content-Encoding', 'gzip');
-  res.set('Content-Type', 'text/javascript');
+  res.set('Content-Type', 'text/javascript'); // and keep it in cache
+
+  res.set('Cache-Control', 'public, max-age=31536000');
+  res.sendFile(__dirname + '/dist' + req.url);
+});
+app.get('/fonts/*.ttf', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31536000');
   res.sendFile(__dirname + '/dist' + req.url);
 }); // handle 404
@@ -28,6 +33,5 @@ app.get('/*.js', function (req, res, next) {
 app.use(function (req, res) {
   res.status(400);
   res.sendFile(__dirname + '/dist/index.html');
-}); // app.listen(process.env.PORT, process.env.IP);
-
-app.listen(3000);
+});
+app.listen(process.env.PORT, process.env.IP);

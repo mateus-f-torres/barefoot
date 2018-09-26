@@ -64,6 +64,7 @@ module.exports = {
     alias: {
       'Store': path.resolve(__dirname, 'src/store/'),
       'Components': path.resolve(__dirname, 'src/components/'),
+      'Assets': path.resolve(__dirname, 'src/assets/'),
       'Types': path.resolve(__dirname, 'types/'),
       'Mocks': path.resolve(__dirname, '__mocks__/'),
     },
@@ -93,6 +94,45 @@ module.exports = {
             compact: true,
           },
         },
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 5 * 1024,
+              fallback: 'file-loader',
+            },
+          },
+          'image-webpack-loader',
+        ],
+      },
+      {
+        test: /\.svg$/i,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 5 * 1024,
+              noquotes: true,
+              fallback: 'file-loader',
+            },
+          },
+          'image-webpack-loader',
+        ],
       },
     ],
   },
