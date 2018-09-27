@@ -33,5 +33,6 @@ app.get('/fonts/*.ttf', function (req, res) {
 app.use(function (req, res) {
   res.status(400);
   res.sendFile(__dirname + '/dist/index.html');
-});
-app.listen(process.env.PORT, process.env.IP);
+}); // app.listen(process.env.PORT, process.env.IP);
+
+app.listen(3000);

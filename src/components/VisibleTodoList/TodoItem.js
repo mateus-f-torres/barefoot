@@ -5,12 +5,10 @@ import type {Todo} from 'Types/props.js';
 import Button from 'Components/common/Button';
 import trash from 'Assets/images/trash.png';
 
-const MAIN_TEXT= '#1b1b1e';
-
 const ListItem = styled.li`
   display: flex;
   background-color: darkgrey;
-  color: ${MAIN_TEXT};
+  color: #1b1b1e;
   justify-content: space-between;
   align-items: center;
   height: 45px;

@@ -71,3 +71,5 @@ cd barefoot/
 ### Credits
 
 Made by [Mateus F Torres](https://github.com/mateus-f-torres)    
+List icon by Smashicons from https://www.flaticon.com/
+Waste Bin icon by Egor Rumyantsev from https://www.flaticon.com/
