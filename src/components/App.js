@@ -5,6 +5,7 @@ import styledNormalize from 'styled-normalize';
 import VisibleTodoList from './VisibleTodoList.js';
 
 import list from 'Assets/images/list.svg';
+import logo from 'Assets/images/mateus-f-torres.svg';
 import RobotoRegular from 'Assets/fonts/Roboto-Regular.ttf';
 
 const MAIN_BACK = '#445963';
@@ -50,20 +51,43 @@ const SVG = styled.img`
   left: 5px;
 `;
 
+const Logo = styled.img`
+  max-width: 100px;
+`;
+
 const Container = styled.div`
   width: 79%;
   margin: 10vh auto 0 auto;
   background-color: #f7f7f7;
-  box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+  border: 3px solid #010101;
+  box-shadow:
+    0 6px 12px rgba(0,0,0, 0.2),
+    0 4px 6px rgba(0,0,0,0.1);
   @media only screen and (min-width: 900px) {
     width: 30%;
   }
+`;
+
+const Footer = styled.footer`
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 5% auto;
+  width: 100%;
+  text-align: center;
 `;
 
 const App = () => (
   <Container>
     <Header>Todo App<SVG src={list}/></Header>
     <VisibleTodoList />
+    <Footer>
+      <h1>Made by</h1>
+      <a href="https://mateus-f-torres.github.io/">
+        <Logo src={logo}/>
+      </a>
+    </Footer>
   </Container>
 );
 

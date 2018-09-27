@@ -5,9 +5,6 @@ import type {Todo} from 'Types/props.js';
 import TodoItem from './TodoItem.js';
 import Button from 'Components/common/Button';
 
-const MAIN_TEXT= '#1b1b1e';
-const HEADER_BACK= '#1b3039';
-
 const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -15,14 +12,13 @@ const Form = styled.form`
 
 const Input = styled.input`
   font-size: 18px;
-  color: ${MAIN_TEXT};
+  color: #1b1b1e;
   background-color: #f7f7f7;
   width: 100%;
   padding: 13px 13px 13px 20px;
   box-sizing: border-box;
   border: 3px solid rgba(0,0,0,0);
   &:focus {
-    border: 3px solid ${HEADER_BACK};
     outline: none;
   }
 `;
