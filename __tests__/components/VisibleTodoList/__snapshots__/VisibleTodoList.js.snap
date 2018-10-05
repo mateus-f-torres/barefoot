@@ -18,6 +18,7 @@ exports[`VisibleTodoList Snapshot Test matches current production snapshot 1`] =
 .c2:focus {
   outline: none;
   border: none;
+  background-color: #345c6d;
 }
 
 .c2:hover {
