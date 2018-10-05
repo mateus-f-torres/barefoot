@@ -19,6 +19,7 @@ const Button = styled.button`
   &:focus {
     outline: none;
     border: none;
+    background-color: ${lighten(0.15, HEADER_BACK)};
   }
   &:hover {
     cursor: pointer;

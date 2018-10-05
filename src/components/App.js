@@ -57,25 +57,20 @@ const Logo = styled.img`
 
 const Container = styled.div`
   width: 79%;
+  max-width: 450px;
   margin: 10vh auto 0 auto;
   background-color: #f7f7f7;
   border: 3px solid #010101;
   box-shadow:
     0 6px 12px rgba(0,0,0, 0.2),
     0 4px 6px rgba(0,0,0,0.1);
-  @media only screen and (min-width: 900px) {
-    width: 30%;
-  }
 `;
 
 const Footer = styled.footer`
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  margin: 5% auto;
+  margin: 15vh auto;
   width: 100%;
   text-align: center;
+  float: right;
 `;
 
 const App = () => (
