@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "8.11.4",
-    "npm": "5.6.0"
+    "node": "10.13.0",
+    "npm": "6.4.1"
   },
   "scripts": {
     "local": "webpack-dev-server --hot --open --config webpack.development.config.js",

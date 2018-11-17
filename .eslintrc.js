@@ -1,11 +1,18 @@
 module.exports = {
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "impliedStrict": true,
+        "jsx": true,
+    },
+  },
   "env": {
     "browser": true,
-    "node": true,
     "commonjs": true,
-    "es6": true,
-    "jquery": true,
-    "jest": true
+    "node": true,
+    "jest": true,
   },
   "settings": {
     "react": {
@@ -14,28 +21,21 @@ module.exports = {
       "flowVersion": "0.80.0",
     },
   },
+  "plugins": [
+    // TODO check if necessary: babel plugin
+    "babel",
+    "react",
+    "flowtype",
+  ],
   "extends": [
     "eslint:recommended",
+    // TODO change to airbnb style
     "google", 
     "plugin:react/recommended",
     "plugin:flowtype/recommended"
   ],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 8,
-    "ecmaFeatures": {
-        "impliedStrict": true,
-        "experimentalObjectRestSpread": true,
-        "jsx": true
-    },
-    "sourceType": "module"
-  },
-  "plugins": [
-    "babel",
-    "react",
-    "flowtype"
-  ],
   "rules": {
+    // TODO turn all off to check needed
     "no-console": [
       "warn"
     ],

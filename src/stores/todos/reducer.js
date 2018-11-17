@@ -2,9 +2,9 @@
 import type {Todo} from 'Types/props.js';
 import type {Action} from 'Types/actions.js';
 
-let ID = 3;
-
 type State = Array<Todo>;
+
+let ID = 3;
 
 const defaultState = [
   {
@@ -28,6 +28,8 @@ const defaultState = [
 const todos = (state: State = defaultState, action: Action) => {
   switch (action.type) {
   case 'ADD_TODO':
+    return addTodoToState(state, action.payload);
+    /*
     return [
       ...state,
       {
@@ -36,6 +38,7 @@ const todos = (state: State = defaultState, action: Action) => {
         completed: false,
       },
     ];
+    */
 
   case 'TOGGLE_TODO':
     // $FlowFixMe
@@ -52,5 +55,9 @@ const todos = (state: State = defaultState, action: Action) => {
     return state;
   }
 };
+
+function addTodoToState(state: State, todo: string) {
+  return [...state, {id: ID++, text: todo, completed: false}];
+}
 
 export default todos;

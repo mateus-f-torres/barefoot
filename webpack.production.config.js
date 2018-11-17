@@ -42,7 +42,13 @@ const cleanPlugin =
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const analyzerPlugin =
-  new BundleAnalyzerPlugin();
+  new BundleAnalyzerPlugin({
+    openAnalyzer: false,
+    analyzerMode: 'static',
+    reportFilename: 'report.html',
+    generateStatsFile: true,
+    statsFilename: 'stats.json',
+  });
 
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
 const progressPlugin =
@@ -62,8 +68,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'Store': path.resolve(__dirname, 'src/store/'),
-      'Components': path.resolve(__dirname, 'src/components/'),
+      'Store': path.resolve(__dirname, 'src/stores/'),
+      'Components': path.resolve(__dirname, 'src/views/'),
       'Assets': path.resolve(__dirname, 'src/assets/'),
       'Types': path.resolve(__dirname, 'types/'),
       'Mocks': path.resolve(__dirname, '__mocks__/'),

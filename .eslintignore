@@ -4,7 +4,6 @@
 /server.js
 
 # Dont lint other config files
-# in case of root linting
 /webpack.*.js
 /jest.config.js
 
