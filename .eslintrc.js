@@ -15,6 +15,16 @@ module.exports = {
     "jest": true,
   },
   "settings": {
+    "import/resolver": {
+      alias: {
+        map: [
+          ["Types", "./src/types/"],
+          ["Store", "./src/stores/"],
+          ["Components", "./src/views/"],
+          ["Assets", "./src/assets/"],
+        ],
+      },
+    },
     "react": {
       "pragma": "React",
       "version": "16.4.1",
@@ -29,10 +39,9 @@ module.exports = {
   ],
   "extends": [
     "eslint:recommended",
-    // TODO change to airbnb style
-    "google", 
+    "airbnb", 
     "plugin:react/recommended",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
   ],
   "rules": {
     // TODO turn all off to check needed
@@ -42,18 +51,15 @@ module.exports = {
     "no-debugger": [
       "warn"
     ],
-    "indent": [
-      "error",
-      2
+    "spaced-comment": [
+      "error", "always", { "exceptions": ["@flow"]}
     ],
+    /*
     "react/jsx-uses-react": [
       "warn"
     ],
     "react/jsx-uses-vars": [
       "warn"
-    ],
-    "spaced-comment": [
-      "error", "always", { "exceptions": ["@flow"]}
     ],
     "require-jsdoc": [
       "off"
@@ -64,5 +70,6 @@ module.exports = {
     "no-invalid-this": [
       "off"
     ],
-  }
+  */
+  },
 }

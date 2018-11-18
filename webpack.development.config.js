@@ -36,11 +36,12 @@ const configs = {
     filename: '[name].[hash].js',
   },
   resolve: {
+    extensions: ['js', 'jsx'],
     alias: {
       'Store': path.resolve(__dirname, 'src/stores/'),
       'Components': path.resolve(__dirname, 'src/views/'),
       'Assets': path.resolve(__dirname, 'src/assets/'),
-      'Types': path.resolve(__dirname, 'types/'),
+      'Types': path.resolve(__dirname, 'src/types/'),
       'Mocks': path.resolve(__dirname, '__mocks__/'),
     },
   },

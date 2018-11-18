@@ -1,5 +1,5 @@
 //@flow
-import type {Action} from 'Types/actions.js';
+import type { Action } from 'Types/actions';
 
 export const addTodo = (text: string): Action => ({
   type: 'ADD_TODO',
