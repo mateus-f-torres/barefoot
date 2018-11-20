@@ -3,9 +3,5 @@
 /coverage/
 /server.js
 
-# Dont lint other config files
-/webpack.*.js
-/jest.config.js
-
 # Dont lint flow-typed
 /flow-typed/

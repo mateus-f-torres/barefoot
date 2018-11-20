@@ -1,6 +1,6 @@
 //@flow
-import type { Todo } from 'Types/props';
-import type { Action } from 'Types/actions';
+import type {Todo} from 'Types/props';
+import type {Action} from 'Types/actions';
 
 type State = Array<Todo>;
 
@@ -25,7 +25,7 @@ const defaultState = [
 const todos = (state: State = defaultState, action: Action) => {
   switch (action.type) {
     case 'ADD_TODO':
-      return addTodoToState(state, action.payload);
+      return addTodoToList(state, action.payload);
       /*
       return [
         ...state,
@@ -39,14 +39,21 @@ const todos = (state: State = defaultState, action: Action) => {
 
     case 'TOGGLE_TODO':
       // $FlowFixMe
+      return toggleTodoCompletion(state, action.payload);
+      /*
       return state.map((todo) => {
         return todo.id === action.payload
           ? {...todo, completed: !todo.completed}
           : todo;
       });
+      */
 
     case 'REMOVE_TODO':
+      // $FlowFixMe
+      return removeTodoFromList(state, action.payload);
+      /*
       return state.filter((todo) => todo.id !== action.payload);
+      */
 
     default:
       return state;
@@ -55,8 +62,12 @@ const todos = (state: State = defaultState, action: Action) => {
 
 let nextID = 3;
 
-function addTodoToState(state: State, todo: string) {
+function addTodoToList(state: State, todo: string) {
   return [...state, {id: nextID++, text: todo, completed: false}];
 }
+
+function toggleTodoCompletion() {}
+
+function removeTodoFromList() {}
 
 export default todos;

@@ -15,7 +15,7 @@
     "prebuild": "eslint src/ && flow status && jest",
     "build": "webpack --config webpack.production.config.js",
     "deploy": "gh-pages -d dist",
-    "prestart": "babel src/server.js -o ./server.js",
+    "prestart": "NODE_ENV=development babel src/server.js -o ./server.js",
     "start": "NODE_ENV=production node server.js",
     "lint:src": "eslint src/",
     "lint:all": "eslint ./",
