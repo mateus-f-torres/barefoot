@@ -1,9 +1,11 @@
 //@flow
 import * as React from 'react';
 import styled from 'styled-components';
-import type {Todo} from 'Types/props.js';
-import Button from 'Components/common/Button';
+import type {Todo} from 'Types/props';
+
 import trash from 'Assets/images/trash.png';
+
+import Button from 'Components/common/Button';
 
 const ListItem = styled.li`
   display: flex;
@@ -44,20 +46,30 @@ type Props = Todo & {
   deleteTodo: (SyntheticEvent<HTMLButtonElement>) => void,
 };
 
-const TodoItem = (props: Props) => (
-  <ListItem id={props.id}>
-    <ListItemText
-      done={props.completed ? true : false}
-      data-test="todo-text"
-      onClick={props.toggleTodo}>
-      {props.text}
-    </ListItemText>
-    <Button
-      data-test="todo-delete"
-      onClick={props.deleteTodo}>
-      <ListItemIcon src={trash}/>
-    </Button>
-  </ListItem>
-);
+// TODO think about prefer-destructuring
+// when copying by value some property
+// when copying by refs some method
+function TodoItem(props: Props) {
+  return (
+    <ListItem id={props.id}>
+
+      <ListItemText
+        done={props.completed ? true : false}
+        data-test="todo-text"
+        onClick={props.toggleTodo}
+      >
+        {props.text}
+      </ListItemText>
+
+      <Button
+        data-test="todo-delete"
+        onClick={props.deleteTodo}
+      >
+        <ListItemIcon src={trash} />
+      </Button>
+
+    </ListItem>
+  );
+}
 
 export default TodoItem;

@@ -2,17 +2,19 @@
 import * as React from 'react';
 import styled, {injectGlobal} from 'styled-components';
 import styledNormalize from 'styled-normalize';
-import VisibleTodoList from './VisibleTodoList.js';
 
 import list from 'Assets/images/list.svg';
 import logo from 'Assets/images/mateus-f-torres.svg';
 import RobotoRegular from 'Assets/fonts/Roboto-Regular.ttf';
 
-const MAIN_BACK = '#445963';
-const MAIN_TEXT= '#1b1b1e';
-const HEADER_BACK= '#1b3039';
-const HEADER_TEXT= '#f1f1f1';
+import VisibleTodoList from './VisibleTodoList/VisibleTodoList';
 
+const MAIN_BACK = '#445963';
+const MAIN_TEXT = '#1b1b1e';
+const HEADER_BACK = '#1b3039';
+const HEADER_TEXT = '#f1f1f1';
+
+/* eslint no-unused-expressions: 'off'*/
 injectGlobal`
   ${styledNormalize}
 
@@ -73,17 +75,30 @@ const Footer = styled.footer`
   float: right;
 `;
 
-const App = () => (
-  <Container>
-    <Header>Todo App<SVG src={list}/></Header>
-    <VisibleTodoList />
-    <Footer>
-      <h1>Made by</h1>
-      <a href="https://mateus-f-torres.github.io/">
-        <Logo src={logo}/>
-      </a>
-    </Footer>
-  </Container>
-);
+const Title = styled.h1``;
+
+const Link = styled.a``;
+
+function App() {
+  return (
+    <Container>
+
+      <Header>
+        Todo App
+        <SVG src={list} />
+      </Header>
+
+      <VisibleTodoList />
+
+      <Footer>
+        <Title>Made by</Title>
+        <Link href="https://mateus-f-torres.github.io/">
+          <Logo src={logo} />
+        </Link>
+      </Footer>
+
+    </Container>
+  );
+}
 
 export default App;

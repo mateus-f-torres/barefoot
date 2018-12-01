@@ -1,9 +1,10 @@
 //@flow
 import * as React from 'react';
 import styled from 'styled-components';
-import type {Todo} from 'Types/props.js';
-import TodoItem from './TodoItem.js';
+import type {Todo} from 'Types/props';
+
 import Button from 'Components/common/Button';
+import TodoItem from './TodoItem';
 
 const Form = styled.form`
   display: flex;
@@ -55,7 +56,7 @@ class TodoList extends React.Component<Props> {
     e.stopPropagation();
     // $FlowFixMe, 'maybe-there' flow error
     let id = e.currentTarget.parentNode.id;
-    id = Number.parseInt(id);
+    id = Number.parseInt(id, 10);
     this.props.toggleTodo(id);
   }
 
@@ -64,7 +65,7 @@ class TodoList extends React.Component<Props> {
     e.stopPropagation();
     // $FlowFixMe, 'maybe-there' flow error
     let id = e.currentTarget.parentNode.id;
-    id = Number.parseInt(id);
+    id = Number.parseInt(id, 10);
     this.props.removeTodo(id);
   }
 
@@ -72,12 +73,17 @@ class TodoList extends React.Component<Props> {
     return (
       <Form
         data-test="todo-submit"
-        onSubmit={this.handleSubmit}>
+        onSubmit={this.handleSubmit}
+      >
+
         <Input
           data-test="todo-input"
           type="text"
-          placeholder="Add todo" />
+          placeholder="Add todo"
+        />
+
         <Button type="submit" />
+
         <List data-test="todo-list">
           {
             this.props.todos.map((todo) => (
@@ -90,10 +96,10 @@ class TodoList extends React.Component<Props> {
             ))
           }
         </List>
+
       </Form>
     );
   }
 }
 
 export default TodoList;
-

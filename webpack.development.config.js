@@ -1,14 +1,19 @@
+/* eslint import/newline-after-import: 'off' */
+/* eslint import/no-extraneous-dependencies: 'off' */
+/* eslint operator-linebreak: 'off' */
+/* eslint prefer-destructuring: 'off' */
+/* eslint quote-props: 'off' */
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const htmlPlugin = 
-  new HtmlWebpackPlugin ({
+const htmlPlugin =
+  new HtmlWebpackPlugin({
     filename: 'index.html',
     template: 'src/index.html',
-});
-  
+  });
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const cleanPlugin = 
+const cleanPlugin =
   new CleanWebpackPlugin('dist', {});
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -20,33 +25,36 @@ const analyzerPlugin =
     generateStatsFile: true,
     statsFilename: 'stats.json',
   });
- 
+
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
 const progressPlugin =
   new SimpleProgressWebpackPlugin({
     format: 'expanded',
   });
 
-const configs = { 
+const configs = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: path.resolve(__dirname,'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
   },
+
   resolve: {
     extensions: ['js', 'jsx'],
     alias: {
-      'Store': path.resolve(__dirname, 'src/stores/'),
-      'Components': path.resolve(__dirname, 'src/views/'),
+      'Views': path.resolve(__dirname, 'src/views/'),
+      'Stores': path.resolve(__dirname, 'src/stores/'),
+      'Services': path.resolve(__dirname, 'src/services/'),
       'Assets': path.resolve(__dirname, 'src/assets/'),
       'Types': path.resolve(__dirname, 'src/types/'),
       'Mocks': path.resolve(__dirname, '__mocks__/'),
     },
   },
+
   module: {
-    rules: [ 
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -73,7 +81,7 @@ const configs = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'images/'
+              outputPath: 'images/',
             },
           },
           {
@@ -86,6 +94,7 @@ const configs = {
       },
     ],
   },
+
   plugins: [
     progressPlugin,
     analyzerPlugin,

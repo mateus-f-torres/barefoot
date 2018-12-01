@@ -3,3 +3,4 @@ coverage
 flow-typed
 dist
 yarn*
+tags
