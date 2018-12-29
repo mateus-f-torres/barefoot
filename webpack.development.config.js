@@ -5,6 +5,10 @@
 /* eslint quote-props: 'off' */
 const path = require('path');
 
+const webpack = require('webpack');
+const hmrPlugin =
+  new webpack.HotModuleReplacementPlugin();
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin =
   new HtmlWebpackPlugin({
@@ -35,7 +39,7 @@ const progressPlugin =
 const configs = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
@@ -56,7 +60,7 @@ const configs = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -100,6 +104,7 @@ const configs = {
     analyzerPlugin,
     cleanPlugin,
     htmlPlugin,
+    hmrPlugin,
   ],
 };
 

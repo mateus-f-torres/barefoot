@@ -1,8 +1,6 @@
-/* eslint no-var: 'off' */
+const env = process.env.BABEL_ENV || process.env.NODE_ENV;
 
-var env = process.env.BABEL_ENV || process.env.NODE_ENV;
-
-var config = {
+const config = {
   presets: [
     ['@babel/preset-env', {useBuiltIns: 'usage'}],
     '@babel/preset-react',

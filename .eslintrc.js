@@ -32,8 +32,6 @@ module.exports = {
     },
   },
   plugins: [
-    // TODO check if necessary: babel plugin
-    'babel',
     'react',
     'flowtype',
   ],
@@ -53,6 +51,7 @@ module.exports = {
     'object-curly-spacing': [
       'error', 'never',
     ],
+    /*
     'no-use-before-define': [
       'error', 'nofunc',
     ],
@@ -68,5 +67,6 @@ module.exports = {
     'spaced-comment': [
       'error', 'always', { 'exceptions': ['@flow']}
     ],
+    */
   },
 }
