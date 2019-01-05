@@ -3,6 +3,7 @@
 
 [ignore]
 # <PROJECT_ROOT>/node_modules/{module}
+<PROJECT_ROOT>/node_modules/polished/
 
 [lints]
 # all=off by default
@@ -20,8 +21,8 @@ suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 # module.name_mapper='.*\(.scss\)$' -> '<PROJECT_ROOT>/__mocks__/fileMock.js'
 
 # add module wrappers for webpack alias
-module.name_mapper='^Store/\(.*\)$' -> '<PROJECT_ROOT>/src/stores/\1'
-module.name_mapper='^Components/\(.*\)$' -> '<PROJECT_ROOT>/src/views/\1'
+module.name_mapper='^Stores/\(.*\)$' -> '<PROJECT_ROOT>/src/stores/\1'
+module.name_mapper='^Views/\(.*\)$' -> '<PROJECT_ROOT>/src/views/\1'
 module.name_mapper='^Assets/\(.*\)$' -> '<PROJECT_ROOT>/src/assets/\1'
 module.name_mapper='^Types/\(.*\)$' -> '<PROJECT_ROOT>/src/types/\1'
 module.name_mapper='^Mocks/\(.*\)$' -> '<PROJECT_ROOT>/__mocks__/\1'

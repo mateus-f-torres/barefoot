@@ -1,11 +1,7 @@
 module.exports = {
-  setupTestFrameworkScriptFile: '<rootDir>__tests__/setup/setupEnzyme.js',
+  setupTestFrameworkScriptFile: '<rootDir>/__tests__/setup/setupEnzyme.js',
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  testPathIgnorePatterns: [
-    // '<rootDir>/path/to/{folder|file}',
-    'setupEnzyme.js',
-    'helpers.js',
-  ],
+  testPathIgnorePatterns: ['<rootDir>/__tests__/setup/'],
   moduleNameMapper: {
     // must come first to prevent jest issue #2663
     '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/assetsTransformer.js',

@@ -21,10 +21,12 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          ['Types', './src/types/'],
-          ['Store', './src/stores/'],
-          ['Components', './src/views/'],
+          ['Views', './src/views/'],
+          ['Stores', './src/stores/'],
+          ['Services', './src/services/'],
           ['Assets', './src/assets/'],
+          ['Types', './src/types/'],
+          ['Mocks', './__mocks__/'],
         ],
       },
     },
