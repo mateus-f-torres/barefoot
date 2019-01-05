@@ -3,7 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import type {Todo} from 'Types/props';
 
-import Button from 'Components/common/Button';
+import Button from 'Views/common/Button';
 import TodoItem from './TodoItem';
 
 const Form = styled.form`

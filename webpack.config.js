@@ -1,12 +1,19 @@
+/* eslint import/newline-after-import: 'off' */
 const path = require('path');
 
 const webpack = require('webpack');
-const hmrPlugin =
+const hotReloadPlugin =
   new webpack.HotModuleReplacementPlugin();
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const cleanPlugin =
+const cleanUpPlugin =
   new CleanWebpackPlugin('dist', {});
+
+const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
+const progressPlugin =
+  new SimpleProgressWebpackPlugin({
+    format: 'compact',
+  });
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const analyzerPlugin =
@@ -21,25 +28,14 @@ const analyzerPlugin =
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlPlugin =
   new HtmlWebpackPlugin({
-    title: 'GoToMarket',
+    title: 'Barefoot',
     filename: 'index.html',
     template: 'src/index.html',
-    // TODO ver o minify default agir em prod
+    favicon: 'src/assets/images/favicon.ico',
   });
-
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const miniCssPlugin =
-  new MiniCssExtractPlugin({
-    filename: '[name].[hash].css',
-    chunkFilename: '[id].[hash].css',
-  });
-
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const optimizeCss =
-  new OptimizeCssAssetsPlugin({});
 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const uglyfyPlugin =
+const uglifyJs =
   new UglifyJsPlugin({
     test: /.js$/,
     include: undefined,
@@ -65,16 +61,20 @@ let configs = {
   mode: 'development',
   target: 'web',
   devtool: 'inline-source-map',
-  context: path.resolve(__dirname, 'src')
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
   },
   resolve: {
-    extensions: ['js', 'jsx'],
+    extensions: ['.js', '.jsx'],
     alias: {
-      'alias': path.resolve(__dirname, 'src/source/'),
+      'Views': path.resolve(__dirname, 'src/views/'),
+      'Stores': path.resolve(__dirname, 'src/stores/'),
+      'Services': path.resolve(__dirname, 'src/services/'),
+      'Assets': path.resolve(__dirname, 'src/assets/'),
+      'Types': path.resolve(__dirname, 'src/types/'),
+      'Mocks': path.resolve(__dirname, '__mocks__/'),
     },
   },
   module: {
@@ -86,15 +86,6 @@ let configs = {
           {
             loader: 'babel-loader',
           }
-        ],
-      },
-      {
-        test: /\.less$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
-          'less-loader',
         ],
       },
       {
@@ -124,28 +115,22 @@ let configs = {
     ],
   },
   plugins: [
-    analyzerPlugin,
-    cleanPlugin,
-    miniCssPlugin,
+    progressPlugin,
+    cleanUpPlugin,
     htmlPlugin,
-    hmrPlugin,
+    hotReloadPlugin,
   ],
   devServer: {
     hot: true,
-    port: '3020',
-    host: '0.0.0.0',
+    port: '8080',
+    // TODO: adicionar nginx, host: '0.0.0.0',
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
     watchContentBase: true,
-    watchOptions: {poll: true},
+    // TODO: entender custo, watchOptions: {poll: true},
+    // TODO: ver necessidade, historyApiFallback: true,
     proxy: {
-      '/onmaps': {target: 'http://localhost:88'},
-      '/consulta': {target: 'http://localhost:88'},
-      '/mapviewer': {target: 'http://localhost:88'},
-      '/indexbuilder': {target: 'http://localhost:88'},
-      '/settings/rs': {target: 'http://localhost:88'},
-      '/api/gotomarket': {target: 'http://localhost:88'},
-      '/api/portfolio': {target: 'http://localhost:88'},
+      '/api': {target: 'http://localhost:3000'},
     },
   },
 };
@@ -167,17 +152,10 @@ if (process.env.NODE_ENV === 'production') {
             chunks: 'all',
             name: 'vendors',
           },
-          styles: {
-            test: /\.css$/,
-            chunks: 'all',
-            name: 'styles',
-            enforce: true,
-          },
         },
       },
       minimizer: [
-        uglyfyPlugin,
-        optimizeCss,
+        uglifyJs,
       ],
     },
     module: {
@@ -195,21 +173,12 @@ if (process.env.NODE_ENV === 'production') {
           ],
         },
         {
-          test: /\.less$/,
-          use: [
-            MiniCssExtractPlugin.loader,
-            'css-loader',
-            'postcss-loader',
-            'less-loader',
-          ],
-        },
-        {
           test: /\.(ttf|eot|woff|woff2)$/,
           use: [
             {
               loader: 'file-loader',
               options: {
-                name: '[name].[ext]',
+                name: '[name].[hash].[ext]',
                 outputPath: 'fonts/',
               },
             },
@@ -223,6 +192,8 @@ if (process.env.NODE_ENV === 'production') {
               options: {
                 limit: 5 * 1024,
                 fallback: 'file-loader',
+                name: '[name].[hash].[ext]',
+                outputPath: 'images/',
               },
             },
             'image-webpack-loader',
@@ -237,6 +208,8 @@ if (process.env.NODE_ENV === 'production') {
                 limit: 5 * 1024,
                 noquotes: true,
                 fallback: 'file-loader',
+                name: '[name].[hash].[ext]',
+                outputPath: 'images/',
               },
             },
             'image-webpack-loader',
@@ -245,25 +218,13 @@ if (process.env.NODE_ENV === 'production') {
       ],
     },
     plugins: [
+      progressPlugin,
       analyzerPlugin,
-      cleanPlugin,
+      cleanUpPlugin,
       gzipPlugin,
-      miniCssPlugin,
       htmlPlugin,
     ],
   });
-  /*
-  htmlPlugin.minify = {
-    collapsWhitespace: true,
-    keepClosingSlash: true,
-    removeComments: true,
-    removeEmptyAttributes: true,
-    removeRedudantAttributes: true,
-    sortAttributes: true,
-    sortClassName: true,
-    useShortDoctype: true,
-  };
-  */
 }
 
 module.exports = configs;

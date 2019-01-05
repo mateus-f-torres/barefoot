@@ -5,7 +5,7 @@ import type {Todo} from 'Types/props';
 
 import trash from 'Assets/images/trash.png';
 
-import Button from 'Components/common/Button';
+import Button from 'Views/common/Button';
 
 const ListItem = styled.li`
   display: flex;

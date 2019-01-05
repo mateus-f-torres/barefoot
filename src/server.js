@@ -14,22 +14,22 @@ app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/dist/index.html`);
 });
 
+// serve and cache .js.gz instead of .js
 app.get('/*.js', (req, res) => {
-  // serve .js.gz file instead of .js
   req.url = `${req.url}.gz`;
   res.set('Content-Encoding', 'gzip');
   res.set('Content-Type', 'text/javascript');
-
-  // and keep it in cache
   res.set('Cache-Control', 'public, max-age=31536000');
-
   res.sendFile(`${__dirname}/dist${req.url}`);
 });
 
 app.get('/fonts/*.ttf', (req, res) => {
-  // cache fonts
   res.set('Cache-Control', 'public, max-age=31536000');
+  res.sendFile(`${__dirname}/dist${req.url}`);
+});
 
+app.get('/*.ico', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31536000');
   res.sendFile(`${__dirname}/dist${req.url}`);
 });
 

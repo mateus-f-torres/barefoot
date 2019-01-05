@@ -1,8 +1,6 @@
 module.exports = {
   setupTestFrameworkScriptFile: '<rootDir>__tests__/setup/setupEnzyme.js',
-  snapshotSerializers: [
-    'enzyme-to-json/serializer',
-  ],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   testPathIgnorePatterns: [
     // '<rootDir>/path/to/{folder|file}',
     'setupEnzyme.js',

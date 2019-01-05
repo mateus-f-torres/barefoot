@@ -1,6 +1,6 @@
 //@flow
 import {connect} from 'react-redux';
-import {addTodo, toggleTodo, removeTodo} from 'Store/todos/actions';
+import {addTodo, toggleTodo, removeTodo} from 'Stores/todos/actions';
 import type {State} from 'Types/state';
 
 import TodoList from './TodoList';

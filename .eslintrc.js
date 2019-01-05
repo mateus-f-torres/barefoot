@@ -14,6 +14,9 @@ module.exports = {
     node: true,
     jest: true,
   },
+  globals: {
+    'exampleGlobalVariable': true,
+  },
   settings: {
     'import/resolver': {
       alias: {
@@ -27,8 +30,11 @@ module.exports = {
     },
     react: {
       pragma: 'React',
-      version: '16.4.1',
-      flowVersion: '0.80.0',
+      version: '16.7.0',
+      flowVersion: '0.89.0',
+    },
+    flowtype: {
+      onlyFilesWithFlowAnnotation: true,
     },
   },
   plugins: [
@@ -36,8 +42,8 @@ module.exports = {
     'flowtype',
   ],
   extends: [
-    'eslint:recommended',
     'airbnb', 
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:flowtype/recommended',
   ],

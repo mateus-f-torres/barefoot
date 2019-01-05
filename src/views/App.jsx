@@ -1,6 +1,6 @@
 //@flow
 import * as React from 'react';
-import styled, {injectGlobal} from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
 import list from 'Assets/images/list.svg';
@@ -14,8 +14,7 @@ const MAIN_TEXT = '#1b1b1e';
 const HEADER_BACK = '#1b3039';
 const HEADER_TEXT = '#f1f1f1';
 
-/* eslint no-unused-expressions: 'off'*/
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
   @font-face {
@@ -96,6 +95,8 @@ function App() {
           <Logo src={logo} />
         </Link>
       </Footer>
+
+      <GlobalStyle />
 
     </Container>
   );
