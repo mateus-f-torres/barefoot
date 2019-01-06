@@ -1,6 +1,6 @@
 import configureStore from 'redux-mock-store';
 
-import {addTodo, toggleTodo, removeTodo} from 'Store/todos/actions.js';
+import {addTodo, toggleTodo, removeTodo} from 'Stores/todos/actions';
 
 const mockStore = configureStore();
 const store = mockStore();

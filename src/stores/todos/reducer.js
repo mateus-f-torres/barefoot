@@ -22,43 +22,21 @@ const defaultState = [
   },
 ];
 
-const todos = (state: State = defaultState, action: Action) => {
+function todos(state: State = defaultState, action: Action) {
   switch (action.type) {
     case 'ADD_TODO':
       return addTodoToList(state, action.payload);
-      /*
-      return [
-        ...state,
-        {
-          id: ID++,
-          text: action.payload,
-          completed: false,
-        },
-      ];
-      */
 
     case 'TOGGLE_TODO':
-      // $FlowFixMe
       return toggleTodoCompletion(state, action.payload);
-      /*
-      return state.map((todo) => {
-        return todo.id === action.payload
-          ? {...todo, completed: !todo.completed}
-          : todo;
-      });
-      */
 
     case 'REMOVE_TODO':
-      // $FlowFixMe
       return removeTodoFromList(state, action.payload);
-      /*
-      return state.filter((todo) => todo.id !== action.payload);
-      */
 
     default:
       return state;
   }
-};
+}
 
 let nextID = 3;
 
@@ -66,8 +44,15 @@ function addTodoToList(state: State, todo: string) {
   return [...state, {id: nextID++, text: todo, completed: false}];
 }
 
-function toggleTodoCompletion() {}
+function toggleTodoCompletion(state: State, id: number) {
+  return state.map((todo) => todo.id == id
+      ? {...todo, completed: !todo.completed}
+      : todo
+  )
+}
 
-function removeTodoFromList() {}
+function removeTodoFromList(state: State, id: number) {
+  return state.filter((todo) => todo.id != id);
+}
 
 export default todos;
