@@ -27,7 +27,8 @@
     "local": "serve dist/",
     "lint": "eslint src/ --ext js,jsx",
     "typecheck": "flow check --include-warnings src/",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "flow-typed install"
   },
   "dependencies": {
     "compression": "1.7.3",
