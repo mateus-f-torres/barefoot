@@ -57,8 +57,8 @@ describe('VisibleTodoList', () => {
           .find('TodoList')
           // find element matching key-value pair attribute
           .find('[data-test="todo-list"]')
-          // dive through styled-component, double data-test
-          .at(1)
+          // dive through styled-component, triple data-test
+          .at(2)
           // to run test
           .children().length).toEqual(mockState.todos.length);
     });
@@ -74,13 +74,13 @@ describe('VisibleTodoList', () => {
       container
         .find('TodoList')
         .find('[data-test="todo-input"]')
-        .at(1)
+        .at(2)
         .instance().value = 'Hello World';
 
       container
         .find('TodoList')
         .find('[data-test="todo-submit"]')
-        .at(1)
+        .at(2)
         .simulate('submit');
 
       expect(store.getActions()).toEqual(expectedActions);
@@ -90,13 +90,13 @@ describe('VisibleTodoList', () => {
       container
         .find('TodoList')
         .find('[data-test="todo-input"]')
-        .at(1)
+        .at(2)
         .instance().value = '    ';
 
       container
         .find('TodoList')
         .find('[data-test="todo-submit"]')
-        .at(1)
+        .at(2)
         .simulate('submit');
 
       expect(store.getActions()).toEqual([]);
@@ -106,7 +106,7 @@ describe('VisibleTodoList', () => {
       let mockInput = container
         .find('TodoList')
         .find('[data-test="todo-input"]')
-        .at(1)
+        .at(2)
         .instance();
 
       mockInput.value = 'Hello World';
@@ -114,7 +114,7 @@ describe('VisibleTodoList', () => {
       container
         .find('TodoList')
         .find('[data-test="todo-submit"]')
-        .at(1)
+        .at(2)
         .simulate('submit');
 
       expect(mockInput.value).toBe('');
@@ -131,7 +131,7 @@ describe('VisibleTodoList', () => {
       container
         .find('TodoList')
         .find('[data-test="todo-list"]')
-        .at(1)
+        .at(2)
         .childAt(1)
         .find('p')
         .simulate('click');
@@ -150,7 +150,7 @@ describe('VisibleTodoList', () => {
       container
         .find('TodoList')
         .find('[data-test="todo-list"]')
-        .at(1)
+        .at(2)
         .childAt(2)
         .find('button')
         .simulate('click');

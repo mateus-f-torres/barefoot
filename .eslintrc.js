@@ -33,7 +33,7 @@ module.exports = {
     react: {
       pragma: 'React',
       version: '16.7.0',
-      flowVersion: '0.89.0',
+      flowVersion: '0.91.0',
     },
     flowtype: {
       onlyFilesWithFlowAnnotation: true,
@@ -58,6 +58,9 @@ module.exports = {
     ],
     'object-curly-spacing': [
       'error', 'never',
+    ],
+    'react/destructuring-assignment': [
+      'off',
     ],
     /*
     'no-use-before-define': [

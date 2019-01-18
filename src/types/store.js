@@ -4,8 +4,8 @@ import type {
   Dispatch as ReduxDispatch,
 } from 'redux';
 
-import type {Action} from './actions.js';
-import type {State} from './state.js';
+import type {Action} from './actions';
+import type {State} from './state';
 
 export type Store = ReduxStore<State, Action>;
 

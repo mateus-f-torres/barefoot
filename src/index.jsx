@@ -7,9 +7,14 @@ import configureStore from 'Stores/configureStore';
 
 import App from 'Views/App.jsx';
 
-ReactDOM.render(
-  <Provider store={configureStore()}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
-);
+const root = document.getElementById('root');
+
+if (root !== null) {
+  ReactDOM.render(
+    <Provider store={configureStore()}>
+      <App />
+    </Provider>,
+    root,
+  );
+}
+

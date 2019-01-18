@@ -71,19 +71,9 @@ class TodoList extends React.Component<Props> {
 
   render() {
     return (
-      <Form
-        data-test="todo-submit"
-        onSubmit={this.handleSubmit}
-      >
-
-        <Input
-          data-test="todo-input"
-          type="text"
-          placeholder="Add todo"
-        />
-
+      <Form data-test="todo-submit" onSubmit={this.handleSubmit}>
+        <Input data-test="todo-input" type="text" placeholder="Add todo" />
         <Button type="submit" />
-
         <List data-test="todo-list">
           {
             this.props.todos.map((todo) => (
@@ -96,7 +86,6 @@ class TodoList extends React.Component<Props> {
             ))
           }
         </List>
-
       </Form>
     );
   }

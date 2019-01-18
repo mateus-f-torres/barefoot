@@ -44,15 +44,17 @@ function addTodoToList(state: State, todo: string) {
   return [...state, {id: nextID++, text: todo, completed: false}];
 }
 
-function toggleTodoCompletion(state: State, id: number) {
-  return state.map((todo) => todo.id == id
+function toggleTodoCompletion(state: State, id: number): State {
+  const mapped = state.map((todo) => todo.id == id
       ? {...todo, completed: !todo.completed}
       : todo
   )
+  return mapped;
 }
 
-function removeTodoFromList(state: State, id: number) {
-  return state.filter((todo) => todo.id != id);
+function removeTodoFromList(state: Array<Todo>, id: number): State {
+  const filtered =  state.filter((todo) => todo.id != id);
+  return filtered;
 }
 
 export default todos;

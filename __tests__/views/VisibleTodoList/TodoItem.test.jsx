@@ -14,13 +14,9 @@ describe('<TodoItem />', () => {
       const wrapper = shallow(<TodoItem {...mockProps} />);
       // console.log(wrapper.debug());
 
-      expect(
-        wrapper
-        // find element matching key-value pair attribute
+      expect(wrapper
+          // find element matching key-value pair attribute
           .find('[data-test="todo-text"]')
-        // dive through styled-component
-          .dive()
-        // to find real component
           .text()).toMatch(/^Hello\sWorld$/);
     });
 
