@@ -20,7 +20,7 @@ const analyzerPlugin =
   new BundleAnalyzerPlugin({
     openAnalyzer: false,
     analyzerMode: 'static',
-    generateStatsFile: true,
+    generateStatsFile: false,
     reportFilename: '../reports/bundle_report.html',
     statsFilename: '../reports/bundle_stats.json',
   });
@@ -69,12 +69,13 @@ let configs = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      'Views': path.resolve(__dirname, 'src/views/'),
-      'Stores': path.resolve(__dirname, 'src/stores/'),
-      'Services': path.resolve(__dirname, 'src/services/'),
-      'Assets': path.resolve(__dirname, 'src/assets/'),
-      'Types': path.resolve(__dirname, 'src/types/'),
-      'Mocks': path.resolve(__dirname, '__mocks__/'),
+      'assets': path.resolve(__dirname, 'src/assets/'),
+      'components': path.resolve(__dirname, 'src/components/'),
+      'containers': path.resolve(__dirname, 'src/containers/'),
+      'ducks': path.resolve(__dirname, 'src/ducks/'),
+      'tests': path.resolve(__dirname, 'src/tests/'),
+      'types': path.resolve(__dirname, 'src/types/'),
+      'utils': path.resolve(__dirname, 'src/utils/'),
     },
   },
   module: {

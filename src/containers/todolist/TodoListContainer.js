@@ -1,9 +1,11 @@
 //@flow
 import {connect} from 'react-redux';
-import {addTodo, toggleTodo, removeTodo} from 'Stores/todos/actions';
-import type {State} from 'Types/state';
 
-import TodoList from './TodoList';
+import {addTodo, toggleTodo, removeTodo} from 'ducks/todos';
+
+import type {State} from 'types/state';
+
+import TodoList from 'components/todolist';
 
 function mapStateToProps(state: State) {
   return {
@@ -25,9 +27,9 @@ function mapDispatchToProps(dispatch: *) {
   };
 }
 
-const VisibleTodoList = connect(
+const TodoListContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
 )(TodoList);
 
-export default VisibleTodoList;
+export default TodoListContainer;

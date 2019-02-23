@@ -3,11 +3,11 @@ import * as React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
-import list from 'Assets/images/list.svg';
-import logo from 'Assets/images/mateus-f-torres.svg';
-import RobotoRegular from 'Assets/fonts/Roboto-Regular.ttf';
+import TodoListContainer from 'containers/TodoList/';
 
-import VisibleTodoList from './VisibleTodoList/VisibleTodoList';
+import list from 'assets/images/list.svg';
+import logo from 'assets/images/mateus-f-torres.svg';
+import RobotoRegular from 'assets/fonts/Roboto-Regular.ttf';
 
 const MAIN_BACK = '#445963';
 const MAIN_TEXT = '#1b1b1e';
@@ -81,23 +81,15 @@ const Link = styled.a``;
 function App() {
   return (
     <Container>
-
-      <Header>
-        Todo App
-        <SVG src={list} />
-      </Header>
-
+      <Header> Todo App <SVG src={list} /></Header>
       <VisibleTodoList />
-
       <Footer>
         <Title>Made by</Title>
         <Link href="https://mateus-f-torres.github.io/">
           <Logo src={logo} />
         </Link>
       </Footer>
-
       <GlobalStyle />
-
     </Container>
   );
 }

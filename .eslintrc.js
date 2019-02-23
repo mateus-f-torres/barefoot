@@ -4,8 +4,8 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-        impliedStrict: true,
-        jsx: true,
+      impliedStrict: true,
+      jsx: true,
     },
   },
   env: {
@@ -21,19 +21,20 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          ['Views', './src/views/'],
-          ['Stores', './src/stores/'],
-          ['Services', './src/services/'],
-          ['Assets', './src/assets/'],
-          ['Types', './src/types/'],
-          ['Mocks', './__mocks__/'],
+          ['assets', './src/assets/'],
+          ['components', './src/components/'],
+          ['containers', './src/containers/'],
+          ['ducks', './src/ducks/'],
+          ['tests', './src/tests/'],
+          ['types', './src/types/'],
+          ['utils', './src/utils/'],
         ],
       },
     },
     react: {
       pragma: 'React',
-      version: '16.7.0',
-      flowVersion: '0.91.0',
+      version: '16.8.3',
+      flowVersion: '0.93.0',
     },
     flowtype: {
       onlyFilesWithFlowAnnotation: true,

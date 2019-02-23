@@ -1,10 +1,11 @@
 //@flow
 import * as React from 'react';
 import styled from 'styled-components';
-import type {Todo} from 'Types/props';
 
-import Button from 'Views/common/Button';
-import TodoItem from './TodoItem';
+import type {Todo} from 'types/props';
+
+import {Button} from 'components/shared';
+import {TodoItem} from 'components/todolist';
 
 const Form = styled.form`
   display: flex;

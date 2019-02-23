@@ -1,6 +1,8 @@
 //@flow
-import type {Todo} from 'Types/props';
-import type {Action} from 'Types/actions';
+import request from 'utils/request';
+
+import type {Action} from 'types/actions';
+import type {Todo} from 'types/props';
 
 type State = Array<Todo>;
 
@@ -22,15 +24,19 @@ const defaultState = [
   },
 ];
 
+const ADD_TODO = 'barefoot/todos/ADD_TODO';
+const TOGGLE_TODO = 'barefoot/todos/TOGGLE_TODO';
+const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
+
 function todos(state: State = defaultState, action: Action) {
   switch (action.type) {
-    case 'ADD_TODO':
+    case ADD_TODO:
       return addTodoToList(state, action.payload);
 
-    case 'TOGGLE_TODO':
+    case TOGGLE_TODO:
       return toggleTodoCompletion(state, action.payload);
 
-    case 'REMOVE_TODO':
+    case REMOVE_TODO:
       return removeTodoFromList(state, action.payload);
 
     default:
@@ -55,6 +61,46 @@ function toggleTodoCompletion(state: State, id: number): State {
 function removeTodoFromList(state: Array<Todo>, id: number): State {
   const filtered =  state.filter((todo) => todo.id != id);
   return filtered;
+}
+
+export function addTodoAction(text: string): Action {
+  return ({
+    type: ADD_TODO,
+    payload: text,
+  })
+}
+
+export function toggleTodoAction(id: number): Action {
+  return ({
+    type: TOGGLE_TODO,
+    payload: id,
+  });
+}
+
+export function removeTodoAction(id: number): Action {
+  return ({
+    type: REMOVE_TODO,
+    payload: id,
+  });
+}
+
+export function callSetTodoAction(text: string): Action {
+  return {
+    type: CALL_SET_TODO,
+    payload: text,
+  }
+}
+
+export function* watchCallSetTodo() {
+  yield takeEvery(CALL_SET_TODO, callSetTodo);
+}
+
+export function* callSetTodo({payload: text}: string) {
+  try {
+    
+  } catch(e) {
+
+  }
 }
 
 export default todos;
