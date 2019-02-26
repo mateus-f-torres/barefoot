@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import type {Todo} from 'types/props';
 
 import {Button} from 'components/shared';
-import {TodoItem} from 'components/todolist';
+import {TodoListItem} from 'components/todolist';
 
 const Form = styled.form`
   display: flex;
@@ -78,7 +78,7 @@ class TodoList extends React.Component<Props> {
         <List data-test="todo-list">
           {
             this.props.todos.map((todo) => (
-              <TodoItem
+              <TodoListItem
                 key={todo.id}
                 toggleTodo={this.toggleTodo}
                 deleteTodo={this.deleteTodo}

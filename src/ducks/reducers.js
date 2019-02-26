@@ -1,3 +1,4 @@
+// @flow
 import {combineReducers} from 'redux';
 
 import todos from 'ducks/todos';
@@ -7,5 +8,4 @@ const reducers = {
 };
 
 export type Reducer = typeof rootReducer;
-
 export default combineReducers(reducers);

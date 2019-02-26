@@ -3,9 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import {Button} from 'components/shared';
-
 import type {Todo} from 'types/props';
-
 import trash from 'assets/images/trash.png';
 
 const ListItem = styled.li`
@@ -47,9 +45,6 @@ type Props = Todo & {
   deleteTodo: (SyntheticEvent<HTMLButtonElement>) => void,
 };
 
-// TODO think about prefer-destructuring
-// when copying by value some property
-// when copying by refs some method
 function TodoItem(props: Props) {
   return (
     <ListItem id={props.id}>

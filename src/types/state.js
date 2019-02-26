@@ -1,5 +1,5 @@
 //@flow
-import type {Reducer} from 'Stores/index';
+import type {Reducer} from 'ducks/reducers';
 
 type $ExtractFunctionReturn = <V>(v: (...args: any) => V) => V;
 

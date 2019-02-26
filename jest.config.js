@@ -1,5 +1,5 @@
 module.exports = {
-  setupFilesAfterEnv: '<rootDir>/src/tests/rtl.setup.js',
+  setupFilesAfterEnv: ['<rootDir>/src/tests/rtl.setup.js'],
   testPathIgnorePatterns: ['rtl.setup.js', 'helpers.js'],
   moduleNameMapper: {
     //    '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/assetsTransformer.js',

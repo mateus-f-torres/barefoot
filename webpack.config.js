@@ -34,9 +34,9 @@ const htmlPlugin =
     favicon: 'src/assets/images/favicon.ico',
   });
 
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const uglifyJs =
-  new UglifyJsPlugin({
+const terserPlugin = require('terser-webpack-plugin');
+const terser =
+  new terserPlugin({
     test: /.js$/,
     include: undefined,
     exclude: undefined,
@@ -156,7 +156,7 @@ if (process.env.NODE_ENV === 'production') {
         },
       },
       minimizer: [
-        uglifyJs,
+        terser,
       ],
     },
     module: {

@@ -2,8 +2,9 @@
 import * as React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
+import {useTranslation} from 'react-i18next';
 
-import TodoListContainer from 'containers/TodoList/';
+import TodoListContainer from 'containers/todolist';
 
 import list from 'assets/images/list.svg';
 import logo from 'assets/images/mateus-f-torres.svg';
@@ -79,12 +80,14 @@ const Title = styled.h1``;
 const Link = styled.a``;
 
 function App() {
+  const {t, i18n} = useTranslation();
+
   return (
     <Container>
       <Header> Todo App <SVG src={list} /></Header>
-      <VisibleTodoList />
+      <TodoListContainer />
       <Footer>
-        <Title>Made by</Title>
+        <Title>{t('madeby')}</Title>
         <Link href="https://mateus-f-torres.github.io/">
           <Logo src={logo} />
         </Link>

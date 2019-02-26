@@ -1,5 +1,5 @@
 //@flow
-import request from 'utils/request';
+// import request from 'utils/request';
 
 import type {Action} from 'types/actions';
 import type {Todo} from 'types/props';
@@ -83,7 +83,7 @@ export function removeTodoAction(id: number): Action {
     payload: id,
   });
 }
-
+/*
 export function callSetTodoAction(text: string): Action {
   return {
     type: CALL_SET_TODO,
@@ -102,5 +102,6 @@ export function* callSetTodo({payload: text}: string) {
 
   }
 }
+*/
 
 export default todos;

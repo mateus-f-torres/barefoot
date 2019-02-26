@@ -1,7 +1,7 @@
 //@flow
 import {connect} from 'react-redux';
 
-import {addTodo, toggleTodo, removeTodo} from 'ducks/todos';
+import {addTodoAction, toggleTodoAction, removeTodoAction} from 'ducks/todos';
 
 import type {State} from 'types/state';
 
@@ -16,13 +16,13 @@ function mapStateToProps(state: State) {
 function mapDispatchToProps(dispatch: *) {
   return {
     addTodo(text) {
-      dispatch(addTodo(text));
+      dispatch(addTodoAction(text));
     },
     toggleTodo(id) {
-      dispatch(toggleTodo(id));
+      dispatch(toggleTodoAction(id));
     },
     removeTodo(id) {
-      dispatch(removeTodo(id));
+      dispatch(removeTodoAction(id));
     },
   };
 }
