@@ -1,11 +1,15 @@
 //@flow
-// import request from 'utils/request';
+import {call, put, takeEvery} from 'redux-saga/effects';
+import request from 'utils/request';
+import {RANDOM_ACTIVITY_URL} from 'utils/urls';
 
 import type {Action} from 'types/actions';
 import type {Todo} from 'types/props';
 
 type State = Array<Todo>;
 
+// TODO: use Math.random for id
+// TODO: memoize
 const defaultState = [
   {
     id: 0,
@@ -27,6 +31,7 @@ const defaultState = [
 const ADD_TODO = 'barefoot/todos/ADD_TODO';
 const TOGGLE_TODO = 'barefoot/todos/TOGGLE_TODO';
 const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
+const CALL_FETCH_RANDOM_ACTIVITY = 'barefoot/todos/CALL_FETCH_RANDOM_ACTIVITY';
 
 function todos(state: State = defaultState, action: Action) {
   switch (action.type) {
@@ -83,25 +88,27 @@ export function removeTodoAction(id: number): Action {
     payload: id,
   });
 }
-/*
-export function callSetTodoAction(text: string): Action {
+
+// TODO: move dispatch to App -> Header -> Icon
+export function callFetchRandomActivityAction(): Action {
   return {
-    type: CALL_SET_TODO,
-    payload: text,
+    type: CALL_FETCH_RANDOM_ACTIVITY,
   }
 }
 
-export function* watchCallSetTodo() {
-  yield takeEvery(CALL_SET_TODO, callSetTodo);
+export function* watchCallFetchRandomActivity() {
+  yield takeEvery(CALL_FETCH_RANDOM_ACTIVITY, callFetchRandomActivity);
 }
 
-export function* callSetTodo({payload: text}: string) {
+function* callFetchRandomActivity() {
   try {
+    const res = yield call(request, RANDOM_ACTIVITY_URL);
+    yield put({type: ADD_TODO, payload: res.activity})
     
   } catch(e) {
-
+    // TODO: add global error handling
+    throw new Error(e);
   }
 }
-*/
 
 export default todos;

@@ -1,7 +1,12 @@
 //@flow
 import {connect} from 'react-redux';
 
-import {addTodoAction, toggleTodoAction, removeTodoAction} from 'ducks/todos';
+import {
+  addTodoAction,
+  toggleTodoAction,
+  removeTodoAction,
+  callFetchRandomActivityAction
+} from 'ducks/todos';
 
 import type {State} from 'types/state';
 
@@ -23,6 +28,9 @@ function mapDispatchToProps(dispatch: *) {
     },
     removeTodo(id) {
       dispatch(removeTodoAction(id));
+    },
+    fetchRandomActivity() {
+      dispatch(callFetchRandomActivityAction());
     },
   };
 }
