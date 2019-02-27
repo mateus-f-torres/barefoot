@@ -2,8 +2,8 @@
 0.93.0
 
 [ignore]
-# <PROJECT_ROOT>/node_modules/{module}
-#<PROJECT_ROOT>/node_modules/polished/
+# ignore i18next resources
+<PROJECT_ROOT>/src/assets/translations/*
 
 [lints]
 # all=off by default
@@ -17,7 +17,7 @@ unsafe-getters-setters=warn
 # ignore next line flow error
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 
-# ignore style files
+# mock style files
 # module.name_mapper='.*\(.scss\)$' -> '<PROJECT_ROOT>/__mocks__/fileMock.js'
 
 # add module wrappers for webpack alias

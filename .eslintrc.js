@@ -63,6 +63,12 @@ module.exports = {
     'react/destructuring-assignment': [
       'off',
     ],
+    'react/jsx-one-expression-per-line': [
+      'off',
+    ],
+    'import/prefer-default-export': [
+      'off',
+    ]
     /*
     'no-use-before-define': [
       'error', 'nofunc',

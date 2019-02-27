@@ -80,7 +80,7 @@ const Title = styled.h1``;
 const Link = styled.a``;
 
 function App() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <Container>

@@ -1,3 +1,4 @@
+// @flow
 import {all} from 'redux-saga/effects';
 
 // import {watchCallSetTodo} from 'ducks/todos';
