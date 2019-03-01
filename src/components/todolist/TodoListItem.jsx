@@ -41,24 +41,17 @@ const ListItemIcon = styled.img`
 `;
 
 type Props = Todo & {
-  toggleTodo: (SyntheticEvent<HTMLParagraphElement>) => void,
-  deleteTodo: (SyntheticEvent<HTMLButtonElement>) => void,
+  toggleTodo: (number) => void,
+  deleteTodo: (number) => void,
 };
 
-function TodoItem(props: Props) {
+function TodoItem({id, completed, text, toggleTodo, deleteTodo}: Props) {
   return (
-    <ListItem id={props.id}>
-      <ListItemText
-        done={props.completed ? true : false}
-        data-test="todo-text"
-        onClick={props.toggleTodo}
-      >
-        {props.text}
+    <ListItem>
+      <ListItemText done={completed ? true : false} onClick={() => toggleTodo(id)}>
+        {text}
       </ListItemText>
-      <Button
-        data-test="todo-delete"
-        onClick={props.deleteTodo}
-      >
+      <Button data-test="todo-delete" onClick={() => deleteTodo(id)}>
         <ListItemIcon src={trash} />
       </Button>
     </ListItem>

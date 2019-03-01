@@ -28,11 +28,13 @@ const defaultState = [
   },
 ];
 
+// NOTE: constants
 const ADD_TODO = 'barefoot/todos/ADD_TODO';
 const TOGGLE_TODO = 'barefoot/todos/TOGGLE_TODO';
 const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
 const CALL_FETCH_RANDOM_ACTIVITY = 'barefoot/todos/CALL_FETCH_RANDOM_ACTIVITY';
 
+// NOTE: reducer
 function todos(state: State = defaultState, action: Action) {
   switch (action.type) {
     case ADD_TODO:
@@ -49,6 +51,7 @@ function todos(state: State = defaultState, action: Action) {
   }
 }
 
+// NOTE: sync functions
 let nextID = 3;
 
 function addTodoToList(state: State, todo: string) {
@@ -68,6 +71,7 @@ function removeTodoFromList(state: Array<Todo>, id: number): State {
   return filtered;
 }
 
+// NOTE: sync actions
 export function addTodoAction(text: string): Action {
   return ({
     type: ADD_TODO,
@@ -89,6 +93,7 @@ export function removeTodoAction(id: number): Action {
   });
 }
 
+// NOTE: async actions
 // TODO: move dispatch to App -> Header -> Icon
 export function callFetchRandomActivityAction(): Action {
   return {
@@ -96,11 +101,13 @@ export function callFetchRandomActivityAction(): Action {
   }
 }
 
+// NOTE: watchers
 export function* watchCallFetchRandomActivity() {
   yield takeEvery(CALL_FETCH_RANDOM_ACTIVITY, callFetchRandomActivity);
 }
 
-function* callFetchRandomActivity() {
+// NOTE: async functions
+export function* callFetchRandomActivity() {
   try {
     const res = yield call(request, RANDOM_ACTIVITY_URL);
     yield put({type: ADD_TODO, payload: res.activity})

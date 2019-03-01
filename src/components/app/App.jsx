@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   body {
   background: ${MAIN_BACK};
   color: ${MAIN_TEXT};
-  font-size: 1em;
+  font-size: 1rem;
   font-family: Roboto, sans-serif;
   }
 `;
@@ -37,20 +37,31 @@ const Header = styled.h1`
   background: ${HEADER_BACK};
   color: ${HEADER_TEXT};
   margin: 0 !important;
-  padding: 10px 20px;
+  padding: 0.75rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  font-size: 24px;
   font-weight: normal;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
 `;
 
-const SVG = styled.img`
+const IconButton = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  line-height: 0;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+`
+
+const Icon = styled.img`
   max-width: 30px;
   height: 30px;
-  position: relative;
-  left: 5px;
 `;
 
 const Logo = styled.img`
@@ -79,12 +90,17 @@ const Title = styled.h1``;
 
 const Link = styled.a``;
 
-function App() {
+function App({fetchRandomActivity}) {
   const {t} = useTranslation();
 
   return (
     <Container>
-      <Header> Todo App <SVG src={list} /></Header>
+      <Header>
+        {t('app_title')}
+        <IconButton onClick={fetchRandomActivity}>
+          <Icon src={list} />
+        </IconButton>
+      </Header>
       <TodoListContainer />
       <Footer>
         <Title>{t('madeby')}</Title>

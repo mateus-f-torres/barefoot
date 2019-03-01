@@ -39,6 +39,9 @@ type Props = {
 };
 
 class TodoList extends React.Component<Props> {
+  // TODO: change to hooked fn component
+  // TODO: make arrow fn too
+  // TODO: get value from input tag without using event
   handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
@@ -52,21 +55,11 @@ class TodoList extends React.Component<Props> {
     }
   }
 
-  toggleTodo = (e: SyntheticEvent<HTMLParagraphElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    // $FlowFixMe, 'maybe-there' flow error
-    let id = e.currentTarget.parentNode.id;
-    id = Number.parseInt(id, 10);
+  toggleTodo = (id) => {
     this.props.toggleTodo(id);
   }
 
-  deleteTodo = (e: SyntheticEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    // $FlowFixMe, 'maybe-there' flow error
-    let id = e.currentTarget.parentNode.id;
-    id = Number.parseInt(id, 10);
+  deleteTodo = (id) => {
     this.props.removeTodo(id);
   }
 
@@ -77,12 +70,14 @@ class TodoList extends React.Component<Props> {
         <Button type="submit" />
         <List data-test="todo-list">
           {
-            this.props.todos.map((todo) => (
+            this.props.todos.map(({id, text, completed}) => (
               <TodoListItem
-                key={todo.id}
+                key={id}
+                id={id}
+                text={text}
+                completed={completed}
                 toggleTodo={this.toggleTodo}
                 deleteTodo={this.deleteTodo}
-                {...todo}
               />
             ))
           }
