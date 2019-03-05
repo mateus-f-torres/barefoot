@@ -70,12 +70,12 @@ class TodoList extends React.Component<Props> {
         <Button type="submit" />
         <List data-test="todo-list">
           {
-            this.props.todos.map(({id, text, completed}) => (
+            Object.entries(this.props.todos).map(([key, value]) => (
               <TodoListItem
-                key={id}
-                id={id}
-                text={text}
-                completed={completed}
+                key={key}
+                id={key}
+                text={value.text}
+                completed={value.completed}
                 toggleTodo={this.toggleTodo}
                 deleteTodo={this.deleteTodo}
               />

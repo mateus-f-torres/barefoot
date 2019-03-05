@@ -7,7 +7,7 @@ const hotReloadPlugin =
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const cleanUpPlugin =
-  new CleanWebpackPlugin('dist', {});
+  new CleanWebpackPlugin();
 
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
 const progressPlugin =

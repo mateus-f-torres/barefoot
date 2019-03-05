@@ -8,25 +8,21 @@ import type {Todo} from 'types/props';
 
 type State = Array<Todo>;
 
-// TODO: use Math.random for id
-// TODO: memoize
-const defaultState = [
-  {
-    id: 0,
+const randomHexId = () => Math.random().toString(16).slice(2, 8);
+const defaultMemoizedState = Object.assign(Object.create(null), {
+  [randomHexId()]: {
     text: 'Buy bread',
     completed: false,
   },
-  {
-    id: 1,
+  [randomHexId()]: {
     text: 'Take dog for a walk',
     completed: true,
   },
-  {
-    id: 2,
+  [randomHexId()]: {
     text: 'Comment codebase',
     completed: false,
   },
-];
+});
 
 // NOTE: constants
 const ADD_TODO = 'barefoot/todos/ADD_TODO';
@@ -35,7 +31,7 @@ const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
 const CALL_FETCH_RANDOM_ACTIVITY = 'barefoot/todos/CALL_FETCH_RANDOM_ACTIVITY';
 
 // NOTE: reducer
-function todos(state: State = defaultState, action: Action) {
+function todos(state: State = defaultMemoizedState, action: Action) {
   switch (action.type) {
     case ADD_TODO:
       return addTodoToList(state, action.payload);
@@ -52,23 +48,21 @@ function todos(state: State = defaultState, action: Action) {
 }
 
 // NOTE: sync functions
-let nextID = 3;
-
 function addTodoToList(state: State, todo: string) {
-  return [...state, {id: nextID++, text: todo, completed: false}];
+  return {...state, [randomHexId()]: {text: todo, completed: false}};
 }
 
 function toggleTodoCompletion(state: State, id: number): State {
-  const mapped = state.map((todo) => todo.id == id
-      ? {...todo, completed: !todo.completed}
-      : todo
-  )
-  return mapped;
+  const oldTodo = {...state[id]};
+  return {...state, [id]: {...oldTodo, completed: !oldTodo.completed}};
 }
 
-function removeTodoFromList(state: Array<Todo>, id: number): State {
-  const filtered =  state.filter((todo) => todo.id != id);
-  return filtered;
+function removeTodoFromList(oldState: Array<Todo>, id: number): State {
+  const newState = Object.create(null);
+  for (const [key, value] of Object.entries(oldState)) {
+    if (key != id) newState[key] = {...value};
+  }
+  return newState;
 }
 
 // NOTE: sync actions
@@ -94,7 +88,6 @@ export function removeTodoAction(id: number): Action {
 }
 
 // NOTE: async actions
-// TODO: move dispatch to App -> Header -> Icon
 export function callFetchRandomActivityAction(): Action {
   return {
     type: CALL_FETCH_RANDOM_ACTIVITY,
@@ -109,7 +102,7 @@ export function* watchCallFetchRandomActivity() {
 // NOTE: async functions
 export function* callFetchRandomActivity() {
   try {
-    const res = yield call(request, RANDOM_ACTIVITY_URL);
+    const res = yield call([request, 'get'], RANDOM_ACTIVITY_URL);
     yield put({type: ADD_TODO, payload: res.activity})
     
   } catch(e) {
