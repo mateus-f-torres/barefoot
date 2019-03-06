@@ -8,6 +8,7 @@ const HEADER_TEXT= '#f1f1f1';
 const Button = styled.button`
   background-color: ${lighten(0.05, HEADER_BACK)};
   border: 1px solid ${HEADER_TEXT};
+  border-top: 0px;
   color: white;
   margin: 0;
   padding: 0.8em 0.8em;
