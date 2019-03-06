@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
     sourceType: 'module',
     ecmaFeatures: {
       impliedStrict: true,
@@ -11,6 +11,7 @@ module.exports = {
   env: {
     browser: true,
     commonjs: true,
+    es6: true,
     node: true,
     jest: true,
   },
@@ -34,7 +35,7 @@ module.exports = {
     react: {
       pragma: 'React',
       version: '16.8.3',
-      flowVersion: '0.93.0',
+      flowVersion: '0.94.0',
     },
     flowtype: {
       onlyFilesWithFlowAnnotation: true,
@@ -45,7 +46,6 @@ module.exports = {
     'flowtype',
   ],
   extends: [
-    'airbnb', 
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:flowtype/recommended',
@@ -66,9 +66,6 @@ module.exports = {
     'react/jsx-one-expression-per-line': [
       'off',
     ],
-    'import/prefer-default-export': [
-      'off',
-    ]
     /*
     'no-use-before-define': [
       'error', 'nofunc',

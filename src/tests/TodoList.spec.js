@@ -11,7 +11,7 @@ afterEach(() => { global.fetch = undefined; })
 describe('TodoList', () => {
   describe('____', () => {
     it('____', async () => {
-      // global.fetch = mockFetch(undefined);
+      global.fetch = mockFetch(undefined);
       // const {saga, render} = setupRenderWithReduxAndSaga({features});
       //saga.run(watchCallFetchFeature);
       const {render} = setupRenderWithReduxAndSaga({todos});

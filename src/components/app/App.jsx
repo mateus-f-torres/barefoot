@@ -90,7 +90,9 @@ const Title = styled.h1``;
 
 const Link = styled.a``;
 
-function App({fetchRandomActivity}) {
+type Props = {fetchRandomActivity: () => void}
+
+function App({fetchRandomActivity}: Props) {
   const {t} = useTranslation();
 
   return (

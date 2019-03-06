@@ -14,7 +14,7 @@ type removeTodo = {
   payload: number,
 };
 
-export type Action =
+export type ReduxAction =
   | addTodo
   | toggleTodo
   | removeTodo;

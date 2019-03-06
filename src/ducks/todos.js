@@ -3,7 +3,7 @@ import {call, put, takeEvery} from 'redux-saga/effects';
 import request from 'utils/request';
 import {RANDOM_ACTIVITY_URL} from 'utils/urls';
 
-import type {Action} from 'types/actions';
+import type {ReduxAction} from 'types/actions';
 import type {Todo} from 'types/props';
 
 type State = Array<Todo>;
@@ -31,7 +31,7 @@ const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
 const CALL_FETCH_RANDOM_ACTIVITY = 'barefoot/todos/CALL_FETCH_RANDOM_ACTIVITY';
 
 // NOTE: reducer
-function todos(state: State = defaultMemoizedState, action: Action) {
+function todos(state: State = defaultMemoizedState, action: ReduxAction) {
   switch (action.type) {
     case ADD_TODO:
       return addTodoToList(state, action.payload);
@@ -66,21 +66,21 @@ function removeTodoFromList(oldState: Array<Todo>, id: number): State {
 }
 
 // NOTE: sync actions
-export function addTodoAction(text: string): Action {
+export function addTodoAction(text: string): ReduxAction {
   return ({
     type: ADD_TODO,
     payload: text,
   })
 }
 
-export function toggleTodoAction(id: number): Action {
+export function toggleTodoAction(id: number): ReduxAction {
   return ({
     type: TOGGLE_TODO,
     payload: id,
   });
 }
 
-export function removeTodoAction(id: number): Action {
+export function removeTodoAction(id: number): ReduxAction {
   return ({
     type: REMOVE_TODO,
     payload: id,
@@ -88,7 +88,7 @@ export function removeTodoAction(id: number): Action {
 }
 
 // NOTE: async actions
-export function callFetchRandomActivityAction(): Action {
+export function callFetchRandomActivityAction(): ReduxAction {
   return {
     type: CALL_FETCH_RANDOM_ACTIVITY,
   }

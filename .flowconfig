@@ -1,9 +1,9 @@
 [version]
-0.93.0
+0.94.0
 
 [ignore]
 # ignore i18next resources
-<PROJECT_ROOT>/src/assets/translations/*
+<PROJECT_ROOT>/src/assets/translations/*.json
 
 [lints]
 # all=off by default
