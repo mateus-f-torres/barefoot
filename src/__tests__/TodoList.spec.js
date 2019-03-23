@@ -1,5 +1,6 @@
 import React from 'react';
-import {wait} from 'react-testing-library';
+// TODO: see if wait use is needed
+import {wait, fireEvent} from 'react-testing-library';
 
 import todos from 'ducks/todos';
 import TodoListContainer from 'containers/todolist';
