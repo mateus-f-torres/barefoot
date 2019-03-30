@@ -102,7 +102,7 @@ export function* watchCallFetchRandomActivity() {
 // NOTE: async functions
 export function* callFetchRandomActivity() {
   try {
-    const res = yield call([request, 'get'], RANDOM_ACTIVITY_URL);
+    const res = yield call(request, RANDOM_ACTIVITY_URL);
     yield put({type: ADD_TODO, payload: res.activity})
     
   } catch(e) {
