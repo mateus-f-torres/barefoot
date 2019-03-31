@@ -19,6 +19,19 @@ i18next
     lng: 'en',
     fallbackLng: 'en',
     keySeparator: '.',
+    interpolation: {
+      escapeValue: false,
+      format: function(value, format, lng) {
+        switch(format) {
+          case 'number':
+            return new Intl.NumberFormat(lng).format(value);
+          case 'date':
+            return new Intl.DateTimeFormat(lng).format(value);
+          default:
+            return value;
+        }
+      }
+    },
   })
 
 export default i18next;

@@ -1,7 +1,7 @@
 //@flow
 import {call, put, takeEvery} from 'redux-saga/effects';
 import request from 'utils/request';
-import {RANDOM_ACTIVITY_URL} from 'utils/urls';
+import {RANDOM_ACTIVITY} from 'utils/urls';
 
 import type {ReduxAction} from 'types/actions';
 import type {Todo} from 'types/props';
@@ -24,13 +24,13 @@ const defaultMemoizedState = Object.assign(Object.create(null), {
   },
 });
 
-// NOTE: constants
+// NOTE: actions
 const ADD_TODO = 'barefoot/todos/ADD_TODO';
 const TOGGLE_TODO = 'barefoot/todos/TOGGLE_TODO';
 const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
-const CALL_FETCH_RANDOM_ACTIVITY = 'barefoot/todos/CALL_FETCH_RANDOM_ACTIVITY';
+const FETCH_RANDOM_ACTIVITY = 'barefoot/todos/FETCH_RANDOM_ACTIVITY';
 
-// NOTE: reducer
+// NOTE: reducer definition
 function todos(state: State = defaultMemoizedState, action: ReduxAction) {
   switch (action.type) {
     case ADD_TODO:
@@ -47,7 +47,37 @@ function todos(state: State = defaultMemoizedState, action: ReduxAction) {
   }
 }
 
-// NOTE: sync functions
+// NOTE: sync action creators
+export function addTodo(text: string): ReduxAction {
+  return ({
+    type: ADD_TODO,
+    payload: text,
+  })
+}
+
+export function toggleTodo(id: number): ReduxAction {
+  return ({
+    type: TOGGLE_TODO,
+    payload: id,
+  });
+}
+
+export function removeTodo(id: number): ReduxAction {
+  return ({
+    type: REMOVE_TODO,
+    payload: id,
+  });
+}
+
+// NOTE: async action creators
+export function fetchRandomActivity(): ReduxAction {
+  return {
+    type: FETCH_RANDOM_ACTIVITY,
+  }
+}
+
+
+// NOTE: reducer functions
 function addTodoToList(state: State, todo: string) {
   return {...state, [randomHexId()]: {text: todo, completed: false}};
 }
@@ -65,44 +95,15 @@ function removeTodoFromList(oldState: Array<Todo>, id: number): State {
   return newState;
 }
 
-// NOTE: sync actions
-export function addTodoAction(text: string): ReduxAction {
-  return ({
-    type: ADD_TODO,
-    payload: text,
-  })
+// NOTE: saga watchers
+export function* watchRequestRandomActivity() {
+  yield takeEvery(FETCH_RANDOM_ACTIVITY, requestRandomActivity);
 }
 
-export function toggleTodoAction(id: number): ReduxAction {
-  return ({
-    type: TOGGLE_TODO,
-    payload: id,
-  });
-}
-
-export function removeTodoAction(id: number): ReduxAction {
-  return ({
-    type: REMOVE_TODO,
-    payload: id,
-  });
-}
-
-// NOTE: async actions
-export function callFetchRandomActivityAction(): ReduxAction {
-  return {
-    type: CALL_FETCH_RANDOM_ACTIVITY,
-  }
-}
-
-// NOTE: watchers
-export function* watchCallFetchRandomActivity() {
-  yield takeEvery(CALL_FETCH_RANDOM_ACTIVITY, callFetchRandomActivity);
-}
-
-// NOTE: async functions
-export function* callFetchRandomActivity() {
+// NOTE: saga workers
+export function* requestRandomActivity() {
   try {
-    const res = yield call(request, RANDOM_ACTIVITY_URL);
+    const res = yield call(request, RANDOM_ACTIVITY);
     yield put({type: ADD_TODO, payload: res.activity})
     
   } catch(e) {

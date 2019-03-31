@@ -1,7 +1,7 @@
 //@flow
 import {connect} from 'react-redux';
 
-import {callFetchRandomActivityAction} from 'ducks/todos';
+import {fetchRandomActivity} from 'ducks/todos';
 import App from 'components/app';
 
 import type {State} from 'types/state';
@@ -14,7 +14,7 @@ function mapStateToProps(state: State) {
 function mapDispatchToActions(dispatch: *) {
   return {
     fetchRandomActivity() {
-      dispatch(callFetchRandomActivityAction());
+      dispatch(fetchRandomActivity());
     }
   }
 }

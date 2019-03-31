@@ -2,9 +2,9 @@
 import {connect} from 'react-redux';
 
 import {
-  addTodoAction,
-  toggleTodoAction,
-  removeTodoAction,
+  addTodo,
+  toggleTodo,
+  removeTodo,
 } from 'ducks/todos';
 
 import type {State} from 'types/state';
@@ -20,13 +20,13 @@ function mapStateToProps(state: State) {
 function mapDispatchToProps(dispatch: *) {
   return {
     addTodo(text) {
-      dispatch(addTodoAction(text));
+      dispatch(addTodo(text));
     },
     toggleTodo(id) {
-      dispatch(toggleTodoAction(id));
+      dispatch(toggleTodo(id));
     },
     removeTodo(id) {
-      dispatch(removeTodoAction(id));
+      dispatch(removeTodo(id));
     },
   };
 }
