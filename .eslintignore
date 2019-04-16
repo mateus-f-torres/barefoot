@@ -2,6 +2,3 @@
 /dist/
 /coverage/
 /server.js
-
-# Dont lint flow-typed
-/flow-typed/

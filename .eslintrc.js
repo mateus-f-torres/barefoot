@@ -35,20 +35,14 @@ module.exports = {
     react: {
       pragma: 'React',
       version: '16.8.3',
-      flowVersion: '0.94.0',
-    },
-    flowtype: {
-      onlyFilesWithFlowAnnotation: true,
     },
   },
   plugins: [
     'react',
-    'flowtype',
   ],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:flowtype/recommended',
   ],
   rules: {
     'wrap-iife': [
@@ -78,9 +72,6 @@ module.exports = {
     ],
     'arrow-parens': [
       'error', 'always',
-    ],
-    'spaced-comment': [
-      'error', 'always', { 'exceptions': ['@flow']}
     ],
     */
   },

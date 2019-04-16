@@ -1,12 +1,6 @@
-//@flow
 import {call, put, takeEvery} from 'redux-saga/effects';
 import request from 'utils/request';
 import {RANDOM_ACTIVITY} from 'utils/urls';
-
-import type {ReduxAction} from 'types/actions';
-import type {Todo} from 'types/props';
-
-type State = Array<Todo>;
 
 const randomHexId = () => Math.random().toString(16).slice(2, 8);
 const defaultMemoizedState = Object.assign(Object.create(null), {
@@ -31,7 +25,7 @@ const REMOVE_TODO = 'barefoot/todos/REMOVE_TODO';
 const FETCH_RANDOM_ACTIVITY = 'barefoot/todos/FETCH_RANDOM_ACTIVITY';
 
 // NOTE: reducer definition
-function todos(state: State = defaultMemoizedState, action: ReduxAction) {
+function todos(state = defaultMemoizedState, action) {
   switch (action.type) {
     case ADD_TODO:
       return addTodoToList(state, action.payload);
@@ -48,21 +42,21 @@ function todos(state: State = defaultMemoizedState, action: ReduxAction) {
 }
 
 // NOTE: sync action creators
-export function addTodo(text: string): ReduxAction {
+export function addTodo(text) {
   return ({
     type: ADD_TODO,
     payload: text,
   })
 }
 
-export function toggleTodo(id: number): ReduxAction {
+export function toggleTodo(id) {
   return ({
     type: TOGGLE_TODO,
     payload: id,
   });
 }
 
-export function removeTodo(id: number): ReduxAction {
+export function removeTodo(id) {
   return ({
     type: REMOVE_TODO,
     payload: id,
@@ -70,7 +64,7 @@ export function removeTodo(id: number): ReduxAction {
 }
 
 // NOTE: async action creators
-export function fetchRandomActivity(): ReduxAction {
+export function fetchRandomActivity() {
   return {
     type: FETCH_RANDOM_ACTIVITY,
   }
@@ -78,16 +72,16 @@ export function fetchRandomActivity(): ReduxAction {
 
 
 // NOTE: reducer functions
-function addTodoToList(state: State, todo: string) {
+function addTodoToList(state, todo) {
   return {...state, [randomHexId()]: {text: todo, completed: false}};
 }
 
-function toggleTodoCompletion(state: State, id: number): State {
+function toggleTodoCompletion(state, id) {
   const oldTodo = {...state[id]};
   return {...state, [id]: {...oldTodo, completed: !oldTodo.completed}};
 }
 
-function removeTodoFromList(oldState: Array<Todo>, id: number): State {
+function removeTodoFromList(oldState, id) {
   const newState = Object.create(null);
   for (const [key, value] of Object.entries(oldState)) {
     if (key != id) newState[key] = {...value};

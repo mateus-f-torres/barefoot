@@ -1,9 +1,7 @@
-//@flow
 import * as React from 'react';
 import styled from 'styled-components';
 
 import {Button} from 'components/shared';
-import type {Todo} from 'types/props';
 import trash from 'assets/images/trash.png';
 
 const ListItem = styled.li`
@@ -40,12 +38,7 @@ const ListItemIcon = styled.img`
   bottom: 5px;
 `;
 
-type Props = Todo & {
-  toggleTodo: (number) => void,
-  deleteTodo: (number) => void,
-};
-
-function TodoItem({id, completed, text, toggleTodo, deleteTodo}: Props) {
+function TodoItem({id, completed, text, toggleTodo, deleteTodo}) {
   return (
     <ListItem>
       <ListItemText done={completed ? true : false} onClick={() => toggleTodo(id)}>

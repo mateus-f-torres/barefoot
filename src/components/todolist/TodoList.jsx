@@ -1,8 +1,5 @@
-//@flow
 import * as React from 'react';
 import styled from 'styled-components';
-
-import type {Todo} from 'types/props';
 
 import {Button} from 'components/shared';
 import {TodoListItem} from 'components/todolist';
@@ -31,26 +28,17 @@ const List = styled.ul`
   padding: 0;
 `;
 
-type Props = {
-  todos: Array<Todo>,
-  addTodo: (string) => void,
-  toggleTodo: (number) => number,
-  removeTodo: (number) => number,
-};
-
-class TodoList extends React.Component<Props> {
+class TodoList extends React.Component {
   // TODO: change to hooked fn component
   // TODO: make arrow fn too
   // TODO: get value from input tag without using event
-  handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
     if (e.currentTarget) {
-      // $FlowFixMe, 'maybe-there' flow error
       let text = e.currentTarget.childNodes[0].value;
       if (!text.trim()) return;
       this.props.addTodo(text);
-      // $FlowFixMe, 'maybe-there' flow error
       e.currentTarget.childNodes[0].value = '';
     }
   }

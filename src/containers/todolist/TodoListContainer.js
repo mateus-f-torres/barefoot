@@ -1,4 +1,3 @@
-//@flow
 import {connect} from 'react-redux';
 
 import {
@@ -7,17 +6,15 @@ import {
   removeTodo,
 } from 'ducks/todos';
 
-import type {State} from 'types/state';
-
 import TodoList from 'components/todolist';
 
-function mapStateToProps(state: State) {
+function mapStateToProps(state) {
   return {
     todos: state.todos,
   };
 }
 
-function mapDispatchToProps(dispatch: *) {
+function mapDispatchToProps(dispatch) {
   return {
     addTodo(text) {
       dispatch(addTodo(text));

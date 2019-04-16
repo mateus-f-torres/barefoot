@@ -1,4 +1,3 @@
-//@flow
 import * as React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
@@ -90,9 +89,7 @@ const Title = styled.h1``;
 
 const Link = styled.a``;
 
-type Props = {fetchRandomActivity: () => void}
-
-function App({fetchRandomActivity}: Props) {
+function App({fetchRandomActivity}) {
   const {t} = useTranslation();
 
   return (
