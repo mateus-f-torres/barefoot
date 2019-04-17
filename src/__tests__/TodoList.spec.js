@@ -16,10 +16,10 @@ describe('TodoList', () => {
       // const {saga, render} = setupRenderWithReduxAndSaga({features});
       //saga.run(watchCallFetchFeature);
       const {render} = setupRenderWithReduxAndSaga({todos});
-      const {getByText} = render(<TodoListContainer />);
+      const {queryByText} = render(<TodoListContainer />);
 
       await wait(() => {
-        expect(getByText(/hello/)).toBe(null);
+        expect(queryByText(/hello/)).toBe(null);
       });
     })
   })

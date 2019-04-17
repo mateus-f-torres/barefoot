@@ -74,7 +74,6 @@ let configs = {
       'containers': path.resolve(__dirname, 'src/containers/'),
       'ducks': path.resolve(__dirname, 'src/ducks/'),
       'tests': path.resolve(__dirname, 'src/tests/'),
-      'types': path.resolve(__dirname, 'src/types/'),
       'utils': path.resolve(__dirname, 'src/utils/'),
     },
   },

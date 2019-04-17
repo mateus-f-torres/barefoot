@@ -14,9 +14,7 @@ Barefoot is an experiment in creating a minimalist but efficient boilerplate for
 - [**Redux**](https://redux.js.org/) for the state manager
 - [**Babel**](https://babeljs.io/) for the compiler
 - [**ESLint**](https://eslint.org/) for the linter
-- [**Flow**](https://flow.org/) for the type checker
 - [**Jest**](https://jestjs.io/) for the test framework
-- [**Enzyme**](http://airbnb.io/enzyme/) for the testing library
 - [**Travis CI**](https://travis-ci.com/) for continuous integration
 - [**Webpack**](https://webpack.js.org/) for the bundler
 
@@ -61,7 +59,6 @@ cd barefoot/
 - [ ] .editorconfig
 - [ ] .babelrc
 - [ ] .eslintrc and .eslintignore
-- [ ] .flowconfig
 - [ ] jest.config.js
 - [ ] .travis.yml
 - [ ] webpack.config.js

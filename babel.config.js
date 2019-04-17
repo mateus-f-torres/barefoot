@@ -2,7 +2,7 @@ const env = process.env.BABEL_ENV || process.env.NODE_ENV;
 
 const config = {
   presets: [
-    ['@babel/preset-env', {'useBuiltIns': 'usage'}],
+    ['@babel/preset-env', {'useBuiltIns': 'usage', 'corejs': 3}],
     ['@babel/preset-react'],
   ],
   plugins: [

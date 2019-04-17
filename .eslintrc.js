@@ -27,7 +27,6 @@ module.exports = {
           ['containers', './src/containers/'],
           ['ducks', './src/ducks/'],
           ['tests', './src/tests/'],
-          ['types', './src/types/'],
           ['utils', './src/utils/'],
         ],
       },
