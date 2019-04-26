@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import {Button} from 'components/shared';
@@ -35,12 +35,10 @@ class TodoList extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    if (e.currentTarget) {
-      let text = e.currentTarget.childNodes[0].value;
-      if (!text.trim()) return;
-      this.props.addTodo(text);
-      e.currentTarget.childNodes[0].value = '';
-    }
+    let text = e.currentTarget.childNodes[0].value;
+    if (!text.trim()) return;
+    this.props.addTodo(text);
+    e.currentTarget.childNodes[0].value = '';
   }
 
   toggleTodo = (id) => {

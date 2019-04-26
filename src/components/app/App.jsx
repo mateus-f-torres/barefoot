@@ -1,6 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
+// TODO: change to simple i18next import
 import {useTranslation} from 'react-i18next';
 
 import TodoListContainer from 'containers/todolist';
