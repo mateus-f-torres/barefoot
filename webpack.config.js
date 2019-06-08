@@ -104,6 +104,17 @@ let configs = {
             options: {hmr: true}
           },
           "css-loader",
+          /*
+          // TODO: debug why using MiniCssExtractPlugin breaks css-modules class injection
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: 'bf__[local]--[hash:base64:5]',
+              importLoaders: 1,
+            },
+          },
+           */
           "postcss-loader",
         ]
       },
