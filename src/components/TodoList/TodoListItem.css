@@ -1,0 +1,30 @@
+.todo__list__item {
+  display: flex;
+  background-color: darkgrey;
+  color: #1b1b1e;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  line-height: 45px;
+}
+
+ .todo__list__item:nth-child(2n) { background-color: white; color: #666; }
+
+ .todo__list__item__text {
+   display: inline-block;
+   width: 100%;
+   padding-left: 10px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
+.todo__list__item__text:hover { cursor: pointer;}
+.todo__list__item__text.-done { text-decoration: line-through; }
+
+.todo__list__item__img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 5px;
+}

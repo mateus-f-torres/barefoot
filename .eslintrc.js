@@ -24,7 +24,6 @@ module.exports = {
         map: [
           ['assets', './src/assets/'],
           ['components', './src/components/'],
-          ['containers', './src/containers/'],
           ['ducks', './src/ducks/'],
           ['tests', './src/tests/'],
           ['utils', './src/utils/'],
@@ -74,4 +73,4 @@ module.exports = {
     ],
     */
   },
-}
+};

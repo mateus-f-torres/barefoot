@@ -1,32 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import {Button} from 'components/shared';
-import {TodoListItem} from 'components/todolist';
-
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-`;
-
-const Input = styled.input`
-  font-size: 18px;
-  color: #1b1b1e;
-  background-color: #f7f7f7;
-  width: 100%;
-  padding: 13px 13px 13px 20px;
-  box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
-  &:focus {
-    outline: none;
-  }
-`;
-
-const List = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
-`;
+import './TodoList.css';
+import TodoListItem from './TodoListItem';
+import Button from 'components/shared/Button';
 
 class TodoList extends React.Component {
   // TODO: change to hooked fn component
@@ -51,10 +27,10 @@ class TodoList extends React.Component {
 
   render() {
     return (
-      <Form data-test="todo-submit" onSubmit={this.handleSubmit}>
-        <Input data-test="todo-input" type="text" placeholder="Add todo" />
+      <form className="todo" onSubmit={this.handleSubmit}>
+        <input className="todo__submit" type="text" placeholder="Add todo" />
         <Button type="submit" />
-        <List data-test="todo-list">
+        <ul className="todo__list">
           {
             Object.entries(this.props.todos).map(([key, value]) => (
               <TodoListItem
@@ -67,8 +43,8 @@ class TodoList extends React.Component {
               />
             ))
           }
-        </List>
-      </Form>
+        </ul>
+      </form>
     );
   }
 }
