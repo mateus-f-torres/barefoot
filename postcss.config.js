@@ -3,6 +3,6 @@ module.exports = {
   plugins: [
     require('autoprefixer'),
     require('postcss-custom-properties'),
-    // require('postcss-nesting'),
+    // TODO: read about require('postcss-nesting'),
   ]
 };

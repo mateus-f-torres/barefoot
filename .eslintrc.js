@@ -25,7 +25,7 @@ module.exports = {
           ['assets', './src/assets/'],
           ['components', './src/components/'],
           ['ducks', './src/ducks/'],
-          ['tests', './src/tests/'],
+          ['tests', './src/__tests__/'],
           ['utils', './src/utils/'],
         ],
       },

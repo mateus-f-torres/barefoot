@@ -80,7 +80,7 @@ let configs = {
       'assets': path.resolve(__dirname, 'src/assets/'),
       'components': path.resolve(__dirname, 'src/components/'),
       'ducks': path.resolve(__dirname, 'src/ducks/'),
-      'tests': path.resolve(__dirname, 'src/tests/'),
+      'tests': path.resolve(__dirname, 'src/__tests__/'),
       'utils': path.resolve(__dirname, 'src/utils/'),
     },
   },
