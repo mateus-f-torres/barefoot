@@ -20,6 +20,7 @@
     "preremote": "NODE_ENV=production babel src/server.js -o ./server.js",
     "remote": "NODE_ENV=production node server.js",
     "local": "http-server dist -g",
+    "lint": "eslint src/ --fix",
     "test": "jest"
   },
   "dependencies": {
