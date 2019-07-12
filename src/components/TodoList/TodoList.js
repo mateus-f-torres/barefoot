@@ -1,28 +1,28 @@
-import React from 'react';
+import React from 'react'
 
-import './TodoList.css';
-import TodoListItem from './TodoListItem';
-import Button from 'components/shared/Button';
+import './TodoList.css'
+import TodoListItem from './TodoListItem'
+import Button from 'components/shared/Button'
 
 class TodoList extends React.Component {
   // TODO: change to hooked fn component
   // TODO: make arrow fn too
   // TODO: get value from input tag without using event
   handleSubmit = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    let text = e.currentTarget.childNodes[0].value;
-    if (!text.trim()) return;
-    this.props.addTodo(text);
-    e.currentTarget.childNodes[0].value = '';
+    e.preventDefault()
+    e.stopPropagation()
+    const text = e.currentTarget.childNodes[0].value
+    if (!text.trim()) return
+    this.props.addTodo(text)
+    e.currentTarget.childNodes[0].value = ''
   }
 
   toggleTodo = (id) => {
-    this.props.toggleTodo(id);
+    this.props.toggleTodo(id)
   }
 
   deleteTodo = (id) => {
-    this.props.removeTodo(id);
+    this.props.removeTodo(id)
   }
 
   render() {
@@ -45,8 +45,8 @@ class TodoList extends React.Component {
           }
         </ul>
       </form>
-    );
+    )
   }
 }
 
-export default TodoList;
+export default TodoList
