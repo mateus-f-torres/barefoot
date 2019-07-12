@@ -1,7 +1,8 @@
-import i18next from 'i18next';
-import {initReactI18next} from 'react-i18next';
+/* eslint camelcase: 'off' */
+import i18next from 'i18next'
+import {initReactI18next} from 'react-i18next'
 
-import en_US from 'assets/translations/en_US.json';
+import en_US from 'assets/translations/en_US.json'
 
 const resources = {
   en: {translation: en_US},
@@ -21,16 +22,16 @@ i18next
     interpolation: {
       escapeValue: false,
       format: function(value, format, lng) {
-        switch(format) {
+        switch (format) {
           case 'number':
-            return new Intl.NumberFormat(lng).format(value);
+            return new Intl.NumberFormat(lng).format(value)
           case 'date':
-            return new Intl.DateTimeFormat(lng).format(value);
+            return new Intl.DateTimeFormat(lng).format(value)
           default:
-            return value;
+            return value
         }
-      }
+      },
     },
   })
 
-export default i18next;
+export default i18next

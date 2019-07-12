@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 // TODO: change to simple i18next import
-import {useTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next'
 
-import './App.css';
-import list from 'assets/images/list.svg';
-import logo from 'assets/images/mateus-f-torres.svg';
+import './App.css'
+import list from 'assets/images/list.svg'
+import logo from 'assets/images/mateus-f-torres.svg'
 
-import TodoListContainer from 'components/TodoList/TodoListContainer';
+import TodoListContainer from 'components/TodoList/TodoListContainer'
 
 function App({fetchRandomActivity}) {
-  const {t} = useTranslation();
+  const {t} = useTranslation()
 
   return (
     <div className="container">
@@ -31,7 +31,7 @@ function App({fetchRandomActivity}) {
 
       </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

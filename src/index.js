@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
 
-import './i18n';
-import './index.css';
+import './i18n'
+import './index.css'
 
-import createStore from 'ducks/';
-import AppContainer from 'components/App/AppContainer';
+import createStore from 'ducks/'
+import AppContainer from 'components/App/AppContainer'
 
-const root = document.getElementById('root');
+const root = document.getElementById('root')
 
 if (root !== null) {
   ReactDOM.render(
@@ -16,6 +16,5 @@ if (root !== null) {
       <AppContainer />
     </Provider>,
     root,
-  );
+  )
 }
-

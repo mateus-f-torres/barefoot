@@ -1,24 +1,24 @@
-import {connect} from 'react-redux';
+import {connect} from 'react-redux'
 
-import {fetchRandomActivity} from 'ducks/todos';
-import App from './App';
+import {fetchRandomActivity} from 'ducks/todos'
+import App from './App'
 
 /* eslint no-unused-vars: 'off' */
 function mapStateToProps(state) {
-  return {};
+  return {}
 }
 
 function mapDispatchToActions(dispatch) {
   return {
     fetchRandomActivity() {
-      dispatch(fetchRandomActivity());
-    }
+      dispatch(fetchRandomActivity())
+    },
   }
 }
 
 const AppContainer = connect(
   mapStateToProps,
   mapDispatchToActions,
-)(App);
+)(App)
 
-export default AppContainer;
+export default AppContainer

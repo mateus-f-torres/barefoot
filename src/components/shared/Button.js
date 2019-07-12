@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import './Button.css';
+import './Button.css'
 
 function Button({children, type, onClick}) {
   return (
@@ -14,4 +14,4 @@ function Button({children, type, onClick}) {
   )
 }
 
-export default Button;
+export default Button

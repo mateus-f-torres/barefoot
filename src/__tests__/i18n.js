@@ -1,7 +1,8 @@
-import i18next from 'i18next';
-import {initReactI18next} from 'react-i18next';
+/* eslint camelcase: 'off' */
+import i18next from 'i18next'
+import {initReactI18next} from 'react-i18next'
 
-import mock_FAKE from './mock_FAKE.json';
+import mock_FAKE from './mock_FAKE.json'
 
 const resources = {
   mock: {translation: mock_FAKE},
@@ -16,4 +17,4 @@ i18next
     keySeparator: '.',
   })
 
-export default i18next;
+export default i18next

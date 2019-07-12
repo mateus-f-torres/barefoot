@@ -4,4 +4,4 @@ module.exports = {
     'git add',
     'jest --bail --findRelatedTests --coverage',
   ],
-};
+}
