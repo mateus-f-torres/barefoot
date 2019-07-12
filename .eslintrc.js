@@ -13,64 +13,73 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    worker: true,
     jest: true,
   },
-  globals: {
-    'exampleGlobalVariable': true,
-  },
   settings: {
-    'import/resolver': {
-      alias: {
-        map: [
-          ['assets', './src/assets/'],
-          ['components', './src/components/'],
-          ['ducks', './src/ducks/'],
-          ['tests', './src/__tests__/'],
-          ['utils', './src/utils/'],
-        ],
-      },
-    },
     react: {
-      pragma: 'React',
-      version: '16.8.3',
+      version: 'detect',
     },
   },
   plugins: [
     'react',
   ],
   extends: [
+    'standard',
     'eslint:recommended',
     'plugin:react/recommended',
   ],
   rules: {
-    'wrap-iife': [
-      'error', 'inside',
+    'object-curly-spacing': [
+      'error', 'never',
+    ],
+    'comma-dangle': [
+      'error', 'always-multiline',
+    ],
+    'space-before-function-paren': [
+      'error', 'never',
     ],
     'eqeqeq': [
       'off',
     ],
-    'object-curly-spacing': [
-      'error', 'never',
+    'no-await-in-loop': [
+      'error',
     ],
-    'react/destructuring-assignment': [
-      'off',
+    'guard-for-in': [
+      'error',
     ],
-    'react/jsx-one-expression-per-line': [
-      'off',
+    'no-implicit-globals': [
+      'error',
     ],
-    /*
-    'no-use-before-define': [
-      'error', 'nofunc',
+    'no-return-await': [
+      'error',
     ],
-    'no-plusplus': [
-      'off',
+    'no-shadow': [
+      'error', {'builtinGlobals': true, 'hoist': 'functions'},
     ],
-    'arrow-body-style': [
-      'error', 'as-needed',
+    'complexity': [
+      'warn', {'max': 6},
     ],
-    'arrow-parens': [
-      'error', 'always',
+    'max-depth': [
+      'warn', {'max': 4},
     ],
-    */
+    'max-len': [
+      'warn', {'code': 80, 'tabWidth': 2, 'ignoreStrings': true, 'ignoreTemplateLiterals': true},
+    ],
+    'max-lines': [
+      'warn', {'max': 300, 'skipBlankLines': false, 'skipComments': false},
+    ],
+    'max-lines-per-function': [
+      'warn', {'max': 25, 'skipBlankLines': false, 'skipComments': false, 'IIFEs': false},
+    ],
+    'max-nested-callbacks': [
+      'warn', {'max': 5},
+    ],
+    'max-params': [
+      'warn', {'max': 3},
+    ],
+    'react/prop-types': [
+      'warn',
+    ],
   },
 };
