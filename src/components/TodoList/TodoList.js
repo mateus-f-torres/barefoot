@@ -29,7 +29,7 @@ class TodoList extends React.Component {
     return (
       <form className="todo" onSubmit={this.handleSubmit}>
         <input className="todo__submit" type="text" placeholder="Add todo" />
-        <Button type="submit" />
+        <Button type="enter" />
         <ul className="todo__list">
           {
             Object.entries(this.props.todos).map(([key, value]) => (
