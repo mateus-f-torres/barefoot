@@ -1,9 +1,6 @@
-const tasks = (arr) => arr.join(' && ');
-
 module.exports = {
-  'hooks': {
-    'pre-commit': tasks([
-      'lint-staged',
-    ]),
+  hooks: {
+    'pre-commit': 'lint-staged',
+    'prepare-commit-msg': 'exec < /dev/tty && git cz --hook',
   },
-};
+}

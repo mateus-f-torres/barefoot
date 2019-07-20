@@ -20,8 +20,9 @@
     "preremote": "NODE_ENV=production babel src/server.js -o ./server.js",
     "remote": "NODE_ENV=production node server.js",
     "local": "http-server dist -g",
+    "prettify": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
     "lint": "eslint src/ --fix",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "compression": "1.7.4",
@@ -48,15 +49,17 @@
     "@testing-library/jest-dom": "4.0.0",
     "@testing-library/react": "8.0.4",
     "autoprefixer": "9.6.0",
-    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
     "clean-webpack-plugin": "3.0.0",
+    "commitizen": "^4.0.3",
     "compression-webpack-plugin": "3.0.0",
     "core-js": "3.1.4",
     "css-loader": "3.0.0",
+    "cz-conventional-changelog": "3.0.1",
     "eslint": "6.0.1",
+    "eslint-config-prettier": "6.0.0",
     "eslint-config-standard": "13.0.1",
     "eslint-plugin-import": "2.18.0",
     "eslint-plugin-node": "9.1.0",
@@ -76,6 +79,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "postcss-custom-properties": "9.0.1",
     "postcss-loader": "3.0.0",
+    "prettier": "1.18.2",
     "simple-progress-webpack-plugin": "1.1.2",
     "style-loader": "0.23.1",
     "svg-url-loader": "3.0.0",
@@ -85,5 +89,10 @@
     "webpack-bundle-analyzer": "3.3.2",
     "webpack-cli": "3.3.5",
     "webpack-dev-server": "3.7.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
