@@ -10,7 +10,11 @@ const sagaMiddleware = createSagaMiddleware()
 
 export default function createRootStore(initialState = {}) {
   const middlewares = applyMiddleware(sagaMiddleware)
-  const rootStore = createStore(reducers, initialState, composeEnhancers(middlewares))
+  const rootStore = createStore(
+    reducers,
+    initialState,
+    composeEnhancers(middlewares),
+  )
   sagaMiddleware.run(sagas)
 
   return rootStore

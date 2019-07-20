@@ -13,7 +13,6 @@ function App({fetchRandomActivity}) {
 
   return (
     <div className="container">
-
       <h1 className="header">
         {t('app_title')}
         <button className="iconBtn" onClick={fetchRandomActivity}>
@@ -28,7 +27,6 @@ function App({fetchRandomActivity}) {
         <a href="https://mateus-f-torres.github.io/">
           <img className="logo" src={logo} />
         </a>
-
       </footer>
     </div>
   )

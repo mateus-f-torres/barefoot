@@ -8,11 +8,13 @@ import TodoListContainer from 'components/TodoList/TodoListContainer'
 import {mockFetch, setupRenderWithReduxAndSaga} from './helpers'
 import './i18n'
 
-afterEach(() => { global.fetch = undefined })
+afterEach(() => {
+  global.fetch = undefined
+})
 
 describe('TodoList', () => {
   describe('____', () => {
-    it('____', async() => {
+    it('____', async () => {
       global.fetch = mockFetch(undefined)
       // const {saga, render} = setupRenderWithReduxAndSaga({features});
       // saga.run(watchCallFetchFeature);

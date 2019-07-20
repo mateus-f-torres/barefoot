@@ -31,18 +31,16 @@ class TodoList extends React.Component {
         <input className="todo__submit" type="text" placeholder="Add todo" />
         <Button type="submit" />
         <ul className="todo__list">
-          {
-            Object.entries(this.props.todos).map(([key, value]) => (
-              <TodoListItem
-                key={key}
-                id={key}
-                text={value.text}
-                completed={value.completed}
-                toggleTodo={this.toggleTodo}
-                deleteTodo={this.deleteTodo}
-              />
-            ))
-          }
+          {Object.entries(this.props.todos).map(([key, value]) => (
+            <TodoListItem
+              key={key}
+              id={key}
+              text={value.text}
+              completed={value.completed}
+              toggleTodo={this.toggleTodo}
+              deleteTodo={this.deleteTodo}
+            />
+          ))}
         </ul>
       </form>
     )

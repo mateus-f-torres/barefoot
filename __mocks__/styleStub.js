@@ -1,1 +1,1 @@
-module.exports = 'style-file-stub';
+module.exports = 'style-file-stub'

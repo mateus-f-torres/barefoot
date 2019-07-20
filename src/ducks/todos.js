@@ -2,7 +2,10 @@ import {call, put, takeEvery} from 'redux-saga/effects'
 import request from 'utils/request'
 import {RANDOM_ACTIVITY} from 'utils/urls'
 
-const randomHexId = () => Math.random().toString(16).slice(2, 8)
+const randomHexId = () =>
+  Math.random()
+    .toString(16)
+    .slice(2, 8)
 const defaultMemoizedState = Object.assign(Object.create(null), {
   [randomHexId()]: {
     text: 'Buy bread',
@@ -43,24 +46,24 @@ function todos(state = defaultMemoizedState, action) {
 
 // NOTE: sync action creators
 export function addTodo(text) {
-  return ({
+  return {
     type: ADD_TODO,
     payload: text,
-  })
+  }
 }
 
 export function toggleTodo(id) {
-  return ({
+  return {
     type: TOGGLE_TODO,
     payload: id,
-  })
+  }
 }
 
 export function removeTodo(id) {
-  return ({
+  return {
     type: REMOVE_TODO,
     payload: id,
-  })
+  }
 }
 
 // NOTE: async action creators
@@ -89,12 +92,12 @@ function removeTodoFromList(oldState, id) {
 }
 
 // NOTE: saga watchers
-export function * watchRequestRandomActivity() {
+export function* watchRequestRandomActivity() {
   yield takeEvery(FETCH_RANDOM_ACTIVITY, requestRandomActivity)
 }
 
 // NOTE: saga workers
-export function * requestRandomActivity() {
+export function* requestRandomActivity() {
   try {
     const res = yield call(request, RANDOM_ACTIVITY)
     yield put({type: ADD_TODO, payload: res.activity})

@@ -8,13 +8,11 @@ const resources = {
   mock: {translation: mock_FAKE},
 }
 
-i18next
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: 'mock',
-    fallbackLng: 'mock',
-    keySeparator: '.',
-  })
+i18next.use(initReactI18next).init({
+  resources,
+  lng: 'mock',
+  fallbackLng: 'mock',
+  keySeparator: '.',
+})
 
 export default i18next

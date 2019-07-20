@@ -9,16 +9,21 @@ export function setupRenderWithReduxAndSaga(rootReducer, initialState = {}) {
   const root = combineReducers(rootReducer)
   const store = createStore(root, initialState, applyMiddleware(sagaMiddleware))
 
-  return ({
+  return {
     saga: sagaMiddleware,
     render(ui) {
-      return ({...render(<Provider store={store}>{ui}</Provider>)})
+      return {...render(<Provider store={store}>{ui}</Provider>)}
     },
-  })
+  }
 }
 
 export function mockFetch(data) {
   return jest.fn().mockImplementation(() => {
-    return Promise.resolve({ok: true, json() { return data }})
+    return Promise.resolve({
+      ok: true,
+      json() {
+        return data
+      },
+    })
   })
 }
