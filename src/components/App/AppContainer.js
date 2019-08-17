@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 
-import {fetchRandomActivity} from 'ducks/todos'
+import {fetchRandomActivity} from '../../ducks/todos'
 import App from './App'
 
 /* eslint no-unused-vars: 'off' */

@@ -4,7 +4,7 @@ import {createStore, combineReducers, applyMiddleware} from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import {render} from '@testing-library/react'
 
-export function setupRenderWithReduxAndSaga(rootReducer, initialState = {}) {
+function setupRenderWithReduxAndSaga(rootReducer, initialState = {}) {
   const sagaMiddleware = createSagaMiddleware()
   const root = combineReducers(rootReducer)
   const store = createStore(root, initialState, applyMiddleware(sagaMiddleware))
@@ -17,13 +17,4 @@ export function setupRenderWithReduxAndSaga(rootReducer, initialState = {}) {
   }
 }
 
-export function mockFetch(data) {
-  return jest.fn().mockImplementation(() => {
-    return Promise.resolve({
-      ok: true,
-      json() {
-        return data
-      },
-    })
-  })
-}
+export default setupRenderWithReduxAndSaga

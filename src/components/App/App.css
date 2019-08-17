@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: Roboto;
-  src: url('~assets/fonts/Roboto-Regular.ttf') format("truetype");
+  src: url('~../../assets/fonts/Roboto-Regular.ttf') format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -26,7 +26,7 @@ body {
 .header {
   background: var(--header-bg-color);
   color: var(--header-tx-color);
-  margin: 0 !important;
+  margin: 0;
   padding: 0.75rem 1.25rem;
   display: flex;
   justify-content: space-between;

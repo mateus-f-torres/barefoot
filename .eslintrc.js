@@ -34,7 +34,7 @@ module.exports = {
     'guard-for-in': ['error'],
     'no-implicit-globals': ['error'],
     'no-return-await': ['error'],
-    'no-shadow': ['error', {builtinGlobals: true, hoist: 'functions'}],
+    'no-shadow': ['error', {builtinGlobals: false, hoist: 'functions'}],
     'complexity': ['warn', {max: 6}],
     'max-depth': ['warn', {max: 4}],
     'max-len': [

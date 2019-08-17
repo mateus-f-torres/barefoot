@@ -2,10 +2,10 @@
 import i18next from 'i18next'
 import {initReactI18next} from 'react-i18next'
 
-import mock_FAKE from './mock_FAKE.json'
+import mock_I18N from './mock_I18N.json'
 
 const resources = {
-  mock: {translation: mock_FAKE},
+  mock: {translation: mock_I18N},
 }
 
 i18next.use(initReactI18next).init({

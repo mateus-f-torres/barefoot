@@ -3,10 +3,10 @@ import React from 'react'
 import {useTranslation} from 'react-i18next'
 
 import './App.css'
-import list from 'assets/images/list.svg'
-import logo from 'assets/images/mateus-f-torres.svg'
+import list from '../../assets/images/list.svg'
+import logo from '../../assets/images/mateus-f-torres.svg'
 
-import TodoListContainer from 'components/TodoList/TodoListContainer'
+import TodoListContainer from '../TodoList/TodoListContainer'
 
 function App({fetchRandomActivity}) {
   const {t} = useTranslation()

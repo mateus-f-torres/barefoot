@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 
-import {addTodo, toggleTodo, removeTodo} from 'ducks/todos'
+import {addTodo, toggleTodo, removeTodo} from '../../ducks/todos'
 import TodoList from './TodoList'
 
 function mapStateToProps(state) {

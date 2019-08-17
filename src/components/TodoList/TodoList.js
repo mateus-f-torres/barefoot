@@ -2,49 +2,44 @@ import React from 'react'
 
 import './TodoList.css'
 import TodoListItem from './TodoListItem'
-import Button from 'components/shared/Button'
+import Button from '../shared/Button'
 
-class TodoList extends React.Component {
-  // TODO: change to hooked fn component
-  // TODO: make arrow fn too
-  // TODO: get value from input tag without using event
-  handleSubmit = (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    const text = e.currentTarget.childNodes[0].value
-    if (!text.trim()) return
-    this.props.addTodo(text)
-    e.currentTarget.childNodes[0].value = ''
+function TodoList(props) {
+  const inputRef = React.useRef(null)
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    event.stopPropagation()
+    const text = inputRef.current.value
+    if (text.trim()) {
+      props.addTodo(text)
+      inputRef.current.value = ''
+    }
   }
 
-  toggleTodo = (id) => {
-    this.props.toggleTodo(id)
-  }
-
-  deleteTodo = (id) => {
-    this.props.removeTodo(id)
-  }
-
-  render() {
-    return (
-      <form className="todo" onSubmit={this.handleSubmit}>
-        <input className="todo__submit" type="text" placeholder="Add todo" />
-        <Button type="submit" />
-        <ul className="todo__list">
-          {Object.entries(this.props.todos).map(([key, value]) => (
-            <TodoListItem
-              key={key}
-              id={key}
-              text={value.text}
-              completed={value.completed}
-              toggleTodo={this.toggleTodo}
-              deleteTodo={this.deleteTodo}
-            />
-          ))}
-        </ul>
-      </form>
-    )
-  }
+  return (
+    <form className="todo" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        ref={inputRef}
+        className="todo__submit"
+        placeholder="Add todo"
+      />
+      <Button type="submit" />
+      <ul className="todo__list">
+        {Object.entries(props.todos).map(([key, value]) => (
+          <TodoListItem
+            key={key}
+            id={key}
+            text={value.text}
+            completed={value.completed}
+            toggleTodo={(id) => props.toggleTodo(id)}
+            deleteTodo={(id) => props.removeTodo(id)}
+          />
+        ))}
+      </ul>
+    </form>
+  )
 }
 
 export default TodoList

@@ -3,19 +3,19 @@ import React from 'react'
 // import {wait, fireEvent} from '@testing-library/react'
 import {wait} from '@testing-library/react'
 
-import todos from 'ducks/todos'
-import TodoListContainer from 'components/TodoList/TodoListContainer'
-import {mockFetch, setupRenderWithReduxAndSaga} from './helpers'
-import './i18n'
+import todos from '../../ducks/todos'
+import TodoListContainer from './TodoListContainer'
+import setupRenderWithReduxAndSaga from '../../../__tests__/helpers'
+import '../../../__tests__/i18n'
 
-afterEach(() => {
-  global.fetch = undefined
-})
-
+// TODO: write tests
 describe('TodoList', () => {
+  beforeEach(() => {
+    fetch.resetMocks()
+  })
+
   describe('____', () => {
     it('____', async () => {
-      global.fetch = mockFetch(undefined)
       // const {saga, render} = setupRenderWithReduxAndSaga({features});
       // saga.run(watchCallFetchFeature);
       const {render} = setupRenderWithReduxAndSaga({todos})
