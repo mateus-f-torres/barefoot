@@ -1,33 +1,13 @@
-import styled from 'styled-components';
-import {lighten} from 'polished';
+import React from 'react'
 
-const HEADER_BACK= '#1b3039';
-const HEADER_TEXT= '#f1f1f1';
+import './Button.css'
 
-const Button = styled.button`
-  background-color: ${lighten(0.05, HEADER_BACK)};
-  border: 1px solid ${HEADER_TEXT};
-  border-top: 0px;
-  color: white;
-  margin: 0;
-  padding: 0.8em 0.8em;
-  height: 100%;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-  display: inline-block;
-  &:focus {
-    outline: none;
-    border: none;
-    background-color: ${lighten(0.15, HEADER_BACK)};
-  }
-  &:hover {
-    cursor: pointer;
-    background-color: ${lighten(0.15, HEADER_BACK)};
-  }
-  &[type='submit'] {
-    display: none;
-  }
-`;
+function Button({children, type, onClick}) {
+  return (
+    <button type={type} onClick={onClick} className="shared__btn">
+      {children}
+    </button>
+  )
+}
 
-export default Button;
+export default Button

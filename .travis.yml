@@ -6,4 +6,5 @@ install:
   - yarn install
   - yarn add --dev codecov
 script:
-  -  yarn run test --coverage && codecov
+  - yarn lint
+  - yarn test --coverage && codecov

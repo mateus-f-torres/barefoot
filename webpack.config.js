@@ -1,91 +1,106 @@
 /* eslint import/newline-after-import: 'off' */
-const path = require('path');
+const path = require('path')
+const {HotModuleReplacementPlugin} = require('webpack')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const webpack = require('webpack');
-const hotReloadPlugin =
-  new webpack.HotModuleReplacementPlugin();
+let cssPlugin
+if (process.env.NODE_ENV === 'production') {
+  cssPlugin = new MiniCssExtractPlugin({
+    filename: '[name].[hash].css',
+    chunkFilename: '[id].[hash].css',
+  })
+} else {
+  cssPlugin = new MiniCssExtractPlugin({
+    filename: '[name].css',
+    chunkFilename: '[id].css',
+  })
+}
 
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const cleanUpPlugin =
-  new CleanWebpackPlugin();
+const optimizeCss = new OptimizeCSSAssetsPlugin({})
+const hotReloadPlugin = new HotModuleReplacementPlugin()
+const cleanUpPlugin = new CleanWebpackPlugin()
+const progressPlugin = new SimpleProgressWebpackPlugin({format: 'compact'})
 
-const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin');
-const progressPlugin =
-  new SimpleProgressWebpackPlugin({
-    format: 'compact',
-  });
+const analyzerPlugin = new BundleAnalyzerPlugin({
+  openAnalyzer: false,
+  analyzerMode: 'static',
+  generateStatsFile: false,
+  reportFilename: '../reports/bundle_report.html',
+  statsFilename: '../reports/bundle_stats.json',
+})
 
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const analyzerPlugin =
-  new BundleAnalyzerPlugin({
-    openAnalyzer: false,
-    analyzerMode: 'static',
-    generateStatsFile: false,
-    reportFilename: '../reports/bundle_report.html',
-    statsFilename: '../reports/bundle_stats.json',
-  });
+const htmlPlugin = new HtmlWebpackPlugin({
+  title: 'Barefoot',
+  filename: 'index.html',
+  template: 'src/index.html',
+  favicon: 'src/assets/images/favicon.ico',
+})
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const htmlPlugin =
-  new HtmlWebpackPlugin({
-    title: 'Barefoot',
-    filename: 'index.html',
-    template: 'src/index.html',
-    favicon: 'src/assets/images/favicon.ico',
-  });
+const terser = new TerserPlugin({
+  cache: true,
+  parallel: true,
+  sourceMap: true,
+})
 
-const terserPlugin = require('terser-webpack-plugin');
-const terser =
-  new terserPlugin({
-    test: /.js$/,
-    include: undefined,
-    exclude: undefined,
-    cache: true,
-    parallel: true,
-    sourceMap: true,
-  });
+// TODO: compression with brotli
+const gzipPlugin = new CompressionPlugin({
+  test: /.(js|css|html|svg|ttf)$/,
+  filename: '[path].gz[query]',
+  algorithm: 'gzip',
+  threshold: 0,
+  minRatio: 0.8,
+})
 
-const CompressionPlugin = require('compression-webpack-plugin');
-const gzipPlugin =
-  new CompressionPlugin({
-    test: /.js$/,
-    include: undefined,
-    exclude: undefined,
-    filename: '[path].gz[query]',
-    algorithm: 'gzip',
-    threshold: 0,
-    minRatio: 0.8,
-  });
+const DEFAULT_PORT = 8080
 
 let configs = {
-  mode: 'development',
   target: 'web',
+  mode: 'development',
   devtool: 'inline-source-map',
-  entry: path.resolve(__dirname, 'src/index.jsx'),
+  entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
   },
-  resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      'assets': path.resolve(__dirname, 'src/assets/'),
-      'components': path.resolve(__dirname, 'src/components/'),
-      'containers': path.resolve(__dirname, 'src/containers/'),
-      'ducks': path.resolve(__dirname, 'src/ducks/'),
-      'tests': path.resolve(__dirname, 'src/tests/'),
-      'utils': path.resolve(__dirname, 'src/utils/'),
-    },
-  },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
-          }
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {hmr: true},
+          },
+          'css-loader',
+          /*
+          // TODO: debug why using MiniCssExtractPlugin breaks css-modules class injection
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: 'bf__[local]--[hash:base64:5]',
+              importLoaders: 1,
+            },
+          },
+           */
+          'postcss-loader',
         ],
       },
       {
@@ -117,12 +132,13 @@ let configs = {
   plugins: [
     progressPlugin,
     cleanUpPlugin,
+    cssPlugin,
     htmlPlugin,
     hotReloadPlugin,
   ],
   devServer: {
     hot: true,
-    port: '8080',
+    port: DEFAULT_PORT,
     // TODO: adicionar nginx, host: '0.0.0.0',
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
@@ -133,7 +149,7 @@ let configs = {
       '/api': {target: 'http://localhost:3000'},
     },
   },
-};
+}
 
 if (process.env.NODE_ENV === 'production') {
   configs = Object.assign({}, configs, {
@@ -152,16 +168,20 @@ if (process.env.NODE_ENV === 'production') {
             chunks: 'all',
             name: 'vendors',
           },
+          styles: {
+            test: /\.css$/,
+            chunks: 'all',
+            name: 'vendors',
+            enforce: true,
+          },
         },
       },
-      minimizer: [
-        terser,
-      ],
+      minimizer: [terser, optimizeCss],
     },
     module: {
       rules: [
         {
-          test: /\.(js|jsx)$/,
+          test: /\.js$/,
           exclude: /node_modules/,
           use: [
             {
@@ -169,7 +189,18 @@ if (process.env.NODE_ENV === 'production') {
               options: {
                 compact: true,
               },
-            }
+            },
+          ],
+        },
+        {
+          test: /\.css$/,
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {hmr: false},
+            },
+            'css-loader',
+            'postcss-loader',
           ],
         },
         {
@@ -222,9 +253,10 @@ if (process.env.NODE_ENV === 'production') {
       analyzerPlugin,
       cleanUpPlugin,
       gzipPlugin,
+      cssPlugin,
       htmlPlugin,
     ],
-  });
+  })
 }
 
-module.exports = configs;
+module.exports = configs

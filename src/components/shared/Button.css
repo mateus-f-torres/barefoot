@@ -1,0 +1,23 @@
+.shared__btn {
+  background-color: var(--btn-default-color);
+  border: 1px solid var(--header-tx-color);
+  border-top: 0;
+  color: white;
+  margin: 0;
+  padding: 0.8em 0.8em;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.shared__btn:hover,
+.shared__btn:active,
+.shared__btn:focus {
+  outline: transparent;
+  background-color: var(--btn-hover-color);
+}
+
+.shared__btn[type="submit"] { display: none; }

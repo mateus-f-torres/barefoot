@@ -4,3 +4,5 @@ flow-typed
 dist
 yarn*
 tags
+.idea
+reports

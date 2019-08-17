@@ -13,65 +13,49 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    worker: true,
     jest: true,
   },
-  globals: {
-    'exampleGlobalVariable': true,
-  },
   settings: {
-    'import/resolver': {
-      alias: {
-        map: [
-          ['assets', './src/assets/'],
-          ['components', './src/components/'],
-          ['containers', './src/containers/'],
-          ['ducks', './src/ducks/'],
-          ['tests', './src/tests/'],
-          ['utils', './src/utils/'],
-        ],
-      },
-    },
     react: {
-      pragma: 'React',
-      version: '16.8.3',
+      version: 'detect',
     },
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   extends: [
+    'standard',
     'eslint:recommended',
     'plugin:react/recommended',
+    'prettier',
   ],
   rules: {
-    'wrap-iife': [
-      'error', 'inside',
+    'eqeqeq': ['off'],
+    'no-await-in-loop': ['error'],
+    'guard-for-in': ['error'],
+    'no-implicit-globals': ['error'],
+    'no-return-await': ['error'],
+    'no-shadow': ['error', {builtinGlobals: false, hoist: 'functions'}],
+    'complexity': ['warn', {max: 6}],
+    'max-depth': ['warn', {max: 4}],
+    'max-len': [
+      'warn',
+      {
+        code: 80,
+        tabWidth: 2,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
     ],
-    'eqeqeq': [
-      'off',
+    'max-lines': [
+      'warn',
+      {max: 300, skipBlankLines: false, skipComments: false},
     ],
-    'object-curly-spacing': [
-      'error', 'never',
+    'max-lines-per-function': [
+      'warn',
+      {max: 50, skipBlankLines: false, skipComments: false, IIFEs: false},
     ],
-    'react/destructuring-assignment': [
-      'off',
-    ],
-    'react/jsx-one-expression-per-line': [
-      'off',
-    ],
-    /*
-    'no-use-before-define': [
-      'error', 'nofunc',
-    ],
-    'no-plusplus': [
-      'off',
-    ],
-    'arrow-body-style': [
-      'error', 'as-needed',
-    ],
-    'arrow-parens': [
-      'error', 'always',
-    ],
-    */
+    'max-nested-callbacks': ['warn', {max: 5}],
+    'max-params': ['warn', {max: 3}],
+    'react/prop-types': ['warn'],
   },
 }
