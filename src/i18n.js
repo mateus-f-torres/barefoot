@@ -2,7 +2,7 @@
 import i18next from 'i18next'
 import {initReactI18next} from 'react-i18next'
 
-import en_US from 'assets/translations/en_US.json'
+import en_US from './assets/translations/en_US.json'
 
 const resources = {
   en: {translation: en_US},

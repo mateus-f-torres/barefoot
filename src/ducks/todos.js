@@ -1,11 +1,12 @@
 import {call, put, takeEvery} from 'redux-saga/effects'
-import request from 'utils/request'
-import {RANDOM_ACTIVITY} from 'utils/urls'
+import request from '../utils/request'
+import {RANDOM_ACTIVITY} from '../utils/urls'
 
 const randomHexId = () =>
   Math.random()
     .toString(16)
     .slice(2, 8)
+
 const defaultMemoizedState = Object.assign(Object.create(null), {
   [randomHexId()]: {
     text: 'Buy bread',
