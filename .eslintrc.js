@@ -52,7 +52,7 @@ module.exports = {
     ],
     'max-lines-per-function': [
       'warn',
-      {max: 25, skipBlankLines: false, skipComments: false, IIFEs: false},
+      {max: 50, skipBlankLines: false, skipComments: false, IIFEs: false},
     ],
     'max-nested-callbacks': ['warn', {max: 5}],
     'max-params': ['warn', {max: 3}],

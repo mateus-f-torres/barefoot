@@ -39,7 +39,7 @@ Waste Bin icon by Egor Rumyantsev, taken from https://www.flaticon.com/
 
 [MIT License](./LICENSE)
 
-
+## Tools
 
 https://editorconfig.org/
 
