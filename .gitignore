@@ -6,3 +6,4 @@ yarn*
 tags
 .idea
 reports
+package-lock.json
