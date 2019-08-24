@@ -15,18 +15,12 @@
     "mock": "json-server __mocks__/api.json",
     "start": "webpack-dev-server --config webpack.config.js",
     "build": "NODE_ENV=production webpack --config webpack.config.js",
-    "predeploy": "yarn test",
-    "deploy": "gh-pages -d dist",
-    "preremote": "NODE_ENV=production babel src/server.js -o ./server.js",
-    "remote": "NODE_ENV=production node server.js",
     "local": "http-server dist -g",
     "format": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
     "lint": "eslint \"{src,__{tests,mocks}__}/**/*.js\" --fix",
     "test": "jest --coverage"
   },
   "dependencies": {
-    "compression": "1.7.4",
-    "express": "4.17.1",
     "i18next": "^17.0.11",
     "normalize.css": "^8.0.1",
     "react": "16.9.0",
@@ -40,7 +34,6 @@
   "devDependencies": {
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
-    "@babel/node": "7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "7.5.5",
     "@babel/plugin-transform-async-to-generator": "7.5.0",
     "@babel/preset-env": "7.5.5",
@@ -52,11 +45,9 @@
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
     "clean-webpack-plugin": "3.0.0",
-    "commitizen": "^4.0.3",
     "compression-webpack-plugin": "3.0.0",
     "core-js": "3.2.1",
     "css-loader": "3.2.0",
-    "cz-conventional-changelog": "3.0.2",
     "eslint": "6.1.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-config-standard": "13.0.1",
@@ -66,7 +57,6 @@
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-standard": "4.0.0",
     "file-loader": "4.2.0",
-    "gh-pages": "2.1.1",
     "html-webpack-plugin": "3.2.0",
     "http-server": "0.11.1",
     "husky": "^3.0.4",
@@ -89,10 +79,5 @@
     "webpack-bundle-analyzer": "3.4.1",
     "webpack-cli": "3.3.6",
     "webpack-dev-server": "3.8.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
