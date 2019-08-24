@@ -20,8 +20,8 @@
     "preremote": "NODE_ENV=production babel src/server.js -o ./server.js",
     "remote": "NODE_ENV=production node server.js",
     "local": "http-server dist -g",
-    "prettify": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
-    "lint": "eslint src/ --fix",
+    "format": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
+    "lint": "eslint \"{src,__{tests,mocks}__}/**/*.js\" --fix",
     "test": "jest --coverage"
   },
   "dependencies": {
@@ -69,7 +69,7 @@
     "gh-pages": "2.1.1",
     "html-webpack-plugin": "3.2.0",
     "http-server": "0.11.1",
-    "husky": "^3.0.3",
+    "husky": "^3.0.4",
     "image-webpack-loader": "5.0.0",
     "jest": "24.9.0",
     "jest-fetch-mock": "^2.1.2",
