@@ -6,6 +6,7 @@
   align-items: center;
   height: 45px;
   line-height: 45px;
+  border-bottom: 1px solid white;
 }
 
  .todo__list__item:nth-child(2n) { background-color: white; color: #666; }
@@ -17,6 +18,7 @@
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
+   border-left: 1px solid white;
  }
 
 .todo__list__item__text:hover { cursor: pointer;}
