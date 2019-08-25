@@ -8,13 +8,23 @@ import logo from '../../assets/images/mateus-f-torres.svg'
 
 import TodoListContainer from '../TodoList/TodoListContainer'
 
+const LANGS = ['en', 'pt', 'es', 'fr', 'ja']
+
 function App({fetchRandomActivity}) {
-  const {t} = useTranslation()
+  const {t, i18n} = useTranslation()
+
+  React.useEffect(() => {
+    setInterval(() => {
+      const randomIndex = Math.floor(Math.random() * Math.floor(LANGS.length))
+      const randomLang = LANGS[randomIndex]
+      i18n.changeLanguage(randomLang)
+    }, 10000)
+  }, [])
 
   return (
     <div className="container">
       <h1 className="header">
-        {t('app_title')}
+        Todo App
         <button className="iconBtn" onClick={fetchRandomActivity}>
           <img className="iconImg" src={list} />
         </button>
@@ -23,7 +33,7 @@ function App({fetchRandomActivity}) {
       <TodoListContainer />
 
       <footer className="footer">
-        <h1>{t('madeby')}</h1>
+        <h1>{t('made_by')}</h1>
         <a href="https://mateus-f-torres.github.io/">
           <img className="logo" src={logo} />
         </a>
