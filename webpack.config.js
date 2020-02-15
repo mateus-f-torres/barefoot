@@ -43,11 +43,7 @@ const htmlPlugin = new HtmlWebpackPlugin({
   favicon: 'src/assets/images/favicon.ico',
 })
 
-const terser = new TerserPlugin({
-  cache: true,
-  parallel: true,
-  sourceMap: true,
-})
+const terser = new TerserPlugin()
 
 // TODO: compression with brotli
 const gzipPlugin = new CompressionPlugin({
@@ -176,6 +172,7 @@ if (process.env.NODE_ENV === 'production') {
           },
         },
       },
+      minimize: true,
       minimizer: [terser, optimizeCss],
     },
     module: {
@@ -216,28 +213,12 @@ if (process.env.NODE_ENV === 'production') {
           ],
         },
         {
-          test: /\.(jpg|jpeg|png|gif)$/i,
+          test: /\.(jpg|jpeg|png|svg|gif)$/i,
           use: [
             {
               loader: 'url-loader',
               options: {
                 limit: 5 * 1024,
-                fallback: 'file-loader',
-                name: '[name].[hash].[ext]',
-                outputPath: 'images/',
-              },
-            },
-            'image-webpack-loader',
-          ],
-        },
-        {
-          test: /\.svg$/i,
-          use: [
-            {
-              loader: 'svg-url-loader',
-              options: {
-                limit: 5 * 1024,
-                noquotes: true,
                 fallback: 'file-loader',
                 name: '[name].[hash].[ext]',
                 outputPath: 'images/',
