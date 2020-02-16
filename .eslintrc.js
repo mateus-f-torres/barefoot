@@ -10,23 +10,25 @@ module.exports = {
     },
   },
   env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    node: true,
-    worker: true,
-    jest: true,
+    'browser': true,
+    'commonjs': true,
+    'es6': true,
+    'node': true,
+    'worker': true,
+    'jest': true,
+    'cypress/globals': true,
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
-  plugins: ['react'],
+  plugins: ['react', 'cypress'],
   extends: [
     'standard',
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:cypress/recommended',
     'prettier',
   ],
   rules: {
