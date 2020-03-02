@@ -5,7 +5,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Barefoot
-Template for a complete React Redux PWA.  
+Template for a complete React Redux SPA.  
 
 ## Getting Started
 
@@ -54,5 +54,3 @@ https://github.com/typicode/husky
 https://github.com/okonet/lint-staged
 
 http://commitizen.github.io/cz-cli/
-
-https://docusaurus.io/
