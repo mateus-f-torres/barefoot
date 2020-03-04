@@ -5,35 +5,41 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Barefoot
-Template for a complete React Redux PWA.  
+Boilerplate for a React Redux SPA.  
+Complete with configurations and tools for a more agile development.  
+Create from scratch (no CRA here) and in constant improvement as my knowledge grows
 
 ## Getting Started
 
 ### Installation
 
+Let's start by forking this repo.  
+To do that you just need to click the **Fork** button at the top of the page.  
 
+After creating a "fork" of the project you can then access **Settings** and change the project name.  
+You can also continue with the same name if you wish to open PRs to me.
+
+Now you can clone your fork to your development machine.  
+Click on the **Clone or download** button in your project's page, copy the link and clone.  
+```
+git clone https://github.com/[your-user-name]/[your-project].git
+```
 
 ### Usage
 
+Since this is a boilerplate and not a generator (yet) we need to cleanup some code.  
 
+##### README
+Feel free to modify all the **README** file but keep the original **LICENCE**.  
+Giving credit back in your own **README** would be much appreciated.  
 
-## Documentation
-
-
-
-## Examples
-
-
+##### package.json
 
 ## Contributing
-
-
 
 ## Credit
 
 Made by [Mateus F Torres](https://github.com/mateus-f-torres)    
-List icon by Smashicons, taken from https://www.flaticon.com/
-Waste Bin icon by Egor Rumyantsev, taken from https://www.flaticon.com/
 
 ## License
 
@@ -54,5 +60,3 @@ https://github.com/typicode/husky
 https://github.com/okonet/lint-staged
 
 http://commitizen.github.io/cz-cli/
-
-https://docusaurus.io/

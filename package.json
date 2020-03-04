@@ -1,6 +1,6 @@
 {
   "name": "barefoot",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "React Redux SPA boilerplate",
   "author": "mateus-f-torres",
   "homepage": "https://mateus-f-torres.github.io/barefoot/",
@@ -40,6 +40,7 @@
     "@babel/plugin-transform-async-to-generator": "7.8.3",
     "@babel/preset-env": "7.8.4",
     "@babel/preset-react": "7.8.3",
+    "@rckeller/cypress-unfetch": "^1.0.1",
     "@storybook/addon-knobs": "^5.3.13",
     "@storybook/addon-viewport": "^5.3.13",
     "@storybook/addons": "^5.3.13",

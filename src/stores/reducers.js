@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux'
 
-import todos from './todos'
+import question from './question/question'
 
 const reducers = {
-  todos,
+  question: question,
 }
 
 export default combineReducers(reducers)

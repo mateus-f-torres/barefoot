@@ -37,7 +37,6 @@ const analyzerPlugin = new BundleAnalyzerPlugin({
 })
 
 const htmlPlugin = new HtmlWebpackPlugin({
-  title: 'Barefoot',
   filename: 'index.html',
   template: 'src/index.html',
   favicon: 'src/assets/images/favicon.ico',
@@ -85,17 +84,6 @@ let configs = {
             options: {hmr: true},
           },
           'css-loader',
-          /*
-          // TODO: debug why using MiniCssExtractPlugin breaks css-modules class injection
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              localIdentName: 'bf__[local]--[hash:base64:5]',
-              importLoaders: 1,
-            },
-          },
-           */
           'postcss-loader',
         ],
       },
@@ -135,12 +123,9 @@ let configs = {
   devServer: {
     hot: true,
     port: DEFAULT_PORT,
-    // TODO: adicionar nginx, host: '0.0.0.0',
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
     watchContentBase: true,
-    // TODO: entender custo, watchOptions: {poll: true},
-    // TODO: ver necessidade, historyApiFallback: true,
     proxy: {
       '/api': {target: 'http://localhost:3000'},
     },
