@@ -1,17 +1,29 @@
 import {connect} from 'react-redux'
 
-import {fetchRandomActivity} from '../../ducks/todos'
+import {
+  answerYes,
+  answerNo,
+  getRandomAnswer,
+} from '../../stores/question/question'
 import App from './App'
 
-/* eslint no-unused-vars: 'off' */
 function mapStateToProps(state) {
-  return {}
+  return {
+    yes: state.question.yes,
+    no: state.question.no,
+  }
 }
 
 function mapDispatchToActions(dispatch) {
   return {
-    fetchRandomActivity() {
-      dispatch(fetchRandomActivity())
+    answerYes() {
+      dispatch(answerYes())
+    },
+    answerNo() {
+      dispatch(answerNo())
+    },
+    getRandomAnswer() {
+      dispatch(getRandomAnswer())
     },
   }
 }
