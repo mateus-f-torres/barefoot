@@ -47,7 +47,11 @@ function App(props) {
             onChange={props.answerNo}
           />
         </div>
-        <button onClick={props.getRandomAnswer} type="button">
+        <button
+          onClick={props.getRandomAnswer}
+          type="button"
+          data-testid="random_answer"
+        >
           {t('random_answer')}
         </button>
       </div>
