@@ -5,7 +5,7 @@ import {Provider} from 'react-redux'
 import './i18n'
 import './index.css'
 
-import createStore from './ducks'
+import createStore from './stores'
 import AppContainer from './components/App/AppContainer'
 
 const root = document.getElementById('root')

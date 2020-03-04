@@ -1,58 +1,25 @@
 body {
-  background: var(--main-bg-color);
-  color: var(--main-tx-color);
   font-size: 1rem;
   font-family: Roboto, sans-serif;
 }
 
-.header {
-  background: var(--header-bg-color);
-  color: var(--header-tx-color);
-  margin: 0;
-  padding: 0.75rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 1.75rem;
-  letter-spacing: 0.5px;
-}
-
-.iconBtn {
-  cursor: pointer;
-  background-color: transparent;
-  border: transparent;
-  padding: 0;
-  line-height: 0;
-}
-
-/* TODO: implement own hover, active and focus states */
-.iconBtn:hover,
-.iconBtn:active,
-.iconBtn:focus { outline: transparent; border: transparent; }
-
-.iconImg {
-  max-width: 30px;
-  height: 30px;
-}
-
-.logo { max-width: 100px; }
-
 .container {
-  width: 79%;
-  max-width: 450px;
-  margin: 10vh auto 0 auto;
-  background-color: #f7f7f7;
-  border: 3px solid #010101;
-  box-shadow:
-    0 6px 12px rgba(0,0,0, 0.2),
-    0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.footer {
-  margin: 5vh auto;
+.header {
   width: 100%;
   text-align: center;
-  float: right;
 }
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form label {margin: 0.5rem;}
+
+.form > button {margin-top: 1rem;}

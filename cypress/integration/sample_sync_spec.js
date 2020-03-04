@@ -2,6 +2,6 @@ describe('Barefoot', function() {
   it('successfully loads', function() {
     cy.visit('/')
 
-    cy.queryByPlaceholderText('Add todo')
+    cy.queryByText('Do you want to be my friend ?')
   })
 })
