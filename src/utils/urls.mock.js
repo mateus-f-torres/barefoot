@@ -1,1 +1,1 @@
-export const RANDOM_ACTIVITY = 'http://localhost:3000/barefoot-mock'
+export const RANDOM_ANSWER = 'http://localhost:3000/barefoot-mock'
