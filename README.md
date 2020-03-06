@@ -141,16 +141,47 @@ A small summary about the main libraries in this project.
 The why and how I choose to use this tools in my development workflow.  
 Most of them don't significantly change the code and could be easily removed or modified if needed.  
 Their main focus is to automate tasks that although important are tedious and repetitive to do.  
+A super side bonus is ensuring a code style inside your repository, therefore leading to more productive PRs.  
 
 * [Husky](#husky)
-    - lint-staged
-    - commitlint (commitizen)
 * [Prettier](#prettier)
-    - editorconfig
 * [ESLint](#eslint)
-    - standardjs
 * [Node Version Manager](#nodeversionmanager)
 * [TravisCI](#travisci)
+
+#### Husky
+
+[`husky`](https://github.com/typicode/husky) helps us work with _git hooks_ in a more simple fashion.  
+Hooks can run tasks in between our normal git workflow (similar to _pre_ and _post_ npm scripts).  
+There are 2 hooks defined in `husky.config.js`: **pre-commit** and **pre-commit-message**.  
+
+##### pre-commit
+
+Runs [`lint-staged`](https://github.com/okonet/lint-staged) on any file a developer tries to commit.  
+At the moment whenever a `.js` file is to be committed that file is formatted, linted and tested.  
+If any tool in the pipeline throws an error the **whole commit is denied** and a message is shown.  
+This is to prevent "bad" code from entering the repository and to favor smaller, more focused commits.  
+
+##### pre-commit-message
+
+Continuing with the theme of small meaningful commits we now go to the actual message written.  
+Commit messages matter but developers tend to either don't care or follow a personal standard that is different from the rest.  
+This leads to confusing messages and unrelated files being committed together.  
+Here we are using [`commitizen`](https://github.com/commitizen/cz-cli) with the [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) to enforce those standard.  
+
+#### Prettier
+
+With editorconfig
+
+#### ESLint
+
+Base standardjs
+
+#### Node Version Manager
+
+#### TravisCI
+
+With Codecov
 
 ## Contributing
 
