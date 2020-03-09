@@ -153,7 +153,7 @@ A super side bonus is ensuring a code style inside your repository, therefore le
 
 [`husky`](https://github.com/typicode/husky) helps us work with _git hooks_ in a more simple fashion.  
 Hooks can run tasks in between our normal git workflow (similar to _pre_ and _post_ npm scripts).  
-There are 2 hooks defined in `husky.config.js`: **pre-commit** and **pre-commit-message**.  
+There are 3 hooks defined in `husky.config.js`  
 
 ##### pre-commit
 
@@ -165,9 +165,15 @@ This is to prevent "bad" code from entering the repository and to favor smaller,
 ##### pre-commit-message
 
 Continuing with the theme of small meaningful commits we now go to the actual message written.  
-Commit messages matter but developers tend to either don't care or follow a personal standard that is different from the rest.  
-This leads to confusing messages and unrelated files being committed together.  
-Here we are using [`commitizen`](https://github.com/commitizen/cz-cli) with the [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) to enforce those standard.  
+Commit messages matter but developers tend to either don't care or follow a personal style that is different from the rest.  
+To make following a standard painless we use [`commitizen`](https://github.com/commitizen/cz-cli)\(with the [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) flavor).  
+Whenever `git commit` is called a form will appear on the command line to help you write the commit message.  
+
+##### commit-msg
+
+Since a developer can still use some other method besides `git commit`, how can we ensure that the standards are followed ?  
+Simple... We lint the message with [`commitlint`](https://github.com/conventional-changelog/commitlint).  
+> NO COMMIT MESSAGE SHALL ESCAPE MY GAZE !!!
 
 #### Prettier
 
