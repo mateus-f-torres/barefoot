@@ -10,18 +10,19 @@ const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-let cssPlugin
-if (process.env.NODE_ENV === 'production') {
-  cssPlugin = new MiniCssExtractPlugin({
-    filename: '[name].[hash].css',
-    chunkFilename: '[id].[hash].css',
-  })
-} else {
-  cssPlugin = new MiniCssExtractPlugin({
-    filename: '[name].css',
-    chunkFilename: '[id].css',
-  })
-}
+const cssPlugin = (function(env) {
+  if (env == 'production') {
+    return new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
+      chunkFilename: '[id].[hash].css',
+    })
+  } else {
+    return new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    })
+  }
+})(process.env.NODE_ENV)
 
 const optimizeCss = new OptimizeCSSAssetsPlugin({})
 const hotReloadPlugin = new HotModuleReplacementPlugin()
