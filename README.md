@@ -53,7 +53,7 @@ Start the application in _development_ mode with `webpack-dev-server`.
 We are using `localhost:8080` as the default location.  
 
 #### `start:mock`
-Start a `json-server` to mocking API calls when developing in a offline environment.  
+Start a [`json-server`](https://github.com/typicode/json-server) to mocking API calls when developing in a offline environment.  
 The mock server will be served at `localhost:3000`.  
 
 #### `start:storybook`
@@ -65,7 +65,7 @@ Bundle the whole application in _production_ mode.
 What gets bundled depends on the dependency tree created from `src/index.js`.  
 
 #### `serve`
-Serve the `dist/` directory locally with `http-server`.  
+Serve the `dist/` directory locally with [`http-server`](https://github.com/http-party/http-server).  
 Good for testing your production build locally if you want.    
 
 #### `format`
@@ -126,6 +126,18 @@ Time to talk about some choices in directory organization and file naming.
 
 ### Tech Stack
 A small summary about the main libraries in this project.  
+
+* [React]
+* [Redux]
+* [Storybook]
+* [Jest and Cypress]
+    - testing-library
+    - fetch helpers
+* [Internationalization]
+* [Webpack]
+    - browserlist
+    - babel
+    - postcss
 
 ### Auxiliary Tools
 The why and how I choose to use this tools in my development workflow.  
