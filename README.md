@@ -7,7 +7,6 @@
 A boilerplate for a React Redux SPA.  
 Complete with configurations and tools for a more agile development.  
 Create from scratch (no CRA here) and in constant improvement as my knowledge grows
-Some random text.
 
 ## Index
 * [Installation](#installation)
