@@ -6,7 +6,7 @@ describe('Barefoot', function() {
     cy.route('GET', 'https://yesno.wtf/api', 'fx:answer').as('getAnswer')
 
     cy.visit('/')
-    cy.queryByTestId('random_answer').click()
+    cy.findByTestId('random_answer').click()
 
     cy.await()
   })

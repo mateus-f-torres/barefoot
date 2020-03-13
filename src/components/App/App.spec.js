@@ -1,7 +1,5 @@
 import React from 'react'
-// TODO: see if wait use is needed
-// import {wait, fireEvent} from '@testing-library/react'
-import {wait} from '@testing-library/react'
+import {waitFor} from '@testing-library/react'
 
 import question from '../../stores/question/question'
 import AppContainer from './AppContainer'
@@ -21,7 +19,7 @@ describe('App', () => {
       const {render} = setupRenderWithReduxAndSaga({question: question})
       const {queryByText} = render(<AppContainer />)
 
-      await wait(() => {
+      await waitFor(() => {
         expect(queryByText(/friend_request/)).toBeInTheDocument()
       })
     })
