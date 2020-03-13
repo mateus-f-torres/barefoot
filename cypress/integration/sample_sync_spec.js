@@ -2,6 +2,6 @@ describe('Barefoot', function() {
   it('successfully loads', function() {
     cy.visit('/')
 
-    cy.queryByText('Do you want to be my friend ?')
+    cy.findByText('Do you want to be my friend ?')
   })
 })
