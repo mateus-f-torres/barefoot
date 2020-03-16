@@ -1,4 +1,8 @@
 import '@testing-library/jest-dom/extend-expect'
-import mockFetch from 'jest-fetch-mock'
+import {enableFetchMocks} from 'jest-fetch-mock'
 
-global.fetch = mockFetch
+import setupRenderWithReduxAndSaga from './setupRenderWithReduxAndSaga'
+import './i18n'
+
+enableFetchMocks()
+global.setupRenderWithReduxAndSaga = setupRenderWithReduxAndSaga

@@ -34,6 +34,7 @@ function App(props) {
             name="answer"
             value="yes"
             id="answer-yes"
+            data-testid="answer-yes"
             checked={props.yes}
             onChange={props.answerYes}
           />
@@ -43,6 +44,7 @@ function App(props) {
             name="answer"
             value="no"
             id="answer-no"
+            data-testid="answer-no"
             checked={props.no}
             onChange={props.answerNo}
           />
