@@ -18,6 +18,9 @@ module.exports = {
     'jest': true,
     'cypress/globals': true,
   },
+  globals: {
+    setupRenderWithReduxAndSaga: 'readonly',
+  },
   settings: {
     react: {
       version: 'detect',
