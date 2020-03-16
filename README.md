@@ -127,17 +127,26 @@ Time to talk about some choices in directory organization and file naming.
 ### Tech Stack
 A small summary about the main libraries in this project.  
 
-* [React]
-* [Redux]
-* [Storybook]
-* [Jest and Cypress]
-    - testing-library
-    - fetch helpers
-* [Internationalization]
-* [Webpack]
-    - browserlist
-    - babel
-    - postcss
+* [React](#react)
+* [Redux](#redux)
+* [Storybook](#storybook)
+* [Jest and Cypress](#jest-and-cypress)
+* [Internationalization](#internationalization)
+* [Webpack](#webpack)
+
+#### React
+
+#### Redux
+
+#### Storybook
+
+#### Jest and Cypress
+testing-library - fetch helpers
+
+#### Internationalization
+
+#### Webpack
+browserlist - babel - postcss
 
 ### Auxiliary Tools
 The why and how I choose to use this tools in my development workflow.  
