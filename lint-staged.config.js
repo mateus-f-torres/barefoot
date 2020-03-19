@@ -3,6 +3,6 @@ module.exports = {
     'prettier --write',
     'eslint --fix',
     'git add',
-    'jest --bail --findRelatedTests --coverage',
+    'jest --bail --findRelatedTests',
   ],
 }
