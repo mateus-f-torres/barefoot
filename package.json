@@ -21,7 +21,8 @@
     "lint": "eslint \"{src,cypress,__{tests,mocks}__}/**/*.js\" --fix",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:cypress": "cypress open"
+    "test:cypress": "cypress open",
+    "test:cypress-run": "cypress run"
   },
   "dependencies": {
     "i18next": "^19.1.0",

@@ -47,6 +47,7 @@ First a quick overview of the present _npm scripts_.
 * [`test`](#test)
 * [`test:watch`](#testwatch)
 * [`test:cypress`](#testcypress)
+* [`test:cypress-run`](#testcypress-run)
 
 #### `start`
 Start the application in _development_ mode with `webpack-dev-server`.  
@@ -85,8 +86,12 @@ Start `jest` in watch mode to help you write and debug your tests.
 Better than running `test` after each change to a test file.  
 
 #### `test:cypress`
-Start `cypress` and test your application in a real browser environment.  
+Start `cypress`, open _Cypress Test Runner_ and test your application in a real browser environment.  
 You will need to run `start` as well to serve the application.
+
+#### `test:cypress-run`
+Start `cypress` and run all specs in headless mode (good for CI)  
+Also need to run alongside `start` (we use `wait-on` for this)
 
 ### Development
 Most of the time you will just need the `start` script to develop your app.  
@@ -141,7 +146,8 @@ A small summary about the main libraries in this project.
 #### Storybook
 
 #### Jest and Cypress
-testing-library - fetch helpers
+testing-library - fetch helpers  
+cypress video recording disabled  
 
 #### Internationalization
 
