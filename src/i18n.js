@@ -2,16 +2,16 @@
 import i18next from 'i18next'
 import {initReactI18next} from 'react-i18next'
 
-import en_US from './assets/translations/en_US.json'
-import pt_BR from './assets/translations/pt_BR.json'
-import es_ES from './assets/translations/es_ES.json'
-import fr_FR from './assets/translations/fr_FR.json'
+import en_US from './assets/translations/en_US/en_US'
+import pt_BR from './assets/translations/pt_BR/pt_BR'
+import es_ES from './assets/translations/es_ES/es_ES'
+import fr_FR from './assets/translations/fr_FR/fr_FR'
 
 const resources = {
-  en: {translation: en_US},
-  pt: {translation: pt_BR},
-  es: {translation: es_ES},
-  fr: {translation: fr_FR},
+  en: en_US,
+  pt: pt_BR,
+  es: es_ES,
+  fr: fr_FR,
 }
 
 i18next.use(initReactI18next).init({
@@ -19,6 +19,8 @@ i18next.use(initReactI18next).init({
   lng: 'en',
   fallbackLng: 'en',
   keySeparator: '.',
+  nsSeparator: ':',
+  defaultNS: 'common',
   interpolation: {
     escapeValue: false,
     format: function (value, format, lng) {
