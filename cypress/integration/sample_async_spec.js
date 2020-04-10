@@ -8,6 +8,8 @@ describe('Barefoot', function() {
     cy.visit('/')
     cy.findByTestId('random_answer').click()
 
+    cy.findByLabelText('Yes').should('be.checked')
+
     cy.await()
   })
 })
