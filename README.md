@@ -6,7 +6,7 @@
 # Barefoot
 A boilerplate for a React Redux SPA.  
 Complete with configurations and tools for a more agile development.  
-Create from scratch (no CRA here) and in constant improvement as my knowledge grows
+Create from scratch (no CRA here) and in constant improvement as my knowledge grows.
 
 ## Index
 * [Installation](#installation)
@@ -33,7 +33,7 @@ Click on the **Clone or download** button in your project's page, copy the link 
 git clone https://github.com/[your-user-name]/[your-project].git
 ```
 
-Remember to keep the original **LICENSE** and also credit me and this project in your own **README**.  
+Remember to keep the original **LICENSE** and credit me and this project in your own **README**.  
 
 ### Usage
 First a quick overview of the present _npm scripts_.
@@ -150,6 +150,7 @@ testing-library - fetch helpers
 cypress video recording disabled  
 
 #### Internationalization
+i18next-react
 
 #### Webpack
 browserlist - babel - postcss
@@ -157,7 +158,7 @@ browserlist - babel - postcss
 ### Auxiliary Tools
 The why and how I choose to use this tools in my development workflow.  
 Most of them don't significantly change the code and could be easily removed or modified if needed.  
-Their main focus is to automate tasks that although important are tedious and repetitive to do.  
+Their focus is to automate tasks that although important are tedious and repetitive to do.  
 A super side bonus is ensuring a code style inside your repository, therefore leading to more productive PRs.  
 
 * [Husky](#husky)
@@ -189,14 +190,14 @@ Simple... We lint the message with [**commitlint**](https://github.com/conventio
 > NO COMMIT MESSAGE SHALL ESCAPE MY GAZE !!!
 
 #### Prettier
-Tabs or spaces, semicolons or no semicolons, single or double quotes and a million other vain issues to discuss.  
+Tabs or spaces, semicolons or no semicolons, single or double quotes, and a million other vain issues to discuss.  
 Everyone has had that one meeting called only to argue about this things... please don't.  
 Just change [**Prettier**](https://prettier.io/) and let's move on with our lives.  
 PS: I'm using [**EditorConfig**](https://editorconfig.org/) as a fallback here... just in case.  
 
 #### ESLint
 Some things aren't so black and white when it comes to code quality and witting style.  
-Javascript is a pretty awesome language in my opinion but it does have some quirks that can trip newcomers.  
+Javascript is a pretty awesome language in my opinion, but it does have some quirks that can trip newcomers.  
 To help with those cases and to aid with the code style we are using [**ESLint**](https://eslint.org/) with [**Javascript Standard Style**](https://standardjs.com/).  
 
 #### Others
