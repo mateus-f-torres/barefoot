@@ -25,8 +25,8 @@ describe('App', () => {
     })
   })
 
-  describe('Async Spec Sample', function() {
-    it('should correctly mock fetch calls', async function() {
+  describe('Async Spec Sample', function () {
+    it('should correctly mock fetch calls', async function () {
       fetch.mockResponse(JSON.stringify({answer: 'no'}), {
         status: 200,
         headers: {'content-type': 'application/json'},

@@ -10,7 +10,7 @@ const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const cssPlugin = (function(env) {
+const cssPlugin = (function (env) {
   if (env == 'production') {
     return new MiniCssExtractPlugin({
       filename: '[name].[hash].css',

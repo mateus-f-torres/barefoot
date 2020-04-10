@@ -21,7 +21,7 @@ i18next.use(initReactI18next).init({
   keySeparator: '.',
   interpolation: {
     escapeValue: false,
-    format: function(value, format, lng) {
+    format: function (value, format, lng) {
       switch (format) {
         case 'number':
           return new Intl.NumberFormat(lng).format(value)
