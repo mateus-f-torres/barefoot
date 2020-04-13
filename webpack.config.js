@@ -127,6 +127,7 @@ let configs = {
     publicPath: '/',
     contentBase: path.resolve(__dirname, 'dist'),
     watchContentBase: true,
+    historyApiFallback: true,
     proxy: {
       '/api': {target: 'http://localhost:3000'},
     },
