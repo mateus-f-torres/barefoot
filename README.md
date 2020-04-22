@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ba3f22ea-0790-413a-be14-7ccf8972d61f/deploy-status)](https://app.netlify.com/sites/barefoot/deploys)
 [![Build Status](https://travis-ci.com/mateus-f-torres/barefoot.svg?branch=master)](https://travis-ci.com/mateus-f-torres/barefoot)
 [![codecov](https://codecov.io/gh/mateus-f-torres/barefoot/branch/master/graph/badge.svg)](https://codecov.io/gh/mateus-f-torres/barefoot)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
@@ -6,7 +7,7 @@
 # Barefoot
 A boilerplate for a React Redux SPA.  
 Complete with configurations and tools for a more agile development.  
-Create from scratch (no CRA here) and in constant improvement as my knowledge grows
+Create from scratch (no CRA here) and in constant improvement as my knowledge grows.
 
 ## Index
 * [Installation](#installation)
@@ -33,7 +34,7 @@ Click on the **Clone or download** button in your project's page, copy the link 
 git clone https://github.com/[your-user-name]/[your-project].git
 ```
 
-Remember to keep the original **LICENSE** and also credit me and this project in your own **README**.  
+Remember to keep the original **LICENSE** and credit me and this project in your own **README**.  
 
 ### Usage
 First a quick overview of the present _npm scripts_.
@@ -47,13 +48,14 @@ First a quick overview of the present _npm scripts_.
 * [`test`](#test)
 * [`test:watch`](#testwatch)
 * [`test:cypress`](#testcypress)
+* [`test:cypress-run`](#testcypress-run)
 
 #### `start`
 Start the application in _development_ mode with `webpack-dev-server`.  
 We are using `localhost:8080` as the default location.  
 
 #### `start:mock`
-Start a `json-server` to mocking API calls when developing in a offline environment.  
+Start a [`json-server`](https://github.com/typicode/json-server) to mocking API calls when developing in a offline environment.  
 The mock server will be served at `localhost:3000`.  
 
 #### `start:storybook`
@@ -65,7 +67,7 @@ Bundle the whole application in _production_ mode.
 What gets bundled depends on the dependency tree created from `src/index.js`.  
 
 #### `serve`
-Serve the `dist/` directory locally with `http-server`.  
+Serve the `dist/` directory locally with [`http-server`](https://github.com/http-party/http-server).  
 Good for testing your production build locally if you want.    
 
 #### `format`
@@ -85,8 +87,12 @@ Start `jest` in watch mode to help you write and debug your tests.
 Better than running `test` after each change to a test file.  
 
 #### `test:cypress`
-Start `cypress` and test your application in a real browser environment.  
+Start `cypress`, open _Cypress Test Runner_ and test your application in a real browser environment.  
 You will need to run `start` as well to serve the application.
+
+#### `test:cypress-run`
+Start `cypress` and run all specs in headless mode (good for CI)  
+Also need to run alongside `start` (we use `wait-on` for this)
 
 ### Development
 Most of the time you will just need the `start` script to develop your app.  
@@ -127,10 +133,33 @@ Time to talk about some choices in directory organization and file naming.
 ### Tech Stack
 A small summary about the main libraries in this project.  
 
+* [React](#react)
+* [Redux](#redux)
+* [Storybook](#storybook)
+* [Jest and Cypress](#jest-and-cypress)
+* [Internationalization](#internationalization)
+* [Webpack](#webpack)
+
+#### React
+
+#### Redux
+
+#### Storybook
+
+#### Jest and Cypress
+testing-library - fetch helpers  
+cypress video recording disabled  
+
+#### Internationalization
+i18next-react
+
+#### Webpack
+browserlist - babel - postcss
+
 ### Auxiliary Tools
 The why and how I choose to use this tools in my development workflow.  
 Most of them don't significantly change the code and could be easily removed or modified if needed.  
-Their main focus is to automate tasks that although important are tedious and repetitive to do.  
+Their focus is to automate tasks that although important are tedious and repetitive to do.  
 A super side bonus is ensuring a code style inside your repository, therefore leading to more productive PRs.  
 
 * [Husky](#husky)
@@ -162,14 +191,14 @@ Simple... We lint the message with [**commitlint**](https://github.com/conventio
 > NO COMMIT MESSAGE SHALL ESCAPE MY GAZE !!!
 
 #### Prettier
-Tabs or spaces, semicolons or no semicolons, single or double quotes and a million other vain issues to discuss.  
+Tabs or spaces, semicolons or no semicolons, single or double quotes, and a million other vain issues to discuss.  
 Everyone has had that one meeting called only to argue about this things... please don't.  
 Just change [**Prettier**](https://prettier.io/) and let's move on with our lives.  
 PS: I'm using [**EditorConfig**](https://editorconfig.org/) as a fallback here... just in case.  
 
 #### ESLint
 Some things aren't so black and white when it comes to code quality and witting style.  
-Javascript is a pretty awesome language in my opinion but it does have some quirks that can trip newcomers.  
+Javascript is a pretty awesome language in my opinion, but it does have some quirks that can trip newcomers.  
 To help with those cases and to aid with the code style we are using [**ESLint**](https://eslint.org/) with [**Javascript Standard Style**](https://standardjs.com/).  
 
 #### Others

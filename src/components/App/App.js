@@ -1,5 +1,4 @@
 import React from 'react'
-// TODO: change to simple i18next import
 import {useTranslation} from 'react-i18next'
 
 import './App.css'
@@ -24,11 +23,11 @@ function App(props) {
 
   return (
     <div className="container">
-      <h1 className="header">{t('friend_request')}</h1>
+      <h1 className="header">{t('common:friend_request')}</h1>
 
       <div className="form">
         <div>
-          <label htmlFor="answer-yes">{t('yes')}</label>
+          <label htmlFor="answer-yes">{t('inputs:yes')}</label>
           <input
             type="radio"
             name="answer"
@@ -38,7 +37,7 @@ function App(props) {
             checked={props.yes}
             onChange={props.answerYes}
           />
-          <label htmlFor="answer-no">{t('no')}</label>
+          <label htmlFor="answer-no">{t('inputs:no')}</label>
           <input
             type="radio"
             name="answer"
@@ -54,7 +53,7 @@ function App(props) {
           type="button"
           data-testid="random_answer"
         >
-          {t('random_answer')}
+          {t('inputs:random_answer')}
         </button>
       </div>
     </div>
