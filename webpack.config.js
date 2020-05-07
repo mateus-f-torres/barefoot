@@ -9,6 +9,8 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const {GenerateSW} = require('workbox-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const cssPlugin = (function (env) {
   if (env == 'production') {
@@ -42,6 +44,8 @@ const htmlPlugin = new HtmlWebpackPlugin({
   template: 'src/index.html',
   favicon: 'src/assets/images/favicon.ico',
 })
+
+const copyPlugin = new CopyPlugin(['src/manifest.json'])
 
 const terser = new TerserPlugin()
 
@@ -119,6 +123,7 @@ let configs = {
     cleanUpPlugin,
     cssPlugin,
     htmlPlugin,
+    copyPlugin,
     hotReloadPlugin,
   ],
   devServer: {
@@ -223,6 +228,11 @@ if (process.env.NODE_ENV === 'production') {
       gzipPlugin,
       cssPlugin,
       htmlPlugin,
+      copyPlugin,
+      new GenerateSW({
+        clientsClaim: true,
+        skipWaiting: true,
+      }),
     ],
   })
 }
