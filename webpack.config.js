@@ -9,6 +9,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const cssPlugin = (function (env) {
   if (env == 'production') {
@@ -42,6 +43,8 @@ const htmlPlugin = new HtmlWebpackPlugin({
   template: 'src/index.html',
   favicon: 'src/assets/images/favicon.ico',
 })
+
+const copyPlugin = new CopyPlugin([{from: 'src/assets/fonts', to: 'fonts/'}])
 
 const terser = new TerserPlugin()
 
@@ -84,20 +87,8 @@ let configs = {
             loader: MiniCssExtractPlugin.loader,
             options: {hmr: true},
           },
-          'css-loader',
+          {loader: 'css-loader', options: {url: false}},
           'postcss-loader',
-        ],
-      },
-      {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/',
-            },
-          },
         ],
       },
       {
@@ -119,6 +110,7 @@ let configs = {
     cleanUpPlugin,
     cssPlugin,
     htmlPlugin,
+    copyPlugin,
     hotReloadPlugin,
   ],
   devServer: {
@@ -183,20 +175,8 @@ if (process.env.NODE_ENV === 'production') {
               loader: MiniCssExtractPlugin.loader,
               options: {hmr: false},
             },
-            'css-loader',
+            {loader: 'css-loader', options: {url: false}},
             'postcss-loader',
-          ],
-        },
-        {
-          test: /\.(ttf|eot|woff|woff2)$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[hash].[ext]',
-                outputPath: 'fonts/',
-              },
-            },
           ],
         },
         {
@@ -223,6 +203,7 @@ if (process.env.NODE_ENV === 'production') {
       gzipPlugin,
       cssPlugin,
       htmlPlugin,
+      copyPlugin,
     ],
   })
 }
