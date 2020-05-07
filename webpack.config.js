@@ -9,7 +9,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const {GenerateSW} = require('workbox-webpack-plugin')
+const {InjectManifest} = require('workbox-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
 const cssPlugin = (function (env) {
@@ -54,6 +54,8 @@ const terser = new TerserPlugin()
 // TODO: compression with brotli
 const gzipPlugin = new CompressionPlugin({
   test: /.(js|css|html|svg|ttf)$/,
+  // TODO: undertand why this plugin breaks Workbox InjectManifest
+  exclude: 'sw.js',
   filename: '[path].gz[query]',
   algorithm: 'gzip',
   threshold: 0,
@@ -231,9 +233,8 @@ if (process.env.NODE_ENV === 'production') {
       cssPlugin,
       htmlPlugin,
       copyPlugin,
-      new GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true,
+      new InjectManifest({
+        swSrc: './src/sw.js',
       }),
     ],
   })
