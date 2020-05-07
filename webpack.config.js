@@ -42,10 +42,12 @@ const analyzerPlugin = new BundleAnalyzerPlugin({
 const htmlPlugin = new HtmlWebpackPlugin({
   filename: 'index.html',
   template: 'src/index.html',
-  favicon: 'src/assets/images/favicon.ico',
 })
 
-const copyPlugin = new CopyPlugin(['src/manifest.json'])
+const copyPlugin = new CopyPlugin([
+  {from: 'src/assets/icons', to: 'icons/'},
+  'src/manifest.json',
+])
 
 const terser = new TerserPlugin()
 
