@@ -1,6 +1,5 @@
 node_modules
 coverage
-flow-typed
 dist
 yarn*
 tags

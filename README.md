@@ -185,10 +185,8 @@ To make following a standard painless we use [**Commitizen**](https://github.com
 Whenever `git commit` is called a form will appear on the command line to help you write the commit message.  
 
 ##### commit-msg
-Developers can still use some other method besides `git commit`...  
-So how can we ensure that the standards are followed ?  
+Since developers can still use some other method besides `git commit` how can we ensure that the standards are followed ?  
 Simple... We lint the message with [**commitlint**](https://github.com/conventional-changelog/commitlint).  
-> NO COMMIT MESSAGE SHALL ESCAPE MY GAZE !!!
 
 #### Prettier
 Tabs or spaces, semicolons or no semicolons, single or double quotes, and a million other vain issues to discuss.  
