@@ -17,6 +17,6 @@
   font-display: swap;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
-       url('fonts/roboto-v20-latin-regular.woff2') format('woff2'),
-       url('fonts/roboto-v20-latin-regular.woff') format('woff');
+       url('~./assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+       url('~./assets/fonts/roboto-v20-latin-regular.woff') format('woff');
 }

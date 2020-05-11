@@ -9,7 +9,6 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 
 const cssPlugin = (function (env) {
   if (env == 'production') {
@@ -44,17 +43,17 @@ const htmlPlugin = new HtmlWebpackPlugin({
   favicon: 'src/assets/images/favicon.ico',
 })
 
-const copyPlugin = new CopyPlugin([{from: 'src/assets/fonts', to: 'fonts/'}])
-
 const terser = new TerserPlugin()
 
-// TODO: compression with brotli
-const gzipPlugin = new CompressionPlugin({
-  test: /.(js|css|html|svg|ttf)$/,
-  filename: '[path].gz[query]',
-  algorithm: 'gzip',
+const brotliPlugin = new CompressionPlugin({
+  test: /\.(js|css|html|svg)$/,
+  filename: '[path].br[query]',
+  algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
+  compressionOptions: {
+    level: 11,
+  },
 })
 
 const DEFAULT_PORT = 8080
@@ -87,8 +86,20 @@ let configs = {
             loader: MiniCssExtractPlugin.loader,
             options: {hmr: true},
           },
-          {loader: 'css-loader', options: {url: false}},
+          'css-loader',
           'postcss-loader',
+        ],
+      },
+      {
+        test: /\.(woff2|woff)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
         ],
       },
       {
@@ -110,7 +121,6 @@ let configs = {
     cleanUpPlugin,
     cssPlugin,
     htmlPlugin,
-    copyPlugin,
     hotReloadPlugin,
   ],
   devServer: {
@@ -175,8 +185,20 @@ if (process.env.NODE_ENV === 'production') {
               loader: MiniCssExtractPlugin.loader,
               options: {hmr: false},
             },
-            {loader: 'css-loader', options: {url: false}},
+            'css-loader',
             'postcss-loader',
+          ],
+        },
+        {
+          test: /\.(woff2|woff)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'fonts/',
+              },
+            },
           ],
         },
         {
@@ -200,10 +222,9 @@ if (process.env.NODE_ENV === 'production') {
       progressPlugin,
       analyzerPlugin,
       cleanUpPlugin,
-      gzipPlugin,
+      brotliPlugin,
       cssPlugin,
       htmlPlugin,
-      copyPlugin,
     ],
   })
 }
