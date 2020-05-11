@@ -2,7 +2,6 @@ import React from 'react'
 import {useTranslation} from 'react-i18next'
 
 import './App.css'
-// import logo from '../../assets/images/mateus-f-torres.svg'
 
 const LANGS = ['en', 'pt', 'es', 'fr']
 function getPseudoRandomLanguage(currentLang) {
