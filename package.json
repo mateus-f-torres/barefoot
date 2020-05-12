@@ -16,7 +16,7 @@
     "start:mock": "json-server __mocks__/api.json",
     "start:storybook": "start-storybook",
     "build": "NODE_ENV=production webpack --config webpack.config.js",
-    "serve": "npx http-server ./dist -g -P http://localhost:8080?",
+    "serve": "npx http-server ./dist -b -P http://localhost:8080?",
     "format": "prettier --write \"{src,cypress,__{tests,mocks}__}/**/*.js\"",
     "lint": "eslint \"{src,cypress,__{tests,mocks}__}/**/*.js\" --fix",
     "test": "jest --coverage",
