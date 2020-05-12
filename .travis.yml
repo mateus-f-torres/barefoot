@@ -8,7 +8,7 @@ install:
   - yarn add --dev codecov wait-on
 script:
   - yarn lint
-  - yarn test --coverage && codecov
+  - yarn test && codecov
   - yarn start & wait-on http://localhost:8080 &
   - yarn test:cypress-run
   - kill $(jobs -p) || true
