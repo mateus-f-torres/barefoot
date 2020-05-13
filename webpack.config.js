@@ -51,15 +51,17 @@ const copyPlugin = new CopyPlugin([
 
 const terser = new TerserPlugin()
 
-// TODO: compression with brotli
-const gzipPlugin = new CompressionPlugin({
-  test: /.(js|css|html|svg|ttf)$/,
-  // TODO: undertand why this plugin breaks Workbox InjectManifest
-  exclude: 'sw.js',
-  filename: '[path].gz[query]',
-  algorithm: 'gzip',
+const brotliPlugin = new CompressionPlugin({
+  test: /\.(js|css|html|svg)$/,
+  filename: '[path].br[query]',
+  algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
+  // TODO: undertand why this plugin breaks Workbox InjectManifest
+  exclude: 'sw.js',
+  compressionOptions: {
+    level: 11,
+  },
 })
 
 const DEFAULT_PORT = 8080
@@ -97,7 +99,7 @@ let configs = {
         ],
       },
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
+        test: /\.(woff2|woff)$/,
         use: [
           {
             loader: 'file-loader',
@@ -197,12 +199,12 @@ if (process.env.NODE_ENV === 'production') {
           ],
         },
         {
-          test: /\.(ttf|eot|woff|woff2)$/,
+          test: /\.(woff2|woff)$/,
           use: [
             {
               loader: 'file-loader',
               options: {
-                name: '[name].[hash].[ext]',
+                name: '[name].[ext]',
                 outputPath: 'fonts/',
               },
             },
@@ -229,7 +231,7 @@ if (process.env.NODE_ENV === 'production') {
       progressPlugin,
       analyzerPlugin,
       cleanUpPlugin,
-      gzipPlugin,
+      brotliPlugin,
       cssPlugin,
       htmlPlugin,
       copyPlugin,
