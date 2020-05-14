@@ -46,7 +46,7 @@ const htmlPlugin = new HtmlWebpackPlugin({
 
 const copyPlugin = new CopyPlugin([
   {from: 'src/assets/icons', to: 'icons/'},
-  'src/manifest.json',
+  {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
 ])
 
 const terser = new TerserPlugin()
@@ -218,7 +218,7 @@ if (process.env.NODE_ENV === 'production') {
               options: {
                 limit: 5 * 1024,
                 fallback: 'file-loader',
-                name: '[name].[hash].[ext]',
+                name: '[name].[ext]',
                 outputPath: 'images/',
               },
             },
@@ -237,6 +237,8 @@ if (process.env.NODE_ENV === 'production') {
       copyPlugin,
       new InjectManifest({
         swSrc: './src/sw.js',
+        exclude: [/\.(js|css)$/, 'sw.js.map'],
+        dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
       }),
     ],
   })
