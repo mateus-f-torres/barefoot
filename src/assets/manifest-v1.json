@@ -6,10 +6,10 @@
 	"display" : "standalone",
 	"start_url" : "/index.html",
 	"short_name" : "Barefoot",
-	"theme_color" : "transparent",
+	"theme_color" : "#FF7E7E",
 	"description" : "React Redux SPA",
 	"orientation" : "portrait",
-	"background_color" : "transparent",
+	"background_color" : "#FF7E7E",
 	"related_applications" : [],
 	"prefer_related_applications" : false,
 	"icons" : [
