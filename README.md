@@ -5,9 +5,9 @@
 [![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mateus-f-torres/barefoot/blob/master/LICENSE)
 
 # Barefoot
-A boilerplate for a React Redux SPA.  
+A React Redux PWA kitchen sink style template.  
 Complete with configurations and tools for a more agile development.  
-Create from scratch (no CRA here) and in constant improvement as my knowledge grows.
+Create from scratch and in constant improvement as my knowledge grows.
 
 ## Index
 * [Installation](#installation)
@@ -22,7 +22,7 @@ Create from scratch (no CRA here) and in constant improvement as my knowledge gr
 
 ## Getting Started
 ### Installation
-Let's start by forking this repo.  
+Start by forking this repo.  
 To do that you just need to click the **Fork** button at the top of the page.  
 
 After creating a "fork" of the project you can then access **Settings** and change the project name.  

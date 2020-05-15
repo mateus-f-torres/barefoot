@@ -7,7 +7,7 @@
 	"start_url" : "/index.html",
 	"short_name" : "Barefoot",
 	"theme_color" : "#FF7E7E",
-	"description" : "React Redux SPA",
+	"description" : "React Redux PWA Kitchen Sink",
 	"orientation" : "portrait",
 	"background_color" : "#FF7E7E",
 	"related_applications" : [],

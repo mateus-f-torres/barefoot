@@ -1,7 +1,7 @@
 {
   "name": "barefoot",
   "version": "4.4.0",
-  "description": "React Redux SPA boilerplate",
+  "description": "React Redux PWA Kitchen Sink",
   "author": "mateus-f-torres",
   "homepage": "https://mateus-f-torres.github.io/barefoot/",
   "main": "index.js",
