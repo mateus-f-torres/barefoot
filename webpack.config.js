@@ -9,6 +9,8 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const {InjectManifest} = require('workbox-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const cssPlugin = (function (env) {
   if (env == 'production') {
@@ -40,8 +42,12 @@ const analyzerPlugin = new BundleAnalyzerPlugin({
 const htmlPlugin = new HtmlWebpackPlugin({
   filename: 'index.html',
   template: 'src/index.html',
-  favicon: 'src/assets/images/favicon.ico',
 })
+
+const copyPlugin = new CopyPlugin([
+  {from: 'src/assets/icons', to: 'icons/'},
+  {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
+])
 
 const terser = new TerserPlugin()
 
@@ -51,6 +57,8 @@ const brotliPlugin = new CompressionPlugin({
   algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
+  // TODO: undertand why this plugin breaks Workbox InjectManifest
+  exclude: 'sw.js',
   compressionOptions: {
     level: 11,
   },
@@ -121,6 +129,7 @@ let configs = {
     cleanUpPlugin,
     cssPlugin,
     htmlPlugin,
+    copyPlugin,
     hotReloadPlugin,
   ],
   devServer: {
@@ -209,7 +218,7 @@ if (process.env.NODE_ENV === 'production') {
               options: {
                 limit: 5 * 1024,
                 fallback: 'file-loader',
-                name: '[name].[hash].[ext]',
+                name: '[name].[ext]',
                 outputPath: 'images/',
               },
             },
@@ -225,6 +234,12 @@ if (process.env.NODE_ENV === 'production') {
       brotliPlugin,
       cssPlugin,
       htmlPlugin,
+      copyPlugin,
+      new InjectManifest({
+        swSrc: './src/sw.js',
+        exclude: [/\.(js|css)$/, 'sw.js.map'],
+        dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
+      }),
     ],
   })
 }
