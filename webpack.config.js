@@ -1,6 +1,5 @@
 /* eslint import/newline-after-import: 'off' */
 const path = require('path')
-const {HotModuleReplacementPlugin} = require('webpack')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
@@ -27,7 +26,6 @@ const cssPlugin = (function (env) {
 })(process.env.NODE_ENV)
 
 const optimizeCss = new OptimizeCSSAssetsPlugin({})
-const hotReloadPlugin = new HotModuleReplacementPlugin()
 const cleanUpPlugin = new CleanWebpackPlugin()
 const progressPlugin = new SimpleProgressWebpackPlugin({format: 'compact'})
 
@@ -65,6 +63,7 @@ const brotliPlugin = new CompressionPlugin({
 })
 
 const DEFAULT_PORT = 8080
+const DEFAULT_PATH = '/'
 
 let configs = {
   target: 'web',
@@ -73,7 +72,7 @@ let configs = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js',
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -124,20 +123,12 @@ let configs = {
       },
     ],
   },
-  plugins: [
-    progressPlugin,
-    cleanUpPlugin,
-    cssPlugin,
-    htmlPlugin,
-    copyPlugin,
-    hotReloadPlugin,
-  ],
+  plugins: [progressPlugin, cleanUpPlugin, cssPlugin, htmlPlugin, copyPlugin],
   devServer: {
     hot: true,
+    compress: true,
     port: DEFAULT_PORT,
-    publicPath: '/',
-    contentBase: path.resolve(__dirname, 'dist'),
-    watchContentBase: true,
+    publicPath: DEFAULT_PATH,
     historyApiFallback: true,
     proxy: {
       '/api': {target: 'http://localhost:3000'},
