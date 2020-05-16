@@ -1,7 +1,6 @@
 /* eslint import/newline-after-import: 'off' */
 const path = require('path')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
@@ -14,20 +13,18 @@ const CopyPlugin = require('copy-webpack-plugin')
 const cssPlugin = (function (env) {
   if (env == 'production') {
     return new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css',
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[name].[contenthash].css',
     })
   } else {
     return new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css',
     })
   }
 })(process.env.NODE_ENV)
 
 const optimizeCss = new OptimizeCSSAssetsPlugin({})
 const cleanUpPlugin = new CleanWebpackPlugin()
-const progressPlugin = new SimpleProgressWebpackPlugin({format: 'compact'})
 
 const analyzerPlugin = new BundleAnalyzerPlugin({
   openAnalyzer: false,
@@ -68,7 +65,7 @@ const DEFAULT_PATH = '/'
 let configs = {
   target: 'web',
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -123,7 +120,7 @@ let configs = {
       },
     ],
   },
-  plugins: [progressPlugin, cleanUpPlugin, cssPlugin, htmlPlugin, copyPlugin],
+  plugins: [cleanUpPlugin, cssPlugin, htmlPlugin, copyPlugin],
   devServer: {
     hot: true,
     compress: true,
@@ -132,6 +129,12 @@ let configs = {
     historyApiFallback: true,
     proxy: {
       '/api': {target: 'http://localhost:3000'},
+    },
+    stats: {
+      assets: true,
+      modules: false,
+      children: false,
+      entrypoints: false,
     },
   },
 }
@@ -145,24 +148,29 @@ if (process.env.NODE_ENV === 'production') {
       filename: '[name].[contenthash].js',
       chunkFilename: '[name].[chunkhash].js',
     },
+    performance: {
+      assetFilter: function (assetFilename) {
+        return assetFilename.endsWith('.br')
+      },
+    },
     optimization: {
+      minimize: true,
+      minimizer: [terser, optimizeCss],
       splitChunks: {
         cacheGroups: {
-          common: {
+          commons: {
             test: /[\\/]node_modules[\\/]/,
             chunks: 'all',
             name: 'vendors',
           },
           styles: {
-            test: /\.css$/,
+            test: /[\\/]node_modules[\\/].css$/,
             chunks: 'all',
-            name: 'vendors',
             enforce: true,
+            name: 'vendors',
           },
         },
       },
-      minimize: true,
-      minimizer: [terser, optimizeCss],
     },
     module: {
       rules: [
@@ -183,7 +191,6 @@ if (process.env.NODE_ENV === 'production') {
           use: [
             {
               loader: MiniCssExtractPlugin.loader,
-              options: {hmr: false},
             },
             'css-loader',
             'postcss-loader',
@@ -219,7 +226,6 @@ if (process.env.NODE_ENV === 'production') {
       ],
     },
     plugins: [
-      progressPlugin,
       analyzerPlugin,
       cleanUpPlugin,
       brotliPlugin,
@@ -232,6 +238,12 @@ if (process.env.NODE_ENV === 'production') {
         dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
       }),
     ],
+    stats: {
+      assets: true,
+      modules: false,
+      children: false,
+      entrypoints: false,
+    },
   })
 }
 
