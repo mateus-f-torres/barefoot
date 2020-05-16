@@ -39,10 +39,12 @@ const htmlPlugin = new HtmlWebpackPlugin({
   template: 'src/index.html',
 })
 
-const copyPlugin = new CopyPlugin([
-  {from: 'src/assets/icons', to: 'icons/'},
-  {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
-])
+const copyPlugin = new CopyPlugin({
+  patterns: [
+    {from: 'src/assets/icons', to: 'icons/'},
+    {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
+  ],
+})
 
 const terser = new TerserPlugin()
 
