@@ -9,6 +9,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {InjectManifest} = require('workbox-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const {SourceMapDevToolPlugin} = require('webpack')
 
 const cssPlugin = (function (env) {
   if (env == 'production') {
@@ -29,9 +30,9 @@ const cleanUpPlugin = new CleanWebpackPlugin()
 const analyzerPlugin = new BundleAnalyzerPlugin({
   openAnalyzer: false,
   analyzerMode: 'static',
-  generateStatsFile: false,
-  reportFilename: '../reports/bundle_report.html',
-  statsFilename: '../reports/bundle_stats.json',
+  generateStatsFile: true,
+  reportFilename: '../reports/report.html',
+  statsFilename: '../reports/stats.json',
 })
 
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -46,7 +47,14 @@ const copyPlugin = new CopyPlugin({
   ],
 })
 
-const terser = new TerserPlugin()
+const sourceMapsPlugin = new SourceMapDevToolPlugin({
+  filename: 'sourcemaps/[file].map',
+  exclude: [/vendors\.*\.*/, 'sw.js'],
+})
+
+const terserPlugin = new TerserPlugin({
+  sourceMap: true,
+})
 
 const brotliPlugin = new CompressionPlugin({
   test: /\.(js|css|html|svg)$/,
@@ -54,11 +62,16 @@ const brotliPlugin = new CompressionPlugin({
   algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
-  // TODO: undertand why this plugin breaks Workbox InjectManifest
   exclude: 'sw.js',
   compressionOptions: {
     level: 11,
   },
+})
+
+const swPlugin = new InjectManifest({
+  swSrc: './src/sw.js',
+  exclude: [/\.(js|css|map)$/],
+  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
 })
 
 const DEFAULT_PORT = 8080
@@ -144,11 +157,11 @@ let configs = {
 if (process.env.NODE_ENV === 'production') {
   configs = Object.assign({}, configs, {
     mode: 'production',
-    devtool: 'source-map',
+    devtool: false,
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].[contenthash].js',
-      chunkFilename: '[name].[chunkhash].js',
+      chunkFilename: '[name].[contenthash].js',
     },
     performance: {
       assetFilter: function (assetFilename) {
@@ -157,12 +170,13 @@ if (process.env.NODE_ENV === 'production') {
     },
     optimization: {
       minimize: true,
-      minimizer: [terser, optimizeCss],
+      minimizer: [terserPlugin, optimizeCss],
       splitChunks: {
         cacheGroups: {
           commons: {
             test: /[\\/]node_modules[\\/]/,
             chunks: 'all',
+            enforce: true,
             name: 'vendors',
           },
           styles: {
@@ -228,17 +242,14 @@ if (process.env.NODE_ENV === 'production') {
       ],
     },
     plugins: [
+      sourceMapsPlugin,
       analyzerPlugin,
       cleanUpPlugin,
       brotliPlugin,
       cssPlugin,
       htmlPlugin,
       copyPlugin,
-      new InjectManifest({
-        swSrc: './src/sw.js',
-        exclude: [/\.(js|css)$/, 'sw.js.map'],
-        dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
-      }),
+      swPlugin,
     ],
     stats: {
       assets: true,
