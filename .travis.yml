@@ -1,15 +1,13 @@
 language: node_js
-cache: yarn
-node_js:
-  - "10.16.0"
+cache: npm
 install:
-  - yarn install
-  - yarn cypress verify
-  - yarn add --dev codecov wait-on
+  - npm ci
+  - npx cypress verify
+  - npm install -D codecov wait-on
 script:
-  - yarn lint
-  - yarn test && codecov
-  - yarn start & wait-on http://localhost:8080 &
-  - yarn test:cypress-run
+  - npm run lint
+  - npm run test && codecov
+  - npm run start & wait-on http://localhost:8080 &
+  - npm run test:cypress-run
   - kill $(jobs -p) || true
 

@@ -1,8 +1,6 @@
 /* eslint import/newline-after-import: 'off' */
 const path = require('path')
-const {HotModuleReplacementPlugin} = require('webpack')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
@@ -11,32 +9,30 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {InjectManifest} = require('workbox-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const {SourceMapDevToolPlugin} = require('webpack')
 
 const cssPlugin = (function (env) {
   if (env == 'production') {
     return new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css',
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[name].[contenthash].css',
     })
   } else {
     return new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css',
     })
   }
 })(process.env.NODE_ENV)
 
 const optimizeCss = new OptimizeCSSAssetsPlugin({})
-const hotReloadPlugin = new HotModuleReplacementPlugin()
 const cleanUpPlugin = new CleanWebpackPlugin()
-const progressPlugin = new SimpleProgressWebpackPlugin({format: 'compact'})
 
 const analyzerPlugin = new BundleAnalyzerPlugin({
   openAnalyzer: false,
   analyzerMode: 'static',
-  generateStatsFile: false,
-  reportFilename: '../reports/bundle_report.html',
-  statsFilename: '../reports/bundle_stats.json',
+  generateStatsFile: true,
+  reportFilename: '../reports/report.html',
+  statsFilename: '../reports/stats.json',
 })
 
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -44,12 +40,21 @@ const htmlPlugin = new HtmlWebpackPlugin({
   template: 'src/index.html',
 })
 
-const copyPlugin = new CopyPlugin([
-  {from: 'src/assets/icons', to: 'icons/'},
-  {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
-])
+const copyPlugin = new CopyPlugin({
+  patterns: [
+    {from: 'src/assets/icons', to: 'icons/'},
+    {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
+  ],
+})
 
-const terser = new TerserPlugin()
+const sourceMapsPlugin = new SourceMapDevToolPlugin({
+  filename: 'sourcemaps/[file].map',
+  exclude: [/vendors\.*\.*/, 'sw.js'],
+})
+
+const terserPlugin = new TerserPlugin({
+  sourceMap: true,
+})
 
 const brotliPlugin = new CompressionPlugin({
   test: /\.(js|css|html|svg)$/,
@@ -57,23 +62,29 @@ const brotliPlugin = new CompressionPlugin({
   algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
-  // TODO: undertand why this plugin breaks Workbox InjectManifest
   exclude: 'sw.js',
   compressionOptions: {
     level: 11,
   },
 })
 
+const swPlugin = new InjectManifest({
+  swSrc: './src/sw.js',
+  exclude: [/\.(js|css|map)$/],
+  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
+})
+
 const DEFAULT_PORT = 8080
+const DEFAULT_PATH = '/'
 
 let configs = {
   target: 'web',
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js',
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -124,23 +135,21 @@ let configs = {
       },
     ],
   },
-  plugins: [
-    progressPlugin,
-    cleanUpPlugin,
-    cssPlugin,
-    htmlPlugin,
-    copyPlugin,
-    hotReloadPlugin,
-  ],
+  plugins: [cleanUpPlugin, cssPlugin, htmlPlugin, copyPlugin],
   devServer: {
     hot: true,
+    compress: true,
     port: DEFAULT_PORT,
-    publicPath: '/',
-    contentBase: path.resolve(__dirname, 'dist'),
-    watchContentBase: true,
+    publicPath: DEFAULT_PATH,
     historyApiFallback: true,
     proxy: {
       '/api': {target: 'http://localhost:3000'},
+    },
+    stats: {
+      assets: true,
+      modules: false,
+      children: false,
+      entrypoints: false,
     },
   },
 }
@@ -148,30 +157,36 @@ let configs = {
 if (process.env.NODE_ENV === 'production') {
   configs = Object.assign({}, configs, {
     mode: 'production',
-    devtool: 'source-map',
+    devtool: false,
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].[contenthash].js',
-      chunkFilename: '[name].[chunkhash].js',
+      chunkFilename: '[name].[contenthash].js',
+    },
+    performance: {
+      assetFilter: function (assetFilename) {
+        return assetFilename.endsWith('.br')
+      },
     },
     optimization: {
+      minimize: true,
+      minimizer: [terserPlugin, optimizeCss],
       splitChunks: {
         cacheGroups: {
-          common: {
+          commons: {
             test: /[\\/]node_modules[\\/]/,
             chunks: 'all',
+            enforce: true,
             name: 'vendors',
           },
           styles: {
-            test: /\.css$/,
+            test: /[\\/]node_modules[\\/].css$/,
             chunks: 'all',
-            name: 'vendors',
             enforce: true,
+            name: 'vendors',
           },
         },
       },
-      minimize: true,
-      minimizer: [terser, optimizeCss],
     },
     module: {
       rules: [
@@ -192,7 +207,6 @@ if (process.env.NODE_ENV === 'production') {
           use: [
             {
               loader: MiniCssExtractPlugin.loader,
-              options: {hmr: false},
             },
             'css-loader',
             'postcss-loader',
@@ -228,19 +242,21 @@ if (process.env.NODE_ENV === 'production') {
       ],
     },
     plugins: [
-      progressPlugin,
+      sourceMapsPlugin,
       analyzerPlugin,
       cleanUpPlugin,
       brotliPlugin,
       cssPlugin,
       htmlPlugin,
       copyPlugin,
-      new InjectManifest({
-        swSrc: './src/sw.js',
-        exclude: [/\.(js|css)$/, 'sw.js.map'],
-        dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
-      }),
+      swPlugin,
     ],
+    stats: {
+      assets: true,
+      modules: false,
+      children: false,
+      entrypoints: false,
+    },
   })
 }
 
