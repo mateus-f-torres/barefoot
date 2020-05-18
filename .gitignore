@@ -1,8 +1,7 @@
 node_modules
 coverage
 dist
-yarn*
+reports
 tags
 .idea
-reports
-package-lock.json
+*.swp
