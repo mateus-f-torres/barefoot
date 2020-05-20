@@ -28,7 +28,6 @@ Remember to keep the original **LICENSE** and credit me and this project in your
 ### Usage
 First a quick overview of the present _npm scripts_.
 * [`start`](#start)
-* [`start:storybook`](#startstorybook)
 * [`build`](#build)
 * [`serve`](#serve)
 * [`format`](#format)
@@ -41,10 +40,6 @@ First a quick overview of the present _npm scripts_.
 #### `start`
 Start the application in _development_ mode with `webpack-dev-server`.  
 We are using `localhost:8080` as the default location.  
-
-#### `start:storybook`
-Start `storybook` to develop your UI components isolated from the main application.  
-This command will automatically open a new browser tab.  
 
 #### `build`
 Bundle the whole application in _production_ mode.  
@@ -85,12 +80,6 @@ Any changes made to files inside `src` will automatically trigger a hot-reload o
 yarn start
 ```
 
-Use the `start:storybook` script if you prefer an isolated developing environment for your components.  
-Storybook also reloads any `.stories` when associated files are modified.
-```
-yarn start:storybook
-```
-
 When the time to bundle your app arrives you just need to call the `build` script.  
 A `bundle_report.html` file will be generated for you in the `reports` directory.  
 ```
@@ -113,7 +102,6 @@ A small summary about the main libraries in this project.
 
 * [React](#react)
 * [Redux](#redux)
-* [Storybook](#storybook)
 * [Jest and Cypress](#jest-and-cypress)
 * [Internationalization](#internationalization)
 * [Webpack](#webpack)
@@ -121,8 +109,6 @@ A small summary about the main libraries in this project.
 #### React
 
 #### Redux
-
-#### Storybook
 
 #### Jest and Cypress
 testing-library - fetch helpers  
