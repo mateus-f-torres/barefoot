@@ -28,7 +28,6 @@ Remember to keep the original **LICENSE** and credit me and this project in your
 ### Usage
 First a quick overview of the present _npm scripts_.
 * [`start`](#start)
-* [`start:mock`](#startmock)
 * [`start:storybook`](#startstorybook)
 * [`build`](#build)
 * [`serve`](#serve)
@@ -42,10 +41,6 @@ First a quick overview of the present _npm scripts_.
 #### `start`
 Start the application in _development_ mode with `webpack-dev-server`.  
 We are using `localhost:8080` as the default location.  
-
-#### `start:mock`
-Start a [`json-server`](https://github.com/typicode/json-server) to mocking API calls when developing in a offline environment.  
-The mock server will be served at `localhost:3000`.  
 
 #### `start:storybook`
 Start `storybook` to develop your UI components isolated from the main application.  
@@ -88,12 +83,6 @@ Most of the time you will just need the `start` script to develop your app.
 Any changes made to files inside `src` will automatically trigger a hot-reload of the app.  
 ```
 yarn start
-```
-
-If the need to locally mock API calls arises use `start:mock` alongside `start`.  
-But remember to change `urls.js` to `urls.mock.js` on files that import from it.  
-```
-yarn start:mock
 ```
 
 Use the `start:storybook` script if you prefer an isolated developing environment for your components.  
