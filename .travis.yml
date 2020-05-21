@@ -3,11 +3,9 @@ cache: npm
 install:
   - npm ci
   - npx cypress verify
-  - npm install -D codecov wait-on
+  - npm install -D wait-on
 script:
-  - npm run lint
-  - npm run test && codecov
   - npm run start & wait-on http://localhost:8080 &
-  - npm run test:cypress-run
+  - npm run test
   - kill $(jobs -p) || true
 
