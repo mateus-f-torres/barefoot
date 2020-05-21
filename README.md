@@ -17,7 +17,7 @@ If you choose to wear sandals and add `styled-component` or prefer sneakers with
 Either way most of the configuration wont change, maybe you need to add or remove a line in `webpack.config.js`.  
 
 ## Getting Started
-### Installation
+### Fork/Clone
 Start by forking this repo.  
 To do that you just need to click the **Fork** button at the top of the page.  
 
@@ -32,95 +32,43 @@ git clone https://github.com/[your-user-name]/[your-project].git
 
 Remember to keep the original **LICENSE** and credit me and this project in your own **README**.  
 
-### Usage
-First a quick overview of the present _npm scripts_.
-* [`start`](#start)
-* [`build`](#build)
-* [`serve`](#serve)
-* [`format`](#format)
-* [`lint`](#lint)
-* [`test`](#test)
-
-#### `start`
-Start the application in _development_ mode with `webpack-dev-server`.  
-We are using `localhost:8080` as the default location.  
-
-#### `build`
-Bundle the whole application in _production_ mode.  
-What gets bundled depends on the dependency tree created from `src/index.js`.  
-
-#### `serve`
-Serve the `dist/` directory locally with [`http-server`](https://github.com/http-party/http-server).  
-Good for testing your production build locally if you want.    
-
-#### `format`
-Runs `prettier` on every `.js` file from `src` and `cypress` directory.  
-Formatting the code according to `prettier.config.js`.  
-
-#### `lint`
-Runs `eslint` on every `.js` file from `src` and `cypress` directory.  
-Linting and fixing (when possible) according to `.eslintrc.js` and `.eslintignore`.  
-
-#### `test`
-Start `cypress` and run all specs in headless mode (good for CI)  
-Also need to run alongside `start` (we use `wait-on` for this)
-
 ### Development
-Most of the time you will just need the `start` script to develop your app.  
+Before you start developing your app install the dependencies with your package manager of choice.  
+I use `npm` to keep things simple here in the documentation.  
+```
+npm install
+```
+
+Most of the time you will use the `start` script to see your app live while working.  
+This will serve the application in _development_ mode with `webpack-dev-server` at `localhost:8080`.  
 Any changes made to files inside `src` will automatically trigger a hot-reload of the app.  
 ```
-yarn start
+npm run start
 ```
 
-When the time to bundle your app arrives you just need to call the `build` script.  
-A `bundle_report.html` file will be generated for you in the `reports` directory.  
+All the automatic formatting, linting and testing is handled by _git hooks_.  
+So instead of wasting time on unfinished code I prefer to only watch code that is being committed.  
+To learn more about it check the [Auxiliary Tools](https://github.com/mateus-f-torres/barefoot/blob/master/doc/tools.md) documentation.  
+
+### Production
+When your done developing your app just use the `build` script.  
+This will call `webpack` in _production_ mode to bundle, minify and compress your application.  
+The finished product will be at the `dist` directory.   
 ```
-yarn build
+npm run build
 ```
 
-You may notice that there are no `pre` or `post` scripts in here.  
-That's because most of the automatic formatting, linting and testing is handled by _git hooks_.  
-Instead of wasting time on unfinished code I prefer to only watch code that is being committed.  
+If you want to see the production version of your application use the `serve` script.  
+The `dist/` directory will be served locally with [`http-server`](https://github.com/http-party/http-server) to `localhost:8080`.  
+Compressed formats and catch-all redirect is already baked in the script.    
+```
+npm run serve
+```
 
-## Coding Time
-Since this is a boilerplate and not a generator (yet) we need to cleanup some code.  
-What you change and what you keep will depend on your wants and needs.  
-
-### Architecture
-Time to talk about some choices in directory organization and file naming.  
-
-### Tech Stack
-A small summary about the main libraries in this project.  
-
-* [React](#react)
-* [Cypress](#cypress)
-* [Webpack](#webpack)
-
-#### React
-
-#### Cypress
-testing-library - fetch helpers  
-cypress video recording disabled  
-
-#### Webpack
-Most of the noise in the bundling processes is ignored with the `stats` configuration, but a `stats.json` file is generated for the _production_ build  
-
-[`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/) provides several options to custimize how and where your files are served  
-Entry points, asset files, if and where to open the browser, etc.  
-Please refer to the full documentation for a more fitting configurations  
-
-Note that in the production configuration we generate source maps only for the _main_ bundle  
-If you wish to hide your code you should prevent normal users from accessing the `sourcemaps/` directory in your server   
-
-Performance hints are enable in production mode, but they are only watching for `.br` files  
-
-browserlist - babel - postcss  
-
-## Contributing
-Use of git-flow
-
-## Credit
-Made by [Mateus F Torres](https://github.com/mateus-f-torres)    
+How you deploy your application I leave it up to you.  
+Here I'm using [**Travis-CI**](https://travis-ci.org/) and [**Netlify**](https://www.netlify.com/) for this.  
+To learn more about how things are bundled check the [Webpack Configuration](https://github.com/mateus-f-torres/barefoot/blob/master/doc/webpack.md) documentation
 
 ## License
-[MIT License](./LICENSE)
+[MIT License](./LICENSE)  
+Made by [Mateus F Torres](https://github.com/mateus-f-torres)    
