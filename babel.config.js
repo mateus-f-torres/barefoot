@@ -6,7 +6,6 @@ const config = {
     ['@babel/preset-react'],
   ],
   plugins: [
-    // TODO: see if this plugin really adds value to me
     ['@babel/plugin-transform-async-to-generator'],
     ['@babel/plugin-proposal-object-rest-spread'],
   ],
