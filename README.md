@@ -4,7 +4,7 @@
 [![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mateus-f-torres/barefoot/blob/master/LICENSE)
 
 # Barefoot
-A React Redux PWA kitchen sink style template.  
+A React PWA kitchen sink style template.  
 Complete with configurations and tools for a more agile development.  
 Create from scratch and in constant improvement as my knowledge grows.
 
@@ -93,13 +93,10 @@ Time to talk about some choices in directory organization and file naming.
 A small summary about the main libraries in this project.  
 
 * [React](#react)
-* [Redux](#redux)
 * [Cypress](#cypress)
 * [Webpack](#webpack)
 
 #### React
-
-#### Redux
 
 #### Cypress
 testing-library - fetch helpers  
