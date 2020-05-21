@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
 
-import './i18n'
 import './index.css'
 import './service-worker.js'
 
