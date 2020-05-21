@@ -9,6 +9,14 @@ A React Redux PWA kitchen sink style template.
 Complete with configurations and tools for a more agile development.  
 Create from scratch and in constant improvement as my knowledge grows.
 
+This project was at some point unnecessary robust for a template.  
+We had `Redux`, `storybook`, `styled-component`, `i18next` and `jest` among other things.  
+But whenever I would start a new project with this template I had a lot of cleaning up to do.  
+
+That is why its called Barefoot... I provide the bare minimun optimization for your development workflow.  
+If you choose to wear sandals and add `styled-component` or prefer sneakers with `redux` that is up to you.  
+Either way most of the configuration wont change, maybe you need to add or remove a line in `webpack.config.js`.  
+
 ## Getting Started
 ### Installation
 Start by forking this repo.  
@@ -103,7 +111,6 @@ A small summary about the main libraries in this project.
 * [React](#react)
 * [Redux](#redux)
 * [Jest and Cypress](#jest-and-cypress)
-* [Internationalization](#internationalization)
 * [Webpack](#webpack)
 
 #### React
@@ -114,11 +121,7 @@ A small summary about the main libraries in this project.
 testing-library - fetch helpers  
 cypress video recording disabled  
 
-#### Internationalization
-i18next-react
-
 #### Webpack
-Currently we are using **webpack@next** (version 5-beta)  
 Most of the noise in the bundling processes is ignored with the `stats` configuration, but a `stats.json` file is generated for the _production_ build  
 
 [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/) provides several options to custimize how and where your files are served  
