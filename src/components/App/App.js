@@ -1,8 +1,21 @@
 import React from 'react'
+import request from '../../utils/request'
+import {RANDOM_ANSWER} from '../../utils/urls'
 
 import './App.css'
 
 function App(props) {
+  const [state, setState] = React.useState({yes: false, no: false})
+
+  const handleYes = () => setState({yes: true, no: false})
+  const handleNo = () => setState({yes: false, no: true})
+
+  function getRandomAnswer() {
+    request(RANDOM_ANSWER).then((res) => {
+      res.answer == 'yes' ? handleYes() : handleNo()
+    })
+  }
+
   return (
     <div className="container">
       <h1 className="header">Do you want to be my friend ?</h1>
@@ -16,8 +29,8 @@ function App(props) {
             value="yes"
             id="answer-yes"
             data-testid="answer-yes"
-            checked={props.yes}
-            onChange={props.answerYes}
+            checked={state.yes}
+            onChange={handleYes}
           />
           <label htmlFor="answer-no">No</label>
           <input
@@ -26,12 +39,12 @@ function App(props) {
             value="no"
             id="answer-no"
             data-testid="answer-no"
-            checked={props.no}
-            onChange={props.answerNo}
+            checked={state.no}
+            onChange={handleNo}
           />
         </div>
         <button
-          onClick={props.getRandomAnswer}
+          onClick={getRandomAnswer}
           type="button"
           data-testid="random_answer"
         >
