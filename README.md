@@ -1,6 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ba3f22ea-0790-413a-be14-7ccf8972d61f/deploy-status)](https://app.netlify.com/sites/barefoot/deploys)
 [![Build Status](https://travis-ci.com/mateus-f-torres/barefoot.svg?branch=master)](https://travis-ci.com/mateus-f-torres/barefoot)
-[![codecov](https://codecov.io/gh/mateus-f-torres/barefoot/branch/master/graph/badge.svg)](https://codecov.io/gh/mateus-f-torres/barefoot)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mateus-f-torres/barefoot/blob/master/LICENSE)
 
@@ -41,9 +40,6 @@ First a quick overview of the present _npm scripts_.
 * [`format`](#format)
 * [`lint`](#lint)
 * [`test`](#test)
-* [`test:watch`](#testwatch)
-* [`test:cypress`](#testcypress)
-* [`test:cypress-run`](#testcypress-run)
 
 #### `start`
 Start the application in _development_ mode with `webpack-dev-server`.  
@@ -58,26 +54,14 @@ Serve the `dist/` directory locally with [`http-server`](https://github.com/http
 Good for testing your production build locally if you want.    
 
 #### `format`
-Runs `prettier` on every `.js` file from `src`, `cypress`, `__tests__` and `__mocks__` directory.  
+Runs `prettier` on every `.js` file from `src` and `cypress` directory.  
 Formatting the code according to `prettier.config.js`.  
 
 #### `lint`
-Runs `eslint` on every `.js` file from `src`, `cypress`, `__tests__` and `__mocks__` directory.  
+Runs `eslint` on every `.js` file from `src` and `cypress` directory.  
 Linting and fixing (when possible) according to `.eslintrc.js` and `.eslintignore`.  
 
 #### `test`
-Start `jest` and test all `.spec.js` or `.test.js` files from `src` and `__tests__`.  
-Providing test coverage information about the project.  
-
-#### `test:watch`
-Start `jest` in watch mode to help you write and debug your tests.  
-Better than running `test` after each change to a test file.  
-
-#### `test:cypress`
-Start `cypress`, open _Cypress Test Runner_ and test your application in a real browser environment.  
-You will need to run `start` as well to serve the application.
-
-#### `test:cypress-run`
 Start `cypress` and run all specs in headless mode (good for CI)  
 Also need to run alongside `start` (we use `wait-on` for this)
 
@@ -110,14 +94,14 @@ A small summary about the main libraries in this project.
 
 * [React](#react)
 * [Redux](#redux)
-* [Jest and Cypress](#jest-and-cypress)
+* [Cypress](#cypress)
 * [Webpack](#webpack)
 
 #### React
 
 #### Redux
 
-#### Jest and Cypress
+#### Cypress
 testing-library - fetch helpers  
 cypress video recording disabled  
 
