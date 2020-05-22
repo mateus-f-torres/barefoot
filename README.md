@@ -16,7 +16,7 @@ That is why its called Barefoot... I provide the bare minimun optimization for y
 If you choose to wear sandals and add `styled-component` or prefer sneakers with `redux` that is up to you.  
 Either way most of the configuration wont change, maybe you need to add or remove a line in `webpack.config.js`.  
 
-## Getting Started
+## Coding Time
 ### Fork/Clone
 Start by forking this repo.  
 To do that you just need to click the **Fork** button at the top of the page.  
@@ -24,46 +24,43 @@ To do that you just need to click the **Fork** button at the top of the page.
 After creating a "fork" of the project you can then access **Settings** and change the project name.  
 You can also continue with the same name if you wish to open PRs to me.
 
-Now you can clone your fork to your development machine.  
-Click on the **Clone or download** button in your project's page, copy the link and clone.  
 ```
 git clone https://github.com/[your-user-name]/[your-project].git
 ```
+Click on the **Clone or download** button in your project's page, copy the link and clone.  
 
 Remember to keep the original **LICENSE** and credit me and this project in your own **README**.  
 
 ### Development
-Before you start developing your app install the dependencies with your package manager of choice.  
-I use `npm` to keep things simple here in the documentation.  
 ```
 npm install
 ```
+Install the dependencies with your package manager of choice.  
+I use `npm` to keep things simple here in the documentation.  
 
-Most of the time you will use the `start` script to see your app live while working.  
-This will serve the application in _development_ mode with `webpack-dev-server` at `localhost:8080`.  
-Any changes made to files inside `src` will automatically trigger a hot-reload of the app.  
 ```
 npm run start
 ```
+This will serve the application in _development_ mode with `webpack-dev-server` at `localhost:8080`.  
+Any changes made to files inside `src` will automatically trigger a hot-reload of the app.  
 
 All the automatic formatting, linting and testing is handled by _git hooks_.  
 So instead of wasting time on unfinished code I prefer to only watch code that is being committed.  
 To learn more about it check the [Auxiliary Tools](https://github.com/mateus-f-torres/barefoot/blob/master/doc/tools.md) documentation.  
 
 ### Production
-When your done developing your app just use the `build` script.  
-This will call `webpack` in _production_ mode to bundle, minify and compress your application.  
-The finished product will be at the `dist` directory.   
 ```
 npm run build
 ```
+Call `webpack` in _production_ mode to bundle, minify and compress your application.  
+The finished product will be at the `dist` directory.   
 
-If you want to see the production version of your application use the `serve` script.  
-The `dist/` directory will be served locally with [`http-server`](https://github.com/http-party/http-server) to `localhost:8080`.  
-Compressed formats and catch-all redirect is already baked in the script.    
 ```
 npm run serve
 ```
+If you want to see the production version of your application use the `serve` script.  
+The `dist/` directory will be served locally with [`http-server`](https://github.com/http-party/http-server) to `localhost:8080`.  
+Compressed formats and catch-all redirect is already baked in the script.    
 
 How you deploy your application I leave it up to you.  
 Here I'm using [**Travis-CI**](https://travis-ci.org/) and [**Netlify**](https://www.netlify.com/) for this.  
