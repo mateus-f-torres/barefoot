@@ -1,6 +1,8 @@
 import React from 'react'
+
 import request from '../../utils/request'
 import {RANDOM_ANSWER} from '../../utils/urls'
+import ColorGame from '../../games/ColorGame/ColorGame'
 
 import './App.css'
 
@@ -51,6 +53,8 @@ function App(props) {
           Random Answer
         </button>
       </div>
+
+      <ColorGame />
     </div>
   )
 }
