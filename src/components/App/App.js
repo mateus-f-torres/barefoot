@@ -1,58 +1,54 @@
 import React from 'react'
-import {useTranslation} from 'react-i18next'
+import request from '../../utils/request'
+import {RANDOM_ANSWER} from '../../utils/urls'
 
 import './App.css'
 
-const LANGS = ['en', 'pt', 'es', 'fr']
-function getPseudoRandomLanguage(currentLang) {
-  const filtered = LANGS.filter((lang) => lang != currentLang)
-  const randomIndex = Math.floor(Math.random() * Math.floor(filtered.length))
-  return filtered[randomIndex]
-}
-
 function App(props) {
-  const {t, i18n} = useTranslation()
+  const [state, setState] = React.useState({yes: false, no: false})
 
-  React.useEffect(() => {
-    setInterval(() => {
-      const randomLanguage = getPseudoRandomLanguage(i18n.language)
-      i18n.changeLanguage(randomLanguage)
-    }, 10000)
-  }, [])
+  const handleYes = () => setState({yes: true, no: false})
+  const handleNo = () => setState({yes: false, no: true})
+
+  function getRandomAnswer() {
+    request(RANDOM_ANSWER).then((res) => {
+      res.answer == 'yes' ? handleYes() : handleNo()
+    })
+  }
 
   return (
     <div className="container">
-      <h1 className="header">{t('common:friend_request')}</h1>
+      <h1 className="header">Do you want to be my friend ?</h1>
 
       <div className="form">
         <div>
-          <label htmlFor="answer-yes">{t('inputs:yes')}</label>
+          <label htmlFor="answer-yes">Yes</label>
           <input
             type="radio"
             name="answer"
             value="yes"
             id="answer-yes"
             data-testid="answer-yes"
-            checked={props.yes}
-            onChange={props.answerYes}
+            checked={state.yes}
+            onChange={handleYes}
           />
-          <label htmlFor="answer-no">{t('inputs:no')}</label>
+          <label htmlFor="answer-no">No</label>
           <input
             type="radio"
             name="answer"
             value="no"
             id="answer-no"
             data-testid="answer-no"
-            checked={props.no}
-            onChange={props.answerNo}
+            checked={state.no}
+            onChange={handleNo}
           />
         </div>
         <button
-          onClick={props.getRandomAnswer}
+          onClick={getRandomAnswer}
           type="button"
           data-testid="random_answer"
         >
-          {t('inputs:random_answer')}
+          Random Answer
         </button>
       </div>
     </div>
