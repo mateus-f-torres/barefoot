@@ -66,7 +66,7 @@ src/
 ├── index.js
 ├── sw
 │   ├── sw.js
-│   └── sw-register.js
+│   └── register.js
 └── utils
     ├── request.js
     └── urls.js
