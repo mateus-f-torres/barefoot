@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './ColorGame.css'
 
 const EMPTY_ARRAY = [0, 1, 2, 3, 4, 5]
