@@ -1,5 +1,6 @@
 import React, {Suspense} from 'react'
 import {BrowserRouter, Switch, Route, Link} from 'react-router-dom'
+import './Home.css'
 
 const ColorGame = React.lazy(() =>
   import(
@@ -8,13 +9,16 @@ const ColorGame = React.lazy(() =>
     '../ColorGame/ColorGame'
   ),
 )
+
+/* TODO: create Typography Game
 const TypographyGame = React.lazy(() =>
   import(
-    /* webpackChunkName: "typography-game" */
-    /* webpackPrefetch: 1 */
+    /* webpackChunkName: "typography-game" /
+    /* webpackPrefetch: 1 /
     '../TypographyGame/TypographyGame'
   ),
 )
+*/
 
 function Home() {
   return (
@@ -22,15 +26,17 @@ function Home() {
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route path="/" exact>
-            <h1 className="header">Lets play some games!</h1>
-            <Link to="color-game">Color Game</Link>
-            <Link to="typography-game">Typography Game</Link>
+            <div className="home">
+              <h1>Lets play some games!</h1>
+              <ul>
+                <li>
+                  <Link to="color-game">Color Game</Link>
+                </li>
+              </ul>
+            </div>
           </Route>
           <Route path="/color-game">
             <ColorGame />
-          </Route>
-          <Route path="/typography-game">
-            <TypographyGame />
           </Route>
         </Switch>
       </Suspense>

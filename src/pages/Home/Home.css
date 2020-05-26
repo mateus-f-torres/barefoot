@@ -1,0 +1,13 @@
+.home {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.home > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home li {
+  margin-bottom: 0.25rem;
+}
