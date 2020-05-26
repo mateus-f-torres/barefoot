@@ -97,6 +97,7 @@ As minimun as the complex structure of bones, muscle and joints you have availab
 
 What you add on top of it depends on where you are going, but, if you dont know where that is, this is a good starting point.  
 If you choose to wear sandals and add `styled-component` or prefer sneakers with `redux` that is up to you.  
+Good coding \ (•◡•) / !   
 
 ## License
 [MIT License](./LICENSE)  
