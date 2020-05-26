@@ -1,7 +1,36 @@
-.square {
-	width: 2rem;
+.colorGame {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.colorGame__colorBox {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.colorGame__colorBox > h3 {text-transform: uppercase;}
+.colorGame__colorBox > button {
+  font-family: Roboto;
   height: 2rem;
-	margin: 0.25rem;
+}
+
+.colorGame__guessBox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.colorGame__square {
+	width: 4rem;
+  height: 4rem;
+  border: none;
 	border-radius: 0.25rem;
-	transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
 }

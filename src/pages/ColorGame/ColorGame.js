@@ -1,7 +1,7 @@
 import React from 'react'
 import './ColorGame.css'
 
-const EMPTY_ARRAY = [0, 1, 2, 3, 4, 5]
+const EMPTY_ARRAY = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 function getRandomHexColor() {
   return '#' + (Math.random() * 16).toString(16).slice(2, 8).padStart(6, '0')
@@ -16,7 +16,14 @@ function ColorGame() {
   const [squareColors, setSquareColors] = React.useState([])
 
   function verifyGuess(e) {
-    console.log(e.target.dataset.color == color)
+    if (e.target.dataset.color == color) {
+      setColor('Nice one!')
+      document
+        .querySelectorAll('.colorGame__square')
+        .forEach((node) => node.style.setProperty('background-color', color))
+    } else {
+      e.target.style.setProperty('background-color', 'transparent')
+    }
   }
 
   function resetGame() {
@@ -27,22 +34,28 @@ function ColorGame() {
     setColor(arrayOfColors[choosenColor])
   }
 
-  return (
-    <div>
-      <h1>{color}</h1>
-      <h2>Guess the correct color</h2>
-      <button onClick={resetGame}>Start</button>
-      <p>some rules</p>
+  React.useLayoutEffect(() => {
+    resetGame()
+  }, [])
 
-      {squareColors.map((c) => (
-        <button
-          key={c}
-          data-color={c}
-          className="square"
-          style={{backgroundColor: c}}
-          onClick={verifyGuess}
-        />
-      ))}
+  return (
+    <div className="colorGame">
+      <h1>The 100% original Color Game</h1>
+      <div className="colorGame__colorBox">
+        <h3>{color}</h3>
+        <button onClick={resetGame}>Reset Game</button>
+      </div>
+      <div className="colorGame__guessBox">
+        {squareColors.map((c) => (
+          <button
+            key={c}
+            data-color={c}
+            className="colorGame__square"
+            style={{backgroundColor: c}}
+            onClick={verifyGuess}
+          />
+        ))}
+      </div>
     </div>
   )
 }
