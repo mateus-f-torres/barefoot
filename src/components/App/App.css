@@ -1,4 +1,6 @@
+/* TODO: add media query for display >= tablet */
+
 .app {
-  margin: 10vh auto 0 auto;
+  margin: 5vh auto 0 auto;
   max-width: 480px;
 }
