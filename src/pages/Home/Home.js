@@ -10,15 +10,13 @@ const ColorGame = React.lazy(() =>
   ),
 )
 
-/* TODO: create Typography Game
 const TypographyGame = React.lazy(() =>
   import(
-    /* webpackChunkName: "typography-game" /
-    /* webpackPrefetch: 1 /
+    /* webpackChunkName: "typography-game" */
+    /* webpackPrefetch: 1 */
     '../TypographyGame/TypographyGame'
   ),
 )
-*/
 
 function Home() {
   return (
@@ -32,11 +30,24 @@ function Home() {
                 <li>
                   <Link to="color-game">Color Game</Link>
                 </li>
+                <li>
+                  <Link to="typography-game">Typography Game</Link>
+                </li>
+                <li>
+                  <Link to="about-page">About page</Link>
+                </li>
               </ul>
             </div>
           </Route>
           <Route path="/color-game">
             <ColorGame />
+          </Route>
+          <Route path="/typography-game">
+            <TypographyGame />
+          </Route>
+          <Route path="/about-page">
+            <h1>About page</h1>
+            <p>work in progress</p>
           </Route>
         </Switch>
       </Suspense>
