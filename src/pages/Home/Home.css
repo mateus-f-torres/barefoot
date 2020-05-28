@@ -1,12 +1,11 @@
 /* TODO: add media query for display >= tablet */
-
 .home {
   margin: 0 auto;
   width: max-content;
   font-family: Roboto, sans-serif;
 }
 
-.home > ul {
+.home ul {
   list-style: none;
   padding: 0;
 }
