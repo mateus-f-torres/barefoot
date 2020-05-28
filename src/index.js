@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './index.css'
-import './service-worker.js'
+import './sw/register.js'
 
 import App from './components/App/App'
 

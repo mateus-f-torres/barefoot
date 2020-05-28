@@ -1,0 +1,44 @@
+/* TODO: add media query for display >= tablet */
+.colorGame {
+  margin: 0 auto;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+
+.colorGame__title {
+  text-align: center;
+}
+
+.colorGame__panel {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.colorGame__guesses {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: 2.5rem;
+  justify-items: center;
+}
+
+.colorGame__guesses__button {
+	width: 4rem;
+  height: 4rem;
+  border: none;
+	border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+}
+
+.colorGame__resetButton {
+  margin-top: 2rem;
+  align-self: flex-end;
+  height: 2rem;
+  font-family: Roboto, sans-serif;
+}
+
