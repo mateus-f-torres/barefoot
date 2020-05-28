@@ -1,68 +1,52 @@
 import React from 'react'
+import createGame from './utils/createGame'
 import './ColorGame.css'
 
-const EMPTY_ARRAY = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-
-// TODO: cleanup all of this
-
-function getRandomHexColor() {
-  return '#' + Math.random().toString(16).slice(2, 8).padStart(6, '0')
-}
-
-function getRandomIndex(arr) {
-  return Math.floor(Math.random() * arr.length)
-}
+const SQUARES = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 function ColorGame() {
+  const game = React.useRef()
+  const container = React.useRef()
   const [color, setColor] = React.useState('')
-  const [squareColors, setSquareColors] = React.useState([])
+
+  React.useLayoutEffect(() => {
+    game.current = createGame(container.current)
+    resetGame()
+  }, [container.current])
+
+  function resetGame() {
+    setColor(game.current.start())
+  }
 
   function verifyGuess(e) {
-    if (e.target.dataset.color == color) {
+    if (game.current.guess(e.target, color)) {
       setColor('')
-      document
-        .querySelectorAll('.colorGame__square')
-        .forEach((node) => node.style.setProperty('background-color', color))
+      game.current.finish(color)
     } else {
-      e.target.style.setProperty('background-color', 'transparent')
+      game.current.continue(e.target)
     }
   }
 
-  function resetGame() {
-    const arrayOfColors = EMPTY_ARRAY.map(getRandomHexColor)
-    const choosenColor = getRandomIndex(arrayOfColors)
-
-    setSquareColors(arrayOfColors)
-    setColor(arrayOfColors[choosenColor])
-  }
-
-  React.useLayoutEffect(() => {
-    resetGame()
-  }, [])
-
   return (
     <div className="colorGame">
-      <h1>
+      <h1 className="colorGame__title">
         The 100% original
         <br />
         Color Game
       </h1>
-      <p>
-        <span>{color ? 'What color is this?' : 'Nice one!'}</span>
-        <span className="color">{color}</span>
-      </p>
-      <div className="colorGame__guessBox">
-        {squareColors.map((c) => (
+      {color ? <p className="colorGame__panel">{color}</p> : <p>Nice one!</p>}
+      <div ref={container} className="colorGame__guesses">
+        {SQUARES.map((i) => (
           <button
-            key={c}
-            data-color={c}
-            className="colorGame__square"
-            style={{backgroundColor: c}}
+            key={i}
+            className="colorGame__guesses__button"
             onClick={verifyGuess}
           />
         ))}
       </div>
-      <button onClick={resetGame}>New Color</button>
+      <button className="colorGame__resetButton" onClick={resetGame}>
+        New Color
+      </button>
     </div>
   )
 }

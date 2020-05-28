@@ -1,5 +1,4 @@
 /* TODO: add media query for display >= tablet */
-
 .colorGame {
   margin: 0 auto;
   width: max-content;
@@ -9,17 +8,16 @@
   font-family: Roboto, sans-serif;
 }
 
-.colorGame > h1 { text-align: center; }
-
-.color { text-transform: uppercase; font-weight: 700; }
-
-.colorGame > p {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.colorGame__title {
+  text-align: center;
 }
 
-.colorGame__guessBox {
+.colorGame__panel {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.colorGame__guesses {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,7 +26,7 @@
   justify-items: center;
 }
 
-.colorGame__square {
+.colorGame__guesses__button {
 	width: 4rem;
   height: 4rem;
   border: none;
@@ -37,9 +35,10 @@
   transition: background-color 0.3s;
 }
 
-.colorGame > button {
+.colorGame__resetButton {
   margin-top: 2rem;
   align-self: flex-end;
   height: 2rem;
   font-family: Roboto, sans-serif;
 }
+
