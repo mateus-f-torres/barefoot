@@ -20,6 +20,7 @@ const cssPlugin = (function (env) {
   } else {
     return new MiniCssExtractPlugin({
       filename: '[name].css',
+      chunkFilename: '[name].css',
     })
   }
 })(process.env.NODE_ENV)
@@ -49,7 +50,7 @@ const copyPlugin = new CopyPlugin({
 
 const sourceMapsPlugin = new SourceMapDevToolPlugin({
   filename: 'sourcemaps/[file].map',
-  exclude: [/vendors\.*\.*/, 'sw.js'],
+  exclude: ['sw.js', /runtime\.*\.*/, /vendors\.*\.*/],
 })
 
 const terserPlugin = new TerserPlugin({
@@ -69,7 +70,7 @@ const brotliPlugin = new CompressionPlugin({
 })
 
 const swPlugin = new InjectManifest({
-  swSrc: './src/sw.js',
+  swSrc: './src/sw/sw.js',
   exclude: [/\.(js|css|map)$/],
   dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
 })
@@ -83,8 +84,8 @@ let configs = {
   devtool: 'eval-source-map',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
+    chunkFilename: '[name].js',
   },
   module: {
     rules: [
@@ -171,6 +172,7 @@ if (process.env.NODE_ENV === 'production') {
     optimization: {
       minimize: true,
       minimizer: [terserPlugin, optimizeCss],
+      runtimeChunk: 'single',
       splitChunks: {
         cacheGroups: {
           commons: {

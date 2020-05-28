@@ -3,6 +3,7 @@ import '@rckeller/cypress-unfetch/await'
 
 describe('Barefoot', function () {
   it('requests an external API response on click', function () {
+    /* TODO: change this sample async spec
     cy.route('GET', 'https://yesno.wtf/api', 'fx:answer').as('getAnswer')
 
     cy.visit('/')
@@ -11,5 +12,6 @@ describe('Barefoot', function () {
     cy.findByLabelText('Yes').should('be.checked')
 
     cy.await()
+    */
   })
 })
