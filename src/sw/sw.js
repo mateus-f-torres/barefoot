@@ -6,5 +6,4 @@ skipWaiting()
 clientsClaim()
 
 precacheAndRoute(self.__WB_MANIFEST)
-
 registerRoute(new NavigationRoute(createHandlerBoundToURL('/index.html')))

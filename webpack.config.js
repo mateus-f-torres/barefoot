@@ -71,7 +71,7 @@ const brotliPlugin = new CompressionPlugin({
 
 const swPlugin = new InjectManifest({
   swSrc: './src/sw/sw.js',
-  exclude: [/\.(js|css|map)$/],
+  exclude: [/\.(br|map)$/],
   dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
 })
 
