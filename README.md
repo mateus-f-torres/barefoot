@@ -91,7 +91,7 @@ This project was at some point unnecessarily robust for a template.
 I had `redux`, `storybook`, `styled-component`, `i18next` and `jest` among other things.  
 But whenever I would start a new project with this template I had a lot of cleaning up to do.  
 
-Then I remembered why I started this project and why I choose to name it **Barefoot**
+Then I remembered why I started this project and why I choose to name it **Barefoot**  
 I provide what I would call "bare minimun configurations and optimizations" for a normal web app development workflow.  
 As minimun as the complex structure of bones, muscle and joints you have available at your feet.  
 
