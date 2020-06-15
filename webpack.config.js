@@ -44,7 +44,7 @@ const htmlPlugin = new HtmlWebpackPlugin({
 const copyPlugin = new CopyPlugin({
   patterns: [
     {from: 'src/assets/icons', to: 'icons/'},
-    {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
+    {from: 'src/assets/manifest.json', to: '[name].[ext]'},
   ],
 })
 
@@ -72,7 +72,7 @@ const brotliPlugin = new CompressionPlugin({
 const swPlugin = new InjectManifest({
   swSrc: './src/sw/sw.js',
   exclude: [/\.(br|map)$/],
-  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
+  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico|txt)$/,
 })
 
 const DEFAULT_PORT = 8080
