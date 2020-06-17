@@ -56,7 +56,7 @@ src/
 ├── assets
 │   ├── fonts/
 │   ├── icons/
-│   └── manifest-v1.json
+│   └── manifest.json
 ├── components
 │   └── App
 │       ├── App.css
