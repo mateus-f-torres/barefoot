@@ -8,6 +8,16 @@ A React PWA kitchen sink style template.
 Complete with configurations and tools for a more agile development.  
 Created from scratch and in constant improvement as my knowledge grows.
 
+**tl;dr**  
+`git clone [repository]`  
+`git flow init -d`  
+`git push origin develop`  
+`npm install`  
+`git flow feature start setup`  
+- rename project (`README.md`, `manifest.json`, `package.json`, `index.html`)
+- remove unnecessary files and configurations (`doc/`, `src/pages`)
+- remove unnecessary dependencies
+
 ## Getting Started
 ### Forking
 Fork this repo by clicking **Fork** button at the top of the page.  
