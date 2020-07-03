@@ -1,16 +1,28 @@
 /* eslint import/newline-after-import: 'off' */
 const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+// HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
-const CompressionPlugin = require('compression-webpack-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+// CSS
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+// JS
+const TerserPlugin = require('terser-webpack-plugin')
+// Compression
+const CompressionPlugin = require('compression-webpack-plugin')
+// Service Worker
 const {InjectManifest} = require('workbox-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+// Extras
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const {SourceMapDevToolPlugin} = require('webpack')
+const CopyPlugin = require('copy-webpack-plugin')
 
+// HTML
+const htmlPlugin = new HtmlWebpackPlugin({
+  filename: 'index.html',
+  template: 'src/index.html',
+})
+// CSS
 const cssPlugin = (function (env) {
   if (env == 'production') {
     return new MiniCssExtractPlugin({
@@ -26,37 +38,11 @@ const cssPlugin = (function (env) {
 })(process.env.NODE_ENV)
 
 const optimizeCss = new OptimizeCSSAssetsPlugin({})
-const cleanUpPlugin = new CleanWebpackPlugin()
-
-const analyzerPlugin = new BundleAnalyzerPlugin({
-  openAnalyzer: false,
-  analyzerMode: 'static',
-  generateStatsFile: true,
-  reportFilename: '../reports/report.html',
-  statsFilename: '../reports/stats.json',
-})
-
-const htmlPlugin = new HtmlWebpackPlugin({
-  filename: 'index.html',
-  template: 'src/index.html',
-})
-
-const copyPlugin = new CopyPlugin({
-  patterns: [
-    {from: 'src/assets/icons', to: 'icons/'},
-    {from: 'src/assets/manifest-v*', to: '[name].[ext]'},
-  ],
-})
-
-const sourceMapsPlugin = new SourceMapDevToolPlugin({
-  filename: 'sourcemaps/[file].map',
-  exclude: ['sw.js', /runtime\.*\.*/, /vendors\.*\.*/],
-})
-
+// JS
 const terserPlugin = new TerserPlugin({
   sourceMap: true,
 })
-
+// Compression
 const brotliPlugin = new CompressionPlugin({
   test: /\.(js|css|html|svg)$/,
   filename: '[path].br[query]',
@@ -68,11 +54,33 @@ const brotliPlugin = new CompressionPlugin({
     level: 11,
   },
 })
-
+// Service Worker
 const swPlugin = new InjectManifest({
   swSrc: './src/sw/sw.js',
   exclude: [/\.(br|map)$/],
-  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico)/,
+  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico|txt)$/,
+})
+// Extras
+const analyzerPlugin = new BundleAnalyzerPlugin({
+  openAnalyzer: false,
+  analyzerMode: 'static',
+  generateStatsFile: true,
+  reportFilename: '../reports/report.html',
+  statsFilename: '../reports/stats.json',
+})
+
+const cleanUpPlugin = new CleanWebpackPlugin()
+
+const sourceMapsPlugin = new SourceMapDevToolPlugin({
+  filename: 'sourcemaps/[file].map',
+  exclude: ['sw.js', /runtime\.*\.*/, /vendors\.*\.*/],
+})
+
+const copyPlugin = new CopyPlugin({
+  patterns: [
+    {from: 'src/assets/icons', to: 'icons/'},
+    {from: 'src/assets/manifest.json', to: '[name].[ext]'},
+  ],
 })
 
 const DEFAULT_PORT = 8080
