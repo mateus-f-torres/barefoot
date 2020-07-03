@@ -5,6 +5,8 @@ install:
   - npx cypress verify
   - npm install -D wait-on
 script:
+  - npx stylelint src/**/*.css --quiet
+  - npx eslint src/**/*.js --quiet
   - npm run start & wait-on http://localhost:8080 &
   - npm run test
   - kill $(jobs -p) || true

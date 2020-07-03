@@ -8,6 +8,16 @@ A React PWA kitchen sink style template.
 Complete with configurations and tools for a more agile development.  
 Created from scratch and in constant improvement as my knowledge grows.
 
+**tl;dr**  
+`git clone [repository]`  
+`git flow init -d`  
+`git push origin develop`  
+`npm install`  
+`git flow feature start setup`  
+- rename project (`README.md`, `manifest.json`, `package.json`, `index.html`)
+- remove unnecessary files and configurations (`doc/`, `src/pages`)
+- remove unnecessary dependencies
+
 ## Getting Started
 ### Forking
 Fork this repo by clicking **Fork** button at the top of the page.  
@@ -56,7 +66,7 @@ src/
 ├── assets
 │   ├── fonts/
 │   ├── icons/
-│   └── manifest-v1.json
+│   └── manifest.json
 ├── components
 │   └── App
 │       ├── App.css
@@ -91,7 +101,7 @@ This project was at some point unnecessarily robust for a template.
 I had `redux`, `storybook`, `styled-component`, `i18next` and `jest` among other things.  
 But whenever I would start a new project with this template I had a lot of cleaning up to do.  
 
-Then I remembered why I started this project and why I choose to name it **Barefoot**
+Then I remembered why I started this project and why I choose to name it **Barefoot**  
 I provide what I would call "bare minimun configurations and optimizations" for a normal web app development workflow.  
 As minimun as the complex structure of bones, muscle and joints you have available at your feet.  
 

@@ -1,13 +1,13 @@
 /* TODO: add media query for display >= tablet */
 .home {
-  margin: 0 auto;
   width: max-content;
+  margin: 0 auto;
   font-family: Roboto, sans-serif;
 }
 
 .home ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .home li {
