@@ -18,6 +18,15 @@ const TypographyGame = React.lazy(() =>
   ),
 )
 
+/* How to stop Flash of Loading Content with Code-Splitting ?
+ *  - Should we set a delay before showing loader ?
+ *  - Or should we always wait a set amount of time ?
+ *
+ *  see how dynamic imports work
+ *  maybe its better to now use .lazy and Suspense ?
+ *  use .hydrate and really cut off a section of the app ?
+ */
+
 function Home() {
   return (
     <BrowserRouter>
