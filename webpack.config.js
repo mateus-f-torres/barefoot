@@ -78,7 +78,7 @@ const sourceMapsPlugin = new SourceMapDevToolPlugin({
 
 const copyPlugin = new CopyPlugin({
   patterns: [
-    {from: 'src/assets/icons', to: 'icons/'},
+    {from: 'src/assets/logo', to: 'logo/'},
     {from: 'src/assets/manifest.json', to: '[name].[ext]'},
   ],
 })

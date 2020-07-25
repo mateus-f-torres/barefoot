@@ -15,7 +15,7 @@ Created from scratch and in constant improvement as my knowledge grows.
 `npm install`  
 `git flow feature start setup`  
 - rename project (`README.md`, `manifest.json`, `package.json`, `index.html`)
-- remove unnecessary files and configurations (`doc/`, `src/pages`)
+- remove unnecessary files, configurations and `doc/` folder
 - remove unnecessary dependencies
 
 ## Getting Started
@@ -65,7 +65,7 @@ Here I'm using [**Travis-CI**](https://travis-ci.org/) and [**Netlify**](https:/
 src/
 ├── assets
 │   ├── fonts/
-│   ├── icons/
+│   ├── logo/
 │   └── manifest.json
 ├── components
 │   └── App
@@ -81,10 +81,6 @@ src/
     ├── request.js
     └── urls.js
 ```
-
-Inside `src/` you will also find a directory named `pages/`.  
-There you will find files related to the mock application I created for Barefoot.  
-They can serve as examples but most of the time you can should just delete the directory.  
 
 ### Tools and Configurations
 All the automatic formatting, linting and testing is handled by _git hooks_.  
