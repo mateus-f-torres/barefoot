@@ -2,6 +2,8 @@ import React from 'react'
 import './App.css'
 
 function App() {
+  var _fake;
+  
   return (
     <div className="app">
       <h1>Hello World</h1>
