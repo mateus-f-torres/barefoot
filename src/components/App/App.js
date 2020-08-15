@@ -1,10 +1,11 @@
 import React from 'react'
-import './App.css'
 
 function App() {
   return (
-    <div className="app">
-      <h1>Hello World</h1>
+    <div className="max-w-lg mx-auto mt-24">
+      <h1 className="font-body text-4xl font-bold text-regal-blue text-center">
+        Hello World
+      </h1>
     </div>
   )
 }
