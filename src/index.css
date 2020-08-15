@@ -1,9 +1,49 @@
-@import 'tailwindcss/base';
-@import 'base.css';
-@import 'tailwindcss/components';
+/* stylelint-disable-next-line */
+@tailwind base;
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: optional;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Roboto'),
+    local('Roboto-Regular'),
+    url('~./assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+    url('~./assets/fonts/roboto-v20-latin-regular.woff') format('woff');
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: fallback;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Roboto Bold'),
+    local('Roboto-Bold'),
+    url('~./assets/fonts/roboto-v20-latin-700.woff2') format('woff2'),
+    url('~./assets/fonts/roboto-v20-latin-700.woff') format('woff');
+}
+
+/* unset TailwindCSS button cursor */
+button,
+[role='button'] {
+  cursor: unset;
+}
+
+/* example usage of custom-properties */
+:root {
+  --regal-blue: #243c5a;
+}
+
+/* stylelint-disable-next-line */
+@tailwind components;
 
 /* custom components styles */
 
-@import 'tailwindcss/utilities';
+/* stylelint-disable-next-line */
+@tailwind utilities;
 
-/* custom utilities styles */
+/* custom components styles */
