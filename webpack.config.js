@@ -90,13 +90,22 @@ let configs = {
   target: 'web',
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.ts'),
   output: {
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'ts-loader',
+          },
+        ],
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
