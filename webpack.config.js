@@ -90,10 +90,13 @@ let configs = {
   target: 'web',
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: path.resolve(__dirname, 'src/index.ts'),
+  entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
     filename: '[name].js',
     chunkFilename: '[name].js',
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   module: {
     rules: [
