@@ -96,7 +96,7 @@ let configs = {
     chunkFilename: '[name].js',
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   module: {
     rules: [
@@ -110,7 +110,7 @@ let configs = {
         ],
       },
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           {
@@ -213,7 +213,16 @@ if (process.env.NODE_ENV === 'production') {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'ts-loader',
+            },
+          ],
+        },
+        {
+          test: /\.jsx?$/,
           exclude: /node_modules/,
           use: [
             {
