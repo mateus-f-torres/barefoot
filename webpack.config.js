@@ -96,7 +96,7 @@ let configs = {
     chunkFilename: '[name].js',
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.jsx'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx'],
   },
   module: {
     rules: [
