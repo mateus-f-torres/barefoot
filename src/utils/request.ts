@@ -1,8 +1,8 @@
-export default function request(url, options = {method: 'GET'}) {
+export default function request(url: string, options = {method: 'GET'}) {
   return fetch(url, options)
     .then((res) => {
       if (!res.ok) {
-        throw new Error('HTTP request error, status = '.concat(res.status))
+        throw new Error('HTTP request error, status = '.concat(String(res.status)))
       } else if (res.status == 204) {
         return null
       } else {

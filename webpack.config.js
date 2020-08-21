@@ -90,15 +90,27 @@ let configs = {
   target: 'web',
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
+  resolve: {
+    extensions: ['.js', '.ts', '.jsx', '.tsx'],
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'ts-loader',
+          },
+        ],
+      },
+      {
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           {
@@ -201,7 +213,16 @@ if (process.env.NODE_ENV === 'production') {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'ts-loader',
+            },
+          ],
+        },
+        {
+          test: /\.jsx?$/,
           exclude: /node_modules/,
           use: [
             {
