@@ -6,7 +6,7 @@ install:
   - npm install -D wait-on
 script:
   - npx stylelint "src/**/*.css" --quiet
-  - npx eslint "src/**/*.js" --quiet
+  - npx eslint "src/**/*.{js,ts,jsx,tsx}" --quiet
   - npm run start & wait-on http://localhost:8080 &
   - npm run test
   - kill $(jobs -p) || true
