@@ -95,6 +95,10 @@ src/
     └── urls.ts
 ```
 
+### Main Libraries
+
+
+
 ### Tools and Configurations
 
 All the automatic formatting, linting and testing is handled by _git hooks_.  
