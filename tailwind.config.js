@@ -3,7 +3,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    mode: 'all',
+    mode: 'layers',
     content: [
       './src/**/*.ts',
       './src/**/*.js',
