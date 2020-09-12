@@ -1,6 +1,7 @@
 module.exports = {
   future: {
     purgeLayersByDefault: true,
+    removeDeprecatedGapUtilites: true,
   },
   purge: {
     mode: 'layers',
