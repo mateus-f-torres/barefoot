@@ -4,6 +4,7 @@
 [![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mateus-f-torres/barefoot/blob/master/LICENSE)
 
 # Barefoot
+
 A React PWA kitchen sink style template.  
 Complete with configurations and tools for a more agile development.  
 Created from scratch and in constant improvement as my knowledge grows.
@@ -13,54 +14,67 @@ Created from scratch and in constant improvement as my knowledge grows.
 `git flow init -d`  
 `git push origin develop`  
 `npm install`  
-`git flow feature start setup`  
+`git flow feature start setup`
+
 - rename project (`README.md`, `manifest.json`, `package.json`, `index.html`)
 - remove unnecessary files, configurations and `doc/` folder
 - remove unnecessary dependencies
 
 ## Getting Started
+
 ### Forking
+
 Fork this repo by clicking **Fork** button at the top of the page.  
-After creating a fork of the repo you can then access **Settings** and change the project name.  
+After creating a fork of the repo you can then access **Settings** and change the project name.
 
 ```
 git clone https://github.com/[your-user-name]/[your-project].git
 ```
+
 Click on the **Clone or download** button in your project's page, copy the link and clone.  
-Remember to keep the original **LICENSE** and credit me and this project in your own **README**.  
+Remember to keep the original **LICENSE** and credit me and this project in your own **README**.
 
 ### Development
+
 ```
 npm install
 ```
+
 Install the dependencies with your package manager of choice.  
-I use [`npm`](https://www.npmjs.com/) to keep things simple here in the documentation.  
+I use [`npm`](https://www.npmjs.com/) to keep things simple here in the documentation.
 
 ```
 npm run start
 ```
+
 This will serve the application in _development_ mode with `webpack-dev-server` at `localhost:8080`.  
-Any changes made to files inside `src` will automatically trigger a hot-reload of the app.  
+Any changes made to files inside `src` will automatically trigger a hot-reload of the app.
 
 ### Production
+
 ```
 npm run build
 ```
+
 Call `webpack` in _production_ mode to bundle, minify and compress your application.  
-The finished product will be at the `dist` directory.   
+The finished product will be at the `dist` directory.
 
 ```
 npm run serve
 ```
+
 To locally serve `dist/` with [`http-server`](https://github.com/http-party/http-server) at `localhost:8080`.  
-Compressed formats and catch-all redirect is already baked in the script.    
+Compressed formats and catch-all redirect is already baked in the script.
 
 ### Deployment
+
 How you deploy your application I leave it up to you.  
-Here I'm using [**Travis-CI**](https://travis-ci.org/) and [**Netlify**](https://www.netlify.com/) for this.  
+Here I'm using [**Travis-CI**](https://travis-ci.org/) and [**Netlify**](https://www.netlify.com/) for this.
 
 ## Overview
+
 ### Structure
+
 ```
 src/
 ├── assets
@@ -69,42 +83,48 @@ src/
 │   └── manifest.json
 ├── components
 │   └── App
-│       ├── App.css
-│       └── App.js
+│       └── App.tsx
 ├── index.css
 ├── index.html
-├── index.js
+├── index.tsx
 ├── sw
 │   ├── sw.js
 │   └── register.js
 └── utils
-    ├── request.js
-    └── urls.js
+    ├── request.ts
+    └── urls.ts
 ```
 
+### Main Libraries
+
+
+
 ### Tools and Configurations
+
 All the automatic formatting, linting and testing is handled by _git hooks_.  
 So instead of wasting time on unfinished code I prefer to only watch code that is being committed.  
-To learn more about it check the [Auxiliary Tools](https://github.com/mateus-f-torres/barefoot/blob/master/doc/tools.md) documentation.  
+To learn more about it check the [Auxiliary Tools](https://github.com/mateus-f-torres/barefoot/blob/master/doc/tools.md) documentation.
 
 One very important aspect of this template is how your application is served to users.  
 There is no silver bullet when it comes to code optimization and bundle generation.  
 Knowing this I created a configuration that can be used as a foundation for more advanced and specific needs.  
-For a more in depth look at this configuration refer to the [Webpack Configuration](https://github.com/mateus-f-torres/barefoot/blob/master/doc/webpack.md) documentation.  
+For a more in depth look at this configuration refer to the [Webpack Configuration](https://github.com/mateus-f-torres/barefoot/blob/master/doc/webpack.md) documentation.
 
 ## About the Project
+
 This project was at some point unnecessarily robust for a template.  
 I had `redux`, `storybook`, `styled-component`, `i18next` and `jest` among other things.  
-But whenever I would start a new project with this template I had a lot of cleaning up to do.  
+But whenever I would start a new project with this template I had a lot of cleaning up to do.
 
 Then I remembered why I started this project and why I choose to name it **Barefoot**  
 I provide what I would call "bare minimun configurations and optimizations" for a normal web app development workflow.  
-As minimun as the complex structure of bones, muscle and joints you have available at your feet.  
+As minimun as the complex structure of bones, muscle and joints you have available at your feet.
 
-What you add on top of it depends on where you are going, but, if you dont know where that is, this is a good starting point.  
+What you add on top of it depends on where you are going, but, if you dont know where that is, this might be a good starting point.  
 If you choose to wear sandals and add `styled-component` or prefer sneakers with `redux` that is up to you.  
-Good coding \ (•◡•) / !   
+Good coding \ (•◡•) / !
 
 ## License
+
 [MIT License](./LICENSE)  
-Made by [Mateus F Torres](https://github.com/mateus-f-torres)  
+Made by [Mateus F Torres](https://github.com/mateus-f-torres)
