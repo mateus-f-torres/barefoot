@@ -2987,7 +2987,7 @@ __metadata:
     mini-css-extract-plugin: ^0.11.1
     optimize-css-assets-webpack-plugin: ^5.0.4
     pnp-webpack-plugin: ^1.6.4
-    postcss: latest
+    postcss: ^8.0.5
     postcss-loader: ^4.0.2
     prettier: ^2.1.1
     react: ^16.13.1
@@ -11780,7 +11780,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:latest":
+"postcss@npm:^8.0.5":
   version: 8.0.5
   resolution: "postcss@npm:8.0.5"
   dependencies:
