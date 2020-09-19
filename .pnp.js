@@ -142,6 +142,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                     'optimize-css-assets-webpack-plugin',
                     'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.4',
                   ],
+                  ['pnp-webpack-plugin', 'npm:1.6.4'],
                   ['postcss', 'npm:8.0.5'],
                   [
                     'postcss-loader',
@@ -6066,6 +6067,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                     'optimize-css-assets-webpack-plugin',
                     'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.4',
                   ],
+                  ['pnp-webpack-plugin', 'npm:1.6.4'],
                   ['postcss', 'npm:8.0.5'],
                   [
                     'postcss-loader',
@@ -20090,6 +20092,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
+          'pnp-webpack-plugin',
+          [
+            [
+              'npm:1.6.4',
+              {
+                packageLocation:
+                  './.yarn/cache/pnp-webpack-plugin-npm-1.6.4-c497046afc-39a484182f.zip/node_modules/pnp-webpack-plugin/',
+                packageDependencies: [
+                  ['pnp-webpack-plugin', 'npm:1.6.4'],
+                  [
+                    'ts-pnp',
+                    'virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0',
+                  ],
+                ],
+                linkType: 'HARD',
+              },
+            ],
+          ],
+        ],
+        [
           'portfinder',
           [
             [
@@ -25740,6 +25762,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                   ],
                 ],
                 packagePeers: ['@types/typescript', 'typescript'],
+                linkType: 'HARD',
+              },
+            ],
+          ],
+        ],
+        [
+          'ts-pnp',
+          [
+            [
+              'virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0',
+              {
+                packageLocation:
+                  './.yarn/$$virtual/ts-pnp-virtual-abd2827f29/0/cache/ts-pnp-npm-1.2.0-43620de7df-78341a2793.zip/node_modules/ts-pnp/',
+                packageDependencies: [
+                  [
+                    'ts-pnp',
+                    'virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0',
+                  ],
+                  ['typescript', null],
+                ],
+                packagePeers: ['typescript'],
                 linkType: 'HARD',
               },
             ],
