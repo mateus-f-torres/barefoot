@@ -14,7 +14,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "NODE_ENV=production webpack",
-    "serve": "http-server ./dist -b -P http://localhost:8080?",
+    "serve": "http-server ./dist -b -P 'http://localhost:8080?'",
     "test": "cypress run"
   },
   "dependencies": {
