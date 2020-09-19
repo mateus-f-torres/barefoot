@@ -16,6 +16,8 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const {SourceMapDevToolPlugin} = require('webpack')
 const CopyPlugin = require('copy-webpack-plugin')
+// Plug'n'Play
+const PnpWebpackPlugin = require('pnp-webpack-plugin')
 
 // HTML
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -97,6 +99,10 @@ let configs = {
   },
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
+    plugins: [PnpWebpackPlugin],
+  },
+  resolveLoader: {
+    plugins: [PnpWebpackPlugin.moduleLoader(module)],
   },
   module: {
     rules: [
