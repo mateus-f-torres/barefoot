@@ -2986,7 +2986,8 @@ __metadata:
     lint-staged: ^10.3.0
     mini-css-extract-plugin: ^0.11.1
     optimize-css-assets-webpack-plugin: ^5.0.4
-    postcss-loader: ^4.0.1
+    postcss: latest
+    postcss-loader: ^4.0.2
     prettier: ^2.1.1
     react: ^16.13.1
     react-dom: ^16.13.1
@@ -9078,6 +9079,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"line-column@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "line-column@npm:1.0.2"
+  dependencies:
+    isarray: ^1.0.0
+    isobject: ^2.0.0
+  checksum: e6fa785b0c75c4485d0f181beaeb2f0b482ebf16921b64d5b61e75e86a61504b42053655d481b1c8de5c4d8b551473c034eb48780c65d76be377e643d395f6e5
+  languageName: node
+  linkType: hard
+
 "lines-and-columns@npm:^1.1.6":
   version: 1.1.6
   resolution: "lines-and-columns@npm:1.1.6"
@@ -10062,6 +10073,15 @@ fsevents@~2.1.2:
   dependencies:
     node-gyp: latest
   checksum: eeab7cf260362a578f0b8622716a76d19bc009722049c7274748644ce03b2aa38ca01b3ac730a0497fd2c1ec882a21a0592e800a903994ed4d32acd06bf7eba7
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^3.1.12":
+  version: 3.1.12
+  resolution: "nanoid@npm:3.1.12"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: dc51417babadca4b00c2126ac0bc1c01e842e3c40edda2d3e1da40e8aae4d691a2a0b9d8e9c3a8cdb16133345a47f9135f0d0eef85a66ad31711ad3d908050e4
   languageName: node
   linkType: hard
 
@@ -11333,9 +11353,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "postcss-loader@npm:4.0.1"
+"postcss-loader@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "postcss-loader@npm:4.0.2"
   dependencies:
     cosmiconfig: ^7.0.0
     klona: ^2.0.3
@@ -11343,9 +11363,9 @@ fsevents@~2.1.2:
     schema-utils: ^2.7.1
     semver: ^7.3.2
   peerDependencies:
-    postcss: ^7.0.0
+    postcss: ^7.0.0 || ^8.0.1
     webpack: ^4.0.0 || ^5.0.0
-  checksum: e66d0c615ed29e1ea9388bdb7b6b863759037f71769eea41d022d6ef467a86e5001e36d3300d8f8efa5e5042af9329f44af3ad158787f645f8ac2eb93fc00ff4
+  checksum: 99ea0b3a86089709f933bdf03eee04d832c1628365003aed948022214e0744f206a55bdfd6d4e327d8af05d9d1ae3e0294f92b34594d9502693c0203ce9d7e45
   languageName: node
   linkType: hard
 
@@ -11747,6 +11767,18 @@ fsevents@~2.1.2:
     source-map: ^0.6.1
     supports-color: ^5.4.0
   checksum: 9b61abdfb366491debc6a633ba3703ae43c674b6c1c64def54e131c8ec01862fc95b3271bde221db805389fc76c3b3f1447b5a9c1d0b332c53cfcc9bfe1b1fa6
+  languageName: node
+  linkType: hard
+
+"postcss@npm:latest":
+  version: 8.0.5
+  resolution: "postcss@npm:8.0.5"
+  dependencies:
+    colorette: ^1.2.1
+    line-column: ^1.0.2
+    nanoid: ^3.1.12
+    source-map: ^0.6.1
+  checksum: bc42914b654a33322e2e584bc9163fd40e934cc2bd105ba2f9c6b548920d900fb3cca3f366786dc7292e13f225f5651acac92fcb35fae8c12520597eda9dabd8
   languageName: node
   linkType: hard
 

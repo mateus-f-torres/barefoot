@@ -142,9 +142,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                     'optimize-css-assets-webpack-plugin',
                     'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.4',
                   ],
+                  ['postcss', 'npm:8.0.5'],
                   [
                     'postcss-loader',
-                    'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.1',
+                    'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.2',
                   ],
                   ['prettier', 'npm:2.1.1'],
                   ['react', 'npm:16.13.1'],
@@ -6065,9 +6066,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                     'optimize-css-assets-webpack-plugin',
                     'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.4',
                   ],
+                  ['postcss', 'npm:8.0.5'],
                   [
                     'postcss-loader',
-                    'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.1',
+                    'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.2',
                   ],
                   ['prettier', 'npm:2.1.1'],
                   ['react', 'npm:16.13.1'],
@@ -16433,6 +16435,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
+          'line-column',
+          [
+            [
+              'npm:1.0.2',
+              {
+                packageLocation:
+                  './.yarn/cache/line-column-npm-1.0.2-bdeb1193f9-e6fa785b0c.zip/node_modules/line-column/',
+                packageDependencies: [
+                  ['line-column', 'npm:1.0.2'],
+                  ['isarray', 'npm:1.0.0'],
+                  ['isobject', 'npm:2.1.0'],
+                ],
+                linkType: 'HARD',
+              },
+            ],
+          ],
+        ],
+        [
           'lines-and-columns',
           [
             [
@@ -18093,6 +18113,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                   ['nan', 'npm:2.14.1'],
                   ['node-gyp', 'npm:7.1.0'],
                 ],
+                linkType: 'HARD',
+              },
+            ],
+          ],
+        ],
+        [
+          'nanoid',
+          [
+            [
+              'npm:3.1.12',
+              {
+                packageLocation:
+                  './.yarn/cache/nanoid-npm-3.1.12-47edcb66d1-dc51417bab.zip/node_modules/nanoid/',
+                packageDependencies: [['nanoid', 'npm:3.1.12']],
                 linkType: 'HARD',
               },
             ],
@@ -20122,6 +20156,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                 linkType: 'HARD',
               },
             ],
+            [
+              'npm:8.0.5',
+              {
+                packageLocation:
+                  './.yarn/cache/postcss-npm-8.0.5-650ddea4d8-bc42914b65.zip/node_modules/postcss/',
+                packageDependencies: [
+                  ['postcss', 'npm:8.0.5'],
+                  ['colorette', 'npm:1.2.1'],
+                  ['line-column', 'npm:1.0.2'],
+                  ['nanoid', 'npm:3.1.12'],
+                  ['source-map', 'npm:0.6.1'],
+                ],
+                linkType: 'HARD',
+              },
+            ],
           ],
         ],
         [
@@ -20342,21 +20391,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           'postcss-loader',
           [
             [
-              'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.1',
+              'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.2',
               {
                 packageLocation:
-                  './.yarn/$$virtual/postcss-loader-virtual-fd291f309c/0/cache/postcss-loader-npm-4.0.1-3a31e02334-e66d0c615e.zip/node_modules/postcss-loader/',
+                  './.yarn/$$virtual/postcss-loader-virtual-2c0219d586/0/cache/postcss-loader-npm-4.0.2-b95a046c0b-99ea0b3a86.zip/node_modules/postcss-loader/',
                 packageDependencies: [
                   [
                     'postcss-loader',
-                    'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.1',
+                    'virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.2',
                   ],
                   ['@types/postcss', null],
                   ['@types/webpack', null],
                   ['cosmiconfig', 'npm:7.0.0'],
                   ['klona', 'npm:2.0.3'],
                   ['loader-utils', 'npm:2.0.0'],
-                  ['postcss', null],
+                  ['postcss', 'npm:8.0.5'],
                   ['schema-utils', 'npm:2.7.1'],
                   ['semver', 'npm:7.3.2'],
                   [
