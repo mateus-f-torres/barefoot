@@ -1,7 +1,7 @@
 language: node_js
 cache: yarn
 install:
-  - yarn install --force
+  - yarn install
   - yarn dlx cypress verify
   - yarn add --dev wait-on
 script:
