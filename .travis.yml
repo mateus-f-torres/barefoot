@@ -1,5 +1,8 @@
 language: node_js
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - $HOME/travis/.cache/Cypress
 install:
   - yarn install --check-cache
   - yarn dlx cypress verify
