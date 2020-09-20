@@ -3,7 +3,6 @@ cache: yarn
 install:
   - yarn install --check-cache
   - yarn dlx cypress verify
-  - yarn dlx cypress install
   - yarn add --dev wait-on
 script:
   - yarn stylelint "src/**/*.css" --quiet
