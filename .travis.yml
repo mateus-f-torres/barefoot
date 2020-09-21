@@ -2,15 +2,6 @@ language: node_js
 cache: yarn
 install:
   - yarn install --check-cache
-  - yarn dlx cypress cache clear
-  - yarn dlx cypress install
-  - yarn dlx cypress verify
-  - yarn dlx cypress version
-  - yarn add --dev wait-on
 script:
   - yarn stylelint "src/**/*.css" --quiet
   - yarn eslint "src/**/*.{js,ts,jsx,tsx}" --quiet
-  - yarn start & wait-on http://localhost:8080 &
-  - yarn test
-  - kill $(jobs -p) || true
-
