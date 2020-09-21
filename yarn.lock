@@ -2967,7 +2967,7 @@ __metadata:
     copy-webpack-plugin: ^6.1.0
     core-js: ^3.6.5
     css-loader: ^4.3.0
-    cypress: 5.1.0
+    cypress: ^5.2.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.8.1
     eslint-config-prettier: ^6.11.0
@@ -4883,9 +4883,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:5.1.0":
-  version: 5.1.0
-  resolution: "cypress@npm:5.1.0"
+"cypress@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "cypress@npm:5.2.0"
   dependencies:
     "@cypress/listr-verbose-renderer": ^0.4.1
     "@cypress/request": ^2.88.5
@@ -4927,7 +4927,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: ed4b5123a5701121a678a5d99ddfc5f31ee200626b7f5170109519e717a8a96138a33bca9da69e2f5ef48b72c85ca3d4f7e742e43f07d30cbf7066c4355d776e
+  checksum: ffb39d28e324ea1fa6d5494c90522860bffaacde84531eebe0407b8f311e96001ad86d3170375510ded34c9e6b320a46037484cfd6efc0936da6b0bf92b88c40
   languageName: node
   linkType: hard
 
