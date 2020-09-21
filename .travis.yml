@@ -1,7 +1,14 @@
 language: node_js
 cache: yarn
+before_install:
+  - rm -rf $HOME/.cache/Cypress/
 install:
   - yarn install --check-cache
+  - yarn dlx cypress install
+  - yarn add --dev wait-on
 script:
   - yarn stylelint "src/**/*.css" --quiet
   - yarn eslint "src/**/*.{js,ts,jsx,tsx}" --quiet
+  - yarn start & wait-on https://localhost:8080 &
+  - yarn test
+  - kill $(jobs -p) || true
