@@ -4,7 +4,6 @@ before_install:
   - rm -rf $HOME/.cache/Cypress
 install:
   - yarn install --check-cache
-  - yarn dlx cypress install
   - yarn add --dev wait-on
 script:
   - yarn stylelint "src/**/*.css" --quiet
