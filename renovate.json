@@ -3,6 +3,6 @@
   "assignees": ["mateus-f-torres"],
   "automerge": false,
   "baseBranches": ["develop"],
-  "commitMessagePrefix": "chore:",
+  "commitMessagePrefix": "chore(renovate):",
   "supportPolicy": ["lts_active"]
 }
