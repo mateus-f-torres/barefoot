@@ -1,8 +1,0 @@
-{
-  "extends": ["config:base"],
-  "assignees": ["mateus-f-torres"],
-  "automerge": false,
-  "baseBranches": ["develop"],
-  "commitMessagePrefix": "chore(renovate):",
-  "supportPolicy": ["lts_active"]
-}
