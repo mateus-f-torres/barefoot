@@ -1797,15 +1797,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/cypress@npm:7.0.0":
-  version: 7.0.0
-  resolution: "@testing-library/cypress@npm:7.0.0"
+"@testing-library/cypress@npm:7.0.1":
+  version: 7.0.1
+  resolution: "@testing-library/cypress@npm:7.0.1"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@testing-library/dom": ^7.22.2
   peerDependencies:
     cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
-  checksum: 63d993da4dff5b324ca2d2c666a46d104aaee6a6ef9c342d2905f99cc6fb0fb631aea407d4301dae5e0a235f3f38206a05198f4cb17a2b1c1435288316b9d060
+  checksum: 6e5c2c2fe1ad7a4b168fcae43ccc5e7f9aa6f52bab7423b89dec7680866cabc557470876111fcb5b0bf2bfcd8b80d7acd753bc031577c31df82b57a045dd24d1
   languageName: node
   linkType: hard
 
@@ -2955,7 +2955,7 @@ __metadata:
     "@commitlint/cli": 9.1.2
     "@commitlint/config-conventional": 9.1.2
     "@rckeller/cypress-unfetch": 1.0.1
-    "@testing-library/cypress": 7.0.0
+    "@testing-library/cypress": 7.0.1
     "@types/react": 16.9.49
     "@types/react-dom": 16.9.8
     autoprefixer: 9.8.6
