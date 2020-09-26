@@ -2,7 +2,7 @@
   "extends": ["config:base"],
   "assignees": ["mateus-f-torres"],
   "automerge": false,
-  "baseBranches": ["development"],
+  "baseBranches": ["develop"],
   "commitMessagePrefix": "chore:",
   "supportPolicy": ["lts_active"]
 }
