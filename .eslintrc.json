@@ -14,12 +14,10 @@
     "commonjs": true,
     "es6": true,
     "node": true,
-    "worker": true,
-    "cypress/globals": true
+    "worker": true
   },
   "plugins": [
-    "react",
-    "cypress"
+    "react"
   ],
   "settings": {
     "react": {
@@ -30,7 +28,6 @@
     "standard",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:cypress/recommended",
     "prettier"
   ],
   "rules": {
