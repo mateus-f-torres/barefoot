@@ -2772,7 +2772,7 @@ __metadata:
     html-webpack-plugin: 4.4.1
     http-server: 0.12.3
     husky: 4.3.0
-    image-webpack-loader: 7.0.0
+    image-webpack-loader: 7.0.1
     lint-staged: 10.3.0
     mini-css-extract-plugin: 0.11.2
     optimize-css-assets-webpack-plugin: 5.0.4
@@ -7398,9 +7398,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"image-webpack-loader@npm:7.0.0":
-  version: 7.0.0
-  resolution: "image-webpack-loader@npm:7.0.0"
+"image-webpack-loader@npm:7.0.1":
+  version: 7.0.1
+  resolution: "image-webpack-loader@npm:7.0.1"
   dependencies:
     imagemin: ^7.0.1
     imagemin-gifsicle: ^7.0.0
@@ -7411,7 +7411,7 @@ fsevents@~2.1.2:
     imagemin-webp: ^6.0.0
     loader-utils: ^2.0.0
     object-assign: ^4.1.1
-    schema-utils: ^2.6.1
+    schema-utils: ^2.7.1
   dependenciesMeta:
     imagemin-gifsicle:
       optional: true
@@ -7425,7 +7425,7 @@ fsevents@~2.1.2:
       optional: true
     imagemin-webp:
       optional: true
-  checksum: ed5ca83676962ffe6d6dcf09be6a766d3c64983ffa50732c111b699c4d0d0eeac19f1d620642cb5ed26e63b51db60a981cb5f4bc9abd5bf4e7ba1d1f3a2fff0c
+  checksum: acdebd8663c262bc292df1517100b51f1f79c6c53b6b03b25403aaf6dde77afa4b68a3989a5d36e7d86d735f5eea28e28de6416d5e1a130055062e7b6722106c
   languageName: node
   linkType: hard
 
@@ -12298,7 +12298,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^2.6.1, schema-utils@npm:^2.6.5, schema-utils@npm:^2.6.6, schema-utils@npm:^2.7.0, schema-utils@npm:^2.7.1":
+"schema-utils@npm:^2.6.5, schema-utils@npm:^2.6.6, schema-utils@npm:^2.7.0, schema-utils@npm:^2.7.1":
   version: 2.7.1
   resolution: "schema-utils@npm:2.7.1"
   dependencies:
