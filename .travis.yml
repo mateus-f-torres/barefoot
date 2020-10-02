@@ -1,7 +1,7 @@
 language: node_js
 cache: yarn
 install:
-  - yarn install --immutable --immutable-cache --check-cache
+  - yarn install
 script:
   - yarn stylelint "src/**/*.css" --quiet
   - yarn eslint "src/**/*.{js,ts,jsx,tsx}" --quiet
