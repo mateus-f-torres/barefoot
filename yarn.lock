@@ -2777,7 +2777,7 @@ __metadata:
     mini-css-extract-plugin: 0.11.2
     optimize-css-assets-webpack-plugin: 5.0.4
     pnp-webpack-plugin: 1.6.4
-    postcss: 8.0.5
+    postcss: 8.1.1
     postcss-loader: 4.0.2
     prettier: 2.1.1
     react: 16.13.1
@@ -11187,15 +11187,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.0.5":
-  version: 8.0.5
-  resolution: "postcss@npm:8.0.5"
+"postcss@npm:8.1.1":
+  version: 8.1.1
+  resolution: "postcss@npm:8.1.1"
   dependencies:
     colorette: ^1.2.1
     line-column: ^1.0.2
     nanoid: ^3.1.12
     source-map: ^0.6.1
-  checksum: bc42914b654a33322e2e584bc9163fd40e934cc2bd105ba2f9c6b548920d900fb3cca3f366786dc7292e13f225f5651acac92fcb35fae8c12520597eda9dabd8
+  checksum: 9bdc9e51369ee35831589f0cfffcb996ed2b50aa23e54e3cf849c74361c17e7f7c1df3e0b993392818ede40f0731c458be134901ce9438bd38223e38781f52f5
   languageName: node
   linkType: hard
 
