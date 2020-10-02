@@ -57,7 +57,6 @@
     "http-server": "0.12.3",
     "husky": "4.3.0",
     "image-webpack-loader": "7.0.0",
-    "jest": "^26.4.2",
     "lint-staged": "10.3.0",
     "mini-css-extract-plugin": "0.11.2",
     "optimize-css-assets-webpack-plugin": "5.0.4",
