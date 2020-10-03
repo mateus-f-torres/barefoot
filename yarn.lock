@@ -2786,7 +2786,7 @@ __metadata:
     stylelint: 13.7.2
     stylelint-config-idiomatic-order: 8.1.0
     stylelint-config-standard: 20.0.0
-    tailwindcss: 1.8.8
+    tailwindcss: 1.8.10
     terser-webpack-plugin: 4.2.2
     ts-loader: 8.0.4
     typescript: 4.0.3
@@ -13485,9 +13485,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:1.8.8":
-  version: 1.8.8
-  resolution: "tailwindcss@npm:1.8.8"
+"tailwindcss@npm:1.8.10":
+  version: 1.8.10
+  resolution: "tailwindcss@npm:1.8.10"
   dependencies:
     "@fullhuman/postcss-purgecss": ^2.1.2
     autoprefixer: ^9.4.5
@@ -13514,7 +13514,7 @@ fsevents@~2.1.2:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 2747e14427e58e0ac58eca34afdfbf1b1a9c6cbc3ce006cedb3f90550be88e2cf57b61048b525c39c49073959a3d4829d5e3ba13a5f6fd22448baeb0282ec6e2
+  checksum: 89c0c8a227b677b4bb150cd6b1c2f37c1a30a0285165ff5b315a1fa0046430ebdf54ccba26c291bfe86c96be0d25c83365608ac8f182799fcdf2e442860a229e
   languageName: node
   linkType: hard
 
