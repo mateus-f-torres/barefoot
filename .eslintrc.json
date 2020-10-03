@@ -80,6 +80,9 @@
     ],
     "react/prop-types": [
       "warn"
+    ],
+    "import/no-duplicates": [
+      "warn"
     ]
   }
 }
