@@ -2755,7 +2755,7 @@ __metadata:
     babel-loader: 8.1.0
     clean-webpack-plugin: 3.0.0
     commitizen: 4.2.1
-    compression-webpack-plugin: 5.0.2
+    compression-webpack-plugin: 6.0.2
     copy-webpack-plugin: 6.2.0
     core-js: 3.6.5
     css-loader: 4.3.0
@@ -3966,18 +3966,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compression-webpack-plugin@npm:5.0.2":
-  version: 5.0.2
-  resolution: "compression-webpack-plugin@npm:5.0.2"
+"compression-webpack-plugin@npm:6.0.2":
+  version: 6.0.2
+  resolution: "compression-webpack-plugin@npm:6.0.2"
   dependencies:
     cacache: ^15.0.5
     find-cache-dir: ^3.3.1
-    schema-utils: ^2.7.0
-    serialize-javascript: ^4.0.0
+    schema-utils: ^2.7.1
+    serialize-javascript: ^5.0.1
     webpack-sources: ^1.4.3
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
-  checksum: d15dce63dca7af08f3e2e98d6074bcd5a7b2f456a04cb88358d4f4c5be5b9de0683ed87ac396d22d8b8003a794539df09de4a9ad5f23c991284fab8c4e589043
+  checksum: ffd2cfca93d0b788e42db0ebd1bb9405a656a42bf94f808f6b7dd7c08efb4a12843cd6babf362b3009ec295e1da95e21c16661bc27d571c9735ae3dd1d552e3a
   languageName: node
   linkType: hard
 
@@ -12298,7 +12298,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^2.6.5, schema-utils@npm:^2.6.6, schema-utils@npm:^2.7.0, schema-utils@npm:^2.7.1":
+"schema-utils@npm:^2.6.5, schema-utils@npm:^2.6.6, schema-utils@npm:^2.7.1":
   version: 2.7.1
   resolution: "schema-utils@npm:2.7.1"
   dependencies:
