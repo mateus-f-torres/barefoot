@@ -3,7 +3,7 @@
     "prettier --write",
     "eslint --fix"
   ],
-  "*.js?(x)": [
+  "!(.pnp)*.js?(x)": [
     "prettier --write",
     "eslint --fix"
   ],
