@@ -1,13 +1,11 @@
-FROM node:12.18.4
+FROM node:12.18.4 AS build
 
 WORKDIR /usr/src/barefoot
-
-EXPOSE 8080
-
-COPY . .
+COPY . /usr/src/barefoot
 
 RUN yarn install --immutable
 
-VOLUME /usr/src/barefoot/.yarn
+RUN yarn build
 
-CMD ["yarn", "start", "--host", "0.0.0.0"]
+FROM nginx
+COPY --from=build /usr/src/barefoot/dist /usr/share/nginx/html
