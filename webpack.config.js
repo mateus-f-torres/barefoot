@@ -47,7 +47,7 @@ const terserPlugin = new TerserPlugin({
 // Compression
 const brotliPlugin = new CompressionPlugin({
   test: /\.(js|css|html|svg)$/,
-  filename: '[path].br[query]',
+  filename: '[path][name].br',
   algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
