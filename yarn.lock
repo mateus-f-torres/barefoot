@@ -1796,13 +1796,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:16.9.50":
-  version: 16.9.50
-  resolution: "@types/react@npm:16.9.50"
+"@types/react@npm:16.9.51":
+  version: 16.9.51
+  resolution: "@types/react@npm:16.9.51"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 3941c4f31cf5a44d376a8ca2b5e5df1ab6af0588da88f8975dc3dac55f3345a7634d599c1a808726723509611b0536943622fbc9162afff2ad869677672b877a
+  checksum: 2244f20526c284e3d81ff50422222fce609034f4a1e29ea71733ab9e2c2c9894f062e4a270e327d5a81d11b02a6de24e418babcfb039a7139549b21179fc1942
   languageName: node
   linkType: hard
 
@@ -2732,7 +2732,7 @@ __metadata:
     "@babel/preset-typescript": 7.10.4
     "@commitlint/cli": 11.0.0
     "@commitlint/config-conventional": 11.0.0
-    "@types/react": 16.9.50
+    "@types/react": 16.9.51
     "@types/react-dom": 16.9.8
     autoprefixer: 10.0.1
     babel-eslint: 10.1.0
