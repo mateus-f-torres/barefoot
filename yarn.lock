@@ -2994,7 +2994,7 @@ __metadata:
     compression-webpack-plugin: 6.0.3
     copy-webpack-plugin: 6.2.1
     core-js: 3.6.5
-    css-loader: ^5.0.0
+    css-loader: 5.0.0
     cz-conventional-changelog: 3.3.0
     eslint: 7.11.0
     eslint-config-prettier: 6.12.0
@@ -3009,14 +3009,14 @@ __metadata:
     husky: 4.3.0
     image-webpack-loader: 7.0.1
     lint-staged: 10.4.0
-    mini-css-extract-plugin: ^1.0.0
+    mini-css-extract-plugin: 1.0.0
     optimize-css-assets-webpack-plugin: 5.0.4
     postcss: 8.1.1
     postcss-loader: 4.0.4
     prettier: 2.1.2
     react: 16.13.1
     react-dom: 16.13.1
-    style-loader: ^2.0.0
+    style-loader: 2.0.0
     stylelint: 13.7.2
     stylelint-config-idiomatic-order: 8.1.0
     stylelint-config-standard: 20.0.0
@@ -3025,9 +3025,9 @@ __metadata:
     ts-loader: 8.0.5
     typescript: 4.0.3
     url-loader: 4.1.1
-    webpack: ^5.1.0
+    webpack: 5.1.0
     webpack-bundle-analyzer: 3.9.0
-    webpack-cli: ^4.0.0
+    webpack-cli: 4.0.0
     webpack-dev-server: 3.11.0
     workbox-core: 5.1.4
     workbox-precaching: 5.1.4
@@ -4454,7 +4454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^5.0.0":
+"css-loader@npm:5.0.0":
   version: 5.0.0
   resolution: "css-loader@npm:5.0.0"
   dependencies:
@@ -5527,6 +5527,26 @@ __metadata:
     string.prototype.trimend: ^1.0.1
     string.prototype.trimstart: ^1.0.1
   checksum: 1b2264251b11d77edb3005700d1d21f04d388f3d880b8c044b460f3dd0621a1568e0b637f8d0a3ff901e7c74ecda7922bf8a8e45b0bb7fd8d5cc7e343746d463
+  languageName: node
+  linkType: hard
+
+"es-abstract@npm:^1.18.0-next.1":
+  version: 1.18.0-next.1
+  resolution: "es-abstract@npm:1.18.0-next.1"
+  dependencies:
+    es-to-primitive: ^1.2.1
+    function-bind: ^1.1.1
+    has: ^1.0.3
+    has-symbols: ^1.0.1
+    is-callable: ^1.2.2
+    is-negative-zero: ^2.0.0
+    is-regex: ^1.1.1
+    object-inspect: ^1.8.0
+    object-keys: ^1.1.1
+    object.assign: ^4.1.1
+    string.prototype.trimend: ^1.0.1
+    string.prototype.trimstart: ^1.0.1
+  checksum: f1e37567e49a54c09050aa3371cac601a789441f4fa9730f2c2d386aadad547d6c303bb41e7f5cb5286b616104d6c13450f33b712f664939a09729dd5e45c963
   languageName: node
   linkType: hard
 
@@ -8082,6 +8102,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"is-callable@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "is-callable@npm:1.2.2"
+  checksum: c35d37cc46c997d6417d7254733c8a3b1146f18121197c5600f601c56fb27abd1b372b0b9c41ea9a69d30556a2a0fd85e396da8eb8bc4af2e5ad8c5232fcd433
+  languageName: node
+  linkType: hard
+
 "is-color-stop@npm:^1.0.0":
   version: 1.1.0
   resolution: "is-color-stop@npm:1.1.0"
@@ -9685,7 +9712,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:^1.0.0":
+"mini-css-extract-plugin@npm:1.0.0":
   version: 1.0.0
   resolution: "mini-css-extract-plugin@npm:1.0.0"
   dependencies:
@@ -9897,11 +9924,11 @@ fsevents@^1.2.7:
   linkType: hard
 
 "nan@npm:^2.12.1":
-  version: 2.14.1
-  resolution: "nan@npm:2.14.1"
+  version: 2.14.2
+  resolution: "nan@npm:2.14.2"
   dependencies:
     node-gyp: latest
-  checksum: eeab7cf260362a578f0b8622716a76d19bc009722049c7274748644ce03b2aa38ca01b3ac730a0497fd2c1ec882a21a0592e800a903994ed4d32acd06bf7eba7
+  checksum: 36349b2e5df4182aa0d0cc43fcd6cc782ca560a83c2764743d80c14ba5028d0c54041a2f464b8d4cb18a884e04415034a0a764c745e1d5502ea34a5cb6470a39
   languageName: node
   linkType: hard
 
@@ -9989,10 +10016,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-forge@npm:0.9.0":
-  version: 0.9.0
-  resolution: "node-forge@npm:0.9.0"
-  checksum: 901d6ab679072ad4b4174daed4d1ede43f01131456aba1918d89246ae37f73e40e053d9bf32ab3836e74e9e471c2637f4a6af337ab8c6a562faa3a385aac806c
+"node-forge@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "node-forge@npm:0.10.0"
+  checksum: c7a729933a0391e4f434d4455705e869340bf91c3cc6b51b3844a91a5ac9db6f8697f600ab1e62e25f990382b2c1592d93d31fd831bb1a0b1e66ce28d9d6d124
   languageName: node
   linkType: hard
 
@@ -10245,12 +10272,12 @@ fsevents@^1.2.7:
   linkType: hard
 
 "object-is@npm:^1.0.1":
-  version: 1.1.2
-  resolution: "object-is@npm:1.1.2"
+  version: 1.1.3
+  resolution: "object-is@npm:1.1.3"
   dependencies:
     define-properties: ^1.1.3
-    es-abstract: ^1.17.5
-  checksum: 9ea7df4475f250c968171fa142b6584bad4c65859af8cb50e06fa8168089ae47afb460776ab60fe5f3aea8ea3c97b30dd0b37d41e23106f2abcc7d6f982bec04
+    es-abstract: ^1.18.0-next.1
+  checksum: f16b6ae28ca9a46154dc549c1660d1db411bbe57643a0479292814cb1842c9ecacb13aac9a18df6ce7af0991c5b034113bdb5a4a9feb282d6deaa136d2ea14e2
   languageName: node
   linkType: hard
 
@@ -12758,11 +12785,11 @@ fsevents@^1.2.7:
   linkType: hard
 
 "selfsigned@npm:^1.10.7":
-  version: 1.10.7
-  resolution: "selfsigned@npm:1.10.7"
+  version: 1.10.8
+  resolution: "selfsigned@npm:1.10.8"
   dependencies:
-    node-forge: 0.9.0
-  checksum: ef53d4801c5cb67690dba94b105e3d87d243f1b1254c7cc02db51d7cb352ddfece065951874515b7c23d52025c250d9f50d74dbe547ba38cca8d15c5ad4ad5e6
+    node-forge: ^0.10.0
+  checksum: a382ec2af9798a93bc25f2d75778eed6d2c685fdf81e56deaac02d46aa896b0cc1b2770b2689891f8fe83d89cd3bb3e2042c6b15057e110f25a57769cb1a5fb3
   languageName: node
   linkType: hard
 
@@ -13681,7 +13708,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"style-loader@npm:^2.0.0":
+"style-loader@npm:2.0.0":
   version: 2.0.0
   resolution: "style-loader@npm:2.0.0"
   dependencies:
@@ -14939,7 +14966,7 @@ typescript@4.0.3:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:^4.0.0":
+"webpack-cli@npm:4.0.0":
   version: 4.0.0
   resolution: "webpack-cli@npm:4.0.0"
   dependencies:
@@ -15076,7 +15103,7 @@ typescript@4.0.3:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.1.0":
+"webpack@npm:5.1.0":
   version: 5.1.0
   resolution: "webpack@npm:5.1.0"
   dependencies:
