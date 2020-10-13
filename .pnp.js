@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:4.3.0"],
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.4.0"],
-            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:0.12.0"],
+            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.0.0"],
             ["optimize-css-assets-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.4"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["postcss", "npm:8.1.1"],
@@ -3861,7 +3861,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:4.3.0"],
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.4.0"],
-            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:0.12.0"],
+            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.0.0"],
             ["optimize-css-assets-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.4"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["postcss", "npm:8.1.1"],
@@ -11240,14 +11240,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["mini-css-extract-plugin", [
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:0.12.0", {
-          "packageLocation": "./.yarn/$$virtual/mini-css-extract-plugin-virtual-6a31059443/0/cache/mini-css-extract-plugin-npm-0.12.0-fd8ed40e6c-bd8d5fe46f.zip/node_modules/mini-css-extract-plugin/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.0.0", {
+          "packageLocation": "./.yarn/$$virtual/mini-css-extract-plugin-virtual-d33f6c8356/0/cache/mini-css-extract-plugin-npm-1.0.0-a6fc4e9e41-c3f4b1691c.zip/node_modules/mini-css-extract-plugin/",
           "packageDependencies": [
-            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:0.12.0"],
+            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.0.0"],
             ["@types/webpack", null],
-            ["loader-utils", "npm:1.4.0"],
+            ["loader-utils", "npm:2.0.0"],
             ["normalize-url", "npm:1.9.1"],
-            ["schema-utils", "npm:1.0.0"],
+            ["schema-utils", "npm:3.0.0"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["webpack-sources", "npm:1.4.3"]
           ],
