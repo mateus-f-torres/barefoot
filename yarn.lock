@@ -3011,7 +3011,6 @@ __metadata:
     lint-staged: 10.4.0
     mini-css-extract-plugin: ^1.0.0
     optimize-css-assets-webpack-plugin: 5.0.4
-    pnp-webpack-plugin: 1.6.4
     postcss: 8.1.1
     postcss-loader: 4.0.4
     prettier: 2.1.2
@@ -11054,15 +11053,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"pnp-webpack-plugin@npm:1.6.4":
-  version: 1.6.4
-  resolution: "pnp-webpack-plugin@npm:1.6.4"
-  dependencies:
-    ts-pnp: ^1.1.6
-  checksum: 39a484182f8fc08cb1420d4a5ccf16457c6498a4546bfbad9e00df7238ba7d98796e9aa6f82a4e803a627860409ffed491a55c5a1384e09bed60cefeb618586d
-  languageName: node
-  linkType: hard
-
 "portfinder@npm:^1.0.26":
   version: 1.0.28
   resolution: "portfinder@npm:1.0.28"
@@ -14316,16 +14306,6 @@ fsevents@^1.2.7:
   peerDependencies:
     typescript: "*"
   checksum: 875ce9be26f5e08d43a468b2e578901ed8c987e8807092851dcb5be707bb3f23542946c9825abafea4111d26b39b7dc14b2c26adcb2bcbe06cddb017119af52f
-  languageName: node
-  linkType: hard
-
-"ts-pnp@npm:^1.1.6":
-  version: 1.2.0
-  resolution: "ts-pnp@npm:1.2.0"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 78341a27939de565e2754ff65ebb689743c16e3295528089d143c08d91842cf9029c3d6b3c95a9a20854a114a7904329d02c710d63f7ce4dbf671b8a3e560ac1
   languageName: node
   linkType: hard
 
