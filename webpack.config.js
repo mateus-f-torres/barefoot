@@ -128,10 +128,7 @@ let configs = {
         test: /\.css$/,
         use: [
           'style-loader',
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {hmr: true},
-          },
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
         ],
@@ -241,13 +238,7 @@ if (process.env.NODE_ENV === 'production') {
         },
         {
           test: /\.css$/,
-          use: [
-            {
-              loader: MiniCssExtractPlugin.loader,
-            },
-            'css-loader',
-            'postcss-loader',
-          ],
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
         },
         {
           test: /\.(woff2|woff)$/,
