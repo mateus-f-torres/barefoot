@@ -5979,7 +5979,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-arguments", "npm:1.0.4"],
             ["is-date-object", "npm:1.0.2"],
             ["is-regex", "npm:1.1.1"],
-            ["object-is", "npm:1.1.2"],
+            ["object-is", "npm:1.1.3"],
             ["object-keys", "npm:1.1.1"],
             ["regexp.prototype.flags", "npm:1.3.0"]
           ],
@@ -6658,6 +6658,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["has", "npm:1.0.3"],
             ["has-symbols", "npm:1.0.1"],
             ["is-callable", "npm:1.2.1"],
+            ["is-negative-zero", "npm:2.0.0"],
+            ["is-regex", "npm:1.1.1"],
+            ["object-inspect", "npm:1.8.0"],
+            ["object-keys", "npm:1.1.1"],
+            ["object.assign", "npm:4.1.1"],
+            ["string.prototype.trimend", "npm:1.0.1"],
+            ["string.prototype.trimstart", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.18.0-next.1", {
+          "packageLocation": "./.yarn/cache/es-abstract-npm-1.18.0-next.1-12dd4b4b73-f1e37567e4.zip/node_modules/es-abstract/",
+          "packageDependencies": [
+            ["es-abstract", "npm:1.18.0-next.1"],
+            ["es-to-primitive", "npm:1.2.1"],
+            ["function-bind", "npm:1.1.1"],
+            ["has", "npm:1.0.3"],
+            ["has-symbols", "npm:1.0.1"],
+            ["is-callable", "npm:1.2.2"],
             ["is-negative-zero", "npm:2.0.0"],
             ["is-regex", "npm:1.1.1"],
             ["object-inspect", "npm:1.8.0"],
@@ -7931,7 +7950,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["fsevents", "patch:fsevents@npm%3A1.2.13#builtin<compat/fsevents>::version=1.2.13&hash=87eb42"],
             ["bindings", "npm:1.5.0"],
-            ["nan", "npm:2.14.1"]
+            ["nan", "npm:2.14.2"]
           ],
           "linkType": "HARD",
         }]
@@ -9465,6 +9484,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-callable-npm-1.2.1-3a2361b4e1-ef2dd2e158.zip/node_modules/is-callable/",
           "packageDependencies": [
             ["is-callable", "npm:1.2.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.2.2", {
+          "packageLocation": "./.yarn/cache/is-callable-npm-1.2.2-075940758b-c35d37cc46.zip/node_modules/is-callable/",
+          "packageDependencies": [
+            ["is-callable", "npm:1.2.2"]
           ],
           "linkType": "HARD",
         }]
@@ -11470,10 +11496,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["nan", [
-        ["npm:2.14.1", {
-          "packageLocation": "./.yarn/unplugged/nan-npm-2.14.1-16097a6487/node_modules/nan/",
+        ["npm:2.14.2", {
+          "packageLocation": "./.yarn/unplugged/nan-npm-2.14.2-e3ede8ce5d/node_modules/nan/",
           "packageDependencies": [
-            ["nan", "npm:2.14.1"],
+            ["nan", "npm:2.14.2"],
             ["node-gyp", "npm:7.1.0"]
           ],
           "linkType": "HARD",
@@ -11576,10 +11602,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["node-forge", [
-        ["npm:0.9.0", {
-          "packageLocation": "./.yarn/cache/node-forge-npm-0.9.0-c76c6bdf02-901d6ab679.zip/node_modules/node-forge/",
+        ["npm:0.10.0", {
+          "packageLocation": "./.yarn/cache/node-forge-npm-0.10.0-605ba7b28b-c7a729933a.zip/node_modules/node-forge/",
           "packageDependencies": [
-            ["node-forge", "npm:0.9.0"]
+            ["node-forge", "npm:0.10.0"]
           ],
           "linkType": "HARD",
         }]
@@ -11860,12 +11886,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["object-is", [
-        ["npm:1.1.2", {
-          "packageLocation": "./.yarn/cache/object-is-npm-1.1.2-30243a0e36-9ea7df4475.zip/node_modules/object-is/",
+        ["npm:1.1.3", {
+          "packageLocation": "./.yarn/cache/object-is-npm-1.1.3-0d96485ac4-f16b6ae28c.zip/node_modules/object-is/",
           "packageDependencies": [
-            ["object-is", "npm:1.1.2"],
+            ["object-is", "npm:1.1.3"],
             ["define-properties", "npm:1.1.3"],
-            ["es-abstract", "npm:1.17.6"]
+            ["es-abstract", "npm:1.18.0-next.1"]
           ],
           "linkType": "HARD",
         }]
@@ -14662,11 +14688,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["selfsigned", [
-        ["npm:1.10.7", {
-          "packageLocation": "./.yarn/cache/selfsigned-npm-1.10.7-4543dde0fa-ef53d4801c.zip/node_modules/selfsigned/",
+        ["npm:1.10.8", {
+          "packageLocation": "./.yarn/cache/selfsigned-npm-1.10.8-c48e1ebfb2-a382ec2af9.zip/node_modules/selfsigned/",
           "packageDependencies": [
-            ["selfsigned", "npm:1.10.7"],
-            ["node-forge", "npm:0.9.0"]
+            ["selfsigned", "npm:1.10.8"],
+            ["node-forge", "npm:0.10.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17188,7 +17214,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-retry", "npm:3.0.1"],
             ["portfinder", "npm:1.0.28"],
             ["schema-utils", "npm:1.0.0"],
-            ["selfsigned", "npm:1.10.7"],
+            ["selfsigned", "npm:1.10.8"],
             ["semver", "npm:6.3.0"],
             ["serve-index", "npm:1.9.1"],
             ["sockjs", "npm:0.3.20"],
