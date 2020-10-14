@@ -92,6 +92,7 @@ let configs = {
   devtool: 'eval-source-map',
   entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
