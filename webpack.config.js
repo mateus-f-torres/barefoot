@@ -4,7 +4,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // CSS
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 // JS
 const TerserPlugin = require('terser-webpack-plugin')
 // Compression
@@ -37,7 +37,7 @@ const cssPlugin = (function (env) {
   }
 })(process.env.NODE_ENV)
 
-const optimizeCss = new OptimizeCSSAssetsPlugin({})
+const minimizeCss = new CssMinimizerPlugin({})
 // JS
 const terserPlugin = new TerserPlugin({
   sourceMap: true,
@@ -189,7 +189,7 @@ if (process.env.NODE_ENV === 'production') {
     },
     optimization: {
       minimize: true,
-      minimizer: [terserPlugin, optimizeCss],
+      minimizer: [terserPlugin, minimizeCss],
       runtimeChunk: 'single',
       splitChunks: {
         cacheGroups: {
