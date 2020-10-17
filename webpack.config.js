@@ -249,18 +249,7 @@ if (process.env.NODE_ENV === 'production') {
         },
         {
           test: /\.(jpg|jpeg|png|svg|gif)$/i,
-          use: [
-            {
-              loader: 'url-loader',
-              options: {
-                limit: 5 * 1024,
-                fallback: 'file-loader',
-                name: '[name].[ext]',
-                outputPath: 'images/',
-              },
-            },
-            'image-webpack-loader',
-          ],
+          use: ['image-webpack-loader'],
         },
       ],
     },
