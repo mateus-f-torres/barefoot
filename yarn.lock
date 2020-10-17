@@ -1918,13 +1918,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:16.9.52":
-  version: 16.9.52
-  resolution: "@types/react@npm:16.9.52"
+"@types/react@npm:16.9.53":
+  version: 16.9.53
+  resolution: "@types/react@npm:16.9.53"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 5e352e28b7a5ee6104a1ddddb7585ce50f88c5fca78f2edb73cc6df897ab3efa4404111052b643782d130755b8657494f3f5324b1eba4644b4a36fea34fec6fb
+  checksum: 01c646c8f08306660441a14495e926c0362114da7813c3bc3d4d58b47590ee92274bbbff18f3fafd465a09369daa25982d68ba6628f1080120b62d40ce75ca40
   languageName: node
   linkType: hard
 
@@ -2984,7 +2984,7 @@ __metadata:
     "@babel/preset-typescript": 7.10.4
     "@commitlint/cli": 11.0.0
     "@commitlint/config-conventional": 11.0.0
-    "@types/react": 16.9.52
+    "@types/react": 16.9.53
     "@types/react-dom": 16.9.8
     autoprefixer: 10.0.1
     babel-eslint: 10.1.0
@@ -2997,7 +2997,7 @@ __metadata:
     css-loader: 5.0.0
     cz-conventional-changelog: 3.3.0
     eslint: 7.11.0
-    eslint-config-prettier: 6.12.0
+    eslint-config-prettier: 6.13.0
     eslint-config-standard: 14.1.1
     eslint-plugin-import: 2.22.1
     eslint-plugin-node: 11.1.0
@@ -3008,7 +3008,7 @@ __metadata:
     html-webpack-plugin: 4.5.0
     husky: 4.3.0
     image-webpack-loader: 7.0.1
-    lint-staged: 10.4.0
+    lint-staged: 10.4.1
     mini-css-extract-plugin: 1.0.0
     optimize-css-assets-webpack-plugin: 5.0.4
     postcss: 8.1.1
@@ -5589,16 +5589,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:6.12.0":
-  version: 6.12.0
-  resolution: "eslint-config-prettier@npm:6.12.0"
+"eslint-config-prettier@npm:6.13.0":
+  version: 6.13.0
+  resolution: "eslint-config-prettier@npm:6.13.0"
   dependencies:
     get-stdin: ^6.0.0
   peerDependencies:
     eslint: ">=3.14.1"
   bin:
     eslint-config-prettier-check: bin/cli.js
-  checksum: 9371c0a8d05df36f3698247e703118a8eb95fa887aabc4b1e189c21e248ab9c49c3b8e5621f42826b89bbfd05aa52493ffddf0c41219db9b6e4df20e46e21da0
+  checksum: fe88da82a493da579fe57cc7b0be0cac5c84bfb5148d5e35abda99a73e6a0ab1125aa24ceae52144c9382c958f1f33efaadb4b86455cd28fef72172d9046a683
   languageName: node
   linkType: hard
 
@@ -9003,9 +9003,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:10.4.0":
-  version: 10.4.0
-  resolution: "lint-staged@npm:10.4.0"
+"lint-staged@npm:10.4.1":
+  version: 10.4.1
+  resolution: "lint-staged@npm:10.4.1"
   dependencies:
     chalk: ^4.1.0
     cli-truncate: ^2.1.0
@@ -9024,7 +9024,7 @@ fsevents@^1.2.7:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: e648011a6d29744072dab599a17075e0590e7f8722cf3138b40f32106247056de9a873afc87b522a04eb9ed2b2511d09ab838ce028b744231a7030874cf850ac
+  checksum: c34dbdeaedc94a3253f3073145ecc4bc1cbe6c783f939db31ac5e30c7db5b3a765a03b8387ad925043a642b92e41b83e35f36a9027fe1a134a392fb8c4a802e8
   languageName: node
   linkType: hard
 
