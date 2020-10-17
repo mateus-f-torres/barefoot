@@ -40,7 +40,8 @@ const cssPlugin = (function (env) {
 const minimizeCss = new CssMinimizerPlugin({})
 // JS
 const terserPlugin = new TerserPlugin({
-  sourceMap: true,
+  // TODO: verify new v5 behavior, "respect devtool option"
+  // sourceMap: true,
 })
 // Compression
 const brotliPlugin = new CompressionPlugin({
@@ -93,6 +94,7 @@ let configs = {
   entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/assets/',
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
@@ -249,7 +251,8 @@ if (process.env.NODE_ENV === 'production') {
         },
         {
           test: /\.(jpg|jpeg|png|svg|gif)$/i,
-          use: ['image-webpack-loader'],
+          // TODO: set file loader options
+          use: ['file-loader', 'image-webpack-loader'],
         },
       ],
     },
