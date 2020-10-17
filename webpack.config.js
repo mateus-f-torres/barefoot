@@ -252,6 +252,7 @@ if (process.env.NODE_ENV === 'production') {
         {
           test: /\.(jpg|jpeg|png|svg|gif)$/i,
           // TODO: set file loader options
+          // FIXME: see image-webpack-loader github to correct docker usage
           use: ['file-loader', 'image-webpack-loader'],
         },
       ],
