@@ -4,7 +4,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // CSS
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 // JS
 const TerserPlugin = require('terser-webpack-plugin')
 // Compression
@@ -16,8 +16,6 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const {SourceMapDevToolPlugin} = require('webpack')
 const CopyPlugin = require('copy-webpack-plugin')
-// Plug'n'Play
-const PnpWebpackPlugin = require('pnp-webpack-plugin')
 
 // HTML
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -39,15 +37,16 @@ const cssPlugin = (function (env) {
   }
 })(process.env.NODE_ENV)
 
-const optimizeCss = new OptimizeCSSAssetsPlugin({})
+const minimizeCss = new CssMinimizerPlugin({})
 // JS
 const terserPlugin = new TerserPlugin({
-  sourceMap: true,
+  // TODO: verify new v5 behavior, "respect devtool option"
+  // sourceMap: true,
 })
 // Compression
 const brotliPlugin = new CompressionPlugin({
   test: /\.(js|css|html|svg)$/,
-  filename: '[path].br[query]',
+  filename: '[path][name].br',
   algorithm: 'brotliCompress',
   threshold: 0,
   minRatio: 0.8,
@@ -94,15 +93,13 @@ let configs = {
   devtool: 'eval-source-map',
   entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
-    plugins: [PnpWebpackPlugin],
-  },
-  resolveLoader: {
-    plugins: [PnpWebpackPlugin.moduleLoader(module)],
   },
   module: {
     rules: [
@@ -128,10 +125,7 @@ let configs = {
         test: /\.css$/,
         use: [
           'style-loader',
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {hmr: true},
-          },
+          {loader: MiniCssExtractPlugin.loader, options: {esModule: false}},
           'css-loader',
           'postcss-loader',
         ],
@@ -187,6 +181,7 @@ if (process.env.NODE_ENV === 'production') {
     devtool: false,
     output: {
       path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
       filename: '[name].[contenthash].js',
       chunkFilename: '[name].[contenthash].js',
     },
@@ -197,7 +192,7 @@ if (process.env.NODE_ENV === 'production') {
     },
     optimization: {
       minimize: true,
-      minimizer: [terserPlugin, optimizeCss],
+      minimizer: [terserPlugin, minimizeCss],
       runtimeChunk: 'single',
       splitChunks: {
         cacheGroups: {
@@ -242,9 +237,7 @@ if (process.env.NODE_ENV === 'production') {
         {
           test: /\.css$/,
           use: [
-            {
-              loader: MiniCssExtractPlugin.loader,
-            },
+            {loader: MiniCssExtractPlugin.loader, options: {esModule: false}},
             'css-loader',
             'postcss-loader',
           ],
@@ -263,18 +256,9 @@ if (process.env.NODE_ENV === 'production') {
         },
         {
           test: /\.(jpg|jpeg|png|svg|gif)$/i,
-          use: [
-            {
-              loader: 'url-loader',
-              options: {
-                limit: 5 * 1024,
-                fallback: 'file-loader',
-                name: '[name].[ext]',
-                outputPath: 'images/',
-              },
-            },
-            'image-webpack-loader',
-          ],
+          // TODO: set file loader options
+          // FIXME: see image-webpack-loader github to correct docker usage
+          use: ['file-loader', 'image-webpack-loader'],
         },
       ],
     },

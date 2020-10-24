@@ -1,10 +1,15 @@
+# Node Modules
 node_modules
-coverage
+
+# Build
 dist
+
+# Reports/Coverages
 reports
-tags
-.idea
-*.swp
+coverage
+
+# Github
+.github
 
 # Yarn v2
 .yarn/*
@@ -13,3 +18,8 @@ tags
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+
+# Editors/IDEs
+tags
+.idea
+*.swp
