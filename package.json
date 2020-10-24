@@ -41,7 +41,7 @@
     "compression-webpack-plugin": "6.0.3",
     "copy-webpack-plugin": "6.2.1",
     "core-js": "3.6.5",
-    "css-loader": "4.3.0",
+    "css-loader": "5.0.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.11.0",
     "eslint-config-prettier": "6.14.0",
