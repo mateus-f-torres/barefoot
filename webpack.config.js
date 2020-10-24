@@ -94,7 +94,7 @@ let configs = {
   entry: path.resolve(__dirname, 'src/index.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/assets/',
+    publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
@@ -125,7 +125,7 @@ let configs = {
         test: /\.css$/,
         use: [
           'style-loader',
-          MiniCssExtractPlugin.loader,
+          {loader: MiniCssExtractPlugin.loader, options: {esModule: false}},
           'css-loader',
           'postcss-loader',
         ],
@@ -181,6 +181,7 @@ if (process.env.NODE_ENV === 'production') {
     devtool: false,
     output: {
       path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
       filename: '[name].[contenthash].js',
       chunkFilename: '[name].[contenthash].js',
     },
@@ -235,7 +236,11 @@ if (process.env.NODE_ENV === 'production') {
         },
         {
           test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+          use: [
+            {loader: MiniCssExtractPlugin.loader, options: {esModule: false}},
+            'css-loader',
+            'postcss-loader',
+          ],
         },
         {
           test: /\.(woff2|woff)$/,
