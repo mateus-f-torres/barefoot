@@ -3647,7 +3647,7 @@ __metadata:
     stylelint-config-idiomatic-order: 8.1.0
     stylelint-config-standard: 20.0.0
     tailwindcss: 1.9.6
-    terser-webpack-plugin: 5.0.1
+    terser-webpack-plugin: 5.0.3
     ts-loader: 8.0.7
     typescript: 4.0.3
     webpack: 5.2.0
@@ -13850,9 +13850,9 @@ resolve@^1.18.1:
   languageName: node
   linkType: hard
 
-"terser-webpack-plugin@npm:5.0.1":
-  version: 5.0.1
-  resolution: "terser-webpack-plugin@npm:5.0.1"
+"terser-webpack-plugin@npm:5.0.3":
+  version: 5.0.3
+  resolution: "terser-webpack-plugin@npm:5.0.3"
   dependencies:
     jest-worker: ^26.6.1
     p-limit: ^3.0.2
@@ -13862,7 +13862,7 @@ resolve@^1.18.1:
     terser: ^5.3.8
   peerDependencies:
     webpack: ^5.1.0
-  checksum: 23dfddfcbaa72b0eb4ee2f2af56ec1d72498f4cf4b17a29712cfa4edd7ce5e4dbc7577f1c69835d32ce104672d77559b0b401a0534f67706f0919cf275e47ace
+  checksum: e71ae79f550095f1e33330b696f860ed6f704d5ad5c6e06a2a4e4db577c758007874459f8b67a4608285ca7c58c6fc3718482be51762f88fa20dbd6101ce700c
   languageName: node
   linkType: hard
 
