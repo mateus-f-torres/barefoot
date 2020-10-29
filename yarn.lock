@@ -3625,7 +3625,7 @@ __metadata:
     cz-conventional-changelog: 3.3.0
     eslint: 7.12.1
     eslint-config-prettier: 6.15.0
-    eslint-config-standard: 15.0.1
+    eslint-config-standard: 16.0.0
     eslint-plugin-import: 2.22.1
     eslint-plugin-node: 11.1.0
     eslint-plugin-promise: 4.2.1
@@ -6024,16 +6024,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:15.0.1":
-  version: 15.0.1
-  resolution: "eslint-config-standard@npm:15.0.1"
+"eslint-config-standard@npm:16.0.0":
+  version: 16.0.0
+  resolution: "eslint-config-standard@npm:16.0.0"
   peerDependencies:
-    eslint: ">=7.11.0"
-    eslint-plugin-import: ">=2.22.1"
-    eslint-plugin-node: ">=11.1.0"
-    eslint-plugin-promise: ">=4.2.1"
-    eslint-plugin-standard: ">=4.0.2"
-  checksum: e5e234126d309b37d25bc00d436b4cb3460ca818ed87411e241c69ef69c87fae217fea832028998e41b378a677e02994256963fbfb31dcd2bc2a96d42858d0e3
+    eslint: ^7.12.1
+    eslint-plugin-import: ^2.22.1
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-promise: ^4.2.1
+  checksum: 385e702d59929f4eeae471d47a51da138c25bb0a263adb935623ac0b9f25f54869e5eb2ea0a6f9658c4c52caeb6cfa282ac9335ff6eb39b8ff8e998997af73e8
   languageName: node
   linkType: hard
 
