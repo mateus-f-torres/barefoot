@@ -53,7 +53,7 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-standard": "4.0.2",
-    "file-loader": "6.1.1",
+    "file-loader": "6.2.0",
     "html-webpack-plugin": "4.5.0",
     "husky": "4.3.0",
     "image-webpack-loader": "7.0.1",
