@@ -70,7 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.1"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.2.1"],
-            ["postcss", "npm:8.1.7"],
+            ["postcss", "npm:8.1.8"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.4"],
             ["prettier", "npm:2.1.2"],
             ["react", "npm:17.0.1"],
@@ -4571,7 +4571,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["colorette", "npm:1.2.1"],
             ["normalize-range", "npm:0.1.2"],
             ["num2fraction", "npm:1.2.2"],
-            ["postcss", "npm:8.1.7"],
+            ["postcss", "npm:8.1.8"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -4760,7 +4760,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.1"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.2.1"],
-            ["postcss", "npm:8.1.7"],
+            ["postcss", "npm:8.1.8"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.4"],
             ["prettier", "npm:2.1.2"],
             ["react", "npm:17.0.1"],
@@ -13047,10 +13047,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.1.7", {
-          "packageLocation": "./.yarn/cache/postcss-npm-8.1.7-55342317d6-45ebaeb281.zip/node_modules/postcss/",
+        ["npm:8.1.8", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.1.8-4f50375bb6-0db803253f.zip/node_modules/postcss/",
           "packageDependencies": [
-            ["postcss", "npm:8.1.7"],
+            ["postcss", "npm:8.1.8"],
             ["colorette", "npm:1.2.1"],
             ["line-column", "npm:1.0.2"],
             ["nanoid", "npm:3.1.16"],
@@ -13200,7 +13200,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cosmiconfig", "npm:7.0.0"],
             ["klona", "npm:2.0.4"],
             ["loader-utils", "npm:2.0.0"],
-            ["postcss", "npm:8.1.7"],
+            ["postcss", "npm:8.1.8"],
             ["schema-utils", "npm:3.0.0"],
             ["semver", "npm:7.3.2"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.0"]
