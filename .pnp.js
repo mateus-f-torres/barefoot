@@ -70,7 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.1"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.3.1"],
-            ["postcss", "npm:8.1.8"],
+            ["postcss", "npm:8.1.9"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
             ["prettier", "npm:2.1.2"],
             ["react", "npm:17.0.1"],
@@ -4571,7 +4571,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["colorette", "npm:1.2.1"],
             ["normalize-range", "npm:0.1.2"],
             ["num2fraction", "npm:1.2.2"],
-            ["postcss", "npm:8.1.8"],
+            ["postcss", "npm:8.1.9"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -4760,7 +4760,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.1"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.3.1"],
-            ["postcss", "npm:8.1.8"],
+            ["postcss", "npm:8.1.9"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
             ["prettier", "npm:2.1.2"],
             ["react", "npm:17.0.1"],
@@ -11838,6 +11838,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nanoid", "npm:3.1.16"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.1.18", {
+          "packageLocation": "./.yarn/cache/nanoid-npm-3.1.18-79cf8e529e-ae87f7a254.zip/node_modules/nanoid/",
+          "packageDependencies": [
+            ["nanoid", "npm:3.1.18"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["nanomatch", [
@@ -13047,14 +13054,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.1.8", {
-          "packageLocation": "./.yarn/cache/postcss-npm-8.1.8-4f50375bb6-0db803253f.zip/node_modules/postcss/",
+        ["npm:8.1.9", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.1.9-54c42665f3-34f41717f0.zip/node_modules/postcss/",
           "packageDependencies": [
-            ["postcss", "npm:8.1.8"],
+            ["postcss", "npm:8.1.9"],
             ["colorette", "npm:1.2.1"],
-            ["line-column", "npm:1.0.2"],
-            ["nanoid", "npm:3.1.16"],
-            ["source-map", "npm:0.6.1"]
+            ["nanoid", "npm:3.1.18"],
+            ["source-map", "npm:0.6.1"],
+            ["vfile-location", "npm:3.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -13200,7 +13207,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cosmiconfig", "npm:7.0.0"],
             ["klona", "npm:2.0.4"],
             ["loader-utils", "npm:2.0.0"],
-            ["postcss", "npm:8.1.8"],
+            ["postcss", "npm:8.1.9"],
             ["schema-utils", "npm:3.0.0"],
             ["semver", "npm:7.3.2"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.6.0"]
@@ -16909,6 +16916,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["replace-ext", "npm:1.0.0"],
             ["unist-util-stringify-position", "npm:2.0.3"],
             ["vfile-message", "npm:2.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vfile-location", [
+        ["npm:3.2.0", {
+          "packageLocation": "./.yarn/cache/vfile-location-npm-3.2.0-cd97ee24d4-4102f03560.zip/node_modules/vfile-location/",
+          "packageDependencies": [
+            ["vfile-location", "npm:3.2.0"]
           ],
           "linkType": "HARD",
         }]
