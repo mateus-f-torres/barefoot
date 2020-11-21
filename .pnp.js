@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.3.1"],
             ["postcss", "npm:8.1.8"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
-            ["prettier", "npm:2.1.2"],
+            ["prettier", "npm:2.2.0"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.1"],
             ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.0"],
@@ -4762,7 +4762,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.3.1"],
             ["postcss", "npm:8.1.8"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
-            ["prettier", "npm:2.1.2"],
+            ["prettier", "npm:2.2.0"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.1"],
             ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.0"],
@@ -13701,10 +13701,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.1.2", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.1.2-9d456ef3cd-bedc24c568.zip/node_modules/prettier/",
+        ["npm:2.2.0", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.2.0-9fa8f01d1a-fe7e2ac725.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.1.2"]
+            ["prettier", "npm:2.2.0"]
           ],
           "linkType": "HARD",
         }]
