@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:11.0.0"],
             ["@commitlint/config-conventional", "npm:11.0.0"],
             ["@types/react", "npm:16.14.1"],
-            ["@types/react-dom", "npm:16.9.9"],
+            ["@types/react-dom", "npm:16.9.10"],
             ["autoprefixer", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.0.2"],
             ["babel-eslint", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["babel-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.2.1"],
@@ -3594,23 +3594,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prop-types", "npm:15.7.3"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:16.9.49", {
-          "packageLocation": "./.yarn/cache/@types-react-npm-16.9.49-0659b511c4-cf5dabe1e9.zip/node_modules/@types/react/",
-          "packageDependencies": [
-            ["@types/react", "npm:16.9.49"],
-            ["@types/prop-types", "npm:15.7.3"],
-            ["csstype", "npm:3.0.3"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["@types/react-dom", [
-        ["npm:16.9.9", {
-          "packageLocation": "./.yarn/cache/@types-react-dom-npm-16.9.9-eac1c70629-d92c166f5b.zip/node_modules/@types/react-dom/",
+        ["npm:16.9.10", {
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-16.9.10-0d08e5404d-910dd9894b.zip/node_modules/@types/react-dom/",
           "packageDependencies": [
-            ["@types/react-dom", "npm:16.9.9"],
-            ["@types/react", "npm:16.9.49"]
+            ["@types/react-dom", "npm:16.9.10"],
+            ["@types/react", "npm:16.14.1"]
           ],
           "linkType": "HARD",
         }]
@@ -4733,7 +4724,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:11.0.0"],
             ["@commitlint/config-conventional", "npm:11.0.0"],
             ["@types/react", "npm:16.14.1"],
-            ["@types/react-dom", "npm:16.9.9"],
+            ["@types/react-dom", "npm:16.9.10"],
             ["autoprefixer", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.0.2"],
             ["babel-eslint", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["babel-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.2.1"],
@@ -6448,15 +6439,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["csso", "npm:4.0.3"],
             ["css-tree", "npm:1.0.0-alpha.39"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["csstype", [
-        ["npm:3.0.3", {
-          "packageLocation": "./.yarn/cache/csstype-npm-3.0.3-1361b4cdeb-ec722366b4.zip/node_modules/csstype/",
-          "packageDependencies": [
-            ["csstype", "npm:3.0.3"]
           ],
           "linkType": "HARD",
         }]

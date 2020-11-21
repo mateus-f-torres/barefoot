@@ -2654,26 +2654,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:16.9.9":
-  version: 16.9.9
-  resolution: "@types/react-dom@npm:16.9.9"
+"@types/react-dom@npm:16.9.10":
+  version: 16.9.10
+  resolution: "@types/react-dom@npm:16.9.10"
   dependencies:
-    "@types/react": "*"
-  checksum: d92c166f5bcd483f175311eec9c472893216d486106a5b5402eb293840c0b0d1aafb484a3fe3f0f4622ae1f6dff46c9fe970873d4dac7fdf70a50931d3cab4a0
+    "@types/react": ^16
+  checksum: 910dd9894ba67438f8c80e71dc4f2ef1c15e2d62145309679dc3b2c0a6f2c4e5a611566a15174e4a7891f9fb6149f21a0a393488716665ff20f10b1181745964
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 16.9.49
-  resolution: "@types/react@npm:16.9.49"
-  dependencies:
-    "@types/prop-types": "*"
-    csstype: ^3.0.2
-  checksum: cf5dabe1e9c893a19a338002ac4bf5a86c9bc3cd88eb07aece54e6d2e5af35debe2a8c72d211ad9133391543ce115219cd7c7f2a6f649b81caf4548e1cc99061
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:16.14.1":
+"@types/react@npm:16.14.1, @types/react@npm:^16":
   version: 16.14.1
   resolution: "@types/react@npm:16.14.1"
   dependencies:
@@ -3633,7 +3623,7 @@ __metadata:
     "@commitlint/cli": 11.0.0
     "@commitlint/config-conventional": 11.0.0
     "@types/react": 16.14.1
-    "@types/react-dom": 16.9.9
+    "@types/react-dom": 16.9.10
     autoprefixer: 10.0.2
     babel-eslint: 10.1.0
     babel-loader: 8.2.1
@@ -5189,13 +5179,6 @@ __metadata:
   dependencies:
     css-tree: 1.0.0-alpha.39
   checksum: b573974336bd5aef7ff71ae294b6664602b186e4ea6ad4b3dbd22fcf7ddeb89eddd5b6f06ad2cb6eebff882d3ab39096f211ed4d9abf4a6c1fde446d9829f9f9
-  languageName: node
-  linkType: hard
-
-"csstype@npm:^3.0.2":
-  version: 3.0.3
-  resolution: "csstype@npm:3.0.3"
-  checksum: ec722366b468229bcc6c7fa3f07eb795efddfc4fdcfeb81728046f8bd20e21584735e89973ec18e8b0d4d3c8dddb288872440ee034836c159d664798da4cf832
   languageName: node
   linkType: hard
 
