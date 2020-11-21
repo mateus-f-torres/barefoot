@@ -166,6 +166,7 @@ let configs = {
     proxy: {
       '/api': {target: 'http://localhost:3000'},
     },
+    // TODO: refactor for v5
     stats: {
       assets: true,
       modules: false,
@@ -272,6 +273,7 @@ if (process.env.NODE_ENV === 'production') {
       copyPlugin,
       swPlugin,
     ],
+    // TODO: refactor for v5
     stats: {
       assets: true,
       modules: false,
