@@ -8,9 +8,6 @@ dist
 reports
 coverage
 
-# Github
-.github
-
 # Yarn v2
 .yarn/*
 !.yarn/cache
