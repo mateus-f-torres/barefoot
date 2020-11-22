@@ -3714,7 +3714,7 @@ __metadata:
     css-loader: 5.0.1
     css-minimizer-webpack-plugin: 1.1.5
     cz-conventional-changelog: 3.3.0
-    eslint: 7.12.1
+    eslint: 7.14.0
     eslint-config-prettier: 6.15.0
     eslint-config-standard: 16.0.2
     eslint-plugin-import: 2.22.1
@@ -6297,9 +6297,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.12.1":
-  version: 7.12.1
-  resolution: "eslint@npm:7.12.1"
+"eslint@npm:7.14.0":
+  version: 7.14.0
+  resolution: "eslint@npm:7.14.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
     "@eslint/eslintrc": ^0.2.1
@@ -6340,7 +6340,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: b3d11ea516d2932db5854ea942a546b711e6ee8735306627042bb9e2539e96844cc62cdb5826039f5d0509202936045c2cd7b84b457004c891a326f8eccae333
+  checksum: 6c1c9ae3cd1ec1c9238a92380049509e9c18fecfb4c9982d4f4d49ec681ec7a2cbc04bbd354ddf10588727f143a158c7a0a82b2fd662197f554bd435cfdb250f
   languageName: node
   linkType: hard
 
