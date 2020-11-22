@@ -26,10 +26,10 @@
     "workbox-routing": "5.1.4"
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
-    "@babel/preset-env": "7.12.1",
-    "@babel/preset-react": "7.12.5",
-    "@babel/preset-typescript": "7.12.1",
+    "@babel/core": "7.12.7",
+    "@babel/preset-env": "7.12.7",
+    "@babel/preset-react": "7.12.7",
+    "@babel/preset-typescript": "7.12.7",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
     "@types/react": "17.0.0",
