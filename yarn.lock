@@ -3559,12 +3559,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:10.0.2":
-  version: 10.0.2
-  resolution: "autoprefixer@npm:10.0.2"
+"autoprefixer@npm:10.0.3":
+  version: 10.0.3
+  resolution: "autoprefixer@npm:10.0.3"
   dependencies:
     browserslist: ^4.14.7
-    caniuse-lite: ^1.0.30001157
+    caniuse-lite: ^1.0.30001161
     colorette: ^1.2.1
     normalize-range: ^0.1.2
     num2fraction: ^1.2.2
@@ -3573,7 +3573,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 5c65432cf729339c985ed63d4c988877d53923019742e30361a88343e49d7e6b07b3c611eef8c1f2079e650026a48c3de24a035247e408b8136cddf25c42521f
+  checksum: 022514a2ba65c4095845eefd0f551b591fd044388b8fdfc3dfbf9ec9b187b5edeb54187757539bf296e4df6b7d0f9621004d660ef27b460972e974678d71b8b0
   languageName: node
   linkType: hard
 
@@ -3719,7 +3719,7 @@ __metadata:
     "@commitlint/config-conventional": 11.0.0
     "@types/react": 17.0.0
     "@types/react-dom": 17.0.0
-    autoprefixer: 10.0.2
+    autoprefixer: 10.0.3
     babel-eslint: 10.1.0
     babel-loader: 8.2.2
     clean-webpack-plugin: 3.0.0
@@ -4277,6 +4277,13 @@ __metadata:
   version: 1.0.30001157
   resolution: "caniuse-lite@npm:1.0.30001157"
   checksum: 8fc930094b538a6592bd09d1c444fe5dc44cfc3517effeb722fb9832d200755908f3b3551069f8f61518ffac65c3dcf4ea022b74de60b70468a6c1d18f5b4184
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001161":
+  version: 1.0.30001161
+  resolution: "caniuse-lite@npm:1.0.30001161"
+  checksum: 4d3f2d199242f45708e513f9e5ccbb7e42995cfd3d6b09a21015a453c07bc8be71cb32fe4b4a1be851513d0a2444587c6f2f613d34cc39e915ac5fb772d67b4f
   languageName: node
   linkType: hard
 
