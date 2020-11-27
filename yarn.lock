@@ -3559,9 +3559,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:10.0.3":
-  version: 10.0.3
-  resolution: "autoprefixer@npm:10.0.3"
+"autoprefixer@npm:10.0.4":
+  version: 10.0.4
+  resolution: "autoprefixer@npm:10.0.4"
   dependencies:
     browserslist: ^4.14.7
     caniuse-lite: ^1.0.30001161
@@ -3573,7 +3573,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 022514a2ba65c4095845eefd0f551b591fd044388b8fdfc3dfbf9ec9b187b5edeb54187757539bf296e4df6b7d0f9621004d660ef27b460972e974678d71b8b0
+  checksum: ccc391565a51b4d2d5f5cf5f600f6e3b56b867f476d4ee24e60c98bc01bd6c66e818f2d3e989453721a8e91a931f1334f6965c61a35c7c836087400b0886c5c4
   languageName: node
   linkType: hard
 
@@ -3719,7 +3719,7 @@ __metadata:
     "@commitlint/config-conventional": 11.0.0
     "@types/react": 17.0.0
     "@types/react-dom": 17.0.0
-    autoprefixer: 10.0.3
+    autoprefixer: 10.0.4
     babel-eslint: 10.1.0
     babel-loader: 8.2.2
     clean-webpack-plugin: 3.0.0
