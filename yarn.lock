@@ -3737,7 +3737,6 @@ __metadata:
     eslint-plugin-node: 11.1.0
     eslint-plugin-promise: 4.2.1
     eslint-plugin-react: 7.21.5
-    eslint-plugin-standard: 4.1.0
     file-loader: 6.2.0
     html-webpack-plugin: 4.5.0
     husky: 4.3.0
@@ -6295,15 +6294,6 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
   checksum: a7123f6feb287ad7e15d36b1c9fda8f78a0f0d39b9ee2d6479a5f0ad0effb8f60f639ef7449cecabb711095060e487f0950b69478b22768547b909c0de4f3afd
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-standard@npm:4.1.0":
-  version: 4.1.0
-  resolution: "eslint-plugin-standard@npm:4.1.0"
-  peerDependencies:
-    eslint: ">=5.0.0"
-  checksum: 4cafe7ac512ffb15bf1020e2ede3fd59cfbef9601b7cbf05e155eca9f10c2eaeb96932effb477eb57fca4fa7b3b2a3469e165ede73a888036ffa5cf6c83a5af2
   languageName: node
   linkType: hard
 
