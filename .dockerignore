@@ -6,6 +6,7 @@ reports
 
 # Github
 .github
+.git
 
 # Yarn v2
 .yarn/*
