@@ -1,5 +1,4 @@
-// TODO: use webpack env plugin to bail in NODE_ENV=development
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator && PRODUCTION) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then(console.log, console.error)
   })

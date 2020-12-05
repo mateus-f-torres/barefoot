@@ -1,5 +1,6 @@
 /* eslint import/newline-after-import: 'off' */
 const path = require('path')
+const webpack = require('webpack')
 // HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // CSS
@@ -59,7 +60,7 @@ const brotliPlugin = new CompressionPlugin({
 const swPlugin = new InjectManifest({
   swSrc: './src/sw/sw.js',
   exclude: [/\.(br|map)$/],
-  dontCacheBustURLsMatching: /\.(js|css|woff2|woff|png|ico|txt)$/,
+  dontCacheBustURLsMatching: /\.(woff2|woff|png|ico|txt)$/,
 })
 // Extras
 const analyzerPlugin = new BundleAnalyzerPlugin({
@@ -82,6 +83,11 @@ const copyPlugin = new CopyPlugin({
     {from: 'src/assets/logo', to: 'logo/'},
     {from: 'src/assets/manifest.json', to: '[name].[ext]'},
   ],
+})
+
+const environmentPlugin = new webpack.DefinePlugin({
+  REVISION: Date.now(),
+  PRODUCTION: process.env.NODE_ENV == 'production',
 })
 
 const DEFAULT_PORT = 8080
@@ -156,7 +162,13 @@ let configs = {
       },
     ],
   },
-  plugins: [cleanUpPlugin, cssPlugin, htmlPlugin, copyPlugin],
+  plugins: [
+    environmentPlugin,
+    cleanUpPlugin,
+    cssPlugin,
+    htmlPlugin,
+    copyPlugin,
+  ],
   devServer: {
     hot: true,
     compress: true,
@@ -264,6 +276,7 @@ if (process.env.NODE_ENV === 'production') {
       ],
     },
     plugins: [
+      environmentPlugin,
       sourceMapsPlugin,
       analyzerPlugin,
       cleanUpPlugin,
