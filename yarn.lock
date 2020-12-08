@@ -3022,7 +3022,7 @@ __metadata:
     clean-webpack-plugin: 3.0.0
     commitizen: 4.2.2
     compression-webpack-plugin: 7.0.0
-    copy-webpack-plugin: 6.3.2
+    copy-webpack-plugin: 6.4.0
     core-js: 3.8.1
     css-loader: 5.0.1
     css-minimizer-webpack-plugin: 1.1.5
@@ -4251,9 +4251,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"copy-webpack-plugin@npm:6.3.2":
-  version: 6.3.2
-  resolution: "copy-webpack-plugin@npm:6.3.2"
+"copy-webpack-plugin@npm:6.4.0":
+  version: 6.4.0
+  resolution: "copy-webpack-plugin@npm:6.4.0"
   dependencies:
     cacache: ^15.0.5
     fast-glob: ^3.2.4
@@ -4268,7 +4268,7 @@ __metadata:
     webpack-sources: ^1.4.3
   peerDependencies:
     webpack: ^4.37.0 || ^5.0.0
-  checksum: 10d873d3e914fec8394077681b7ec37c0b38e8a8d412a31e71a4fe37ac70d52473603c558400c57b3bdd2bd7ed8eead363201919d59351b20751c2f5ccb971c7
+  checksum: 47728eeb9c7988a95a88bb41935a7650bbe66058bd96880278e60df5cbc96e9b8945f1e7c8e71876628de923a692791195c47d6b1cd1daf55adbf0863bda4803
   languageName: node
   linkType: hard
 
