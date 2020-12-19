@@ -24,6 +24,7 @@
     "react"
   ],
   "settings": {
+    "import/resolver":  "node",
     "react": {
       "version": "detect"
     }
@@ -83,9 +84,6 @@
       "warn", {"max": 3}
     ],
     "react/prop-types": [
-      "warn"
-    ],
-    "import/no-duplicates": [
       "warn"
     ]
   }
