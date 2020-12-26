@@ -1,14 +1,17 @@
 {
-  "*.ts?(x)": [
+  "!(.pnp|*.config)*.js?(x)": [
     "eslint --fix",
     "prettier --write"
   ],
-  "!(.pnp)*.js?(x)": [
+  "*.ts?(x)": [
     "eslint --fix",
     "prettier --write"
   ],
   "*.css": [
     "stylelint --fix",
+    "prettier --write"
+  ],
+  "*.config.js": [
     "prettier --write"
   ]
 }
