@@ -8,6 +8,7 @@
     "prettier --write"
   ],
   "*.css": [
-    "stylelint --fix"
+    "stylelint --fix",
+    "prettier --write"
   ]
 }
