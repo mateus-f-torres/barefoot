@@ -1,13 +1,7 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "impliedStrict": true,
-      "modules": true,
-      "jsx": true
-    }
+    "project": "./tsconfig.json"
   },
   "env": {
     "browser": true,
@@ -32,9 +26,10 @@
   },
   "extends": [
     "standard",
-    "eslint:recommended",
+    "standard-with-typescript",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
+    // "eslint:recommended",
+    // "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/react",
     "prettier/@typescript-eslint"
