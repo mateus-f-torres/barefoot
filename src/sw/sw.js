@@ -1,6 +1,6 @@
-import {clientsClaim} from 'workbox-core'
-import {precacheAndRoute, createHandlerBoundToURL} from 'workbox-precaching'
-import {registerRoute, NavigationRoute} from 'workbox-routing'
+import {clientsClaim} from "workbox-core"
+import {precacheAndRoute, createHandlerBoundToURL} from "workbox-precaching"
+import {registerRoute, NavigationRoute} from "workbox-routing"
 
 self.skipWaiting()
 
@@ -8,6 +8,6 @@ clientsClaim()
 
 precacheAndRoute([
   ...self.__WB_MANIFEST,
-  {url: '/index.html', revision: REVISION},
+  {url: "/index.html", revision: REVISION},
 ])
-registerRoute(new NavigationRoute(createHandlerBoundToURL('/index.html')))
+registerRoute(new NavigationRoute(createHandlerBoundToURL("/index.html")))
