@@ -65,6 +65,7 @@
     "style-loader": "2.0.0",
     "stylelint": "13.8.0",
     "stylelint-config-idiomatic-order": "8.1.0",
+    "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
     "terser-webpack-plugin": "5.0.3",
     "ts-loader": "8.0.12",

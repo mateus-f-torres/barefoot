@@ -78,6 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.0"],
             ["stylelint", "npm:13.8.0"],
             ["stylelint-config-idiomatic-order", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.0"],
+            ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.0.2"],
             ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:20.0.0"],
             ["tailwindcss", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.2"],
             ["terser-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.3"],
@@ -5548,6 +5549,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.0"],
             ["stylelint", "npm:13.8.0"],
             ["stylelint-config-idiomatic-order", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.0"],
+            ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.0.2"],
             ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:20.0.0"],
             ["tailwindcss", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.2"],
             ["terser-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.3"],
@@ -16747,6 +16749,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/stylelint", null],
             ["stylelint", "npm:13.8.0"],
             ["stylelint-order", "virtual:5f9d4654fe94ed8592b245a1d6097db2231ce55fd417634fa06a83571a2e26080cb8aaf394bb856be2c39e9c0163af8c70b6b3c16fd69c17b3efedcc46e123e7#npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "@types/stylelint",
+            "stylelint"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["stylelint-config-prettier", [
+        ["npm:8.0.2", {
+          "packageLocation": "./.yarn/cache/stylelint-config-prettier-npm-8.0.2-768ded0ce2-dd7b09ed02.zip/node_modules/stylelint-config-prettier/",
+          "packageDependencies": [
+            ["stylelint-config-prettier", "npm:8.0.2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.0.2", {
+          "packageLocation": "./.yarn/$$virtual/stylelint-config-prettier-virtual-fb005a6a1d/0/cache/stylelint-config-prettier-npm-8.0.2-768ded0ce2-dd7b09ed02.zip/node_modules/stylelint-config-prettier/",
+          "packageDependencies": [
+            ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.0.2"],
+            ["@types/stylelint", null],
+            ["stylelint", "npm:13.8.0"]
           ],
           "packagePeers": [
             "@types/stylelint",

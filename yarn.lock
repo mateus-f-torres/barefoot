@@ -3239,6 +3239,7 @@ __metadata:
     style-loader: 2.0.0
     stylelint: 13.8.0
     stylelint-config-idiomatic-order: 8.1.0
+    stylelint-config-prettier: 8.0.2
     stylelint-config-standard: 20.0.0
     tailwindcss: 2.0.2
     terser-webpack-plugin: 5.0.3
@@ -13166,6 +13167,18 @@ resolve@^1.19.0:
   peerDependencies:
     stylelint: ">=11"
   checksum: f7bd9f188ef64956211f5484881b9ecf51aa5271be9ef08b625f412b2ddba286ef194c33a32d78195674ac46b789e49b33200c0d0e147866a51fa0cf072cfd0a
+  languageName: node
+  linkType: hard
+
+"stylelint-config-prettier@npm:8.0.2":
+  version: 8.0.2
+  resolution: "stylelint-config-prettier@npm:8.0.2"
+  peerDependencies:
+    stylelint: ">=11.0.0"
+  bin:
+    stylelint-config-prettier: bin/check.js
+    stylelint-config-prettier-check: bin/check.js
+  checksum: dd7b09ed02d2a932d9c2de4a1532298c559d590683dcb6c9974592e4e0a74e1d4b0962c9770a0499798dfef9341d4a0dac6a57877b23edc3d1e97e7f99cfd077
   languageName: node
   linkType: hard
 
