@@ -16,6 +16,7 @@
     "build": "NODE_ENV=production webpack",
     "serve": "docker run --name barefoot -d -p 8080:80 barefoot",
     "format": "prettier src/**/*.{js,ts,jsx,tsx,css} *.config.js",
+    "lint": "eslint src/**/*.{js,ts,jsx,tsx} *.config.js",
     "test": "echo \"WARN: no test specified\" && exit 0"
   },
   "dependencies": {
