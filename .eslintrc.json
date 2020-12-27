@@ -28,8 +28,6 @@
     "standard",
     "standard-with-typescript",
     "plugin:react/recommended",
-    // "eslint:recommended",
-    // "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/react",
     "prettier/@typescript-eslint"
