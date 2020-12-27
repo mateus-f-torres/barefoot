@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint import/newline-after-import: 'off' */
 const path = require("path")
 const webpack = require("webpack")

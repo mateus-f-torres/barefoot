@@ -1,3 +1,4 @@
+// @ts-nocheck
 module.exports = {
   purge: {
     mode: "layers",
