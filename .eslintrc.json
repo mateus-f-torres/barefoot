@@ -77,9 +77,6 @@
     ],
     "max-params": [
       "warn", {"max": 3}
-    ],
-    "react/prop-types": [
-      "warn"
     ]
   }
 }
