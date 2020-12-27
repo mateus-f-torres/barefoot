@@ -47,9 +47,6 @@
     "no-implicit-globals": [
       "error"
     ],
-    "no-return-await": [
-      "error"
-    ],
     "no-shadow": [
       "error", {"builtinGlobals": false, "hoist": "functions"}
     ],
