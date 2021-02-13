@@ -1,13 +1,7 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "impliedStrict": true,
-      "modules": true,
-      "jsx": true
-    }
+    "project": "./tsconfig.json"
   },
   "env": {
     "browser": true,
@@ -21,6 +15,7 @@
     "PRODUCTION": "readonly"
   },
   "plugins": [
+    "@typescript-eslint",
     "react"
   ],
   "settings": {
@@ -31,9 +26,11 @@
   },
   "extends": [
     "standard",
-    "eslint:recommended",
+    "standard-with-typescript",
     "plugin:react/recommended",
-    "prettier"
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
   ],
   "rules": {
     "eqeqeq": [
@@ -46,9 +43,6 @@
       "error"
     ],
     "no-implicit-globals": [
-      "error"
-    ],
-    "no-return-await": [
       "error"
     ],
     "no-shadow": [
@@ -65,6 +59,7 @@
       {
         "code": 80,
         "tabWidth": 2,
+        "ignoreUrls": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true
       }
@@ -82,9 +77,6 @@
     ],
     "max-params": [
       "warn", {"max": 3}
-    ],
-    "react/prop-types": [
-      "warn"
     ]
   }
 }

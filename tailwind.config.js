@@ -1,21 +1,22 @@
+// @ts-nocheck
 module.exports = {
   purge: {
-    mode: 'layers',
+    mode: "layers",
     content: [
-      './src/**/*.ts',
-      './src/**/*.js',
-      './src/**/*.tsx',
-      './src/**/*.jsx',
-      './src/**/*.html',
+      "./src/**/*.js",
+      "./src/**/*.ts",
+      "./src/**/*.jsx",
+      "./src/**/*.tsx",
+      "./src/**/*.html",
     ],
   },
   theme: {
     extend: {
       fontFamily: {
-        body: 'Roboto',
+        body: "Roboto",
       },
       colors: {
-        'regal-blue': 'var(--regal-blue)',
+        "regal-blue": "var(--regal-blue)",
       },
     },
   },
