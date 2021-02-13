@@ -48,7 +48,7 @@ npm run start
 ```
 
 This will serve the application in _development_ mode with `webpack-dev-server` at `localhost:8080`.  
-Any changes made to files inside `src` will automatically trigger a hot-reload of the app.
+Any changes made to the files inside `src` will automatically trigger a hot-reload of the app.
 
 ### Production
 
@@ -113,14 +113,13 @@ For a more in depth look at this configuration refer to the [Webpack Configurati
 ## About the Project
 
 This project was at some point unnecessarily robust for a template.  
-I had `redux`, `storybook`, `styled-component`, `i18next` and `jest` among other things.  
-But whenever I would start a new project with this template I had a lot of cleaning up to do.
+I had `redux`, `storybook`, `styled-component`, `i18next` and `jest` among other things, but whenever I would start a new project with this template I had a lot of cleaning up to do.
 
 Then I remembered why I started this project and why I choose to name it **Barefoot**  
-I provide what I would call "bare minimun configurations and optimizations" for a normal web app development workflow.  
-As minimun as the complex structure of bones, muscle and joints you have available at your feet.
+I provide what I would call "bare minimum configurations and optimizations" for a normal web app development workflow.  
+As minimum as the complex structure of bones, muscle and joints you have available at your feet.
 
-What you add on top of it depends on where you are going, but, if you dont know where that is, this might be a good starting point.  
+What you add on top of it depends on where you are going, but, if you don't know where that is, this might be a good starting point.  
 If you choose to wear sandals and add `styled-component` or prefer sneakers with `redux` that is up to you.  
 Good coding \ (•◡•) / !
 

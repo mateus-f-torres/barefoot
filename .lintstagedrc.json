@@ -1,13 +1,10 @@
 {
-  "*.ts?(x)": [
-    "prettier --write",
-    "eslint --fix"
-  ],
-  "!(.pnp)*.js?(x)": [
-    "prettier --write",
-    "eslint --fix"
+  "!(.pnp)*.js?(x)|*.ts?(x)": [
+    "eslint --fix",
+    "prettier --write"
   ],
   "*.css": [
-    "stylelint --fix"
+    "stylelint --fix",
+    "prettier --write"
   ]
 }
