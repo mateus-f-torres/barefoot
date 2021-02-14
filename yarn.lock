@@ -2311,13 +2311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.0":
-  version: 17.0.0
-  resolution: "@types/react@npm:17.0.0"
+"@types/react@npm:17.0.2":
+  version: 17.0.2
+  resolution: "@types/react@npm:17.0.2"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: dcef2034b822a949c5528fa8fa3c64da654fdbb822bd8f0488c0084d84cadb8b90af68813a6c95153d4754079f50b1cab206552c7c20f6b67a26c3641383fe31
+  checksum: de1cd27ce57a961379978f83676d60d88bf729337683d1d4cb22dd8f285ed4200db19f7243052dc67c80133fe6798da1497456fe6f67a5bba5f5e30ce2544bfa
   languageName: node
   linkType: hard
 
@@ -3351,7 +3351,7 @@ __metadata:
     "@babel/preset-typescript": 7.12.7
     "@commitlint/cli": 11.0.0
     "@commitlint/config-conventional": 11.0.0
-    "@types/react": 17.0.0
+    "@types/react": 17.0.2
     "@types/react-dom": 17.0.0
     "@typescript-eslint/eslint-plugin": 4.12.0
     "@typescript-eslint/parser": 4.12.0
