@@ -74,7 +74,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.5.3"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.3.3"],
             ["postcss", "npm:8.2.2"],
-            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
+            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.2.0"],
             ["prettier", "npm:2.2.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.1"],
@@ -5766,7 +5766,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.5.3"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.3.3"],
             ["postcss", "npm:8.2.2"],
-            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
+            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.2.0"],
             ["prettier", "npm:2.2.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.1"],
@@ -14499,17 +14499,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["postcss-loader", [
-        ["npm:4.1.0", {
-          "packageLocation": "./.yarn/cache/postcss-loader-npm-4.1.0-a41a5910a5-5c74e4656d.zip/node_modules/postcss-loader/",
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/postcss-loader-npm-4.2.0-f01fec2503-685a54e576.zip/node_modules/postcss-loader/",
           "packageDependencies": [
-            ["postcss-loader", "npm:4.1.0"]
+            ["postcss-loader", "npm:4.2.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0", {
-          "packageLocation": "./.yarn/$$virtual/postcss-loader-virtual-2b2fc8d933/0/cache/postcss-loader-npm-4.1.0-a41a5910a5-5c74e4656d.zip/node_modules/postcss-loader/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.2.0", {
+          "packageLocation": "./.yarn/$$virtual/postcss-loader-virtual-fe7e5d5894/0/cache/postcss-loader-npm-4.2.0-f01fec2503-685a54e576.zip/node_modules/postcss-loader/",
           "packageDependencies": [
-            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.1.0"],
+            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.2.0"],
             ["@types/postcss", null],
             ["@types/webpack", null],
             ["cosmiconfig", "npm:7.0.0"],
@@ -14517,7 +14517,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:2.0.0"],
             ["postcss", "npm:8.2.2"],
             ["schema-utils", "npm:3.0.0"],
-            ["semver", "npm:7.3.2"],
+            ["semver", "npm:7.3.4"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.11.1"]
           ],
           "packagePeers": [
