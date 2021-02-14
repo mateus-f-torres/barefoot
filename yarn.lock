@@ -3379,7 +3379,7 @@ __metadata:
     html-webpack-plugin: 4.5.1
     husky: 4.3.8
     image-webpack-loader: 7.0.1
-    lint-staged: 10.5.3
+    lint-staged: 10.5.4
     mini-css-extract-plugin: 1.3.6
     postcss: 8.2.2
     postcss-loader: 4.1.0
@@ -8988,9 +8988,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:10.5.3":
-  version: 10.5.3
-  resolution: "lint-staged@npm:10.5.3"
+"lint-staged@npm:10.5.4":
+  version: 10.5.4
+  resolution: "lint-staged@npm:10.5.4"
   dependencies:
     chalk: ^4.1.0
     cli-truncate: ^2.1.0
@@ -9009,7 +9009,7 @@ fsevents@~2.1.2:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: cd34098f62feac51a8eb6a6abff6a15be292bfcac55d04c3e9f21c3ea8e472b94fac27507e4d087f0c6e159881216cd22bdf02d2b8d21cd8d0ffdf8ed00875b4
+  checksum: dbcafe3679668379fc03f3aef481c3f710794ec03dd5c3915f26a0de110977fbcb44b55ab6dfcff9e8e5789c568ea5629e92f55944fc43f6f6fa1890ee5b07ba
   languageName: node
   linkType: hard
 
