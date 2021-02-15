@@ -3359,7 +3359,7 @@ __metadata:
     babel-loader: 8.2.2
     clean-webpack-plugin: 3.0.0
     commitizen: 4.2.3
-    compression-webpack-plugin: 7.1.1
+    compression-webpack-plugin: 7.1.2
     copy-webpack-plugin: 7.0.0
     core-js: 3.8.2
     css-loader: 5.0.2
@@ -4447,15 +4447,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compression-webpack-plugin@npm:7.1.1":
-  version: 7.1.1
-  resolution: "compression-webpack-plugin@npm:7.1.1"
+"compression-webpack-plugin@npm:7.1.2":
+  version: 7.1.2
+  resolution: "compression-webpack-plugin@npm:7.1.2"
   dependencies:
     schema-utils: ^3.0.0
     serialize-javascript: ^5.0.1
   peerDependencies:
     webpack: ^5.1.0
-  checksum: d3989b16dc7f1cd151d9b8c6e370fb516bef226dd81c39b0063f19c066fa804aeab131f9d7e80c1e31573d363ea207d010733002f600cf61b0fd55c005d45ce5
+  checksum: cc75535bfb2bbe353d3b9b49f3411e412457b62dda14c3406bb0c499d4894a67a702f934575909e22b628e1696b276814fc483a40afaf9f35e8790d3f679f44a
   languageName: node
   linkType: hard
 
