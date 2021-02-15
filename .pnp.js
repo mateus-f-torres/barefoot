@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.0"],
             ["core-js", "npm:3.8.2"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.2"],
-            ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.1.5"],
+            ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.2.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.1.0"],
@@ -5747,7 +5747,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.0"],
             ["core-js", "npm:3.8.2"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.2"],
-            ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.1.5"],
+            ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.2.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.1.0"],
@@ -7317,17 +7317,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["css-minimizer-webpack-plugin", [
-        ["npm:1.1.5", {
-          "packageLocation": "./.yarn/cache/css-minimizer-webpack-plugin-npm-1.1.5-66e0e9fb6c-5f2c8658e6.zip/node_modules/css-minimizer-webpack-plugin/",
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/css-minimizer-webpack-plugin-npm-1.2.0-3cabdf02bf-1da81ecf46.zip/node_modules/css-minimizer-webpack-plugin/",
           "packageDependencies": [
-            ["css-minimizer-webpack-plugin", "npm:1.1.5"]
+            ["css-minimizer-webpack-plugin", "npm:1.2.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.1.5", {
-          "packageLocation": "./.yarn/$$virtual/css-minimizer-webpack-plugin-virtual-14f429c8b7/0/cache/css-minimizer-webpack-plugin-npm-1.1.5-66e0e9fb6c-5f2c8658e6.zip/node_modules/css-minimizer-webpack-plugin/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.2.0", {
+          "packageLocation": "./.yarn/$$virtual/css-minimizer-webpack-plugin-virtual-8b770d32f4/0/cache/css-minimizer-webpack-plugin-npm-1.2.0-3cabdf02bf-1da81ecf46.zip/node_modules/css-minimizer-webpack-plugin/",
           "packageDependencies": [
-            ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.1.5"],
+            ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.2.0"],
             ["@types/webpack", null],
             ["cacache", "npm:15.0.5"],
             ["cssnano", "npm:4.1.10"],
