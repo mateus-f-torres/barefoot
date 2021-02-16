@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.22.0"],
             ["eslint-plugin-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.0"],
             ["file-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
-            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1"],
+            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["husky", "npm:4.3.8"],
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.3"],
@@ -5759,7 +5759,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.22.0"],
             ["eslint-plugin-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.0"],
             ["file-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
-            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1"],
+            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["husky", "npm:4.3.8"],
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.3"],
@@ -10587,29 +10587,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["html-webpack-plugin", [
-        ["npm:4.5.1", {
-          "packageLocation": "./.yarn/cache/html-webpack-plugin-npm-4.5.1-ad82c6c1f7-58979a6adb.zip/node_modules/html-webpack-plugin/",
+        ["npm:5.1.0", {
+          "packageLocation": "./.yarn/cache/html-webpack-plugin-npm-5.1.0-85e8337f80-ad67436ac7.zip/node_modules/html-webpack-plugin/",
           "packageDependencies": [
-            ["html-webpack-plugin", "npm:4.5.1"]
+            ["html-webpack-plugin", "npm:5.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1", {
-          "packageLocation": "./.yarn/$$virtual/html-webpack-plugin-virtual-dd4dfe9b80/0/cache/html-webpack-plugin-npm-4.5.1-ad82c6c1f7-58979a6adb.zip/node_modules/html-webpack-plugin/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0", {
+          "packageLocation": "./.yarn/$$virtual/html-webpack-plugin-virtual-b87c5ce204/0/cache/html-webpack-plugin-npm-5.1.0-85e8337f80-ad67436ac7.zip/node_modules/html-webpack-plugin/",
           "packageDependencies": [
-            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1"],
+            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["@types/html-minifier-terser", "npm:5.1.0"],
-            ["@types/tapable", "npm:1.0.6"],
-            ["@types/webpack", "npm:4.41.22"],
+            ["@types/webpack", null],
             ["html-minifier-terser", "npm:5.1.1"],
-            ["loader-utils", "npm:1.4.0"],
+            ["loader-utils", "npm:2.0.0"],
             ["lodash", "npm:4.17.20"],
             ["pretty-error", "npm:2.1.1"],
-            ["tapable", "npm:1.1.3"],
-            ["util.promisify", "npm:1.0.0"],
+            ["tapable", "npm:2.0.0"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.11.1"]
           ],
           "packagePeers": [
+            "@types/webpack",
             "webpack"
           ],
           "linkType": "HARD",
