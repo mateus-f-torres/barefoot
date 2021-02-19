@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.22.0"],
             ["eslint-plugin-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.0"],
             ["file-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
-            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1"],
+            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.2"],
             ["husky", "npm:4.3.8"],
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.4"],
@@ -5759,7 +5759,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.22.0"],
             ["eslint-plugin-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.0.0"],
             ["file-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
-            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1"],
+            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.2"],
             ["husky", "npm:4.3.8"],
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.4"],
@@ -7150,14 +7150,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.6.5", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.6.5-5941340066/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.6.5-5941340066-9283348dd5.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.6.5"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.8.3", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.8.3-f6bf459c9f/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.8.3-f6bf459c9f-3c67d1732d.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.8.3"]
           ],
@@ -7553,7 +7553,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["cwebp-bin", [
         ["npm:5.1.0", {
-          "packageLocation": "./.yarn/unplugged/cwebp-bin-npm-5.1.0-23bb159900/node_modules/cwebp-bin/",
+          "packageLocation": "./.yarn/cache/cwebp-bin-npm-5.1.0-23bb159900-ef491f3c0c.zip/node_modules/cwebp-bin/",
           "packageDependencies": [
             ["cwebp-bin", "npm:5.1.0"],
             ["bin-build", "npm:3.0.0"],
@@ -8261,7 +8261,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ejs", [
         ["npm:2.7.4", {
-          "packageLocation": "./.yarn/unplugged/ejs-npm-2.7.4-879ed38a4e/node_modules/ejs/",
+          "packageLocation": "./.yarn/cache/ejs-npm-2.7.4-879ed38a4e-f066d9a932.zip/node_modules/ejs/",
           "packageDependencies": [
             ["ejs", "npm:2.7.4"]
           ],
@@ -10033,7 +10033,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gifsicle", [
         ["npm:5.1.0", {
-          "packageLocation": "./.yarn/unplugged/gifsicle-npm-5.1.0-f8d5da3bd1/node_modules/gifsicle/",
+          "packageLocation": "./.yarn/cache/gifsicle-npm-5.1.0-f8d5da3bd1-39304e6c98.zip/node_modules/gifsicle/",
           "packageDependencies": [
             ["gifsicle", "npm:5.1.0"],
             ["bin-build", "npm:3.0.0"],
@@ -10587,17 +10587,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["html-webpack-plugin", [
-        ["npm:4.5.1", {
-          "packageLocation": "./.yarn/cache/html-webpack-plugin-npm-4.5.1-ad82c6c1f7-58979a6adb.zip/node_modules/html-webpack-plugin/",
+        ["npm:4.5.2", {
+          "packageLocation": "./.yarn/cache/html-webpack-plugin-npm-4.5.2-ad6a757dbb-5896c2ac5c.zip/node_modules/html-webpack-plugin/",
           "packageDependencies": [
-            ["html-webpack-plugin", "npm:4.5.1"]
+            ["html-webpack-plugin", "npm:4.5.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1", {
-          "packageLocation": "./.yarn/$$virtual/html-webpack-plugin-virtual-dd4dfe9b80/0/cache/html-webpack-plugin-npm-4.5.1-ad82c6c1f7-58979a6adb.zip/node_modules/html-webpack-plugin/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.2", {
+          "packageLocation": "./.yarn/$$virtual/html-webpack-plugin-virtual-43ad55a3b6/0/cache/html-webpack-plugin-npm-4.5.2-ad6a757dbb-5896c2ac5c.zip/node_modules/html-webpack-plugin/",
           "packageDependencies": [
-            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.1"],
+            ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.5.2"],
             ["@types/html-minifier-terser", "npm:5.1.0"],
             ["@types/tapable", "npm:1.0.6"],
             ["@types/webpack", "npm:4.41.22"],
@@ -10749,7 +10749,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["husky", [
         ["npm:4.3.8", {
-          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.8-f7cd00e56d/node_modules/husky/",
+          "packageLocation": "./.yarn/cache/husky-npm-4.3.8-f7cd00e56d-1ac4fb51ff.zip/node_modules/husky/",
           "packageDependencies": [
             ["husky", "npm:4.3.8"],
             ["chalk", "npm:4.1.0"],
@@ -13048,7 +13048,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.0.0-b83d656810/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.0.0-b83d656810-0dd557e6c9.zip/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -13681,7 +13681,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["optipng-bin", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/unplugged/optipng-bin-npm-7.0.0-3f0ba6ba72/node_modules/optipng-bin/",
+          "packageLocation": "./.yarn/cache/optipng-bin-npm-7.0.0-3f0ba6ba72-495dcba49c.zip/node_modules/optipng-bin/",
           "packageDependencies": [
             ["optipng-bin", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -14282,7 +14282,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-6d01ab81eb.zip/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
