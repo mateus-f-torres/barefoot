@@ -3368,7 +3368,7 @@ __metadata:
     compression-webpack-plugin: 7.1.2
     copy-webpack-plugin: 7.0.0
     core-js: 3.8.3
-    css-loader: 5.0.2
+    css-loader: 5.1.1
     css-minimizer-webpack-plugin: 1.2.0
     cz-conventional-changelog: 3.3.0
     eslint: 7.21.0
@@ -4784,15 +4784,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:5.0.2":
-  version: 5.0.2
-  resolution: "css-loader@npm:5.0.2"
+"css-loader@npm:5.1.1":
+  version: 5.1.1
+  resolution: "css-loader@npm:5.1.1"
   dependencies:
     camelcase: ^6.2.0
     cssesc: ^3.0.0
     icss-utils: ^5.1.0
     loader-utils: ^2.0.0
-    postcss: ^8.2.4
+    postcss: ^8.2.6
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
@@ -4802,7 +4802,7 @@ __metadata:
     semver: ^7.3.4
   peerDependencies:
     webpack: ^4.27.0 || ^5.0.0
-  checksum: 522ec665a9f32e749b9014562bbbce5291fbc6f21c0ce630570fed809638d848a9f640ff90dbb90cbdb9f9d442b93b9fc90266f5edf485480fd33258706ccaa3
+  checksum: 620fae3cace4a251fec723da2a4549a3874dd3459774451f834b19c4f38051aa76323d500d5d3408244b11fb40dbfc2fb30722be7b5e87ba7c6bed65396a898b
   languageName: node
   linkType: hard
 
@@ -11594,7 +11594,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.2.6, postcss@npm:^8.2.1, postcss@npm:^8.2.4":
+"postcss@npm:8.2.6, postcss@npm:^8.2.1, postcss@npm:^8.2.6":
   version: 8.2.6
   resolution: "postcss@npm:8.2.6"
   dependencies:
