@@ -7,8 +7,5 @@ self.skipWaiting()
 
 clientsClaim()
 
-precacheAndRoute([
-  ...self.__WB_MANIFEST,
-  {url: "/index.html", revision: REVISION},
-])
+precacheAndRoute(self.__WB_MANIFEST)
 registerRoute(new NavigationRoute(createHandlerBoundToURL("/index.html")))
