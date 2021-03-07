@@ -1,4 +1,4 @@
-FROM node:12.21.0-alpine AS build
+FROM node:14.16.0-alpine AS build
 
 WORKDIR /usr/src/barefoot
 COPY . /usr/src/barefoot
