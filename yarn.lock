@@ -4266,7 +4266,7 @@ __metadata:
     stylelint-config-standard: 21.0.0
     tailwindcss: 2.0.3
     terser-webpack-plugin: 5.1.1
-    ts-loader: 8.0.17
+    ts-loader: 8.0.18
     typescript: 4.1.5
     webpack: 5.24.4
     webpack-bundle-analyzer: 4.4.0
@@ -15041,9 +15041,9 @@ resolve@^1.19.0:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:8.0.17":
-  version: 8.0.17
-  resolution: "ts-loader@npm:8.0.17"
+"ts-loader@npm:8.0.18":
+  version: 8.0.18
+  resolution: "ts-loader@npm:8.0.18"
   dependencies:
     chalk: ^4.1.0
     enhanced-resolve: ^4.0.0
@@ -15053,7 +15053,7 @@ resolve@^1.19.0:
   peerDependencies:
     typescript: "*"
     webpack: "*"
-  checksum: e09b71875034ec5daf0f6eac2acefea31c78df1a0aa2d6f76f66954326acf93bafa9092a5a7f5872276bba39ba4dfebbcb7c21ef88d4334ff95bb4d216b9dfe0
+  checksum: 16c1a3cc4d03fb96293f9e0dd163e9eb872d8b2e610eeff50ed1502b3c5fda870cff3b9cc48423cf1f4bcd4cb5755c4456b3e7d8351014702a7f34d5fdd1ecc0
   languageName: node
   linkType: hard
 
