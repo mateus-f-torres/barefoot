@@ -4236,7 +4236,7 @@ __metadata:
     copy-webpack-plugin: 8.0.0
     core-js: 3.9.1
     css-loader: 5.1.2
-    css-minimizer-webpack-plugin: 1.2.0
+    css-minimizer-webpack-plugin: 1.3.0
     cz-conventional-changelog: 3.3.0
     eslint: 7.21.0
     eslint-config-prettier: 7.2.0
@@ -5643,9 +5643,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-minimizer-webpack-plugin@npm:1.2.0":
-  version: 1.2.0
-  resolution: "css-minimizer-webpack-plugin@npm:1.2.0"
+"css-minimizer-webpack-plugin@npm:1.3.0":
+  version: 1.3.0
+  resolution: "css-minimizer-webpack-plugin@npm:1.3.0"
   dependencies:
     cacache: ^15.0.5
     cssnano: ^4.1.10
@@ -5658,7 +5658,7 @@ __metadata:
     webpack-sources: ^1.4.3
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
-  checksum: 1da81ecf46865cd2db0bf639022c725489c0259e8fcc976f98738cc4cc6713660b8dbdc8e15e81eac56d06f93adef0e8f167c9d93f755d1013c4a82e5425133f
+  checksum: 35840869f38e547214cf526920ba49a17a2377981d12ca5860ea3450e66bf1811f6546d36383d154b08aa59195e2bcbab7a9d1089581864defbb489b359dd768
   languageName: node
   linkType: hard
 
