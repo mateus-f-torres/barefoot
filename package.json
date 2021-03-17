@@ -12,6 +12,7 @@
     "npm": "7.6.3"
   },
   "scripts": {
+    "postinstall": "husky install",
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
     "serve": "docker run --name barefoot -d -p 8080:80 barefoot",
