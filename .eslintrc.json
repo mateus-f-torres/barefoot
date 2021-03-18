@@ -28,9 +28,7 @@
     "standard",
     "standard-with-typescript",
     "plugin:react/recommended",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "rules": {
     "eqeqeq": [
