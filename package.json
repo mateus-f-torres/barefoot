@@ -15,7 +15,7 @@
     "postinstall": "husky install",
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
-    "serve": "docker run --name barefoot -d -p 8080:80 barefoot",
+    "serve": "./scripts/server.sh",
     "format": "prettier src/**/*.{js,ts,jsx,tsx,css} *.config.js",
     "lint": "eslint src/**/*.{js,ts,jsx,tsx} *.config.js && stylelint src/**/*.css",
     "compile": "tsc",
