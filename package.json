@@ -22,8 +22,8 @@
     "test": "echo \"WARN: no test specified\" && exit 0"
   },
   "dependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "tailwindcss": "2.0.4",
     "workbox-core": "6.1.2",
     "workbox-precaching": "6.1.2",
