@@ -2,6 +2,12 @@
 image_name="barefoot"
 local_port="$(test -n "$1" && echo "$1" || echo "8080")"
 
+# safeguard that developer has docker installed
+if ! command -v docker &> /dev/null; then
+  echo "ERROR: docker is required but it's not installed."
+  exit 1
+fi
+
 # get barefoot container id, if present
 docker_id="$(docker ps --quiet --filter name=$image_name)"
 
