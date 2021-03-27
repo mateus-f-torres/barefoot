@@ -1,24 +1,23 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ba3f22ea-0790-413a-be14-7ccf8972d61f/deploy-status)](https://app.netlify.com/sites/barefoot/deploys)
-[![Build Status](https://travis-ci.com/mateus-f-torres/barefoot.svg?branch=master)](https://travis-ci.com/mateus-f-torres/barefoot)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mateus-f-torres/barefoot/blob/master/LICENSE)
 
 # Barefoot
 
-A React PWA kitchen sink style template.  
+A React PWA kitchen sink style project template.  
 Complete with configurations and tools for a more agile development.  
 Created from scratch and in constant improvement as my knowledge grows.
 
 **tl;dr**  
 `git clone [repository]`  
 `git flow init -d`  
-`git push origin develop`  
-`npm install`  
+`git push origin -u develop`  
 `git flow feature start setup`
 
 - rename project (`README.md`, `manifest.json`, `package.json`, `index.html`)
 - remove unnecessary files, configurations and `doc/` folder
 - remove unnecessary dependencies
+- run `yarn install`
 
 ## Getting Started
 
@@ -37,14 +36,14 @@ Remember to keep the original **LICENSE** and credit me and this project in your
 ### Development
 
 ```
-npm install
+yarn install
 ```
 
 Install the dependencies with your package manager of choice.  
-I use [`npm`](https://www.npmjs.com/) to keep things simple here in the documentation.
+I use [*yarn v2*](https://yarnpkg.com/) as this project main package manager.  
 
 ```
-npm run start
+yarn start
 ```
 
 This will serve the application in _development_ mode with `webpack-dev-server` at `localhost:8080`.  
@@ -53,27 +52,27 @@ Any changes made to the files inside `src` will automatically trigger a hot-relo
 ### Production
 
 ```
-npm run build
+yarn build
 ```
 
 Call `webpack` in _production_ mode to bundle, minify and compress your application.  
 The finished product will be at the `dist` directory.
 
 ```
-npm run serve
+yarn serve [app_name] [local_port]
 ```
 
-To locally serve `dist/` with [`http-server`](https://github.com/http-party/http-server) at `localhost:8080`.  
-Compressed formats and catch-all redirect is already baked in the script.
+Setup a docker image and serve your project with nginx.  
+If no `app_name` and `local_port` is given will default to `barefoot` `8080`.
 
 ### Deployment
 
 How you deploy your application I leave it up to you.  
-Here I'm using [**Travis-CI**](https://travis-ci.org/) and [**Netlify**](https://www.netlify.com/) for this.
+Here I'm using [**Netlify**](https://www.netlify.com/).
 
 ## Overview
 
-### Structure
+### Source Structure
 
 ```
 src/
