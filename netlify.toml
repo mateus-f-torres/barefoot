@@ -1,3 +1,4 @@
+# Catch All rule, always last redirect rule
 [[redirects]]
   from = "/*"
   to = "/index.html"
