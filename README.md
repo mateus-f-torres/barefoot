@@ -40,7 +40,7 @@ yarn install
 ```
 
 Install the dependencies with your package manager of choice.  
-I use [*yarn v2*](https://yarnpkg.com/) as this project main package manager.  
+I use [*yarn v2*](https://yarnpkg.com/) as this project's main package manager.  
 
 ```
 yarn start
@@ -62,8 +62,8 @@ The finished product will be at the `dist` directory.
 yarn serve [app_name] [local_port]
 ```
 
-Setup a docker image and serve your project with nginx.  
-If no `app_name` and `local_port` is given will default to `barefoot` `8080`.
+Set up a docker image and serve your project with nginx.  
+If no `app_name` and `local_port` is given, default to `barefoot` `8080`.
 
 ### Deployment
 
