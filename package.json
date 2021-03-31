@@ -12,7 +12,6 @@
     "npm": "7.7.5"
   },
   "scripts": {
-    "postinstall": "husky install",
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
     "serve": "./scripts/server.sh",
