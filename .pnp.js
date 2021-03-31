@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.4"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.4.0"],
-            ["postcss", "npm:8.2.8"],
+            ["postcss", "npm:8.2.9"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.0"],
             ["prettier", "npm:2.2.1"],
             ["react", "npm:17.0.2"],
@@ -6424,7 +6424,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["colorette", "npm:1.2.2"],
             ["fraction.js", "npm:4.0.13"],
             ["normalize-range", "npm:0.1.2"],
-            ["postcss", "npm:8.2.8"],
+            ["postcss", "npm:8.2.9"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -6623,7 +6623,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:7.0.1"],
             ["lint-staged", "npm:10.5.4"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:1.4.0"],
-            ["postcss", "npm:8.2.8"],
+            ["postcss", "npm:8.2.9"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.0"],
             ["prettier", "npm:2.2.1"],
             ["react", "npm:17.0.2"],
@@ -14138,6 +14138,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nanoid", "npm:3.1.20"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.1.22", {
+          "packageLocation": "./.yarn/cache/nanoid-npm-3.1.22-e0ab44a9c0-6a38c79981.zip/node_modules/nanoid/",
+          "packageDependencies": [
+            ["nanoid", "npm:3.1.22"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["nanomatch", [
@@ -15393,6 +15400,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map", "npm:0.6.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:8.2.9", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.2.9-5f6584d6dd-b661a6e858.zip/node_modules/postcss/",
+          "packageDependencies": [
+            ["postcss", "npm:8.2.9"],
+            ["colorette", "npm:1.2.2"],
+            ["nanoid", "npm:3.1.22"],
+            ["source-map", "npm:0.6.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["postcss-calc", [
@@ -15549,7 +15566,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", null],
             ["cosmiconfig", "npm:7.0.0"],
             ["klona", "npm:2.0.4"],
-            ["postcss", "npm:8.2.8"],
+            ["postcss", "npm:8.2.9"],
             ["semver", "npm:7.3.4"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.28.0"]
           ],
@@ -15757,7 +15774,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-nested", "virtual:ba159c9e42045ec2c6f76e6779c6035a3773bf522be9b22d37242332411a2c3b9e71cf405ab080ded3e6393c7deed52b93fe1d93e58ad897bbec585689c32f6e#npm:5.0.5"],
             ["@types/postcss", null],
-            ["postcss", "npm:8.2.8"],
+            ["postcss", "npm:8.2.9"],
             ["postcss-selector-parser", "npm:6.0.4"]
           ],
           "packagePeers": [
@@ -18503,7 +18520,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["modern-normalize", "npm:1.0.0"],
             ["node-emoji", "npm:1.10.0"],
             ["object-hash", "npm:2.1.1"],
-            ["postcss", "npm:8.2.8"],
+            ["postcss", "npm:8.2.9"],
             ["postcss-functions", "npm:3.0.0"],
             ["postcss-js", "npm:3.0.3"],
             ["postcss-nested", "virtual:ba159c9e42045ec2c6f76e6779c6035a3773bf522be9b22d37242332411a2c3b9e71cf405ab080ded3e6393c7deed52b93fe1d93e58ad897bbec585689c32f6e#npm:5.0.5"],

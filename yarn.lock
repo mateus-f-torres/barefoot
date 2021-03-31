@@ -4411,7 +4411,7 @@ __metadata:
     image-webpack-loader: 7.0.1
     lint-staged: 10.5.4
     mini-css-extract-plugin: 1.4.0
-    postcss: 8.2.8
+    postcss: 8.2.9
     postcss-loader: 5.2.0
     prettier: 2.2.1
     react: 17.0.2
@@ -11077,6 +11077,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.1.22":
+  version: 3.1.22
+  resolution: "nanoid@npm:3.1.22"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 6a38c799816de388cd67233a9fad6216e0ad2abda3ce5b34eb126afbef6905924507223dc65797e2bcbc513f9cd7e078ea7e69448d59f434a6206b491278ae24
+  languageName: node
+  linkType: hard
+
 "nanomatch@npm:^1.2.9":
   version: 1.2.13
   resolution: "nanomatch@npm:1.2.13"
@@ -12687,14 +12696,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.2.8, postcss@npm:^8.2.8":
-  version: 8.2.8
-  resolution: "postcss@npm:8.2.8"
+"postcss@npm:8.2.9":
+  version: 8.2.9
+  resolution: "postcss@npm:8.2.9"
   dependencies:
     colorette: ^1.2.2
-    nanoid: ^3.1.20
+    nanoid: ^3.1.22
     source-map: ^0.6.1
-  checksum: 6e17d28833cf918a5ab306bfc7ec66b236dc51ed0f3de959491d40f6a171f5bd5f26de12f74e6bfeebaad44b0ac92b9f477a669d5f1fc07a27d67d8147a4bf6f
+  checksum: b661a6e858c82e8919c9b1e6bc299b5b2ba61dc66ccc52ef631ddc8b69aabce170a6f0a9ea04f087e7be780ad34cfc15dbbf952c152a9698375de8c88b8c4e96
   languageName: node
   linkType: hard
 
@@ -12751,6 +12760,17 @@ fsevents@~2.1.2:
     nanoid: ^3.1.20
     source-map: ^0.6.1
   checksum: 31dcc6632589e5b0d06ae3854122073a38952f3a25280511fa4bd8c2bc254c05d1d1db0913848ed3171c84d41b233ec3fe5d7349de4700f624a16fa93553ccac
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.2.8":
+  version: 8.2.8
+  resolution: "postcss@npm:8.2.8"
+  dependencies:
+    colorette: ^1.2.2
+    nanoid: ^3.1.20
+    source-map: ^0.6.1
+  checksum: 6e17d28833cf918a5ab306bfc7ec66b236dc51ed0f3de959491d40f6a171f5bd5f26de12f74e6bfeebaad44b0ac92b9f477a669d5f1fc07a27d67d8147a4bf6f
   languageName: node
   linkType: hard
 
