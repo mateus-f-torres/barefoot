@@ -4420,7 +4420,7 @@ __metadata:
     compression-webpack-plugin: 7.1.2
     copy-webpack-plugin: 8.1.1
     core-js: 3.10.1
-    css-loader: 5.2.1
+    css-loader: 5.2.2
     css-minimizer-webpack-plugin: 1.3.0
     cz-conventional-changelog: 3.3.0
     eslint: 7.24.0
@@ -5838,25 +5838,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:5.2.1":
-  version: 5.2.1
-  resolution: "css-loader@npm:5.2.1"
+"css-loader@npm:5.2.2":
+  version: 5.2.2
+  resolution: "css-loader@npm:5.2.2"
   dependencies:
     camelcase: ^6.2.0
-    cssesc: ^3.0.0
     icss-utils: ^5.1.0
     loader-utils: ^2.0.0
-    postcss: ^8.2.8
+    postcss: ^8.2.10
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
     postcss-modules-values: ^4.0.0
     postcss-value-parser: ^4.1.0
     schema-utils: ^3.0.0
-    semver: ^7.3.4
+    semver: ^7.3.5
   peerDependencies:
     webpack: ^4.27.0 || ^5.0.0
-  checksum: ea4174eea8e0a6227584a0114496d5e8468be985e9aca89cca723e4c2afa757267652dff307e7901f2e6fb10571151c8bee71468550933772fe5ff70a520d9d7
+  checksum: 1e0992f03e4e581dbb0da0b555639c0d162a072b8babd7ad065c1775cbc4dc612cb00abdff91e1c651724cd089758f5835064ea38dd8284f6a7d6e2d03791c5a
   languageName: node
   linkType: hard
 
@@ -12848,7 +12847,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.2.10":
+"postcss@npm:8.2.10, postcss@npm:^8.2.10":
   version: 8.2.10
   resolution: "postcss@npm:8.2.10"
   dependencies:
@@ -12912,17 +12911,6 @@ fsevents@~2.3.1:
     nanoid: ^3.1.20
     source-map: ^0.6.1
   checksum: 31dcc6632589e5b0d06ae3854122073a38952f3a25280511fa4bd8c2bc254c05d1d1db0913848ed3171c84d41b233ec3fe5d7349de4700f624a16fa93553ccac
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.2.8":
-  version: 8.2.8
-  resolution: "postcss@npm:8.2.8"
-  dependencies:
-    colorette: ^1.2.2
-    nanoid: ^3.1.20
-    source-map: ^0.6.1
-  checksum: 6e17d28833cf918a5ab306bfc7ec66b236dc51ed0f3de959491d40f6a171f5bd5f26de12f74e6bfeebaad44b0ac92b9f477a669d5f1fc07a27d67d8147a4bf6f
   languageName: node
   linkType: hard
 
@@ -14029,7 +14017,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"semver@npm:7.3.5":
+"semver@npm:7.3.5, semver@npm:^7.3.5":
   version: 7.3.5
   resolution: "semver@npm:7.3.5"
   dependencies:
