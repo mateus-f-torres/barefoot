@@ -1,6 +1,6 @@
 #!/bin/bash
-image_name="barefoot"
-local_port="$(test -n "$1" && echo "$1" || echo "8080")"
+image_name="$(test -n "$1" && echo "$1" || echo "barefoot")"
+local_port="$(test -n "$2" && echo "$2" || echo "8080")"
 
 # safeguard that developer has docker installed
 if ! command -v docker &> /dev/null; then
@@ -8,16 +8,16 @@ if ! command -v docker &> /dev/null; then
   exit 1
 fi
 
-# get barefoot container id, if present
-docker_id="$(docker ps --quiet --filter name=$image_name)"
+# get container id, if present
+docker_id="$(docker ps --quiet --filter name="$image_name")"
 
-# remove old barefoot image, if present
+# remove old image, if present
 if test -n "$docker_id"; then
-  docker stop $image_name && docker rm $image_name
+  docker stop "$image_name" && docker rm "$image_name"
 fi
 
 # build a new image
-docker build --tag $image_name .
+docker build --tag "$image_name" .
 
 # run image, mapping our local port to nginx port 80
-docker run --name $image_name --detach --publish "$local_port":80 $image_name
+docker run --name "$image_name" --detach --publish "$local_port":80 "$image_name"

@@ -1,7 +1,6 @@
-async function request(
-  url: string,
-  options = {method: "GET"}
-): Promise<unknown> {
+// TODO: get a working Interface for Options
+//       adding options to make a POST request breaks compilation
+async function request(url: string, options: any): Promise<unknown> {
   const res = await fetch(url, options)
   if (!res.ok) {
     throw new Error("HTTP request error, ".concat(String(res.status)))
