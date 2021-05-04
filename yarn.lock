@@ -4519,7 +4519,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     style-loader: 2.0.0
-    stylelint: 13.13.0
+    stylelint: 13.13.1
     stylelint-config-idiomatic-order: 8.1.0
     stylelint-config-prettier: 8.0.2
     stylelint-config-standard: 22.0.0
@@ -5118,6 +5118,16 @@ __metadata:
     escape-string-regexp: ^1.0.5
     supports-color: ^5.3.0
   checksum: 22c7b7b5bc761c882bb6516454a1a671923f1c53ff972860065aa0b28a195f230163c1d46ee88bcc7a03e5539177d896457d8bc727de7f244c6e87032743038e
+  languageName: node
+  linkType: hard
+
+"chalk@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "chalk@npm:4.1.1"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: 445c12db7aeed0046500a1e4184d31209a77d165654c885a789c41c8598a6a95bd2392180987cac572c967b93a2a730dda778bb7f87fa06ca63fd8592f8cc59f
   languageName: node
   linkType: hard
 
@@ -15032,15 +15042,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint@npm:13.13.0":
-  version: 13.13.0
-  resolution: "stylelint@npm:13.13.0"
+"stylelint@npm:13.13.1":
+  version: 13.13.1
+  resolution: "stylelint@npm:13.13.1"
   dependencies:
     "@stylelint/postcss-css-in-js": ^0.37.2
     "@stylelint/postcss-markdown": ^0.36.2
     autoprefixer: ^9.8.6
     balanced-match: ^2.0.0
-    chalk: ^4.1.0
+    chalk: ^4.1.1
     cosmiconfig: ^7.0.0
     debug: ^4.3.1
     execall: ^2.0.0
@@ -15081,12 +15091,12 @@ resolve@^2.0.0-next.3:
     style-search: ^0.1.0
     sugarss: ^2.0.0
     svg-tags: ^1.0.0
-    table: ^6.5.1
+    table: ^6.6.0
     v8-compile-cache: ^2.3.0
     write-file-atomic: ^3.0.3
   bin:
     stylelint: bin/stylelint.js
-  checksum: f23c0c02cc264625ba732f19e2633d4557b03813acb46fdf66915e52c7dd204f97617217d24ce62c3364fad5a7b84f4f704c80d4da12d5892f2ce70c92f1a9cb
+  checksum: 36659e8789074c13bfd01777ddfd497a7728a78cc22a0cb05f5b8dd66dab258a3ed9ee3022437565336b538f5c6a0706eba8bab43f451f81e94c29e8e4546e6a
   languageName: node
   linkType: hard
 
@@ -15192,9 +15202,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"table@npm:^6.5.1":
-  version: 6.5.1
-  resolution: "table@npm:6.5.1"
+"table@npm:^6.6.0":
+  version: 6.6.0
+  resolution: "table@npm:6.6.0"
   dependencies:
     ajv: ^8.0.1
     lodash.clonedeep: ^4.5.0
@@ -15203,7 +15213,7 @@ resolve@^2.0.0-next.3:
     slice-ansi: ^4.0.0
     string-width: ^4.2.0
     strip-ansi: ^6.0.0
-  checksum: 9bae2990c8096c0687e6951c983b27aaa8d4d570384e9429376145beb417ed088acddd9e93e1a2d6626001a86add70f24c5ed88c1617095cfed9ed43800b0eb3
+  checksum: 78186283603545e6c182e00a37a775d677d1a0737bfff0a5948b1083104adfcc140be9aff53552d45a3912d85ee19f6745c4dfb97b9f9a27b309c4fcf3f48c79
   languageName: node
   linkType: hard
 
