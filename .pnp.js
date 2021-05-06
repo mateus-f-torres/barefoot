@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.3"],
             ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.1.2"],
             ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.1"],
-            ["core-js", "npm:3.11.2"],
+            ["core-js", "npm:3.12.0"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.4"],
             ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -6759,7 +6759,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.3"],
             ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.1.2"],
             ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.1"],
-            ["core-js", "npm:3.11.2"],
+            ["core-js", "npm:3.12.0"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.4"],
             ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.0.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -8149,10 +8149,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["core-js", [
-        ["npm:3.11.2", {
-          "packageLocation": "./.yarn/cache/core-js-npm-3.11.2-5e4ccd7742-a332ed594d.zip/node_modules/core-js/",
+        ["npm:3.12.0", {
+          "packageLocation": "./.yarn/cache/core-js-npm-3.12.0-86ddce2306-85242be9b4.zip/node_modules/core-js/",
           "packageDependencies": [
-            ["core-js", "npm:3.11.2"]
+            ["core-js", "npm:3.12.0"]
           ],
           "linkType": "HARD",
         }]
