@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.13.0"],
             ["@commitlint/cli", "npm:12.1.1"],
             ["@commitlint/config-conventional", "npm:12.1.1"],
+            ["@pusher/push-notifications-web", "npm:1.1.0"],
             ["@types/react", "npm:17.0.5"],
             ["@types/react-dom", "npm:17.0.3"],
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.22.1"],
@@ -4907,6 +4908,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@pusher/push-notifications-web", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/@pusher-push-notifications-web-npm-1.1.0-052d5a3e97-3ffdc10cdc.zip/node_modules/@pusher/push-notifications-web/",
+          "packageDependencies": [
+            ["@pusher/push-notifications-web", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@rollup/plugin-babel", [
         ["npm:5.2.2", {
           "packageLocation": "./.yarn/cache/@rollup-plugin-babel-npm-5.2.2-d1de4602ba-757fdcdcb1.zip/node_modules/@rollup/plugin-babel/",
@@ -6749,6 +6759,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.13.0"],
             ["@commitlint/cli", "npm:12.1.1"],
             ["@commitlint/config-conventional", "npm:12.1.1"],
+            ["@pusher/push-notifications-web", "npm:1.1.0"],
             ["@types/react", "npm:17.0.5"],
             ["@types/react-dom", "npm:17.0.3"],
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.22.1"],

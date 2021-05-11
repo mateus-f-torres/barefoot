@@ -3098,6 +3098,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@pusher/push-notifications-web@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@pusher/push-notifications-web@npm:1.1.0"
+  checksum: 3ffdc10cdc11f4746905b7ea4cbbb0e9f9f2385ced303d95f60b66d29b341fd54a00fb42bc4a6a464ec0a6e0f8be1bf175a5dbd595ae748be6578cd19f377cc5
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.2.2
   resolution: "@rollup/plugin-babel@npm:5.2.2"
@@ -4493,6 +4500,7 @@ __metadata:
     "@babel/preset-typescript": 7.13.0
     "@commitlint/cli": 12.1.1
     "@commitlint/config-conventional": 12.1.1
+    "@pusher/push-notifications-web": 1.1.0
     "@types/react": 17.0.5
     "@types/react-dom": 17.0.3
     "@typescript-eslint/eslint-plugin": 4.22.1
