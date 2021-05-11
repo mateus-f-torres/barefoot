@@ -9,3 +9,5 @@ clientsClaim()
 
 precacheAndRoute(self.__WB_MANIFEST)
 registerRoute(new NavigationRoute(createHandlerBoundToURL("/index.html")))
+
+importScripts("https://js.pusher.com/beams/service-worker.js")
