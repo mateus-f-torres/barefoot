@@ -7,6 +7,10 @@ import "./sw/register"
 
 import App from "./components/App/App"
 
+declare global {
+  const PUSHER_INSTANCE_ID: string
+}
+
 const root = document.getElementById("root")
 
 if (root !== null) {
@@ -21,14 +25,13 @@ if (root !== null) {
 window.navigator.serviceWorker.ready
   .then((registration) => {
     const beamsClient = new PusherPushNotifications.Client({
-      // TODO: use env
-      instanceId: "542b5fae-8e7a-405b-8750-43086af04cb1",
+      instanceId: PUSHER_INSTANCE_ID,
       serviceWorkerRegistration: registration,
     })
 
     beamsClient
       .start()
-      .then(async () => await beamsClient.addDeviceInterest("hello"))
+      .then(async () => await beamsClient.addDeviceInterest("debug-barefoot"))
       .then(() => console.log("Successfully registered and subscribed!"))
       .catch(console.error)
   })
