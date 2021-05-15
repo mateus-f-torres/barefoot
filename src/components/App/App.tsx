@@ -1,18 +1,17 @@
 import React from "react"
 import * as PusherPushNotifications from "@pusher/push-notifications-web"
 
-declare global {
-  const PUSHER_INSTANCE_ID: string
-}
+import Button from "../Button/Button"
 
 function App(): React.ReactElement {
+  // TODO: move Pusher logic to separate file after single user auth is implemented
   async function handleSubscribe(): Promise<void> {
-    const swRegistration = await window.navigator.serviceWorker.getRegistration()
-    if (swRegistration !== undefined) {
+    const registration = await window.navigator?.serviceWorker.getRegistration()
+    if (registration !== undefined) {
       const beamsClient = new PusherPushNotifications.Client({
-        instanceId: "542b5fae-8e7a-405b-8750-43086af04cb1",
-        // instanceId: PUSHER_INSTANCE_ID,
-        serviceWorkerRegistration: swRegistration,
+        // TODO: configure dockerfile to add this .env variable
+        instanceId: PUSHER_INSTANCE_ID,
+        serviceWorkerRegistration: registration,
       })
 
       beamsClient
@@ -30,7 +29,7 @@ function App(): React.ReactElement {
       <h1 className="font-body text-4xl font-bold text-regal-blue text-center">
         Hello World
       </h1>
-      <button onClick={handleSubscribe}>Subscribe!</button>
+      <Button handleClick={handleSubscribe} />
     </div>
   )
 }
