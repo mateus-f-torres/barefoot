@@ -122,6 +122,9 @@ What you add on top of it depends on where you are going, but, if you don't know
 If you choose to wear sandals and add `styled-component` or prefer sneakers with `redux` that is up to you.  
 Good coding \ (•◡•) / !
 
+## Credit
+Icon `bell-solid.svg` from [**Font Awesome**](https://fontawesome.com/license)
+
 ## License
 
 [MIT License](./LICENSE)  

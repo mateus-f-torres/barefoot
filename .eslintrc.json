@@ -12,7 +12,8 @@
   },
   "globals": {
     "REVISION": "readonly",
-    "PRODUCTION": "readonly"
+    "PRODUCTION": "readonly",
+    "PUSHER_INSTANCE_ID": "readonly"
   },
   "plugins": [
     "@typescript-eslint",

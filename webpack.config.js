@@ -89,6 +89,7 @@ const copyPlugin = new CopyPlugin({
 const environmentPlugin = new webpack.DefinePlugin({
   REVISION: Date.now(),
   PRODUCTION: process.env.NODE_ENV == "production",
+  PUSHER_INSTANCE_ID: process.env.PUSHER_INSTANCE_ID,
 })
 
 const DEFAULT_PORT = 8080
