@@ -4513,7 +4513,7 @@ __metadata:
     copy-webpack-plugin: 8.1.1
     core-js: 3.12.1
     css-loader: 5.2.4
-    css-minimizer-webpack-plugin: 2.0.0
+    css-minimizer-webpack-plugin: 3.0.0
     cz-conventional-changelog: 3.3.0
     eslint: 7.26.0
     eslint-config-prettier: 8.3.0
@@ -5916,9 +5916,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-minimizer-webpack-plugin@npm:2.0.0":
-  version: 2.0.0
-  resolution: "css-minimizer-webpack-plugin@npm:2.0.0"
+"css-minimizer-webpack-plugin@npm:3.0.0":
+  version: 3.0.0
+  resolution: "css-minimizer-webpack-plugin@npm:3.0.0"
   dependencies:
     cssnano: ^5.0.0
     jest-worker: ^26.3.0
@@ -5934,7 +5934,7 @@ __metadata:
       optional: true
     csso:
       optional: true
-  checksum: 7a83a1295a3c21d7148857e58e114a9d268212dc381f01bf989c63f16e6fca92e13bb02cb3bb0ec8fb45a03460cd5e1a3d4842832b062a6ca70f27ffb0f4c9ba
+  checksum: 9c5fa5e5c2047869367f7f8beeb9cdbb2aeb804a75edc582949103dc6908f9034bddbb99ccee99729f857c3803d2a428f3376e1dc8168785d257497b9e06eea3
   languageName: node
   linkType: hard
 
