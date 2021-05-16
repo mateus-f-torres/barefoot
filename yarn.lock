@@ -4591,6 +4591,7 @@ __metadata:
     css-loader: 5.2.4
     css-minimizer-webpack-plugin: 3.0.0
     cz-conventional-changelog: 3.3.0
+    dotenv: 9.0.2
     eslint: 7.26.0
     eslint-config-prettier: 8.3.0
     eslint-config-standard: 16.0.2
@@ -6796,6 +6797,13 @@ __metadata:
   dependencies:
     is-obj: ^2.0.0
   checksum: 76e6693d8803eeff9cb920988446bf223cf1f6e5b1c0c2fe07a66906392134931a481b11e3c0bd852c5cfc97fad65258bcb4359169ad1d8d624cb3f56932be98
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:9.0.2":
+  version: 9.0.2
+  resolution: "dotenv@npm:9.0.2"
+  checksum: 062a31a2fd024a8a7efee4f2d3972d488a1485e0545b97ab3c338f59f17689a2ae84b6e8ddb9ebca2902cc9b4926e7b672a476f5e326c6902648312fc3da54d9
   languageName: node
   linkType: hard
 
