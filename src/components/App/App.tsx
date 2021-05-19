@@ -3,8 +3,6 @@ import * as PusherPushNotifications from "@pusher/push-notifications-web"
 
 import Button from "../Button/Button"
 
-console.log(PUSHER_INSTANCE_ID, PRODUCTION)
-
 function App(): React.ReactElement {
   // TODO: move Pusher logic to separate file after single user auth is implemented
   async function handleSubscribe(): Promise<void> {
