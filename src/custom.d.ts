@@ -1,3 +1,4 @@
+declare const PRODUCTION: boolean
 declare const PUSHER_INSTANCE_ID: string
 
 declare module "*.svg" {

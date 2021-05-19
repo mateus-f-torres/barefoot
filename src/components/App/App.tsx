@@ -9,7 +9,6 @@ function App(): React.ReactElement {
     const registration = await window.navigator?.serviceWorker.getRegistration()
     if (registration !== undefined) {
       const beamsClient = new PusherPushNotifications.Client({
-        // TODO: configure dockerfile to add this .env variable
         instanceId: PUSHER_INSTANCE_ID,
         serviceWorkerRegistration: registration,
       })

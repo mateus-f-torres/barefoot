@@ -18,6 +18,8 @@ const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 const {SourceMapDevToolPlugin} = require("webpack")
 const CopyPlugin = require("copy-webpack-plugin")
+// eslint-disable-next-line no-unused-vars
+const dotenv = require("dotenv").config()
 
 // HTML
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -87,9 +89,8 @@ const copyPlugin = new CopyPlugin({
 })
 
 const environmentPlugin = new webpack.DefinePlugin({
-  REVISION: Date.now(),
   PRODUCTION: process.env.NODE_ENV == "production",
-  PUSHER_INSTANCE_ID: process.env.PUSHER_INSTANCE_ID,
+  PUSHER_INSTANCE_ID: JSON.stringify(process.env.PUSHER_INSTANCE_ID),
 })
 
 const DEFAULT_PORT = 8080
