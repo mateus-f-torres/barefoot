@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.5"],
             ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.0.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
-            ["dotenv", "npm:9.0.2"],
+            ["dotenv", "npm:10.0.0"],
             ["eslint", "npm:7.26.0"],
             ["eslint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.3.0"],
             ["eslint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:16.0.2"],
@@ -6874,7 +6874,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.2.5"],
             ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.0.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
-            ["dotenv", "npm:9.0.2"],
+            ["dotenv", "npm:10.0.0"],
             ["eslint", "npm:7.26.0"],
             ["eslint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.3.0"],
             ["eslint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:16.0.2"],
@@ -9388,10 +9388,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["dotenv", [
-        ["npm:9.0.2", {
-          "packageLocation": "./.yarn/cache/dotenv-npm-9.0.2-fd127dfe81-062a31a2fd.zip/node_modules/dotenv/",
+        ["npm:10.0.0", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-10.0.0-36b272df25-9c45712e21.zip/node_modules/dotenv/",
           "packageDependencies": [
-            ["dotenv", "npm:9.0.2"]
+            ["dotenv", "npm:10.0.0"]
           ],
           "linkType": "HARD",
         }]
