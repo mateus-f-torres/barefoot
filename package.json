@@ -46,7 +46,7 @@
     "commitizen": "4.2.4",
     "compression-webpack-plugin": "8.0.0",
     "copy-webpack-plugin": "9.0.0",
-    "core-js": "3.12.1",
+    "core-js": "3.13.0",
     "css-loader": "5.2.6",
     "css-minimizer-webpack-plugin": "3.0.0",
     "cz-conventional-changelog": "3.3.0",
