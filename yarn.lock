@@ -4662,7 +4662,7 @@ __metadata:
     copy-webpack-plugin: 9.0.0
     core-js: 3.13.1
     css-loader: 5.2.6
-    css-minimizer-webpack-plugin: 3.0.0
+    css-minimizer-webpack-plugin: 3.0.1
     cz-conventional-changelog: 3.3.0
     dotenv: 10.0.0
     eslint: 7.27.0
@@ -6066,12 +6066,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-minimizer-webpack-plugin@npm:3.0.0":
-  version: 3.0.0
-  resolution: "css-minimizer-webpack-plugin@npm:3.0.0"
+"css-minimizer-webpack-plugin@npm:3.0.1":
+  version: 3.0.1
+  resolution: "css-minimizer-webpack-plugin@npm:3.0.1"
   dependencies:
     cssnano: ^5.0.0
-    jest-worker: ^26.3.0
+    jest-worker: ^27.0.2
     p-limit: ^3.0.2
     postcss: ^8.2.9
     schema-utils: ^3.0.0
@@ -6084,7 +6084,7 @@ __metadata:
       optional: true
     csso:
       optional: true
-  checksum: 9c5fa5e5c2047869367f7f8beeb9cdbb2aeb804a75edc582949103dc6908f9034bddbb99ccee99729f857c3803d2a428f3376e1dc8168785d257497b9e06eea3
+  checksum: f41255e4a1196f99ffe37784acbc0323e63c3009fc12cc22d7287c97d809eab999428f4d7282c8268c8bcda2eb40dda1f696a8b7cd044ea0180ec6080c52c302
   languageName: node
   linkType: hard
 
@@ -10314,17 +10314,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jest-worker@npm:^26.3.0":
-  version: 26.5.0
-  resolution: "jest-worker@npm:26.5.0"
-  dependencies:
-    "@types/node": "*"
-    merge-stream: ^2.0.0
-    supports-color: ^7.0.0
-  checksum: 0cb994d9e144712589fd5cbf948c27d6a11a871f1fecb65c99d50799e35c7e21fda2d0a74c0245eddf4884e40c1f638b02cd2c5c4c3eeb1ee07b64da3cb0fb3a
-  languageName: node
-  linkType: hard
-
 "jest-worker@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-worker@npm:26.6.2"
@@ -10333,6 +10322,17 @@ fsevents@~2.3.1:
     merge-stream: ^2.0.0
     supports-color: ^7.0.0
   checksum: 5eb349833b5e9750ce8700388961dfd5d5e207c913122221e418e48b9cda3c17b0fb418f6a90f1614cfdc3ca836158b720c5dc1de82cb1e708266b4d76e31a38
+  languageName: node
+  linkType: hard
+
+"jest-worker@npm:^27.0.2":
+  version: 27.0.2
+  resolution: "jest-worker@npm:27.0.2"
+  dependencies:
+    "@types/node": "*"
+    merge-stream: ^2.0.0
+    supports-color: ^8.0.0
+  checksum: bfbfd3d0af94a5505e841719bba4f57823305a3333b3dcecad333eea517c18ee3ba528e8fab017444ad93666ca15b73f1969b71fe0ba9f9abec8843a74b081e7
   languageName: node
   linkType: hard
 
@@ -15478,6 +15478,15 @@ resolve@^2.0.0-next.3:
   dependencies:
     has-flag: ^4.0.0
   checksum: 8e57067c39216f3c2ffce7cc14ca934d54746192571203aa9c9922d97d2d55cc1bdaa9e41a11f91e620670b5a74ebdec6b548a885d8cc2dea7cab59e21416029
+  languageName: node
+  linkType: hard
+
+"supports-color@npm:^8.0.0":
+  version: 8.1.1
+  resolution: "supports-color@npm:8.1.1"
+  dependencies:
+    has-flag: ^4.0.0
+  checksum: 0219f5c91753fea8dc8046cd4b18d39458b5dc0c6421c67c1072209faae9ba93b89283252e3b05d5c18901fd9f8b95001e3247fb93e2265f66d584a676522c75
   languageName: node
   linkType: hard
 
