@@ -4535,7 +4535,7 @@ __metadata:
     eslint-plugin-react: 7.24.0
     eslint-plugin-standard: 5.0.0
     file-loader: 6.2.0
-    html-webpack-plugin: 5.3.1
+    html-webpack-plugin: 5.3.2
     husky: 6.0.0
     image-webpack-loader: 7.0.1
     lint-staged: 11.0.0
@@ -5954,18 +5954,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-select@npm:^1.1.0":
-  version: 1.2.0
-  resolution: "css-select@npm:1.2.0"
-  dependencies:
-    boolbase: ~1.0.0
-    css-what: 2.1
-    domutils: 1.5.1
-    nth-check: ~1.0.1
-  checksum: c1fdd9040c677cd872e57761aafce8b603fa3c979117cc9d70e0e4901d6e0c751abe3b05b93d918835413165916d7f7132559a6f350863124f6bbbec2b1694d8
-  languageName: node
-  linkType: hard
-
 "css-select@npm:^2.0.0":
   version: 2.1.0
   resolution: "css-select@npm:2.1.0"
@@ -5988,6 +5976,19 @@ __metadata:
     domutils: ^2.4.3
     nth-check: ^2.0.0
   checksum: c06346140ea596220896980b8ce62e7dbc9fc4c902a0858d97ba933f538aecc96fed57967c15793faf76f2a6bab5385650d0a3637e07f498f75c39ce2c9764ab
+  languageName: node
+  linkType: hard
+
+"css-select@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "css-select@npm:4.1.3"
+  dependencies:
+    boolbase: ^1.0.0
+    css-what: ^5.0.0
+    domhandler: ^4.2.0
+    domutils: ^2.6.0
+    nth-check: ^2.0.0
+  checksum: 0259932ad2f37dd6fd0ba7a16a1bedb58d9ac2f0dd6888a27ea860193340ec4599568d126740ae8809eb814c3a6e848fb6ce674c420dc439877becccb91b03af
   languageName: node
   linkType: hard
 
@@ -6028,13 +6029,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-what@npm:2.1":
-  version: 2.1.3
-  resolution: "css-what@npm:2.1.3"
-  checksum: 732fcecfe3247eadd79081790934f9aa003ca935657d87a4737afc03dc378f8f3d1a071066328a226d98299d15e855c886f625119fe1d7f2367659d3335bde6f
-  languageName: node
-  linkType: hard
-
 "css-what@npm:^3.2.1":
   version: 3.3.0
   resolution: "css-what@npm:3.3.0"
@@ -6046,6 +6040,13 @@ __metadata:
   version: 4.0.0
   resolution: "css-what@npm:4.0.0"
   checksum: 2116d25ed233597bfe0b2fb50b56076f5dfc1665f602f8a367bbaa8d086ce91c188d92a47118fa0daf35118456b0a0e537241f89b34b4d98161d63da63740471
+  languageName: node
+  linkType: hard
+
+"css-what@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "css-what@npm:5.0.1"
+  checksum: 051bcda396ef25fbc58f66a0c9b54c3bd11f5b8a9f9cdf138865c3bff029fddb6df8fffb487a079110d691856385769fe4e9345262fabeb7a09783dd6f6a7bc2
   languageName: node
   linkType: hard
 
@@ -6610,7 +6611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-converter@npm:^0.2":
+"dom-converter@npm:^0.2.0":
   version: 0.2.0
   resolution: "dom-converter@npm:0.2.0"
   dependencies:
@@ -6679,16 +6680,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:1.5.1":
-  version: 1.5.1
-  resolution: "domutils@npm:1.5.1"
-  dependencies:
-    dom-serializer: 0
-    domelementtype: 1
-  checksum: ffc578118d3e50d0f34a0bba37575492998d43b7e54764533b1890e6c233b67068a0f369d1d23d200aa71c3fe87f2d60fdc4a87479e416edafecc33f00fc9735
-  languageName: node
-  linkType: hard
-
 "domutils@npm:^1.5.1, domutils@npm:^1.7.0":
   version: 1.7.0
   resolution: "domutils@npm:1.7.0"
@@ -6707,6 +6698,17 @@ __metadata:
     domelementtype: ^2.2.0
     domhandler: ^4.2.0
   checksum: 9da918510929e787d029034986287760f304ce089bdc3538482a3eee3e50abe9c055fa0c44f4366117efb8323615bd0228bdcbb0ca9799f80f7d3c2fc4df20ba
+  languageName: node
+  linkType: hard
+
+"domutils@npm:^2.5.2, domutils@npm:^2.6.0":
+  version: 2.7.0
+  resolution: "domutils@npm:2.7.0"
+  dependencies:
+    dom-serializer: ^1.0.1
+    domelementtype: ^2.2.0
+    domhandler: ^4.2.0
+  checksum: b7c6cbd4854611447785cdc10f989728cc213652c89211b7d0956c37e565b8a2881683a0162b9a77aa39f52de1eff10f439fe77315d3e828beda3b81a43c1dea
   languageName: node
   linkType: hard
 
@@ -9013,22 +9015,22 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:5.3.1":
-  version: 5.3.1
-  resolution: "html-webpack-plugin@npm:5.3.1"
+"html-webpack-plugin@npm:5.3.2":
+  version: 5.3.2
+  resolution: "html-webpack-plugin@npm:5.3.2"
   dependencies:
     "@types/html-minifier-terser": ^5.0.0
     html-minifier-terser: ^5.0.1
-    lodash: ^4.17.20
-    pretty-error: ^2.1.1
+    lodash: ^4.17.21
+    pretty-error: ^3.0.4
     tapable: ^2.0.0
   peerDependencies:
     webpack: ^5.20.0
-  checksum: 2d744cf3144686cc4b786dac8fbbce3733dd1825a99efea2f289b54e47201f8431df56114d72eb87cf4f78aa8dede6ea5ee09904313dbd72209dc3a43a804b51
+  checksum: 3e8f6e4df87702e794522ae53ffd7e24c62ecc88d914e9e86626bb5977d62afe40e7be9032f72f3dde8696b53590b8d79466bfd38b3b5079148cf913c2c7a4c0
   languageName: node
   linkType: hard
 
-"htmlparser2@npm:^3.10.0, htmlparser2@npm:^3.3.0":
+"htmlparser2@npm:^3.10.0":
   version: 3.10.1
   resolution: "htmlparser2@npm:3.10.1"
   dependencies:
@@ -9039,6 +9041,18 @@ fsevents@~2.3.1:
     inherits: ^2.0.1
     readable-stream: ^3.1.1
   checksum: 94fa6312e6c378b1c0f1626d3f468f0b25c5dcf6689bfa61fa0002c044c4c77842b5122feb84b501b02539165917febba0ffe754046996c9e8ed77c1bb65e66c
+  languageName: node
+  linkType: hard
+
+"htmlparser2@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "htmlparser2@npm:6.1.0"
+  dependencies:
+    domelementtype: ^2.0.1
+    domhandler: ^4.0.0
+    domutils: ^2.5.2
+    entities: ^2.0.0
+  checksum: 37b0b2c0ae99aed0537f6373a6ad3dc6f19fddfd10799a75e76213458a0f754bbd3a829f075d175c9f5e3c70c7e354cb5a1dd1b582cee90e28a0845a96d524dc
   languageName: node
   linkType: hard
 
@@ -11656,7 +11670,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"nth-check@npm:^1.0.2, nth-check@npm:~1.0.1":
+"nth-check@npm:^1.0.2":
   version: 1.0.2
   resolution: "nth-check@npm:1.0.2"
   dependencies:
@@ -13232,13 +13246,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pretty-error@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "pretty-error@npm:2.1.1"
+"pretty-error@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "pretty-error@npm:3.0.4"
   dependencies:
-    renderkid: ^2.0.1
-    utila: ~0.4
-  checksum: dc2a92f59888eac1bd3861b439944ab50c46fcc957c3147126270f1e9e06c7bbacde1ab23ab2fc73c8f3a1961094db0878ec8a569f1d5606343a0ada7899cfc4
+    lodash: ^4.17.20
+    renderkid: ^2.0.6
+  checksum: f393954c8755b800bf8fe0ddd7c49b37f02949dc13c2929d03b0792ac404c92d421435b25fa516a34592afbb8379af67fa36c3b816c4d20f162ca3203a6a7c9d
   languageName: node
   linkType: hard
 
@@ -13776,16 +13790,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"renderkid@npm:^2.0.1":
-  version: 2.0.3
-  resolution: "renderkid@npm:2.0.3"
+"renderkid@npm:^2.0.6":
+  version: 2.0.7
+  resolution: "renderkid@npm:2.0.7"
   dependencies:
-    css-select: ^1.1.0
-    dom-converter: ^0.2
-    htmlparser2: ^3.3.0
-    strip-ansi: ^3.0.0
-    utila: ^0.4.0
-  checksum: 6520020e223b934fba7faf2c87242b065196d48a6ef8fc6c2c371379ed9c3a40cd8254d7db4b1cfb1bfad254b17d346800270bb0b8e7b96002285f5b9bf13c98
+    css-select: ^4.1.3
+    dom-converter: ^0.2.0
+    htmlparser2: ^6.1.0
+    lodash: ^4.17.21
+    strip-ansi: ^3.0.1
+  checksum: 7ca23ccbc95a8f85654802bc9353f0a2260f01f10bbde9384a6390e8c2add28c22c41e2d52a6375a04ba9cf41eeaa053942986734a3b25b3b7f2d3f8a9abffff
   languageName: node
   linkType: hard
 
@@ -16247,7 +16261,7 @@ typescript@4.3.4:
   languageName: node
   linkType: hard
 
-"utila@npm:^0.4.0, utila@npm:~0.4":
+"utila@npm:~0.4":
   version: 0.4.0
   resolution: "utila@npm:0.4.0"
   checksum: 6799b0a5666ac26fb547068e6967e51b534e290174b10ae26e500c216197b0faed9be8a12108bc408ce475ce1002c866aac2d1d4e1453dc72b441d8900f2063a
