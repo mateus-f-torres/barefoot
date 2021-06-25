@@ -66,7 +66,7 @@
     "husky": "6.0.0",
     "image-webpack-loader": "7.0.1",
     "lint-staged": "11.0.0",
-    "mini-css-extract-plugin": "1.5.1",
+    "mini-css-extract-plugin": "1.6.1",
     "postcss": "8.3.5",
     "postcss-loader": "6.1.0",
     "prettier": "2.3.1",
