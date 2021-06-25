@@ -4526,7 +4526,7 @@ __metadata:
     babel-loader: 8.2.2
     clean-webpack-plugin: 3.0.0
     commitizen: 4.2.4
-    compression-webpack-plugin: 8.0.0
+    compression-webpack-plugin: 8.0.1
     copy-webpack-plugin: 9.0.0
     core-js: 3.15.1
     css-loader: 5.2.6
@@ -5617,15 +5617,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compression-webpack-plugin@npm:8.0.0":
-  version: 8.0.0
-  resolution: "compression-webpack-plugin@npm:8.0.0"
+"compression-webpack-plugin@npm:8.0.1":
+  version: 8.0.1
+  resolution: "compression-webpack-plugin@npm:8.0.1"
   dependencies:
     schema-utils: ^3.0.0
-    serialize-javascript: ^5.0.1
+    serialize-javascript: ^6.0.0
   peerDependencies:
     webpack: ^5.1.0
-  checksum: 37862ef6076fbf980c2f7360b5af12e555ee2c24f9aecbbadd44b6bb31dcfbdc8b2f2f64e53ffb38879ce2922e5e8f83aceb3876940a9aa912981ce43573ed97
+  checksum: 71428c082914621ce7168fbb46990f585bdd0038632e237685ee3e0ff81aa1c8d436868e2e86bd39d6b25a55dc6acd225d9bc9aac8c2efaa38719269f329884d
   languageName: node
   linkType: hard
 
@@ -14372,6 +14372,15 @@ resolve@^2.0.0-next.3:
   dependencies:
     randombytes: ^2.1.0
   checksum: 97eef70a33c75e690b0c6aa2ffe622ecdfc888d3f181a5cf129e5778228dcd100febabc0f41ff793199ee79acd14cbbad0c69f1348a3893580fe424c4718889b
+  languageName: node
+  linkType: hard
+
+"serialize-javascript@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "serialize-javascript@npm:6.0.0"
+  dependencies:
+    randombytes: ^2.1.0
+  checksum: e086a40bfcb9d341c37a4e52bc200d143b54397cf1bb486f38cd40cdbaac4b82437d981472df94dbcff6334269e0d82daffbd6b75dd50fe54a5a5da2273f2360
   languageName: node
   linkType: hard
 
