@@ -4548,7 +4548,7 @@ __metadata:
     husky: 6.0.0
     image-webpack-loader: 7.0.1
     lint-staged: 11.0.0
-    mini-css-extract-plugin: 1.6.1
+    mini-css-extract-plugin: 1.6.2
     postcss: 8.3.5
     postcss-loader: 6.1.0
     prettier: 2.3.2
@@ -11222,16 +11222,16 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:1.6.1":
-  version: 1.6.1
-  resolution: "mini-css-extract-plugin@npm:1.6.1"
+"mini-css-extract-plugin@npm:1.6.2":
+  version: 1.6.2
+  resolution: "mini-css-extract-plugin@npm:1.6.2"
   dependencies:
     loader-utils: ^2.0.0
     schema-utils: ^3.0.0
     webpack-sources: ^1.1.0
   peerDependencies:
     webpack: ^4.4.0 || ^5.0.0
-  checksum: 34fe3c65953982b20e3fa87494e6d632f3730c1688664a474c3c1298da65910aa162c94a5ebe9351402afc20d2539052c5d93bfe88cbcf88c3b3172789689b0c
+  checksum: 53c162db80f2b58dcc1e85a2e1b52ffed73d3184ed5b8a037786d8562fbecf1b936397ea3873f3375356f8a6def27ec97867f9938356358d369d2a9e20a30718
   languageName: node
   linkType: hard
 
