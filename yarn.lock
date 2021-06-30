@@ -4554,7 +4554,7 @@ __metadata:
     prettier: 2.3.2
     react: 17.0.2
     react-dom: 17.0.2
-    style-loader: 2.0.0
+    style-loader: 3.0.0
     stylelint: 13.13.1
     stylelint-config-idiomatic-order: 8.1.0
     stylelint-config-prettier: 8.0.2
@@ -15134,15 +15134,12 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"style-loader@npm:2.0.0":
-  version: 2.0.0
-  resolution: "style-loader@npm:2.0.0"
-  dependencies:
-    loader-utils: ^2.0.0
-    schema-utils: ^3.0.0
+"style-loader@npm:3.0.0":
+  version: 3.0.0
+  resolution: "style-loader@npm:3.0.0"
   peerDependencies:
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: ffc305488244ab499f91b05a1c94dd199b8b106d69e260ce38bd599819bbb352357e107bef3c319b775b9fb0eaed571cb68f8c7940e457553f85a980f4b630d8
+    webpack: ^5.0.0
+  checksum: 2457cb01f8b4d843aeaf4587eb26584ec9c93832ab892151cde9ce1e1fba558fa6d7b27c68f059b9d76f4e208d692cbfcd23f9461d76fcee19505274dc085fab
   languageName: node
   linkType: hard
 
