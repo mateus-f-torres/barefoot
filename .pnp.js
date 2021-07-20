@@ -80,7 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.2"],
-            ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.1.0"],
+            ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.2.1"],
             ["stylelint", "npm:13.13.1"],
             ["stylelint-config-idiomatic-order", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.0"],
             ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.0.2"],
@@ -6826,7 +6826,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.2"],
-            ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.1.0"],
+            ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.2.1"],
             ["stylelint", "npm:13.13.1"],
             ["stylelint-config-idiomatic-order", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.0"],
             ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.0.2"],
@@ -19051,17 +19051,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["style-loader", [
-        ["npm:3.1.0", {
-          "packageLocation": "./.yarn/cache/style-loader-npm-3.1.0-7a89e7a683-bc1e159c33.zip/node_modules/style-loader/",
+        ["npm:3.2.1", {
+          "packageLocation": "./.yarn/cache/style-loader-npm-3.2.1-d7e80dafb3-898b572015.zip/node_modules/style-loader/",
           "packageDependencies": [
-            ["style-loader", "npm:3.1.0"]
+            ["style-loader", "npm:3.2.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.1.0", {
-          "packageLocation": "./.yarn/$$virtual/style-loader-virtual-b88fc7b3d7/0/cache/style-loader-npm-3.1.0-7a89e7a683-bc1e159c33.zip/node_modules/style-loader/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.2.1", {
+          "packageLocation": "./.yarn/$$virtual/style-loader-virtual-a810c1b1f9/0/cache/style-loader-npm-3.2.1-d7e80dafb3-898b572015.zip/node_modules/style-loader/",
           "packageDependencies": [
-            ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.1.0"],
+            ["style-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.2.1"],
             ["@types/webpack", null],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.45.1"]
           ],
