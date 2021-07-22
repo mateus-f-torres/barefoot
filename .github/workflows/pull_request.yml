@@ -1,0 +1,31 @@
+name: Pull Request Review
+
+on:
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  checking-code:
+    name: Checking Code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.17.3'
+          cache: 'yarn'
+      - name: Install
+        run: 'yarn install --immutable'
+      - name: Prettier Checking
+        run: 'yarn prettier --check "src/**/*.{js,ts,jsx,tsx,css}" "*.config.js"'
+      - name: ESLint Checking
+        run: 'yarn eslint "src/**/*.{js,ts,jsx,tsx}" "*.config.js"'
+      - name: Stylelint Checking
+        run: 'yarn stylelint "src/**/*.css"'
+#     - name: Commitlint Checking
+#       run: ''
+      - name: Testing Branch
+        run: 'yarn test'
+
