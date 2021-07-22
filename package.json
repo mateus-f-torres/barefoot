@@ -15,9 +15,6 @@
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
     "serve": "./scripts/server.sh",
-    "format": "prettier src/**/*.{js,ts,jsx,tsx,css} *.config.js",
-    "lint": "eslint src/**/*.{js,ts,jsx,tsx} *.config.js && stylelint src/**/*.css",
-    "compile": "tsc",
     "test": "echo \"WARN: no test specified\" && exit 0"
   },
   "dependencies": {
