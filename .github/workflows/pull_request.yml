@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - master
-      - develop
-    branches-ignore:
-      - renovate/*
 
 jobs:
   automated-code-review:
