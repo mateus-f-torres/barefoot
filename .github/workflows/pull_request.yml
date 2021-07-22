@@ -1,4 +1,4 @@
-name: Pull Request Review
+name: Pull Request
 
 on:
   pull_request:
@@ -7,8 +7,8 @@ on:
       - develop
 
 jobs:
-  checking-code:
-    name: Checking Code
+  automated-code-review:
+    name: Automated Code Review
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
