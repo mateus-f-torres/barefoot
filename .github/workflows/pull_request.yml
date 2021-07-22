@@ -29,8 +29,8 @@ jobs:
         run: 'yarn eslint "src/**/*.{js,ts,jsx,tsx}" "*.config.js"'
       - name: Stylelint Checking
         run: 'yarn stylelint "src/**/*.css"'
-     - name: Commitlint Checking
-       run: 'yarn commitlint --from=${{ github.event.pull_request.base.sha }}'
+      - name: Commitlint Checking
+        run: 'yarn commitlint --from=${{ github.event.pull_request.base.sha }} --to=${{ github.event.pull_request.head.sha }}'
       - name: Testing Branch
         run: 'yarn test'
 
