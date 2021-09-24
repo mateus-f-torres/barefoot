@@ -4576,21 +4576,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:10.3.1":
-  version: 10.3.1
-  resolution: "autoprefixer@npm:10.3.1"
+"autoprefixer@npm:10.3.5":
+  version: 10.3.5
+  resolution: "autoprefixer@npm:10.3.5"
   dependencies:
-    browserslist: ^4.16.6
-    caniuse-lite: ^1.0.30001243
-    colorette: ^1.2.2
+    browserslist: ^4.17.1
+    caniuse-lite: ^1.0.30001259
     fraction.js: ^4.1.1
+    nanocolors: ^0.1.5
     normalize-range: ^0.1.2
     postcss-value-parser: ^4.1.0
   peerDependencies:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: f220c29c98fe740e27308e418f3e45978ceb209ff0d77276ca01e0ef15089e1936bc1746eac9309c92af15de1a4ace21926aad47a5355e2fa84ffdfabc7f7b0f
+  checksum: 5c8841f4eaadca1ec606243f71018c929924233dc2f8452c64495c4bf5b94364c610f8c3c53d839c07b6bebeeb852b2d7fa07eb03b7a31d4c28dbe89193fc9bd
   languageName: node
   linkType: hard
 
@@ -4721,7 +4721,7 @@ __metadata:
     "@types/react-dom": 17.0.9
     "@typescript-eslint/eslint-plugin": 4.29.2
     "@typescript-eslint/parser": 4.29.2
-    autoprefixer: 10.3.1
+    autoprefixer: 10.3.5
     babel-loader: 8.2.2
     clean-webpack-plugin: 3.0.0
     commitizen: 4.2.4
@@ -5073,6 +5073,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"browserslist@npm:^4.17.1":
+  version: 4.17.1
+  resolution: "browserslist@npm:4.17.1"
+  dependencies:
+    caniuse-lite: ^1.0.30001259
+    electron-to-chromium: ^1.3.846
+    escalade: ^3.1.1
+    nanocolors: ^0.1.5
+    node-releases: ^1.1.76
+  bin:
+    browserslist: cli.js
+  checksum: 735d4f007dc74f5281d80c7f1677e22d750b78cf9e3c934e8ff4308674fcd4b561c9ec4a8aca7fecd34366077489b29004ca472a480140ccd7674d739c21b7f6
+  languageName: node
+  linkType: hard
+
 "buffer-alloc-unsafe@npm:^1.1.0":
   version: 1.1.0
   resolution: "buffer-alloc-unsafe@npm:1.1.0"
@@ -5311,10 +5326,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001243":
-  version: 1.0.30001244
-  resolution: "caniuse-lite@npm:1.0.30001244"
-  checksum: 9a5280e4df641edcc41aa547b5c4cf190d13f9b8f96c187c88b506b6ae7f4635381a40d8325e926e57f35b49f9133ce7e0de6c1074880e74204a649c686f7028
+"caniuse-lite@npm:^1.0.30001259":
+  version: 1.0.30001259
+  resolution: "caniuse-lite@npm:1.0.30001259"
+  checksum: 2c4e535b0ebf76109437206cc4f327fff25a3d0560ac3a90f053dc53d0ce47f97e9cea18e5edba555e0a3b4b960ce814992c583fbe70ec36e446be2c76ec935e
   languageName: node
   linkType: hard
 
@@ -7076,6 +7091,13 @@ __metadata:
   version: 1.3.739
   resolution: "electron-to-chromium@npm:1.3.739"
   checksum: 1885766bd050c56eb5371d4dad6b28597d24a2a10c57047261bb965786cd85795e57ce29ed28029c6044717c37af15dc19519a475addaa57810be469b28e4c3e
+  languageName: node
+  linkType: hard
+
+"electron-to-chromium@npm:^1.3.846":
+  version: 1.3.846
+  resolution: "electron-to-chromium@npm:1.3.846"
+  checksum: 2719cab6aa91ab0ad3a5b4dd2dc6100fd441f765cfbe55806d238efb6f908f4577b2607e33e2f8e5794389c377e21507d8747548524093073e11fdda9761e73b
   languageName: node
   linkType: hard
 
@@ -11614,6 +11636,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"nanocolors@npm:^0.1.5":
+  version: 0.1.6
+  resolution: "nanocolors@npm:0.1.6"
+  checksum: 410550ccc8138abde509ca9946f4c2082248cedc1e729e96e286bb917b0de8e63321237ccea795f31adb2499a66ae73d10684011cfe09ed0220d137cd48a8aa0
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.1.18":
   version: 3.1.18
   resolution: "nanoid@npm:3.1.18"
@@ -11752,6 +11781,13 @@ fsevents@^1.2.7:
   version: 1.1.71
   resolution: "node-releases@npm:1.1.71"
   checksum: 9e283003f1deafd0ca7f9bbde9c4b5b05d880ca165217f5227b37406626d6689a246a5c4c72f9a8512be65cd51b13cc7d0f5d8bc68ad36089b620f1810292340
+  languageName: node
+  linkType: hard
+
+"node-releases@npm:^1.1.76":
+  version: 1.1.76
+  resolution: "node-releases@npm:1.1.76"
+  checksum: 965c5a4f5a3d8953e95388178d9d0df76da443eb8108817dc19e7fc9a6c97e3f4c6f7f7728b99912c41d7f80f468573395b47c9c6bdd3e319a61b4bb173fcac4
   languageName: node
   linkType: hard
 
