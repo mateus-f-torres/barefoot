@@ -9,7 +9,7 @@
   "private": true,
   "engines": {
     "node": "14.17.6",
-    "npm": "7.20.5"
+    "npm": "7.24.1"
   },
   "scripts": {
     "start": "webpack serve",
