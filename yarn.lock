@@ -4693,7 +4693,7 @@ __metadata:
     image-webpack-loader: 7.0.1
     lint-staged: 11.1.2
     mini-css-extract-plugin: 1.6.2
-    postcss: 8.3.7
+    postcss: 8.3.8
     postcss-loader: 6.1.1
     prettier: 2.3.2
     react: 17.0.2
@@ -11710,6 +11710,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"nanocolors@npm:^0.2.2":
+  version: 0.2.9
+  resolution: "nanocolors@npm:0.2.9"
+  checksum: 709c771708af04ad33b9074619cb989b40eb50718fc2624249384de7391f05e1f38a3a0d2d8049d7a8e009dd9b81c49a93b4d5a70c455b34abdbf046a8c77ca5
+  languageName: node
+  linkType: hard
+
 "nanocolors@npm:^0.2.8":
   version: 0.2.8
   resolution: "nanocolors@npm:0.2.8"
@@ -13445,14 +13452,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.3.7":
-  version: 8.3.7
-  resolution: "postcss@npm:8.3.7"
+"postcss@npm:8.3.8":
+  version: 8.3.8
+  resolution: "postcss@npm:8.3.8"
   dependencies:
-    nanocolors: ^0.1.5
+    nanocolors: ^0.2.2
     nanoid: ^3.1.25
     source-map-js: ^0.6.2
-  checksum: cbcef5f8be9120336cb5dac6681025e9af34d664a5dbde61ab08c557c7a9030411577464b213e35d0f4d5e4a7d3e2cfee073975ac48c80e37f6384a5aa81a7b7
+  checksum: bea4f2f367c803739ca89c6773aa80ecad6480171db7e1ebb211fabe7eaf7ff68b3b4d007e41f84d561344a588d62d1b50b3e46e1f5c368712100df553fc09ca
   languageName: node
   linkType: hard
 
