@@ -4685,7 +4685,7 @@ __metadata:
     eslint-plugin-import: 2.24.2
     eslint-plugin-node: 11.1.0
     eslint-plugin-promise: 5.1.0
-    eslint-plugin-react: 7.26.0
+    eslint-plugin-react: 7.26.1
     eslint-plugin-standard: 5.0.0
     file-loader: 6.2.0
     html-webpack-plugin: 5.3.2
@@ -7520,9 +7520,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.26.0":
-  version: 7.26.0
-  resolution: "eslint-plugin-react@npm:7.26.0"
+"eslint-plugin-react@npm:7.26.1":
+  version: 7.26.1
+  resolution: "eslint-plugin-react@npm:7.26.1"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
@@ -7540,7 +7540,7 @@ __metadata:
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: b9c98c5ee55914ceed98390eafb7a5a95eb1a61bd5dcfca814103a635776887dd012b3ca3680fe17c9fd90975312f419e752cfdc11befa470435b34513587bb1
+  checksum: 65784a12354bcedc6513381e4a3f92bebf7a9d7c7207eae3ba46e1b971a67f192d55ef67b097430a29e6299b0949c3d9a2f058c4d6346f0bc8919e972292ae50
   languageName: node
   linkType: hard
 
