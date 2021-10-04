@@ -4707,7 +4707,7 @@ __metadata:
     terser-webpack-plugin: 5.1.4
     ts-loader: 9.2.6
     typescript: 4.3.5
-    webpack: 5.55.1
+    webpack: 5.56.1
     webpack-bundle-analyzer: 4.4.2
     webpack-cli: 4.8.0
     webpack-dev-server: 3.11.2
@@ -16917,9 +16917,9 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.55.1":
-  version: 5.55.1
-  resolution: "webpack@npm:5.55.1"
+"webpack@npm:5.56.1":
+  version: 5.56.1
+  resolution: "webpack@npm:5.56.1"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.50
@@ -16950,7 +16950,7 @@ typescript@4.3.5:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 2f1ab7f0ea96d9f4729935192a778123b615477466f7a3c927a0f8ca1f94473fe681ef28be992f0e092c97a8104563f46647eb70ae16884ca41108e9739e42a4
+  checksum: 46c7e12aed20761e9cde79a088c785bc1e14a9828ddcf50b8d32d3bad0707a3502928e6c66b532a20d83608a18d9e2db546f8218b97862e0717c7ff265db0a8e
   languageName: node
   linkType: hard
 
