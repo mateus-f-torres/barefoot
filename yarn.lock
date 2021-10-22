@@ -4743,7 +4743,7 @@ __metadata:
     eslint-import-resolver-node: 0.3.6
     eslint-plugin-import: 2.25.2
     eslint-plugin-node: 11.1.0
-    eslint-plugin-promise: 5.1.0
+    eslint-plugin-promise: 5.1.1
     eslint-plugin-react: 7.26.1
     eslint-plugin-standard: 5.0.0
     file-loader: 6.2.0
@@ -7551,12 +7551,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:5.1.0":
-  version: 5.1.0
-  resolution: "eslint-plugin-promise@npm:5.1.0"
+"eslint-plugin-promise@npm:5.1.1":
+  version: 5.1.1
+  resolution: "eslint-plugin-promise@npm:5.1.1"
   peerDependencies:
     eslint: ^7.0.0
-  checksum: dd6ed68112818248e94b82d8f57807be148d1162868b890542367bc8c242f6b74be34bfd0d609d5e6231fb5e99112718fe23a34213daaa18d3864678e9c776a2
+  checksum: 058771594da143b50f18d5b6714c4d0f41c8bd178877ae750e069d256280536afe9b5d92de82b9f8954d1e08fb0bd580dfbca228c51eb435084564e4eb5c3c72
   languageName: node
   linkType: hard
 
