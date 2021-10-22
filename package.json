@@ -27,8 +27,8 @@
     "workbox-routing": "6.1.5"
   },
   "devDependencies": {
-    "@babel/core": "7.15.0",
-    "@babel/preset-env": "7.15.0",
+    "@babel/core": "7.15.8",
+    "@babel/preset-env": "7.15.8",
     "@babel/preset-react": "7.14.5",
     "@babel/preset-typescript": "7.15.0",
     "@commitlint/cli": "13.2.0",
@@ -38,7 +38,7 @@
     "@typescript-eslint/eslint-plugin": "5.1.0",
     "@typescript-eslint/parser": "5.1.0",
     "autoprefixer": "10.3.7",
-    "babel-loader": "8.2.2",
+    "babel-loader": "8.2.3",
     "clean-webpack-plugin": "4.0.0",
     "commitizen": "4.2.4",
     "compression-webpack-plugin": "9.0.0",
