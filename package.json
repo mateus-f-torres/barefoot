@@ -64,7 +64,7 @@
     "image-webpack-loader": "8.0.1",
     "lint-staged": "11.2.3",
     "mini-css-extract-plugin": "1.6.2",
-    "postcss": "8.3.9",
+    "postcss": "8.3.11",
     "postcss-loader": "6.1.1",
     "prettier": "2.4.1",
     "style-loader": "3.3.0",
