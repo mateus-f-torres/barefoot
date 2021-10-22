@@ -4752,7 +4752,7 @@ __metadata:
     image-webpack-loader: 8.0.1
     lint-staged: 11.2.3
     mini-css-extract-plugin: 1.6.2
-    postcss: 8.3.9
+    postcss: 8.3.11
     postcss-loader: 6.1.1
     prettier: 2.4.1
     react: 17.0.2
@@ -11836,12 +11836,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.28":
-  version: 3.1.28
-  resolution: "nanoid@npm:3.1.28"
+"nanoid@npm:^3.1.30":
+  version: 3.1.30
+  resolution: "nanoid@npm:3.1.30"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 615abb31f9b23bc80100adcbb6e2b9dfb98c8d75c2a70b1eaf5d903c130f7e40cd82a05d56eb1f796c35cf544fb5e4b3323d54c2fed204a677968af54568252d
+  checksum: 440f685e9890bd96433cf6c01535165b1e9677ba4a5c4179e1a61612f0b4c428cc628425fe232038b93304d15b191892d7ced9503fa558d1296e4e95fe80a627
   languageName: node
   linkType: hard
 
@@ -13503,14 +13503,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.3.9":
-  version: 8.3.9
-  resolution: "postcss@npm:8.3.9"
+"postcss@npm:8.3.11":
+  version: 8.3.11
+  resolution: "postcss@npm:8.3.11"
   dependencies:
-    nanoid: ^3.1.28
-    picocolors: ^0.2.1
+    nanoid: ^3.1.30
+    picocolors: ^1.0.0
     source-map-js: ^0.6.2
-  checksum: f67654ab01ec6ec9126eb5ed64b06f602dfce7e6a38aa7f4d3cdb67fe40fe97234286c5fd6769f56138206ea80e944c62f909052b00c351239064ef3b850664d
+  checksum: fa1530f7e1817bcaf40b34db246d0c49e42daf12719abd4a3a1b5886491cca125af6b21ccdfc24a074ea9b6b73a6677e1478906adb732b2bd5208077a64473a6
   languageName: node
   linkType: hard
 
