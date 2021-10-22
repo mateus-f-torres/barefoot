@@ -3599,14 +3599,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.27":
-  version: 17.0.27
-  resolution: "@types/react@npm:17.0.27"
+"@types/react@npm:17.0.31":
+  version: 17.0.31
+  resolution: "@types/react@npm:17.0.31"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 0e54725df927efffd413da553a9f57ca9469d62a8cf31704c7628efc6254846560aa5531a53f4386238df08500822177cf0da147bf3f0e0d70abd8998ee1230f
+  checksum: bbdfc50fd73d83a8bcaa5afa570e2ad7e442b76d72fdc0be0cbdc428ddb4aff14906bc1a8b842ee49bca890442b3a727d2969dc47bc7a06a4eac29f0b7440f5a
   languageName: node
   linkType: hard
 
@@ -4721,7 +4721,7 @@ __metadata:
     "@commitlint/cli": 13.2.0
     "@commitlint/config-conventional": 13.2.0
     "@pusher/push-notifications-web": 1.1.0
-    "@types/react": 17.0.27
+    "@types/react": 17.0.31
     "@types/react-dom": 17.0.10
     "@typescript-eslint/eslint-plugin": 5.1.0
     "@typescript-eslint/parser": 5.1.0
