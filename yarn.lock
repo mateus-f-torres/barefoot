@@ -4731,7 +4731,7 @@ __metadata:
     commitizen: 4.2.4
     compression-webpack-plugin: 9.0.0
     copy-webpack-plugin: 9.0.1
-    core-js: 3.18.2
+    core-js: 3.18.3
     css-loader: 5.2.7
     css-minimizer-webpack-plugin: 3.0.2
     cz-conventional-changelog: 3.3.0
@@ -6072,10 +6072,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.18.2":
-  version: 3.18.2
-  resolution: "core-js@npm:3.18.2"
-  checksum: bcdfca1a0fdf6c404b86a4871a4f7d13c4c64083fad1a818168d8626b492697e0f7ca131571830652a4d5e33b09076fc3aa47a35814503e4a5aa641916fa72a4
+"core-js@npm:3.18.3":
+  version: 3.18.3
+  resolution: "core-js@npm:3.18.3"
+  checksum: 01a927d02974a95313bc2325d9f832bbb4801c0c7e69639392574799f87041ce3dae52bdee3646c7cd58b4f38750a6093ca05363bf9f772be9c38dc69608c25c
   languageName: node
   linkType: hard
 
