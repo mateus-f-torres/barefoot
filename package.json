@@ -12,6 +12,7 @@
     "npm": "8.1.1"
   },
   "scripts": {
+    "postinstall": "husky install",
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
     "serve": "./scripts/server.sh",
