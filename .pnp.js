@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:13.2.0"],
             ["@pusher/push-notifications-web", "npm:1.1.0"],
             ["@types/react", "npm:17.0.27"],
-            ["@types/react-dom", "npm:17.0.9"],
+            ["@types/react-dom", "npm:17.0.10"],
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["autoprefixer", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.3.6"],
@@ -5519,10 +5519,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/react-dom", [
-        ["npm:17.0.9", {
-          "packageLocation": "./.yarn/cache/@types-react-dom-npm-17.0.9-046b4282f3-82da85bcfb.zip/node_modules/@types/react-dom/",
+        ["npm:17.0.10", {
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-17.0.10-aea5504608-5fb8148b52.zip/node_modules/@types/react-dom/",
           "packageDependencies": [
-            ["@types/react-dom", "npm:17.0.9"],
+            ["@types/react-dom", "npm:17.0.10"],
             ["@types/react", "npm:16.9.49"]
           ],
           "linkType": "HARD",
@@ -6976,7 +6976,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:13.2.0"],
             ["@pusher/push-notifications-web", "npm:1.1.0"],
             ["@types/react", "npm:17.0.27"],
-            ["@types/react-dom", "npm:17.0.9"],
+            ["@types/react-dom", "npm:17.0.10"],
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["autoprefixer", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.3.6"],
