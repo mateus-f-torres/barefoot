@@ -4733,7 +4733,7 @@ __metadata:
     copy-webpack-plugin: 9.0.1
     core-js: 3.18.2
     css-loader: 5.2.7
-    css-minimizer-webpack-plugin: 3.0.2
+    css-minimizer-webpack-plugin: 3.1.1
     cz-conventional-changelog: 3.3.0
     dotenv: 10.0.0
     eslint: 7.32.0
@@ -6206,15 +6206,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-minimizer-webpack-plugin@npm:3.0.2":
-  version: 3.0.2
-  resolution: "css-minimizer-webpack-plugin@npm:3.0.2"
+"css-minimizer-webpack-plugin@npm:3.1.1":
+  version: 3.1.1
+  resolution: "css-minimizer-webpack-plugin@npm:3.1.1"
   dependencies:
     cssnano: ^5.0.6
     jest-worker: ^27.0.2
     p-limit: ^3.0.2
     postcss: ^8.3.5
-    schema-utils: ^3.0.0
+    schema-utils: ^3.1.0
     serialize-javascript: ^6.0.0
     source-map: ^0.6.1
   peerDependencies:
@@ -6224,7 +6224,9 @@ __metadata:
       optional: true
     csso:
       optional: true
-  checksum: 179debffae069fe5ec44be5a0bb8bda0df48f0adae7fde1cbc266f2b28a9d5c5a13d843c22c8682279ac3bd0371bbfe78146cbf5e92538fccb6b662316f6cf2d
+    esbuild:
+      optional: true
+  checksum: 037827f89ba4fb9bf04295840591eb893f4d1ac0c7d5d5c86d7b412ccf80adfafe78beb2bbc26db04a2c1b7435cdd178b421fbadb8bfb4348344907847d44385
   languageName: node
   linkType: hard
 
