@@ -3580,12 +3580,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.9":
-  version: 17.0.9
-  resolution: "@types/react-dom@npm:17.0.9"
+"@types/react-dom@npm:17.0.10":
+  version: 17.0.10
+  resolution: "@types/react-dom@npm:17.0.10"
   dependencies:
     "@types/react": "*"
-  checksum: 82da85bcfba524fb83946df50e433b8cc942dd30f5f3f6e0756816960ce4b85db6faa2da9f2b83124087fbe0d124580edf7b1017628b78fb28fee057e91512cb
+  checksum: 5fb8148b528b7dd69e34fdf9a700d91848659161acbd2b78ecc26fb707f6eb9afc7fbf0d630482ea51729932a0ede20527e8f2ca6a949f9198f60657d0e332cb
   languageName: node
   linkType: hard
 
@@ -4722,7 +4722,7 @@ __metadata:
     "@commitlint/config-conventional": 13.2.0
     "@pusher/push-notifications-web": 1.1.0
     "@types/react": 17.0.27
-    "@types/react-dom": 17.0.9
+    "@types/react-dom": 17.0.10
     "@typescript-eslint/eslint-plugin": 5.1.0
     "@typescript-eslint/parser": 5.1.0
     autoprefixer: 10.3.6
