@@ -27,20 +27,10 @@ const htmlPlugin = new HtmlWebpackPlugin({
   template: "src/index.html",
 })
 // CSS
-const cssPlugin = (function (env) {
-  if (env == "production") {
-    return new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
-      chunkFilename: "[name].[contenthash].css",
-    })
-  } else {
-    return new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[name].css",
-    })
-  }
-})(process.env.NODE_ENV)
-
+const cssPlugin = new MiniCssExtractPlugin({
+  filename: "[name].[contenthash].css",
+  chunkFilename: "[name].[contenthash].css",
+})
 const minimizeCss = new CssMinimizerPlugin({})
 // JS
 const terserPlugin = new TerserPlugin({
@@ -63,7 +53,7 @@ const brotliPlugin = new CompressionPlugin({
 const swPlugin = new InjectManifest({
   swSrc: "./src/sw/sw.js",
   exclude: [/\.(br|map)$/],
-  dontCacheBustURLsMatching: /\.(woff2|woff|png|ico|txt)$/,
+  dontCacheBustURLsMatching: /\.(woff2|woff|jpg|jpeg|png|svg|gif|ico|txt)$/,
 })
 // Extras
 const analyzerPlugin = new BundleAnalyzerPlugin({
@@ -132,36 +122,21 @@ let configs = {
       },
       {
         test: /\.css$/,
-        use: [
-          "style-loader",
-          {loader: MiniCssExtractPlugin.loader, options: {esModule: false}},
-          "css-loader",
-          "postcss-loader",
-        ],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.(woff2|woff)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "fonts/",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
       },
       {
         test: /\.(jpg|jpeg|png|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][ext]",
+        },
       },
     ],
   },
@@ -176,17 +151,19 @@ let configs = {
     hot: true,
     compress: true,
     port: DEFAULT_PORT,
-    publicPath: DEFAULT_PATH,
     historyApiFallback: true,
     proxy: {
       "/api": {target: "http://localhost:3000"},
     },
-    // TODO: refactor for v5
-    stats: {
-      assets: true,
-      modules: false,
-      children: false,
-      entrypoints: false,
+    // TODO: refactor for v5, see https://github.com/webpack/webpack-dev-middleware
+    devMiddleware: {
+      publicPath: DEFAULT_PATH,
+      stats: {
+        assets: true,
+        modules: false,
+        children: false,
+        entrypoints: false,
+      },
     },
   },
 }
@@ -252,29 +229,23 @@ if (process.env.NODE_ENV === "production") {
         },
         {
           test: /\.css$/,
-          use: [
-            {loader: MiniCssExtractPlugin.loader, options: {esModule: false}},
-            "css-loader",
-            "postcss-loader",
-          ],
+          use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
         },
         {
           test: /\.(woff2|woff)$/,
-          use: [
-            {
-              loader: "file-loader",
-              options: {
-                name: "[name].[ext]",
-                outputPath: "fonts/",
-              },
-            },
-          ],
+          type: "asset/resource",
+          generator: {
+            filename: "fonts/[name][ext]",
+          },
         },
         {
           test: /\.(jpg|jpeg|png|svg|gif)$/i,
-          // TODO: set file loader options
           // FIXME: see image-webpack-loader github to correct docker usage
-          use: ["file-loader", "image-webpack-loader"],
+          use: ["image-webpack-loader"],
+          type: "asset/resource",
+          generator: {
+            filename: "images/[name][ext]",
+          },
         },
       ],
     },

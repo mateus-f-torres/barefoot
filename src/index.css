@@ -4,23 +4,23 @@
 /* roboto-regular - latin */
 @font-face {
   font-display: optional;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"),
-    url("~./assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"),
-    url("~./assets/fonts/roboto-v20-latin-regular.woff") format("woff");
+    url("./assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("./assets/fonts/roboto-v20-latin-regular.woff") format("woff");
 }
 
 /* roboto-700 - latin */
 @font-face {
   font-display: fallback;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("~./assets/fonts/roboto-v20-latin-700.woff2") format("woff2"),
-    url("~./assets/fonts/roboto-v20-latin-700.woff") format("woff");
+    url("./assets/fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    url("./assets/fonts/roboto-v20-latin-700.woff") format("woff");
 }
 
 /* unset TailwindCSS button cursor */
