@@ -1,2 +1,2 @@
-yarn lint-staged
+yarn lint-staged --allow-empty
 
