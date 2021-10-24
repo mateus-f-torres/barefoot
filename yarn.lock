@@ -4719,7 +4719,7 @@ __metadata:
     compression-webpack-plugin: 9.0.0
     copy-webpack-plugin: 9.0.1
     core-js: 3.18.3
-    css-loader: 5.2.7
+    css-loader: 6.4.0
     css-minimizer-webpack-plugin: 3.1.1
     cz-conventional-changelog: 3.3.0
     dotenv: 10.0.0
@@ -6097,23 +6097,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:5.2.7":
-  version: 5.2.7
-  resolution: "css-loader@npm:5.2.7"
+"css-loader@npm:6.4.0":
+  version: 6.4.0
+  resolution: "css-loader@npm:6.4.0"
   dependencies:
     icss-utils: ^5.1.0
-    loader-utils: ^2.0.0
     postcss: ^8.2.15
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
     postcss-modules-values: ^4.0.0
     postcss-value-parser: ^4.1.0
-    schema-utils: ^3.0.0
     semver: ^7.3.5
   peerDependencies:
-    webpack: ^4.27.0 || ^5.0.0
-  checksum: e121c9310e3597003126844c3bb9e0635273e14065730ae62102fea5f594da948479c56503299ceee6bc942da1b125e24fec27b3b0d9ea64a83f27a88f10bba4
+    webpack: ^5.0.0
+  checksum: 3d7d84823aec500733a5521700da3d749c590f001f15c69f141dc7dae1563601fdaaefdbbf019933b3fc1d1689e2a7a98ed5615d5866c490d88c4a5d145b8235
   languageName: node
   linkType: hard
 
