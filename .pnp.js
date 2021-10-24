@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:13.2.0"],
             ["@commitlint/config-conventional", "npm:13.2.0"],
             ["@pusher/push-notifications-web", "npm:1.1.0"],
-            ["@types/react", "npm:17.0.31"],
+            ["@types/react", "npm:17.0.32"],
             ["@types/react-dom", "npm:17.0.10"],
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
@@ -5487,10 +5487,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:17.0.31", {
-          "packageLocation": "./.yarn/cache/@types-react-npm-17.0.31-cceb1ec826-bbdfc50fd7.zip/node_modules/@types/react/",
+        ["npm:17.0.32", {
+          "packageLocation": "./.yarn/cache/@types-react-npm-17.0.32-a78892c136-84a09e977b.zip/node_modules/@types/react/",
           "packageDependencies": [
-            ["@types/react", "npm:17.0.31"],
+            ["@types/react", "npm:17.0.32"],
             ["@types/prop-types", "npm:15.7.3"],
             ["@types/scheduler", "npm:0.16.1"],
             ["csstype", "npm:3.0.3"]
@@ -6923,7 +6923,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:13.2.0"],
             ["@commitlint/config-conventional", "npm:13.2.0"],
             ["@pusher/push-notifications-web", "npm:1.1.0"],
-            ["@types/react", "npm:17.0.31"],
+            ["@types/react", "npm:17.0.32"],
             ["@types/react-dom", "npm:17.0.10"],
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.1.0"],
@@ -8294,7 +8294,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.18.3", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.18.3-b19f2d459b/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.18.3-b19f2d459b-01a927d029.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.18.3"]
           ],
@@ -8723,7 +8723,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["cwebp-bin", [
         ["npm:5.1.0", {
-          "packageLocation": "./.yarn/unplugged/cwebp-bin-npm-5.1.0-23bb159900/node_modules/cwebp-bin/",
+          "packageLocation": "./.yarn/cache/cwebp-bin-npm-5.1.0-23bb159900-ef491f3c0c.zip/node_modules/cwebp-bin/",
           "packageDependencies": [
             ["cwebp-bin", "npm:5.1.0"],
             ["bin-build", "npm:3.0.0"],
@@ -9464,7 +9464,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ejs", [
         ["npm:2.7.4", {
-          "packageLocation": "./.yarn/unplugged/ejs-npm-2.7.4-879ed38a4e/node_modules/ejs/",
+          "packageLocation": "./.yarn/cache/ejs-npm-2.7.4-879ed38a4e-f066d9a932.zip/node_modules/ejs/",
           "packageDependencies": [
             ["ejs", "npm:2.7.4"]
           ],
@@ -11423,7 +11423,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gifsicle", [
         ["npm:5.1.0", {
-          "packageLocation": "./.yarn/unplugged/gifsicle-npm-5.1.0-f8d5da3bd1/node_modules/gifsicle/",
+          "packageLocation": "./.yarn/cache/gifsicle-npm-5.1.0-f8d5da3bd1-39304e6c98.zip/node_modules/gifsicle/",
           "packageDependencies": [
             ["gifsicle", "npm:5.1.0"],
             ["bin-build", "npm:3.0.0"],
@@ -14562,7 +14562,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.0.0-b83d656810/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.0.0-b83d656810-0dd557e6c9.zip/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -15241,7 +15241,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["optipng-bin", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/unplugged/optipng-bin-npm-7.0.0-3f0ba6ba72/node_modules/optipng-bin/",
+          "packageLocation": "./.yarn/cache/optipng-bin-npm-7.0.0-3f0ba6ba72-495dcba49c.zip/node_modules/optipng-bin/",
           "packageDependencies": [
             ["optipng-bin", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -15833,7 +15833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-6d01ab81eb.zip/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -17168,7 +17168,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/react-dom-virtual-e451da9e38/0/cache/react-dom-npm-17.0.2-f551215af1-960a74ff66.zip/node_modules/react-dom/",
           "packageDependencies": [
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.2"],
-            ["@types/react", "npm:17.0.31"],
+            ["@types/react", "npm:17.0.32"],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
             ["react", "npm:17.0.2"],
