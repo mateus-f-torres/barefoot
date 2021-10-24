@@ -53,7 +53,7 @@ const brotliPlugin = new CompressionPlugin({
 const swPlugin = new InjectManifest({
   swSrc: "./src/sw/sw.js",
   exclude: [/\.(br|map)$/],
-  dontCacheBustURLsMatching: /\.(woff2|woff|png|ico|txt)$/,
+  dontCacheBustURLsMatching: /\.(woff2|woff|jpg|jpeg|png|svg|gif|ico|txt)$/,
 })
 // Extras
 const analyzerPlugin = new BundleAnalyzerPlugin({
@@ -151,17 +151,19 @@ let configs = {
     hot: true,
     compress: true,
     port: DEFAULT_PORT,
-    publicPath: DEFAULT_PATH,
     historyApiFallback: true,
     proxy: {
       "/api": {target: "http://localhost:3000"},
     },
-    // TODO: refactor for v5
-    stats: {
-      assets: true,
-      modules: false,
-      children: false,
-      entrypoints: false,
+    // TODO: refactor for v5, see https://github.com/webpack/webpack-dev-middleware
+    devMiddleware: {
+      publicPath: DEFAULT_PATH,
+      stats: {
+        assets: true,
+        modules: false,
+        children: false,
+        entrypoints: false,
+      },
     },
   },
 }
