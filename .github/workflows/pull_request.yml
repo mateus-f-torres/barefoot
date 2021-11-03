@@ -22,9 +22,9 @@ jobs:
       - name: Install
         run: 'yarn install --immutable'
       - name: Prettier Checking
-        run: 'yarn prettier --check "src/**/*.{js,ts,jsx,tsx,css}" "*.config.js"'
+        run: 'yarn prettier --check "src/**/*.{js,ts,jsx,tsx,css}" "__mocks__/**/*" "./*.{js,ts}"'
       - name: ESLint Checking
-        run: 'yarn eslint "src/**/*.{js,ts,jsx,tsx}" "*.config.js"'
+        run: 'yarn eslint "src/**/*.{js,ts,jsx,tsx}" "__mocks__/**/*" "./*.{js,ts}"'
       - name: Stylelint Checking
         run: 'yarn stylelint "src/**/*.css"'
       - name: Commitlint Checking
