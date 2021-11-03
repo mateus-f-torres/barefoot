@@ -1,4 +1,0 @@
-jest.config.ts
-
-__mocks__/styleMock.js
-__mocks__/fileMock.js
