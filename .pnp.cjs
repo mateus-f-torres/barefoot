@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:8.0.1"],
             ["lint-staged", "npm:12.1.2"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.4.5"],
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
@@ -6567,7 +6567,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.1.1"],
             ["normalize-range", "npm:0.1.2"],
             ["picocolors", "npm:1.0.0"],
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -6766,7 +6766,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-webpack-loader", "npm:8.0.1"],
             ["lint-staged", "npm:12.1.2"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.4.5"],
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
@@ -15582,10 +15582,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.4.0", {
-          "packageLocation": "./.yarn/cache/postcss-npm-8.4.0-cd5eba50f8-5139eb1b87.zip/node_modules/postcss/",
+        ["npm:8.4.1", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.1-6c95363249-89ede712cc.zip/node_modules/postcss/",
           "packageDependencies": [
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["nanoid", "npm:3.1.30"],
             ["picocolors", "npm:1.0.0"],
             ["source-map-js", "npm:1.0.1"]
@@ -15806,7 +15806,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", null],
             ["cosmiconfig", "npm:7.0.0"],
             ["klona", "npm:2.0.4"],
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["semver", "npm:7.3.5"],
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.64.3"]
           ],
@@ -16085,7 +16085,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-nested", "virtual:1b33ad49708ba96c08d02316360a8281423507426fb08f26916c1b54884b4f8584fea0653499a9096c7c20b36f3a7903755003e12f6f3c99c487580c57b9df39#npm:5.0.6"],
             ["@types/postcss", null],
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["postcss-selector-parser", "npm:6.0.6"]
           ],
           "packagePeers": [
@@ -18914,7 +18914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-emoji", "npm:1.11.0"],
             ["normalize-path", "npm:3.0.0"],
             ["object-hash", "npm:2.2.0"],
-            ["postcss", "npm:8.4.0"],
+            ["postcss", "npm:8.4.1"],
             ["postcss-js", "npm:3.0.3"],
             ["postcss-load-config", "virtual:1b33ad49708ba96c08d02316360a8281423507426fb08f26916c1b54884b4f8584fea0653499a9096c7c20b36f3a7903755003e12f6f3c99c487580c57b9df39#npm:3.1.0"],
             ["postcss-nested", "virtual:1b33ad49708ba96c08d02316360a8281423507426fb08f26916c1b54884b4f8584fea0653499a9096c7c20b36f3a7903755003e12f6f3c99c487580c57b9df39#npm:5.0.6"],
