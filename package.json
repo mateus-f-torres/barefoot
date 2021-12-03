@@ -9,7 +9,7 @@
   "private": true,
   "engines": {
     "node": "16.13.1",
-    "npm": "8.1.4"
+    "npm": "8.2.0"
   },
   "packageManager": "yarn@3.0.2",
   "scripts": {
