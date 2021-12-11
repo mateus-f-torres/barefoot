@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["clean-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.0"],
             ["commitizen", "npm:4.2.4"],
             ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.1"],
-            ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.0.0"],
+            ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["core-js", "npm:3.19.3"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.5.1"],
             ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.2.0"],
@@ -6724,7 +6724,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["clean-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.0"],
             ["commitizen", "npm:4.2.4"],
             ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.1"],
-            ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.0.0"],
+            ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["core-js", "npm:3.19.3"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.5.1"],
             ["css-minimizer-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.2.0"],
@@ -8012,17 +8012,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["copy-webpack-plugin", [
-        ["npm:10.0.0", {
-          "packageLocation": "./.yarn/cache/copy-webpack-plugin-npm-10.0.0-cbf3ed64fd-70652af613.zip/node_modules/copy-webpack-plugin/",
+        ["npm:10.1.0", {
+          "packageLocation": "./.yarn/cache/copy-webpack-plugin-npm-10.1.0-6cf83299bd-ba746a314e.zip/node_modules/copy-webpack-plugin/",
           "packageDependencies": [
-            ["copy-webpack-plugin", "npm:10.0.0"]
+            ["copy-webpack-plugin", "npm:10.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.0.0", {
-          "packageLocation": "./.yarn/__virtual__/copy-webpack-plugin-virtual-3e39ddc114/0/cache/copy-webpack-plugin-npm-10.0.0-cbf3ed64fd-70652af613.zip/node_modules/copy-webpack-plugin/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0", {
+          "packageLocation": "./.yarn/__virtual__/copy-webpack-plugin-virtual-ac8591b67c/0/cache/copy-webpack-plugin-npm-10.1.0-6cf83299bd-ba746a314e.zip/node_modules/copy-webpack-plugin/",
           "packageDependencies": [
-            ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.0.0"],
+            ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["@types/webpack", null],
             ["fast-glob", "npm:3.2.7"],
             ["glob-parent", "npm:6.0.1"],
