@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.2.3"],
             ["clean-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.0"],
             ["commitizen", "npm:4.2.4"],
-            ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.1"],
+            ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.2"],
             ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["core-js", "npm:3.19.3"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.5.1"],
@@ -6737,7 +6737,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.2.3"],
             ["clean-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.0.0"],
             ["commitizen", "npm:4.2.4"],
-            ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.1"],
+            ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.2"],
             ["copy-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.1.0"],
             ["core-js", "npm:3.19.3"],
             ["css-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.5.1"],
@@ -7823,17 +7823,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["compression-webpack-plugin", [
-        ["npm:9.1.1", {
-          "packageLocation": "./.yarn/cache/compression-webpack-plugin-npm-9.1.1-51591f7e3a-6c7dd65379.zip/node_modules/compression-webpack-plugin/",
+        ["npm:9.1.2", {
+          "packageLocation": "./.yarn/cache/compression-webpack-plugin-npm-9.1.2-bc277c735a-fe61e68f09.zip/node_modules/compression-webpack-plugin/",
           "packageDependencies": [
-            ["compression-webpack-plugin", "npm:9.1.1"]
+            ["compression-webpack-plugin", "npm:9.1.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.1", {
-          "packageLocation": "./.yarn/__virtual__/compression-webpack-plugin-virtual-e0e40f8a66/0/cache/compression-webpack-plugin-npm-9.1.1-51591f7e3a-6c7dd65379.zip/node_modules/compression-webpack-plugin/",
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.2", {
+          "packageLocation": "./.yarn/__virtual__/compression-webpack-plugin-virtual-b402ee98c3/0/cache/compression-webpack-plugin-npm-9.1.2-bc277c735a-fe61e68f09.zip/node_modules/compression-webpack-plugin/",
           "packageDependencies": [
-            ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.1"],
+            ["compression-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.1.2"],
             ["@types/webpack", null],
             ["schema-utils", "npm:4.0.0"],
             ["serialize-javascript", "npm:6.0.0"],
