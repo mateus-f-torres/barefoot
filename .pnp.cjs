@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.16.5"],
             ["@babel/preset-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.16.5"],
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.16.5"],
-            ["@commitlint/cli", "npm:16.0.0"],
+            ["@commitlint/cli", "npm:16.0.1"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@pusher/push-notifications-web", "npm:1.1.0"],
             ["@types/react", "npm:17.0.38"],
@@ -4611,10 +4611,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/cli", [
-        ["npm:16.0.0", {
-          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.0-6bdf4d8543-203d1a02bd.zip/node_modules/@commitlint/cli/",
+        ["npm:16.0.1", {
+          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.1-a43d26e49a-a4ec182911.zip/node_modules/@commitlint/cli/",
           "packageDependencies": [
-            ["@commitlint/cli", "npm:16.0.0"],
+            ["@commitlint/cli", "npm:16.0.1"],
             ["@commitlint/format", "npm:16.0.0"],
             ["@commitlint/lint", "npm:16.0.0"],
             ["@commitlint/load", "npm:16.0.0"],
@@ -6980,7 +6980,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.16.5"],
             ["@babel/preset-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.16.5"],
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.16.5"],
-            ["@commitlint/cli", "npm:16.0.0"],
+            ["@commitlint/cli", "npm:16.0.1"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@pusher/push-notifications-web", "npm:1.1.0"],
             ["@types/react", "npm:17.0.38"],
