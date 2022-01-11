@@ -70,7 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["file-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
             ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.5.0"],
             ["husky", "npm:7.0.4"],
-            ["image-webpack-loader", "npm:8.0.1"],
+            ["image-webpack-loader", "npm:8.1.0"],
             ["lint-staged", "npm:12.1.7"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.4.6"],
             ["postcss", "npm:8.4.5"],
@@ -6969,7 +6969,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["file-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.2.0"],
             ["html-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.5.0"],
             ["husky", "npm:7.0.4"],
-            ["image-webpack-loader", "npm:8.0.1"],
+            ["image-webpack-loader", "npm:8.1.0"],
             ["lint-staged", "npm:12.1.7"],
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.4.6"],
             ["postcss", "npm:8.4.5"],
@@ -8713,13 +8713,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["cwebp-bin", [
-        ["npm:5.1.0", {
-          "packageLocation": "./.yarn/unplugged/cwebp-bin-npm-5.1.0-23bb159900/node_modules/cwebp-bin/",
+        ["npm:7.0.1", {
+          "packageLocation": "./.yarn/unplugged/cwebp-bin-npm-7.0.1-06ed8d3a6f/node_modules/cwebp-bin/",
           "packageDependencies": [
-            ["cwebp-bin", "npm:5.1.0"],
+            ["cwebp-bin", "npm:7.0.1"],
             ["bin-build", "npm:3.0.0"],
-            ["bin-wrapper", "npm:4.1.0"],
-            ["logalot", "npm:2.1.0"]
+            ["bin-wrapper", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -12269,17 +12268,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["image-webpack-loader", [
-        ["npm:8.0.1", {
-          "packageLocation": "./.yarn/cache/image-webpack-loader-npm-8.0.1-2d2c5a834d-200256d312.zip/node_modules/image-webpack-loader/",
+        ["npm:8.1.0", {
+          "packageLocation": "./.yarn/cache/image-webpack-loader-npm-8.1.0-ffc7f250dc-2a9be1c1bf.zip/node_modules/image-webpack-loader/",
           "packageDependencies": [
-            ["image-webpack-loader", "npm:8.0.1"],
+            ["image-webpack-loader", "npm:8.1.0"],
             ["imagemin", "npm:7.0.1"],
             ["imagemin-gifsicle", "npm:7.0.0"],
             ["imagemin-mozjpeg", "npm:9.0.0"],
             ["imagemin-optipng", "npm:8.0.0"],
             ["imagemin-pngquant", "npm:9.0.2"],
             ["imagemin-svgo", "npm:9.0.0"],
-            ["imagemin-webp", "npm:6.0.0"],
+            ["imagemin-webp", "npm:7.0.0"],
             ["loader-utils", "npm:2.0.0"],
             ["object-assign", "npm:4.1.1"],
             ["schema-utils", "npm:2.7.1"]
@@ -12365,11 +12364,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["imagemin-webp", [
-        ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/imagemin-webp-npm-6.0.0-cea4b2b1f4-10cc8a1af2.zip/node_modules/imagemin-webp/",
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/imagemin-webp-npm-7.0.0-2699c6c016-8f27c83b39.zip/node_modules/imagemin-webp/",
           "packageDependencies": [
-            ["imagemin-webp", "npm:6.0.0"],
-            ["cwebp-bin", "npm:5.1.0"],
+            ["imagemin-webp", "npm:7.0.0"],
+            ["cwebp-bin", "npm:7.0.1"],
             ["exec-buffer", "npm:3.2.0"],
             ["is-cwebp-readable", "npm:3.0.0"]
           ],
