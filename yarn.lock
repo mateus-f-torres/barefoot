@@ -4746,7 +4746,7 @@ __metadata:
     stylelint-config-idiomatic-order: 8.1.0
     stylelint-config-prettier: 9.0.3
     stylelint-config-standard: 24.0.0
-    tailwindcss: 3.0.13
+    tailwindcss: 3.0.14
     terser-webpack-plugin: 5.3.0
     ts-loader: 9.2.6
     typescript: 4.5.4
@@ -15069,9 +15069,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.0.13":
-  version: 3.0.13
-  resolution: "tailwindcss@npm:3.0.13"
+"tailwindcss@npm:3.0.14":
+  version: 3.0.14
+  resolution: "tailwindcss@npm:3.0.14"
   dependencies:
     arg: ^5.0.1
     chalk: ^4.1.2
@@ -15099,7 +15099,7 @@ resolve@^2.0.0-next.3:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: ede2b886587be42ef2e3fdd6cc87a5f6853e8eb86c0124960e325c04aabb90d71bb037464f8dbb6b5a719f7602b48d829132a408469a952d2911700b519a7a35
+  checksum: 3a5ebd282fd1071f8689c92ac125d81bb81b95fe45e5a4fec2d61406e330b628431a5f755ec15f11d4e674b58944ce0d2604a2eb891dbee1c57ee42e3ba880da
   languageName: node
   linkType: hard
 
