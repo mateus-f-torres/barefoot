@@ -43,7 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.15.0"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
             ["@types/jest", "npm:27.0.2"],\
-            ["@types/node", "npm:16.11.6"],\
+            ["@types/node", "npm:16.11.22"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.11"],\
             ["@types/testing-library__jest-dom", "npm:5.14.1"],\
@@ -6142,10 +6142,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:16.11.6", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.6-3a38cc239a-6e19634766.zip/node_modules/@types/node/",\
+        ["npm:16.11.22", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.22-e445de895f-9d879b9b04.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:16.11.6"]\
+            ["@types/node", "npm:16.11.22"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8070,7 +8070,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.15.0"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
             ["@types/jest", "npm:27.0.2"],\
-            ["@types/node", "npm:16.11.6"],\
+            ["@types/node", "npm:16.11.22"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.11"],\
             ["@types/testing-library__jest-dom", "npm:5.14.1"],\
@@ -21998,7 +21998,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:16.11.6"],\
+            ["@types/node", "npm:16.11.22"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
