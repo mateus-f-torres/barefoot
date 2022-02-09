@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:16.1.0"],\
             ["@commitlint/config-conventional", "npm:16.0.0"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
-            ["@testing-library/jest-dom", "npm:5.15.0"],\
+            ["@testing-library/jest-dom", "npm:5.16.2"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
             ["@types/jest", "npm:27.0.2"],\
             ["@types/node", "npm:16.11.6"],\
@@ -4626,17 +4626,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@babel/runtime-corejs3", [\
-        ["npm:7.17.0", {\
-          "packageLocation": "./.yarn/cache/@babel-runtime-corejs3-npm-7.17.0-05c01df00e-88fa4f7674.zip/node_modules/@babel/runtime-corejs3/",\
-          "packageDependencies": [\
-            ["@babel/runtime-corejs3", "npm:7.17.0"],\
-            ["core-js-pure", "npm:3.21.0"],\
-            ["regenerator-runtime", "npm:0.13.7"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@babel/template", [\
         ["npm:7.10.4", {\
           "packageLocation": "./.yarn/cache/@babel-template-npm-7.10.4-521586243b-174a1fbfa1.zip/node_modules/@babel/template/",\
@@ -5695,13 +5684,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@testing-library/jest-dom", [\
-        ["npm:5.15.0", {\
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.15.0-52dfd0c207-fb11af2462.zip/node_modules/@testing-library/jest-dom/",\
+        ["npm:5.16.2", {\
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.16.2-1ae5bcade4-e4569df67c.zip/node_modules/@testing-library/jest-dom/",\
           "packageDependencies": [\
-            ["@testing-library/jest-dom", "npm:5.15.0"],\
+            ["@testing-library/jest-dom", "npm:5.16.2"],\
             ["@babel/runtime", "npm:7.17.0"],\
             ["@types/testing-library__jest-dom", "npm:5.14.2"],\
-            ["aria-query", "npm:4.2.2"],\
+            ["aria-query", "npm:5.0.0"],\
             ["chalk", "npm:3.0.0"],\
             ["css", "npm:3.0.0"],\
             ["css.escape", "npm:1.5.1"],\
@@ -7485,15 +7474,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["aria-query", [\
-        ["npm:4.2.2", {\
-          "packageLocation": "./.yarn/cache/aria-query-npm-4.2.2-e0c4f1a309-38401a9a40.zip/node_modules/aria-query/",\
-          "packageDependencies": [\
-            ["aria-query", "npm:4.2.2"],\
-            ["@babel/runtime", "npm:7.17.0"],\
-            ["@babel/runtime-corejs3", "npm:7.17.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:5.0.0", {\
           "packageLocation": "./.yarn/cache/aria-query-npm-5.0.0-986fb11e0e-c41f98866c.zip/node_modules/aria-query/",\
           "packageDependencies": [\
@@ -8067,7 +8047,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:16.1.0"],\
             ["@commitlint/config-conventional", "npm:16.0.0"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
-            ["@testing-library/jest-dom", "npm:5.15.0"],\
+            ["@testing-library/jest-dom", "npm:5.16.2"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
             ["@types/jest", "npm:27.0.2"],\
             ["@types/node", "npm:16.11.6"],\
@@ -9487,15 +9467,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["core-js-compat", "npm:3.7.0"],\
             ["browserslist", "npm:4.14.7"],\
             ["semver", "npm:7.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["core-js-pure", [\
-        ["npm:3.21.0", {\
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.21.0-dc4104b1b9/node_modules/core-js-pure/",\
-          "packageDependencies": [\
-            ["core-js-pure", "npm:3.21.0"]\
           ],\
           "linkType": "HARD"\
         }]\
