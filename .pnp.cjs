@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint", "npm:14.4.0"],\
             ["stylelint-config-idiomatic-order", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.0"],\
             ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.0.3"],\
-            ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:24.0.0"],\
+            ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:25.0.0"],\
             ["tailwindcss", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.0.19"],\
             ["terser-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.3.1"],\
             ["ts-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.2.6"],\
@@ -8288,7 +8288,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint", "npm:14.4.0"],\
             ["stylelint-config-idiomatic-order", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:8.1.0"],\
             ["stylelint-config-prettier", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.0.3"],\
-            ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:24.0.0"],\
+            ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:25.0.0"],\
             ["tailwindcss", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:3.0.19"],\
             ["terser-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.3.1"],\
             ["ts-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.2.6"],\
@@ -21390,17 +21390,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["stylelint-config-recommended", [\
-        ["npm:6.0.0", {\
-          "packageLocation": "./.yarn/cache/stylelint-config-recommended-npm-6.0.0-67cddf9dd5-103b3c1222.zip/node_modules/stylelint-config-recommended/",\
+        ["npm:7.0.0", {\
+          "packageLocation": "./.yarn/cache/stylelint-config-recommended-npm-7.0.0-b9ef493d8d-9a60a59eff.zip/node_modules/stylelint-config-recommended/",\
           "packageDependencies": [\
-            ["stylelint-config-recommended", "npm:6.0.0"]\
+            ["stylelint-config-recommended", "npm:7.0.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:611b261040a6176b9ccdbdd4db074cc957bb49fe4f0a91f65cec944119d7d028d70b9182369e1ebaad75b8fa01c7df78c8f1b5bcea9d5087246141d209bb9cd1#npm:6.0.0", {\
-          "packageLocation": "./.yarn/__virtual__/stylelint-config-recommended-virtual-746bedb8c9/0/cache/stylelint-config-recommended-npm-6.0.0-67cddf9dd5-103b3c1222.zip/node_modules/stylelint-config-recommended/",\
+        ["virtual:855b4d4b758266bb4d5c3e044af09af17a21b1c8de5bbc2de66ff896fce17f8ace7e4d625ddfd2380dc80019d472bdc40bbddd71b3a784e8f740fe7906f00f4c#npm:7.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/stylelint-config-recommended-virtual-61470c29d8/0/cache/stylelint-config-recommended-npm-7.0.0-b9ef493d8d-9a60a59eff.zip/node_modules/stylelint-config-recommended/",\
           "packageDependencies": [\
-            ["stylelint-config-recommended", "virtual:611b261040a6176b9ccdbdd4db074cc957bb49fe4f0a91f65cec944119d7d028d70b9182369e1ebaad75b8fa01c7df78c8f1b5bcea9d5087246141d209bb9cd1#npm:6.0.0"],\
+            ["stylelint-config-recommended", "virtual:855b4d4b758266bb4d5c3e044af09af17a21b1c8de5bbc2de66ff896fce17f8ace7e4d625ddfd2380dc80019d472bdc40bbddd71b3a784e8f740fe7906f00f4c#npm:7.0.0"],\
             ["@types/stylelint", null],\
             ["stylelint", "npm:14.4.0"]\
           ],\
@@ -21412,20 +21412,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["stylelint-config-standard", [\
-        ["npm:24.0.0", {\
-          "packageLocation": "./.yarn/cache/stylelint-config-standard-npm-24.0.0-dfa9aff315-5993ede913.zip/node_modules/stylelint-config-standard/",\
+        ["npm:25.0.0", {\
+          "packageLocation": "./.yarn/cache/stylelint-config-standard-npm-25.0.0-2ee726214c-bfd5773f47.zip/node_modules/stylelint-config-standard/",\
           "packageDependencies": [\
-            ["stylelint-config-standard", "npm:24.0.0"]\
+            ["stylelint-config-standard", "npm:25.0.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:24.0.0", {\
-          "packageLocation": "./.yarn/__virtual__/stylelint-config-standard-virtual-611b261040/0/cache/stylelint-config-standard-npm-24.0.0-dfa9aff315-5993ede913.zip/node_modules/stylelint-config-standard/",\
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:25.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/stylelint-config-standard-virtual-855b4d4b75/0/cache/stylelint-config-standard-npm-25.0.0-2ee726214c-bfd5773f47.zip/node_modules/stylelint-config-standard/",\
           "packageDependencies": [\
-            ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:24.0.0"],\
+            ["stylelint-config-standard", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:25.0.0"],\
             ["@types/stylelint", null],\
             ["stylelint", "npm:14.4.0"],\
-            ["stylelint-config-recommended", "virtual:611b261040a6176b9ccdbdd4db074cc957bb49fe4f0a91f65cec944119d7d028d70b9182369e1ebaad75b8fa01c7df78c8f1b5bcea9d5087246141d209bb9cd1#npm:6.0.0"]\
+            ["stylelint-config-recommended", "virtual:855b4d4b758266bb4d5c3e044af09af17a21b1c8de5bbc2de66ff896fce17f8ace7e4d625ddfd2380dc80019d472bdc40bbddd71b3a784e8f740fe7906f00f4c#npm:7.0.0"]\
           ],\
           "packagePeers": [\
             "@types/stylelint",\
