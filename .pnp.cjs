@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:16.2.1"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.2"],\
-            ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
+            ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.3"],\
             ["@types/jest", "npm:27.4.0"],\
             ["@types/node", "npm:16.11.25"],\
             ["@types/react", "npm:17.0.39"],\
@@ -5906,17 +5906,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@testing-library/react", [\
-        ["npm:12.1.2", {\
-          "packageLocation": "./.yarn/cache/@testing-library-react-npm-12.1.2-ccdefbca45-70b0f7f27c.zip/node_modules/@testing-library/react/",\
+        ["npm:12.1.3", {\
+          "packageLocation": "./.yarn/cache/@testing-library-react-npm-12.1.3-9cd5a455e7-2f059e93dc.zip/node_modules/@testing-library/react/",\
           "packageDependencies": [\
-            ["@testing-library/react", "npm:12.1.2"]\
+            ["@testing-library/react", "npm:12.1.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2", {\
-          "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-d5153827fb/0/cache/@testing-library-react-npm-12.1.2-ccdefbca45-70b0f7f27c.zip/node_modules/@testing-library/react/",\
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.3", {\
+          "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-8625414f0b/0/cache/@testing-library-react-npm-12.1.3-9cd5a455e7-2f059e93dc.zip/node_modules/@testing-library/react/",\
           "packageDependencies": [\
-            ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
+            ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.3"],\
             ["@babel/runtime", "npm:7.17.0"],\
             ["@testing-library/dom", "npm:8.11.3"],\
             ["@types/react", "npm:17.0.39"],\
@@ -8222,7 +8222,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:16.2.1"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.2"],\
-            ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.2"],\
+            ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.3"],\
             ["@types/jest", "npm:27.4.0"],\
             ["@types/node", "npm:16.11.25"],\
             ["@types/react", "npm:17.0.39"],\
