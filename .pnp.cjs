@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.2"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.3"],\
-            ["@types/jest", "npm:27.4.0"],\
+            ["@types/jest", "npm:27.4.1"],\
             ["@types/node", "npm:16.11.25"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.11"],\
@@ -6308,6 +6308,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-format", "npm:27.5.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:27.4.1", {\
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.4.1-31d07cd0d8-5184f3eef4.zip/node_modules/@types/jest/",\
+          "packageDependencies": [\
+            ["@types/jest", "npm:27.4.1"],\
+            ["jest-matcher-utils", "npm:27.5.1"],\
+            ["pretty-format", "npm:27.5.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/json-schema", [\
@@ -8284,7 +8293,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.2"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.3"],\
-            ["@types/jest", "npm:27.4.0"],\
+            ["@types/jest", "npm:27.4.1"],\
             ["@types/node", "npm:16.11.25"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.11"],\
