@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["terser-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.3.1"],\
             ["ts-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.2.6"],\
             ["ts-node", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.5.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"],\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.68.0"],\
             ["webpack-bundle-analyzer", "npm:4.5.0"],\
             ["webpack-cli", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.9.2"],\
@@ -5264,7 +5264,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cosmiconfig-typescript-loader", "virtual:a75ab8877cd24700867f81b5d7905a51d250c39f96ddb4a53f08a850e0f18018e9e2dc301500f0ed55a27419d776f82a4529153e7240e77b86d7643297bfb9c6#npm:1.0.2"],\
             ["lodash", "npm:4.17.20"],\
             ["resolve-from", "npm:5.0.0"],\
-            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6639,7 +6639,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["regexpp", "npm:3.2.0"],\
             ["semver", "npm:7.3.5"],\
             ["tsutils", "virtual:ffd72331032d90f6c6a5175470c80a998ddb577b85b3dd6207376f33b27523f571f5287f471dbc447778404f517bb53d386390c12468f7d073d0bc1a8f40c426#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -6678,7 +6678,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/typescript-estree", "virtual:922bee5a88aa0a2595d4b0a9af0208a3e3da5bc70726aa95e621a0d0a6eb121f74ed6129963135749e06039152d96ff92c3ab1ff0d7565070f5c8b0ea5f829b4#npm:4.11.0"],\
             ["debug", "virtual:65523936f66795efc0bd6f7ca9a755f1be9f9bb998dc7cd39f5d823ea185c793a03b3f329f921a146569ee8bdffdd22dd15c2e08d286539b118e1cbbab91f8cf#npm:4.2.0"],\
             ["eslint", "npm:8.9.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -6699,7 +6699,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/typescript-estree", "virtual:6ec835e3a29085bcd3517d5a2c85409e80ebbd3d713691ad1ced455127d661c62b2512fc8d8b055a81801ee2bc537f6946e129477a27f76b16eb40c4716317bd#npm:5.12.0"],\
             ["debug", "virtual:66eebb2bc3b4f52280b83cc1b333b15f6585ed522f781d0567d2ce1a4931108ff4c790db57c6810d6afbdceb64309519bef02b156594aa3ca8181f5f0d1f78c9#npm:4.3.2"],\
             ["eslint", "npm:8.9.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -6748,7 +6748,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:66eebb2bc3b4f52280b83cc1b333b15f6585ed522f781d0567d2ce1a4931108ff4c790db57c6810d6afbdceb64309519bef02b156594aa3ca8181f5f0d1f78c9#npm:4.3.2"],\
             ["eslint", "npm:8.9.0"],\
             ["tsutils", "virtual:ffd72331032d90f6c6a5175470c80a998ddb577b85b3dd6207376f33b27523f571f5287f471dbc447778404f517bb53d386390c12468f7d073d0bc1a8f40c426#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -6822,7 +6822,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-glob", "npm:4.0.3"],\
             ["semver", "npm:7.3.5"],\
             ["tsutils", "virtual:ffd72331032d90f6c6a5175470c80a998ddb577b85b3dd6207376f33b27523f571f5287f471dbc447778404f517bb53d386390c12468f7d073d0bc1a8f40c426#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -6843,7 +6843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.20"],\
             ["semver", "npm:7.3.2"],\
             ["tsutils", "virtual:6c65c2e12b8e04cd659d1ab60c4645776a7e4f3ee38b66cc711c9a9ce9d480bfb45e7064ad4a9b5f755d1d32d13daef6d06d18c8644092273f33e9f82ff96c08#npm:3.17.1"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -8333,7 +8333,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["terser-webpack-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.3.1"],\
             ["ts-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:9.2.6"],\
             ["ts-node", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.5.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"],\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.68.0"],\
             ["webpack-bundle-analyzer", "npm:4.5.0"],\
             ["webpack-cli", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:4.9.2"],\
@@ -9758,7 +9758,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/typescript", null],\
             ["cosmiconfig", "npm:7.0.0"],\
             ["ts-node", "virtual:e9c3670a5ea1da0c8a5519bfdccc806bf58b661bf3652fc45e3a073fdc7ff598afd64a203b9015a40227b41f5a519db3274f9862fe110c094bd2ad70eb17e893#npm:10.4.0"],\
-            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/cosmiconfig",\
@@ -11525,7 +11525,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.25.4"],\
             ["eslint-plugin-node", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:11.1.0"],\
             ["eslint-plugin-promise", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:6.0.0"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/eslint-plugin-import",\
@@ -22194,7 +22194,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["enhanced-resolve", "npm:5.8.0"],\
             ["micromatch", "npm:4.0.2"],\
             ["semver", "npm:7.3.4"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"],\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.68.0"]\
           ],\
           "packagePeers": [\
@@ -22242,7 +22242,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["create-require", "npm:1.1.1"],\
             ["diff", "npm:4.0.2"],\
             ["make-error", "npm:1.3.6"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"],\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["v8-compile-cache-lib", "npm:3.0.0"],\
             ["yn", "npm:3.1.1"]\
           ],\
@@ -22278,7 +22278,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["create-require", "npm:1.1.1"],\
             ["diff", "npm:4.0.2"],\
             ["make-error", "npm:1.3.6"],\
-            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=142761"],\
+            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"],\
             ["yn", "npm:3.1.1"]\
           ],\
           "packagePeers": [\
@@ -22364,7 +22364,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tsutils", "virtual:6c65c2e12b8e04cd659d1ab60c4645776a7e4f3ee38b66cc711c9a9ce9d480bfb45e7064ad4a9b5f755d1d32d13daef6d06d18c8644092273f33e9f82ff96c08#npm:3.17.1"],\
             ["@types/typescript", null],\
             ["tslib", "npm:1.14.1"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -22378,7 +22378,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tsutils", "virtual:ffd72331032d90f6c6a5175470c80a998ddb577b85b3dd6207376f33b27523f571f5287f471dbc447778404f517bb53d386390c12468f7d073d0bc1a8f40c426#npm:3.21.0"],\
             ["@types/typescript", null],\
             ["tslib", "npm:1.14.1"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -22513,17 +22513,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=142761", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-49218e7ac9-3d1b044496.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-66db3462d6-3d1b044496.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=bda367"]\
           ],\
           "linkType": "HARD"\
         }],\
-        ["patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-01c2584a7f-858c61fa63.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-1413b5712d-858c61fa63.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=142761"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -24137,8 +24137,8 @@ async function copyPromise(destinationFs, destination, sourceFs, source, opts) {
   const normalizedSource = sourceFs.pathUtils.normalize(source);
   const prelayout = [];
   const postlayout = [];
-  const referenceTime = opts.stableTime ? {mtime: defaultTime, atime: defaultTime} : await sourceFs.lstatPromise(normalizedSource);
-  await destinationFs.mkdirpPromise(destinationFs.pathUtils.dirname(destination), {utimes: [referenceTime.atime, referenceTime.mtime]});
+  const {atime, mtime} = opts.stableTime ? {atime: defaultTime, mtime: defaultTime} : await sourceFs.lstatPromise(normalizedSource);
+  await destinationFs.mkdirpPromise(destinationFs.pathUtils.dirname(destination), {utimes: [atime, mtime]});
   const updateTime = typeof destinationFs.lutimesPromise === `function` ? destinationFs.lutimesPromise.bind(destinationFs) : destinationFs.utimesPromise.bind(destinationFs);
   await copyImpl(prelayout, postlayout, updateTime, destinationFs, normalizedDestination, sourceFs, normalizedSource, __spreadProps$2(__spreadValues$4({}, opts), {didParentExist: true}));
   for (const operation of prelayout)
@@ -24151,7 +24151,7 @@ async function copyImpl(prelayout, postlayout, updateTime, destinationFs, destin
   var _a, _b;
   const destinationStat = opts.didParentExist ? await maybeLStat(destinationFs, destination) : null;
   const sourceStat = await sourceFs.lstatPromise(source);
-  const referenceTime = opts.stableTime ? {mtime: defaultTime, atime: defaultTime} : sourceStat;
+  const {atime, mtime} = opts.stableTime ? {atime: defaultTime, mtime: defaultTime} : sourceStat;
   let updated;
   switch (true) {
     case sourceStat.isDirectory():
@@ -24174,8 +24174,8 @@ async function copyImpl(prelayout, postlayout, updateTime, destinationFs, destin
         throw new Error(`Unsupported file type (${sourceStat.mode})`);
       }
   }
-  if (updated || ((_a = destinationStat == null ? void 0 : destinationStat.mtime) == null ? void 0 : _a.getTime()) !== referenceTime.mtime.getTime() || ((_b = destinationStat == null ? void 0 : destinationStat.atime) == null ? void 0 : _b.getTime()) !== referenceTime.atime.getTime()) {
-    postlayout.push(() => updateTime(destination, referenceTime.atime, referenceTime.mtime));
+  if (updated || ((_a = destinationStat == null ? void 0 : destinationStat.mtime) == null ? void 0 : _a.getTime()) !== mtime.getTime() || ((_b = destinationStat == null ? void 0 : destinationStat.atime) == null ? void 0 : _b.getTime()) !== atime.getTime()) {
+    postlayout.push(() => updateTime(destination, atime, mtime));
     updated = true;
   }
   if (destinationStat === null || (destinationStat.mode & 511) !== (sourceStat.mode & 511)) {
@@ -24440,24 +24440,18 @@ class FakeFS {
           return this.removePromise(this.pathUtils.resolve(p, entry));
         }));
       }
-      let t = 0;
-      do {
+      for (let t = 0; t <= maxRetries; t++) {
         try {
           await this.rmdirPromise(p);
           break;
         } catch (error) {
-          if (error.code === `EBUSY` || error.code === `ENOTEMPTY`) {
-            if (maxRetries === 0) {
-              break;
-            } else {
-              await new Promise((resolve) => setTimeout(resolve, t * 100));
-              continue;
-            }
-          } else {
+          if (error.code !== `EBUSY` && error.code !== `ENOTEMPTY`) {
             throw error;
+          } else if (t < maxRetries) {
+            await new Promise((resolve) => setTimeout(resolve, t * 100));
           }
         }
-      } while (t++ < maxRetries);
+      }
     } else {
       await this.unlinkPromise(p);
     }
@@ -25570,11 +25564,7 @@ class ZipFS extends BasePortableFakeFS {
     const entry = this.fds.get(fd);
     if (typeof entry === `undefined`)
       throw EBADF(`read`);
-    let realPosition;
-    if (position === -1 || position === null)
-      realPosition = entry.cursor;
-    else
-      realPosition = position;
+    const realPosition = position === -1 || position === null ? entry.cursor : position;
     const source = this.readFileSync(entry.p);
     source.copy(buffer, offset, realPosition, realPosition + length);
     const bytesRead = Math.max(0, Math.min(source.length - realPosition, length));
@@ -25805,14 +25795,14 @@ class ZipFS extends BasePortableFakeFS {
     return this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 16;
   }
   registerListing(p) {
-    let listing = this.listings.get(p);
-    if (listing)
-      return listing;
+    const existingListing = this.listings.get(p);
+    if (existingListing)
+      return existingListing;
     const parentListing = this.registerListing(ppath.dirname(p));
-    listing = new Set();
     parentListing.add(ppath.basename(p));
-    this.listings.set(p, listing);
-    return listing;
+    const newListing = new Set();
+    this.listings.set(p, newListing);
+    return newListing;
   }
   registerEntry(p, index) {
     const parentListing = this.registerListing(ppath.dirname(p));
@@ -25918,11 +25908,7 @@ class ZipFS extends BasePortableFakeFS {
       if (newIndex === -1)
         throw this.makeLibzipError(this.libzip.getError(this.zip));
       if (this.level !== `mixed`) {
-        let method;
-        if (this.level === 0)
-          method = this.libzip.ZIP_CM_STORE;
-        else
-          method = this.libzip.ZIP_CM_DEFLATE;
+        const method = this.level === 0 ? this.libzip.ZIP_CM_STORE : this.libzip.ZIP_CM_DEFLATE;
         const rc = this.libzip.file.setCompression(this.zip, newIndex, 0, method, this.level);
         if (rc === -1) {
           throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -27358,7 +27344,7 @@ class ZipOpenFS extends BasePortableFakeFS {
       return null;
     let filePath = ``;
     while (true) {
-      const pathPartWithArchive = p.substr(filePath.length);
+      const pathPartWithArchive = p.substring(filePath.length);
       let archivePart;
       if (!this.fileExtensions) {
         archivePart = getArchivePart(pathPartWithArchive, `.zip`);
@@ -27388,7 +27374,7 @@ class ZipOpenFS extends BasePortableFakeFS {
       }
       return {
         archivePath: filePath,
-        subPath: this.pathUtils.join(PortablePath.root, p.substr(filePath.length))
+        subPath: this.pathUtils.join(PortablePath.root, p.substring(filePath.length))
       };
     }
   }
