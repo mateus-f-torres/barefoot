@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.12"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.2"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.12.1"],\
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.12.1"],\
             ["autoprefixer", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.4.2"],\
@@ -6582,6 +6582,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.4.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:5.14.3", {\
+          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.3-0aa35d2c00-203443d0e7.zip/node_modules/@types/testing-library__jest-dom/",\
+          "packageDependencies": [\
+            ["@types/testing-library__jest-dom", "npm:5.14.3"],\
+            ["@types/jest", "npm:27.4.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/trusted-types", [\
@@ -8297,7 +8305,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:17.0.39"],\
             ["@types/react-dom", "npm:17.0.12"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.2"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.12.1"],\
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.12.1"],\
             ["autoprefixer", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:10.4.2"],\
