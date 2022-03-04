@@ -5545,7 +5545,7 @@ __metadata:
     compression-webpack-plugin: 9.2.0
     copy-webpack-plugin: 10.2.4
     core-js: 3.21.1
-    css-loader: 6.6.0
+    css-loader: 6.7.0
     css-minimizer-webpack-plugin: 3.4.1
     cz-conventional-changelog: 3.3.0
     dotenv: 16.0.0
@@ -6946,12 +6946,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:6.6.0":
-  version: 6.6.0
-  resolution: "css-loader@npm:6.6.0"
+"css-loader@npm:6.7.0":
+  version: 6.7.0
+  resolution: "css-loader@npm:6.7.0"
   dependencies:
     icss-utils: ^5.1.0
-    postcss: ^8.4.5
+    postcss: ^8.4.7
     postcss-modules-extract-imports: ^3.0.0
     postcss-modules-local-by-default: ^4.0.0
     postcss-modules-scope: ^3.0.0
@@ -6960,7 +6960,7 @@ __metadata:
     semver: ^7.3.5
   peerDependencies:
     webpack: ^5.0.0
-  checksum: cc4117320c2bfbbc3e84cdf811fb29219f1900cf4dcebb7dbf916b7cbdfc193cd9017d19b62be2d57d22baeb791919de52bf2e3086213d184875813817ac290f
+  checksum: 222bbde35315f4cf723fb1dd3a7c5a21e073de2018e8a9475f89631a090f6fd829ef756972a0f15ed6298f6c852d0f45e46ee729625256397ee17638c0b4ae9d
   languageName: node
   linkType: hard
 
@@ -13185,15 +13185,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.30":
-  version: 3.1.30
-  resolution: "nanoid@npm:3.1.30"
-  bin:
-    nanoid: bin/nanoid.cjs
-  checksum: 276d0d4b0c41c46aeefec5f09f093e4085a2352d06881c845db22b84f8ef72cc8defae6d76bfb1d8a2a128eb2dec42ab148d16582be4e7754c97905806ef57b6
-  languageName: node
-  linkType: hard
-
 "nanoid@npm:^3.2.0":
   version: 3.2.0
   resolution: "nanoid@npm:3.2.0"
@@ -14786,7 +14777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.7":
+"postcss@npm:8.4.7, postcss@npm:^8.4.7":
   version: 8.4.7
   resolution: "postcss@npm:8.4.7"
   dependencies:
@@ -14816,17 +14807,6 @@ __metadata:
     nanoid: ^3.1.23
     source-map-js: ^0.6.2
   checksum: c73fc4825ed27396d453a942628cd8e34dd43c11b724f43f65f376d3900037736013b6446f1d9947ce5a847837cf96649e9a3f200ca2bd94a884e91e56ee1ceb
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.4.5":
-  version: 8.4.5
-  resolution: "postcss@npm:8.4.5"
-  dependencies:
-    nanoid: ^3.1.30
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.1
-  checksum: b78abdd89c10f7b48f4bdcd376104a19d6e9c7495ab521729bdb3df315af6c211360e9f06887ad3bc0ab0f61a04b91d68ea11462997c79cced58b9ccd66fac07
   languageName: node
   linkType: hard
 
@@ -16256,13 +16236,6 @@ resolve@^2.0.0-next.3:
   version: 0.6.2
   resolution: "source-map-js@npm:0.6.2"
   checksum: 9c8151a29e00fd8d3ba87709fdf9a9ce48313d653f4a29a39b4ae53d346ac79e005de624796ff42eff55cbaf26d2e87f4466001ca87831d400d818c5cf146a0e
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "source-map-js@npm:1.0.1"
-  checksum: 22606113d62bbd468712b0cb0c46e9a8629de7eb081049c62a04d977a211abafd7d61455617f8b78daba0b6c0c7e7c88f8c6b5aaeacffac0a6676ecf5caac5ce
   languageName: node
   linkType: hard
 
