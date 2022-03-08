@@ -5,22 +5,28 @@ import Button from "../Button/Button"
 
 function App(): React.ReactElement {
   // TODO: move Pusher logic to separate file after single user auth is implemented
-  async function handleSubscribe(): Promise<void> {
-    const registration = await window.navigator?.serviceWorker.getRegistration()
-    if (registration !== undefined) {
-      const beamsClient = new PusherPushNotifications.Client({
-        instanceId: PUSHER_INSTANCE_ID,
-        serviceWorkerRegistration: registration,
-      })
+  function handleSubscribe(): void {
+    void (async () => {
+      const registration =
+        await window.navigator?.serviceWorker.getRegistration()
 
-      beamsClient
-        .start()
-        .then(async () => await beamsClient.addDeviceInterest("debug-barefoot"))
-        .then(() => console.log("Successfully registered and subscribed!"))
-        .catch(console.error)
-    } else {
-      console.log("No service worker registered.")
-    }
+      if (registration !== undefined) {
+        const beamsClient = new PusherPushNotifications.Client({
+          instanceId: PUSHER_INSTANCE_ID,
+          serviceWorkerRegistration: registration,
+        })
+
+        beamsClient
+          .start()
+          .then(
+            async () => await beamsClient.addDeviceInterest("debug-barefoot")
+          )
+          .then(() => console.log("Successfully registered and subscribed!"))
+          .catch(console.error)
+      } else {
+        console.log("No service worker registered.")
+      }
+    })()
   }
 
   return (
