@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:16.2.3"],\
             ["@commitlint/config-conventional", "npm:16.2.1"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
-            ["@testing-library/jest-dom", "npm:5.16.3"],\
+            ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.4"],\
             ["@types/jest", "npm:27.4.1"],\
             ["@types/node", "npm:16.11.26"],\
@@ -6021,10 +6021,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@testing-library/jest-dom", [\
-        ["npm:5.16.3", {\
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.16.3-150af3dca0-2d7b767bc1.zip/node_modules/@testing-library/jest-dom/",\
+        ["npm:5.16.4", {\
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.16.4-0bdb383307-4240501223.zip/node_modules/@testing-library/jest-dom/",\
           "packageDependencies": [\
-            ["@testing-library/jest-dom", "npm:5.16.3"],\
+            ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@babel/runtime", "npm:7.17.0"],\
             ["@types/testing-library__jest-dom", "npm:5.14.2"],\
             ["aria-query", "npm:5.0.0"],\
@@ -8371,7 +8371,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:16.2.3"],\
             ["@commitlint/config-conventional", "npm:16.2.1"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
-            ["@testing-library/jest-dom", "npm:5.16.3"],\
+            ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:12.1.4"],\
             ["@types/jest", "npm:27.4.1"],\
             ["@types/node", "npm:16.11.26"],\
