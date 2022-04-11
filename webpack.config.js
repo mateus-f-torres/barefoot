@@ -79,7 +79,7 @@ const copyPlugin = new CopyPlugin({
 })
 
 const environmentPlugin = new webpack.DefinePlugin({
-  PRODUCTION: process.env.NODE_ENV == "production",
+  PRODUCTION: process.env.NODE_ENV === "production",
   PUSHER_INSTANCE_ID: JSON.stringify(process.env.PUSHER_INSTANCE_ID),
 })
 
