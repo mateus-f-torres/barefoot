@@ -29,52 +29,5 @@
     "standard-with-typescript",
     "plugin:react/recommended",
     "prettier"
-  ],
-  "rules": {
-    "eqeqeq": [
-      "off"
-    ],
-    "no-await-in-loop": [
-      "error"
-    ],
-    "guard-for-in": [
-      "error"
-    ],
-    "no-implicit-globals": [
-      "error"
-    ],
-    "no-shadow": [
-      "error", {"builtinGlobals": false, "hoist": "functions"}
-    ],
-    "complexity": [
-      "warn", {"max": 6}
-    ],
-    "max-depth": [
-      "warn", {"max": 4}
-    ],
-    "max-len": [
-      "warn",
-      {
-        "code": 80,
-        "tabWidth": 2,
-        "ignoreUrls": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true
-      }
-    ],
-    "max-lines": [
-      "warn",
-      {"max": 300, "skipBlankLines": false, "skipComments": false}
-    ],
-    "max-lines-per-function": [
-      "warn",
-      {"max": 50, "skipBlankLines": false, "skipComments": false, "IIFEs": false}
-    ],
-    "max-nested-callbacks": [
-      "warn", {"max": 5}
-    ],
-    "max-params": [
-      "warn", {"max": 3}
-    ]
-  }
+  ]
 }
