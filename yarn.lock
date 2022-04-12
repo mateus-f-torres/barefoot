@@ -5675,7 +5675,6 @@ __metadata:
     eslint-config-prettier: 8.5.0
     eslint-config-standard: 16.0.3
     eslint-config-standard-with-typescript: 21.0.1
-    eslint-import-resolver-node: 0.3.6
     eslint-plugin-import: 2.26.0
     eslint-plugin-node: 11.1.0
     eslint-plugin-promise: 6.0.0
@@ -8343,7 +8342,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:0.3.6, eslint-import-resolver-node@npm:^0.3.6":
+"eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
   resolution: "eslint-import-resolver-node@npm:0.3.6"
   dependencies:
