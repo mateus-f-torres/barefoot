@@ -4253,14 +4253,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.2":
-  version: 18.0.2
-  resolution: "@types/react@npm:18.0.2"
+"@types/react@npm:18.0.5":
+  version: 18.0.5
+  resolution: "@types/react@npm:18.0.5"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 5f8a729449ef6d59b4f7f76f1a0096a1b1b76a4bb43156c4f16e0c5ad299c66b31568ab19e1de68a56bc9b2843dbc812f316bfd91686ac4867c00676db7a8e8b
+  checksum: 70d3336d43ef25509fa89ef3278f57fdf1945fc921e69b7890a78ab9a52a55ee38e2f13aa71eb4f6032b7311e7557860ce8836c1acf3028304989571c9736a96
   languageName: node
   linkType: hard
 
@@ -5655,7 +5655,7 @@ __metadata:
     "@testing-library/react": 12.1.5
     "@types/jest": 27.4.1
     "@types/node": 16.11.27
-    "@types/react": 18.0.2
+    "@types/react": 18.0.5
     "@types/react-dom": 18.0.1
     "@types/testing-library__jest-dom": 5.14.3
     "@typescript-eslint/eslint-plugin": 5.19.0
