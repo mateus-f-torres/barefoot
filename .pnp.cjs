@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.4.1"],\
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:18.0.2"],\
-            ["@types/react-dom", "npm:18.0.0"],\
+            ["@types/react-dom", "npm:18.0.1"],\
             ["@types/testing-library__jest-dom", "npm:5.14.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.19.0"],\
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.19.0"],\
@@ -6088,7 +6088,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/runtime", "npm:7.17.0"],\
             ["@testing-library/dom", "npm:8.11.3"],\
             ["@types/react", "npm:18.0.2"],\
-            ["@types/react-dom", "npm:18.0.0"],\
+            ["@types/react-dom", "npm:18.0.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:17.0.2"]\
           ],\
@@ -6594,10 +6594,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/react-dom", [\
-        ["npm:18.0.0", {\
-          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.0.0-f0d7a2e690-0d8c9cb3e7.zip/node_modules/@types/react-dom/",\
+        ["npm:18.0.1", {\
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.0.1-3444453ba7-6c183e2e50.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
-            ["@types/react-dom", "npm:18.0.0"],\
+            ["@types/react-dom", "npm:18.0.1"],\
             ["@types/react", "npm:16.9.49"]\
           ],\
           "linkType": "HARD"\
@@ -8420,7 +8420,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.4.1"],\
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:18.0.2"],\
-            ["@types/react-dom", "npm:18.0.0"],\
+            ["@types/react-dom", "npm:18.0.1"],\
             ["@types/testing-library__jest-dom", "npm:5.14.3"],\
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.19.0"],\
             ["@typescript-eslint/parser", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.19.0"],\
