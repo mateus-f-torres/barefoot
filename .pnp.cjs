@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.18.0"],\
             ["@babel/preset-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
-            ["@commitlint/cli", "npm:17.0.0"],\
+            ["@commitlint/cli", "npm:17.0.1"],\
             ["@commitlint/config-conventional", "npm:17.0.0"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
@@ -5186,15 +5186,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@commitlint/cli", [\
-        ["npm:17.0.0", {\
-          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-17.0.0-d282c401da-ac7159458e.zip/node_modules/@commitlint/cli/",\
+        ["npm:17.0.1", {\
+          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-17.0.1-f3d480a3b9-7a69ce6eeb.zip/node_modules/@commitlint/cli/",\
           "packageDependencies": [\
-            ["@commitlint/cli", "npm:17.0.0"],\
+            ["@commitlint/cli", "npm:17.0.1"],\
             ["@commitlint/format", "npm:17.0.0"],\
             ["@commitlint/lint", "npm:17.0.0"],\
             ["@commitlint/load", "npm:17.0.0"],\
             ["@commitlint/read", "npm:17.0.0"],\
             ["@commitlint/types", "npm:17.0.0"],\
+            ["execa", "npm:5.0.0"],\
             ["lodash", "npm:4.17.20"],\
             ["resolve-from", "npm:5.0.0"],\
             ["resolve-global", "npm:1.0.0"],\
@@ -8461,7 +8462,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.18.0"],\
             ["@babel/preset-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
-            ["@commitlint/cli", "npm:17.0.0"],\
+            ["@commitlint/cli", "npm:17.0.1"],\
             ["@commitlint/config-conventional", "npm:17.0.0"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
