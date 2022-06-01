@@ -37,8 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.18.2"],\
             ["@babel/preset-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
-            ["@commitlint/cli", "npm:17.0.1"],\
-            ["@commitlint/config-conventional", "npm:17.0.0"],\
+            ["@commitlint/cli", "npm:17.0.2"],\
+            ["@commitlint/config-conventional", "npm:17.0.2"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:13.3.0"],\
@@ -5450,10 +5450,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@commitlint/cli", [\
-        ["npm:17.0.1", {\
-          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-17.0.1-f3d480a3b9-7a69ce6eeb.zip/node_modules/@commitlint/cli/",\
+        ["npm:17.0.2", {\
+          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-17.0.2-d9f42b86bf-1f8a00da69.zip/node_modules/@commitlint/cli/",\
           "packageDependencies": [\
-            ["@commitlint/cli", "npm:17.0.1"],\
+            ["@commitlint/cli", "npm:17.0.2"],\
             ["@commitlint/format", "npm:17.0.0"],\
             ["@commitlint/lint", "npm:17.0.0"],\
             ["@commitlint/load", "npm:17.0.0"],\
@@ -5469,11 +5469,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@commitlint/config-conventional", [\
-        ["npm:17.0.0", {\
-          "packageLocation": "./.yarn/cache/@commitlint-config-conventional-npm-17.0.0-61f9d43456-d2a8973c65.zip/node_modules/@commitlint/config-conventional/",\
+        ["npm:17.0.2", {\
+          "packageLocation": "./.yarn/cache/@commitlint-config-conventional-npm-17.0.2-fe72cc5e8c-6effb4f68d.zip/node_modules/@commitlint/config-conventional/",\
           "packageDependencies": [\
-            ["@commitlint/config-conventional", "npm:17.0.0"],\
-            ["conventional-changelog-conventionalcommits", "npm:4.4.0"]\
+            ["@commitlint/config-conventional", "npm:17.0.2"],\
+            ["conventional-changelog-conventionalcommits", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8743,8 +8743,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.18.2"],\
             ["@babel/preset-react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
             ["@babel/preset-typescript", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.17.12"],\
-            ["@commitlint/cli", "npm:17.0.1"],\
-            ["@commitlint/config-conventional", "npm:17.0.0"],\
+            ["@commitlint/cli", "npm:17.0.2"],\
+            ["@commitlint/config-conventional", "npm:17.0.2"],\
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:13.3.0"],\
@@ -10058,10 +10058,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["conventional-changelog-conventionalcommits", [\
-        ["npm:4.4.0", {\
-          "packageLocation": "./.yarn/cache/conventional-changelog-conventionalcommits-npm-4.4.0-a63ee04618-24ba21260e.zip/node_modules/conventional-changelog-conventionalcommits/",\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/conventional-changelog-conventionalcommits-npm-5.0.0-a270202fe8-b67d12e4e0.zip/node_modules/conventional-changelog-conventionalcommits/",\
           "packageDependencies": [\
-            ["conventional-changelog-conventionalcommits", "npm:4.4.0"],\
+            ["conventional-changelog-conventionalcommits", "npm:5.0.0"],\
             ["compare-func", "npm:2.0.0"],\
             ["lodash", "npm:4.17.20"],\
             ["q", "npm:1.5.1"]\
