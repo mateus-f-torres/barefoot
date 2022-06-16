@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:28.1.0"],\
             ["jest-environment-jsdom", "npm:28.1.0"],\
             ["lint-staged", "npm:12.5.0"],\
-            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.0"],\
+            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.1"],\
             ["postcss", "npm:8.4.14"],\
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.0"],\
             ["prettier", "npm:2.6.2"],\
@@ -8783,7 +8783,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:28.1.0"],\
             ["jest-environment-jsdom", "npm:28.1.0"],\
             ["lint-staged", "npm:12.5.0"],\
-            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.0"],\
+            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.1"],\
             ["postcss", "npm:8.4.14"],\
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.0"],\
             ["prettier", "npm:2.6.2"],\
@@ -17274,17 +17274,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["mini-css-extract-plugin", [\
-        ["npm:2.6.0", {\
-          "packageLocation": "./.yarn/cache/mini-css-extract-plugin-npm-2.6.0-c3e21a6a16-ea73bd6655.zip/node_modules/mini-css-extract-plugin/",\
+        ["npm:2.6.1", {\
+          "packageLocation": "./.yarn/cache/mini-css-extract-plugin-npm-2.6.1-4e6d2beaf0-df60840404.zip/node_modules/mini-css-extract-plugin/",\
           "packageDependencies": [\
-            ["mini-css-extract-plugin", "npm:2.6.0"]\
+            ["mini-css-extract-plugin", "npm:2.6.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.0", {\
-          "packageLocation": "./.yarn/__virtual__/mini-css-extract-plugin-virtual-254bc8a68d/0/cache/mini-css-extract-plugin-npm-2.6.0-c3e21a6a16-ea73bd6655.zip/node_modules/mini-css-extract-plugin/",\
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.1", {\
+          "packageLocation": "./.yarn/__virtual__/mini-css-extract-plugin-virtual-ac85814fd0/0/cache/mini-css-extract-plugin-npm-2.6.1-4e6d2beaf0-df60840404.zip/node_modules/mini-css-extract-plugin/",\
           "packageDependencies": [\
-            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.0"],\
+            ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.1"],\
             ["@types/webpack", null],\
             ["schema-utils", "npm:4.0.0"],\
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.73.0"]\
