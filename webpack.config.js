@@ -6,9 +6,8 @@ const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 // CSS
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 // JS
-const TerserPlugin = require("terser-webpack-plugin")
+const {ESBuildMinifyPlugin} = require("esbuild-loader")
 // Compression
 const CompressionPlugin = require("compression-webpack-plugin")
 // Service Worker
@@ -31,16 +30,16 @@ const cssPlugin = new MiniCssExtractPlugin({
   filename: "[name].[contenthash].css",
   chunkFilename: "[name].[contenthash].css",
 })
-const minimizeCss = new CssMinimizerPlugin({})
 // JS
-const terserPlugin = new TerserPlugin({
-  // TODO: verify new v5 behavior, "respect devtool option"
-  // sourceMap: true,
+// TODO: verify new v5 behavior, "respect devtool option"
+const esBuildMinifyPlugin = new ESBuildMinifyPlugin({
+  target: "es6",
+  css: true,
 })
 // Compression
 const brotliPlugin = new CompressionPlugin({
   test: /\.(js|css|html|svg)$/,
-  filename: "[path][name].br",
+  filename: "[path][base].br",
   algorithm: "brotliCompress",
   threshold: 0,
   minRatio: 0.8,
@@ -103,20 +102,13 @@ let configs = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
+        test: /\.(js|ts)x?$/,
         use: [
           {
-            loader: "ts-loader",
-          },
-        ],
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "babel-loader",
+            loader: "esbuild-loader",
+            options: {
+              loader: "tsx",
+            },
           },
         ],
       },
@@ -185,7 +177,7 @@ if (process.env.NODE_ENV === "production") {
     },
     optimization: {
       minimize: true,
-      minimizer: [terserPlugin, minimizeCss],
+      minimizer: [esBuildMinifyPlugin],
       runtimeChunk: "single",
       splitChunks: {
         cacheGroups: {
@@ -208,21 +200,12 @@ if (process.env.NODE_ENV === "production") {
       rules: [
         {
           test: /\.tsx?$/,
-          exclude: /node_modules/,
           use: [
             {
-              loader: "ts-loader",
-            },
-          ],
-        },
-        {
-          test: /\.jsx?$/,
-          exclude: /node_modules/,
-          use: [
-            {
-              loader: "babel-loader",
+              loader: "esbuild-loader",
               options: {
-                compact: true,
+                loader: "tsx",
+                target: "es6",
               },
             },
           ],

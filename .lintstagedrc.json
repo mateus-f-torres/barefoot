@@ -1,6 +1,6 @@
 {
   "!(.pnp)*.js?(x)|*.ts?(x)": [
-    "jest --findRelatedTests",
+    "jest --findRelatedTests --passWithNoTests",
     "eslint --fix",
     "prettier --write"
   ],
