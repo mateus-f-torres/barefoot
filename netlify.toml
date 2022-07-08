@@ -1,3 +1,7 @@
+[build.environment]
+  NODE_VERSION = "18.4.0"
+  YARN_VERSION = "3.2.1"
+
 # Catch All rule, always last redirect rule
 [[redirects]]
   from = "/*"
