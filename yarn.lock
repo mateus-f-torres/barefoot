@@ -5551,7 +5551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:^28.1.2":
+"babel-jest@npm:28.1.2, babel-jest@npm:^28.1.2":
   version: 28.1.2
   resolution: "babel-jest@npm:28.1.2"
   dependencies:
@@ -5707,7 +5707,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 5.30.5
     "@typescript-eslint/parser": 5.30.5
     autoprefixer: 10.4.7
-    babel-jest: ^28.1.2
+    babel-jest: 28.1.2
     commitizen: 4.2.4
     compression-webpack-plugin: 10.0.0
     copy-webpack-plugin: 11.0.0
