@@ -193,7 +193,7 @@ if (process.env.NODE_ENV === "production") {
     module: {
       rules: [
         {
-          test: /\.tsx?$/,
+          test: /\.(js|ts)x?$/,
           use: [
             {
               loader: "esbuild-loader",
