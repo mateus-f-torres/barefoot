@@ -33,7 +33,7 @@ const cssPlugin = new MiniCssExtractPlugin({
 // JS
 // TODO: verify new v5 behavior, "respect devtool option"
 const esBuildMinifyPlugin = new ESBuildMinifyPlugin({
-  target: "es6",
+  target: "es2021",
   css: true,
 })
 // Compression
@@ -199,7 +199,7 @@ if (process.env.NODE_ENV === "production") {
               loader: "esbuild-loader",
               options: {
                 loader: "tsx",
-                target: "es6",
+                target: "es2021",
               },
             },
           ],
