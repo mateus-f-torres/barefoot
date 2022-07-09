@@ -14,9 +14,9 @@ const CompressionPlugin = require("compression-webpack-plugin")
 const {InjectManifest} = require("workbox-webpack-plugin")
 // Extras
 const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
-const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 const {SourceMapDevToolPlugin} = require("webpack")
 const CopyPlugin = require("copy-webpack-plugin")
+
 // eslint-disable-next-line no-unused-vars
 const dotenv = require("dotenv").config()
 
@@ -63,8 +63,6 @@ const analyzerPlugin = new BundleAnalyzerPlugin({
   statsFilename: "../reports/stats.json",
 })
 
-const cleanUpPlugin = new CleanWebpackPlugin()
-
 const sourceMapsPlugin = new SourceMapDevToolPlugin({
   filename: "sourcemaps/[file].map",
   exclude: ["sw.js", /runtime\.*\.*/, /vendors\.*\.*/],
@@ -91,6 +89,7 @@ let configs = {
   devtool: "eval-source-map",
   entry: path.resolve(__dirname, "src/index.tsx"),
   output: {
+    clean: true,
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
     filename: "[name].js",
@@ -132,13 +131,7 @@ let configs = {
       },
     ],
   },
-  plugins: [
-    environmentPlugin,
-    cleanUpPlugin,
-    cssPlugin,
-    htmlPlugin,
-    copyPlugin,
-  ],
+  plugins: [environmentPlugin, cssPlugin, htmlPlugin, copyPlugin],
   devServer: {
     hot: true,
     compress: true,
@@ -165,6 +158,7 @@ if (process.env.NODE_ENV === "production") {
     mode: "production",
     devtool: false,
     output: {
+      clean: true,
       path: path.resolve(__dirname, "dist"),
       publicPath: "/",
       filename: "[name].[contenthash].js",
@@ -236,7 +230,6 @@ if (process.env.NODE_ENV === "production") {
       environmentPlugin,
       sourceMapsPlugin,
       analyzerPlugin,
-      cleanUpPlugin,
       brotliPlugin,
       cssPlugin,
       htmlPlugin,
