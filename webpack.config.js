@@ -31,22 +31,16 @@ const cssPlugin = new MiniCssExtractPlugin({
   chunkFilename: "[name].[contenthash].css",
 })
 // JS
-// TODO: verify new v5 behavior, "respect devtool option"
 const esBuildMinifyPlugin = new ESBuildMinifyPlugin({
+  sourcemap: true,
   target: "es2021",
   css: true,
 })
 // Compression
 const brotliPlugin = new CompressionPlugin({
-  test: /\.(js|css|html|svg)$/,
+  test: /\.(js|css|html|svg|json|map)$/,
   filename: "[path][base].br",
   algorithm: "brotliCompress",
-  threshold: 0,
-  minRatio: 0.8,
-  exclude: "sw.js",
-  compressionOptions: {
-    level: 11,
-  },
 })
 // Service Worker
 const swPlugin = new InjectManifest({
@@ -65,6 +59,7 @@ const analyzerPlugin = new BundleAnalyzerPlugin({
 
 const sourceMapsPlugin = new SourceMapDevToolPlugin({
   filename: "sourcemaps/[file].map",
+  include: [/main\.*\.*/],
   exclude: ["sw.js", /runtime\.*\.*/, /vendors\.*\.*/],
 })
 
