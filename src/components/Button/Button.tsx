@@ -1,15 +1,18 @@
 import React from "react"
 import bell from "../../assets/icons/bell-solid.svg"
 
-interface ButtonProps {
-  handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void
-}
+// interface ButtonProps {
+//   handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+// }
+// props: ButtonProps
 
-function Button(props: ButtonProps): React.ReactElement {
+function Button(): React.ReactElement {
   return (
     <button
       className="bg-red-200 block mx-auto mt-60 p-4 rounded-full shadow-md"
-      onClick={props.handleClick}
+      onClick={() => {
+        throw new Error("Blow up!")
+      }}
     >
       <img className="w-8 h-8" src={bell} alt="Notification Bell" />
     </button>
