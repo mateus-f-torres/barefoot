@@ -9,9 +9,7 @@ function Button(props: ButtonProps): React.ReactElement {
   return (
     <button
       className="bg-red-200 block mx-auto mt-60 p-4 rounded-full shadow-md"
-      onClick={() => {
-        throw new Error("Blow up!")
-      }}
+      onClick={props.handleClick}
     >
       <img className="w-8 h-8" src={bell} alt="Notification Bell" />
     </button>
