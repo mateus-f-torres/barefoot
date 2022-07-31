@@ -1,54 +1,43 @@
-// @ts-nocheck
-/* eslint import/newline-after-import: 'off' */
-const path = require("path")
-const webpack = require("webpack")
-// HTML
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-// CSS
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-// JS
-const {ESBuildMinifyPlugin} = require("esbuild-loader")
-// Compression
-const CompressionPlugin = require("compression-webpack-plugin")
-// Service Worker
-const {InjectManifest} = require("workbox-webpack-plugin")
-// Extras
-const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
-const {SourceMapDevToolPlugin} = require("webpack")
-const CopyPlugin = require("copy-webpack-plugin")
+import path from "path"
+import CopyPlugin from "copy-webpack-plugin"
+import HtmlWebpackPlugin from "html-webpack-plugin"
+import {ESBuildMinifyPlugin} from "esbuild-loader"
+import {InjectManifest} from "workbox-webpack-plugin"
+import MiniCssExtractPlugin from "mini-css-extract-plugin"
+import CompressionPlugin from "compression-webpack-plugin"
+import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer"
+import {DefinePlugin, SourceMapDevToolPlugin} from "webpack"
 
-// eslint-disable-next-line no-unused-vars
-const dotenv = require("dotenv").config()
+import "dotenv/config"
 
-// HTML
 const htmlPlugin = new HtmlWebpackPlugin({
   filename: "index.html",
   template: "src/index.html",
 })
-// CSS
+
 const cssPlugin = new MiniCssExtractPlugin({
   filename: "[name].[contenthash].css",
   chunkFilename: "[name].[contenthash].css",
 })
-// JS
+
 const esBuildMinifyPlugin = new ESBuildMinifyPlugin({
   sourcemap: true,
   target: "es2021",
   css: true,
 })
-// Compression
+
 const brotliPlugin = new CompressionPlugin({
-  test: /\.(js|css|html|svg|json|map)$/,
+  test: /\.(js|css|html|svg|json)$/,
   filename: "[path][base].br",
   algorithm: "brotliCompress",
 })
-// Service Worker
+
 const swPlugin = new InjectManifest({
   swSrc: "./src/sw/sw.js",
   exclude: [/\.(br|map)$/],
   dontCacheBustURLsMatching: /\.(woff2|woff|jpg|jpeg|png|svg|gif|ico|txt)$/,
 })
-// Extras
+
 const analyzerPlugin = new BundleAnalyzerPlugin({
   openAnalyzer: false,
   analyzerMode: "static",
@@ -70,9 +59,9 @@ const copyPlugin = new CopyPlugin({
   ],
 })
 
-const environmentPlugin = new webpack.DefinePlugin({
-  PRODUCTION: process.env.NODE_ENV === "production",
-  PUSHER_INSTANCE_ID: JSON.stringify(process.env.PUSHER_INSTANCE_ID),
+const environmentPlugin = new DefinePlugin({
+  PRODUCTION: process.env["NODE_ENV"] === "production",
+  PUSHER_INSTANCE_ID: JSON.stringify(process.env["PUSHER_INSTANCE_ID"]),
 })
 
 const DEFAULT_PORT = 8080
@@ -148,7 +137,7 @@ let configs = {
   },
 }
 
-if (process.env.NODE_ENV === "production") {
+if (process.env["NODE_ENV"] === "production") {
   configs = Object.assign({}, configs, {
     mode: "production",
     devtool: false,
@@ -160,7 +149,7 @@ if (process.env.NODE_ENV === "production") {
       chunkFilename: "[name].[contenthash].js",
     },
     performance: {
-      assetFilter: function (assetFilename) {
+      assetFilter: function (assetFilename: any) {
         return assetFilename.endsWith(".br")
       },
     },
