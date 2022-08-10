@@ -1,9 +1,9 @@
-import React from "react"
-import * as PusherPushNotifications from "@pusher/push-notifications-web"
+import type { ReactElement } from 'react'
+import * as PusherPushNotifications from '@pusher/push-notifications-web'
 
-import Button from "../Button/Button"
+import Button from '../Button/Button'
 
-function App(): React.ReactElement {
+function App(): ReactElement {
   // TODO: move Pusher logic to separate file after single user auth is implemented
   function handleSubscribe(): void {
     void (async () => {
@@ -19,12 +19,12 @@ function App(): React.ReactElement {
         beamsClient
           .start()
           .then(
-            async () => await beamsClient.addDeviceInterest("debug-barefoot")
+            async () => await beamsClient.addDeviceInterest('debug-barefoot')
           )
-          .then(() => console.log("Successfully registered and subscribed!"))
+          .then(() => console.log('Successfully registered and subscribed!'))
           .catch(console.error)
       } else {
-        console.log("No service worker registered.")
+        console.log('No service worker registered.')
       }
     })()
   }
