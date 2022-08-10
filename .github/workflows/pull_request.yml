@@ -21,16 +21,16 @@ jobs:
           cache: 'yarn'
       - name: Install
         run: 'yarn install --immutable'
+      - name: Commitlint Check
+        run: 'yarn commitlint --from=${{ github.event.pull_request.base.sha }} --to=${{ github.event.pull_request.head.sha }}'
       - name: Prettier Check
-        run: 'yarn prettier --check "src/**/*.{js,ts,jsx,tsx,css}" "__mocks__/**/*" "./*.{js,ts}"'
+        run: 'yarn prettier --check --loglevel=warn "src/**/*.{js,ts,jsx,tsx,css}" "__mocks__/**/*" "./*.{js,ts}"'
       - name: ESLint Check
         run: 'yarn eslint "src/**/*.{js,ts,jsx,tsx}" "__mocks__/**/*" "./*.{js,ts}"'
       - name: Stylelint Check
         run: 'yarn stylelint "src/**/*.css"'
       - name: TypeScript Check
-        run: 'yarn tsc --project tsconfig.json --noEmit'
-      - name: Commitlint Check
-        run: 'yarn commitlint --from=${{ github.event.pull_request.base.sha }} --to=${{ github.event.pull_request.head.sha }}'
+        run: 'yarn tsc --noEmit --project tsconfig.json'
       - name: Testing Branch
         run: 'yarn test'
 
