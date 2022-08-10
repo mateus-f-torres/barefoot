@@ -1,1 +1,1 @@
-export const RANDOM_ANSWER = "https://yesno.wtf/api"
+export const RANDOM_ANSWER = 'https://yesno.wtf/api'
