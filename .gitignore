@@ -20,6 +20,7 @@ coverage
 !.yarn/versions
 
 # Editors/IDEs
-tags
+.vscode
 .idea
 *.swp
+tags
