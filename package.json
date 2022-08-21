@@ -76,7 +76,7 @@
     "postcss-loader": "7.0.1",
     "prettier": "2.7.1",
     "style-loader": "3.3.1",
-    "stylelint": "14.10.0",
+    "stylelint": "14.11.0",
     "stylelint-config-idiomatic-order": "8.1.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard": "27.0.0",
