@@ -9,9 +9,9 @@
   "private": true,
   "engines": {
     "node": "18.7.0",
-    "yarn": "3.2.2"
+    "yarn": "3.2.3"
   },
-  "packageManager": "yarn@3.2.2",
+  "packageManager": "yarn@3.2.3",
   "scripts": {
     "postinstall": "husky install",
     "start": "webpack serve",
