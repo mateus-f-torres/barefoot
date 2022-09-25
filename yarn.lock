@@ -6137,7 +6137,7 @@ __metadata:
     react-dom: 18.2.0
     style-loader: 3.3.1
     stylelint: 14.12.1
-    stylelint-config-idiomatic-order: 8.1.0
+    stylelint-config-idiomatic-order: 9.0.0
     stylelint-config-prettier: 9.0.3
     stylelint-config-standard: 28.0.0
     tailwindcss: 3.1.8
@@ -12089,7 +12089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.12, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
+"lodash@npm:^4.17.12, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
   version: 4.17.20
   resolution: "lodash@npm:4.17.20"
   checksum: b31afa09739b7292a88ec49ffdb2fcaeb41f690def010f7a067eeedffece32da6b6847bfe4d38a77e6f41778b9b2bca75eeab91209936518173271f0b69376ea
@@ -13688,13 +13688,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-sorting@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "postcss-sorting@npm:5.0.1"
-  dependencies:
-    lodash: ^4.17.14
-    postcss: ^7.0.17
-  checksum: 0a410afab47e1ec10f1bd8768d7118cad93d00990a298816bb6c30f72f66ed05d29f152c8a04b943749fef134413171d6c91ef9915a1b95281573c1c7d13f76c
+"postcss-sorting@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "postcss-sorting@npm:7.0.1"
+  peerDependencies:
+    postcss: ^8.3.9
+  checksum: 79cca6703ef7c60ea913c3bfb91f85bd7adce35e60b834a40cadd1c7e18f37961d63f0e641387651ee3bf1df1996e952d8fe443f93a271aa2d23f239ea3145bc
   languageName: node
   linkType: hard
 
@@ -13712,7 +13711,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.16, postcss@npm:^8.4.16":
+"postcss@npm:8.4.16, postcss@npm:^8.3.11, postcss@npm:^8.4.16":
   version: 8.4.16
   resolution: "postcss@npm:8.4.16"
   dependencies:
@@ -13720,17 +13719,6 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 10eee25efd77868036403858577da0cefaf2e0905feeaba5770d5438ccdddba3d01cba8063e96b8aac4c6daa0ed413dd5ae0554a433a3c4db38df1d134cffc1f
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^7.0.17":
-  version: 7.0.32
-  resolution: "postcss@npm:7.0.32"
-  dependencies:
-    chalk: ^2.4.2
-    source-map: ^0.6.1
-    supports-color: ^6.1.0
-  checksum: 3bc2ac6508c97559077bd24f341908d5b86a50b76164c87d4224af94248ca329e28fc5292fff9cc3fec503325cac40094a6fbf7ef1bd1a3e94aefa93031834f0
   languageName: node
   linkType: hard
 
@@ -15621,14 +15609,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-idiomatic-order@npm:8.1.0":
-  version: 8.1.0
-  resolution: "stylelint-config-idiomatic-order@npm:8.1.0"
+"stylelint-config-idiomatic-order@npm:9.0.0":
+  version: 9.0.0
+  resolution: "stylelint-config-idiomatic-order@npm:9.0.0"
   dependencies:
-    stylelint-order: ^3.1.1
+    stylelint-order: ^5.0.0
   peerDependencies:
     stylelint: ">=11"
-  checksum: f83ebfb90a506e0c01df8f1e25e11a55cfd881dbb07bc9714a25fe8fa1d31cb50aa160561692edd15aa654f2d200cd08e10620f7ac2a7d6a2b3bde955d49f6f7
+  checksum: ff942702442cb60116ef35442f8ab15279fbaeb6ce6ca2e56f3b0fd11c1f5355a8aa4a8cdca5f64d5cfd3b4879f662e1a092333965a16342fc25d9ff230616c6
   languageName: node
   linkType: hard
 
@@ -15664,16 +15652,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-order@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "stylelint-order@npm:3.1.1"
+"stylelint-order@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "stylelint-order@npm:5.0.0"
   dependencies:
-    lodash: ^4.17.15
-    postcss: ^7.0.17
-    postcss-sorting: ^5.0.1
+    postcss: ^8.3.11
+    postcss-sorting: ^7.0.1
   peerDependencies:
-    stylelint: ">=10.0.1"
-  checksum: 35388f28bd9a4d91ab35eea3518ba83b4b72514aa169015fd3187ce94061be201e47e557165b6ffad20baaaf69be4770785a4e4b7b56e4317759f84112bc1d8d
+    stylelint: ^14.0.0
+  checksum: fa3ace3cc65486b9f94165603bd04983636fda5ac959cd29bf87847a95b32f366b16faf612bd49e3b9f96073f8fe28a22a5c5727cc08c8f9d7327c89084b3f30
   languageName: node
   linkType: hard
 
@@ -15731,15 +15718,6 @@ resolve@^2.0.0-next.3:
   dependencies:
     has-flag: ^3.0.0
   checksum: 95f6f4ba5afdf92f495b5a912d4abee8dcba766ae719b975c56c084f5004845f6f5a5f7769f52d53f40e21952a6d87411bafe34af4a01e65f9926002e38e1dac
-  languageName: node
-  linkType: hard
-
-"supports-color@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "supports-color@npm:6.1.0"
-  dependencies:
-    has-flag: ^3.0.0
-  checksum: 74358f9535c83ee113fbaac354b11e808060f6e7d8722082ee43af3578469134e89d00026dce2a6b93ce4e5b89d0e9a10f638b2b9f64c7838c2fb2883a47b3d5
   languageName: node
   linkType: hard
 
