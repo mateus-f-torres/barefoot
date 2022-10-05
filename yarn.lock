@@ -4870,14 +4870,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-bundle-analyzer@npm:4.4.2":
-  version: 4.4.2
-  resolution: "@types/webpack-bundle-analyzer@npm:4.4.2"
+"@types/webpack-bundle-analyzer@npm:4.6.0":
+  version: 4.6.0
+  resolution: "@types/webpack-bundle-analyzer@npm:4.6.0"
   dependencies:
     "@types/node": "*"
     tapable: ^2.2.0
     webpack: ^5
-  checksum: 013260f0122e8d9d7041b16eb71cb25695019d57648d96774ad4a73345a25d9cd1e9667073cc8548110a3c1519321c93a085bbfaa479a983fab72d9eab8143b2
+  checksum: 1cd5baa621a1dbe820bacf981d6e48f3423b733fb5e33c1356347e73d5e3e880ae6ebacf8f43d9e47e135d3ed2653ec5e40e12c6ce187f2eb3f548d9c949f6aa
   languageName: node
   linkType: hard
 
@@ -6130,7 +6130,7 @@ __metadata:
     "@types/react-dom": 18.0.6
     "@types/testing-library__jest-dom": 5.14.5
     "@types/webpack": 5.28.0
-    "@types/webpack-bundle-analyzer": 4.4.2
+    "@types/webpack-bundle-analyzer": 4.6.0
     "@typescript-eslint/eslint-plugin": 5.39.0
     "@typescript-eslint/parser": 5.39.0
     autoprefixer: 10.4.12
