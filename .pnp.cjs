@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-environment-jsdom", "npm:29.1.2"],\
             ["lint-staged", "npm:13.0.3"],\
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.1"],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.1"],\
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
@@ -8788,7 +8788,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.2.0"],\
             ["normalize-range", "npm:0.1.2"],\
             ["picocolors", "npm:1.0.0"],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["postcss-value-parser", "npm:4.2.0"]\
           ],\
           "packagePeers": [\
@@ -9158,7 +9158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-environment-jsdom", "npm:29.1.2"],\
             ["lint-staged", "npm:13.0.3"],\
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.6.1"],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.1"],\
             ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
@@ -17585,10 +17585,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.4.17", {\
-          "packageLocation": "./.yarn/cache/postcss-npm-8.4.17-301c0fb6cf-a6d9096dd7.zip/node_modules/postcss/",\
+        ["npm:8.4.18", {\
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.18-f1d73c0a84-9349fd9984.zip/node_modules/postcss/",\
           "packageDependencies": [\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["nanoid", "npm:3.3.4"],\
             ["picocolors", "npm:1.0.0"],\
             ["source-map-js", "npm:1.0.2"]\
@@ -17619,7 +17619,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["postcss-import", "virtual:b1b911ec4e9343600ab9e065d3b314358e631f4f2956d728c5d852ed71f9b87391a6b14f72032c78ba0159c754ea4a60d486cc43203548d60e8f5c811625f668#npm:14.1.0"],\
             ["@types/postcss", null],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["postcss-value-parser", "npm:4.2.0"],\
             ["read-cache", "npm:1.0.0"],\
             ["resolve", "patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"]\
@@ -17645,7 +17645,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-js", "virtual:b1b911ec4e9343600ab9e065d3b314358e631f4f2956d728c5d852ed71f9b87391a6b14f72032c78ba0159c754ea4a60d486cc43203548d60e8f5c811625f668#npm:4.0.0"],\
             ["@types/postcss", null],\
             ["camelcase-css", "npm:2.0.1"],\
-            ["postcss", "npm:8.4.17"]\
+            ["postcss", "npm:8.4.18"]\
           ],\
           "packagePeers": [\
             "@types/postcss",\
@@ -17669,7 +17669,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/postcss", null],\
             ["@types/ts-node", null],\
             ["lilconfig", "npm:2.0.5"],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["ts-node", null],\
             ["yaml", "npm:1.10.2"]\
           ],\
@@ -17698,7 +17698,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", "npm:5.28.0"],\
             ["cosmiconfig", "npm:7.0.0"],\
             ["klona", "npm:2.0.5"],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["semver", "npm:7.3.7"],\
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.74.0"]\
           ],\
@@ -17826,7 +17826,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["postcss-nested", "virtual:b1b911ec4e9343600ab9e065d3b314358e631f4f2956d728c5d852ed71f9b87391a6b14f72032c78ba0159c754ea4a60d486cc43203548d60e8f5c811625f668#npm:5.0.6"],\
             ["@types/postcss", null],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["postcss-selector-parser", "npm:6.0.6"]\
           ],\
           "packagePeers": [\
@@ -20169,7 +20169,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["normalize-path", "npm:3.0.0"],\
             ["object-hash", "npm:3.0.0"],\
             ["picocolors", "npm:1.0.0"],\
-            ["postcss", "npm:8.4.17"],\
+            ["postcss", "npm:8.4.18"],\
             ["postcss-import", "virtual:b1b911ec4e9343600ab9e065d3b314358e631f4f2956d728c5d852ed71f9b87391a6b14f72032c78ba0159c754ea4a60d486cc43203548d60e8f5c811625f668#npm:14.1.0"],\
             ["postcss-js", "virtual:b1b911ec4e9343600ab9e065d3b314358e631f4f2956d728c5d852ed71f9b87391a6b14f72032c78ba0159c754ea4a60d486cc43203548d60e8f5c811625f668#npm:4.0.0"],\
             ["postcss-load-config", "virtual:b1b911ec4e9343600ab9e065d3b314358e631f4f2956d728c5d852ed71f9b87391a6b14f72032c78ba0159c754ea4a60d486cc43203548d60e8f5c811625f668#npm:3.1.4"],\
