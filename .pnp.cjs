@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:13.4.0"],\
-            ["@types/jest", "npm:29.2.2"],\
+            ["@types/jest", "npm:29.2.3"],\
             ["@types/node", "npm:18.11.9"],\
             ["@types/react", "npm:18.0.25"],\
             ["@types/react-dom", "npm:18.0.8"],\
@@ -7143,10 +7143,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:29.2.2", {\
-          "packageLocation": "./.yarn/cache/@types-jest-npm-29.2.2-563a51378d-13b1a48858.zip/node_modules/@types/jest/",\
+        ["npm:29.2.3", {\
+          "packageLocation": "./.yarn/cache/@types-jest-npm-29.2.3-717f400a5c-5537090671.zip/node_modules/@types/jest/",\
           "packageDependencies": [\
-            ["@types/jest", "npm:29.2.2"],\
+            ["@types/jest", "npm:29.2.3"],\
             ["expect", "npm:29.0.1"],\
             ["pretty-format", "npm:29.0.1"]\
           ],\
@@ -9136,7 +9136,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@pusher/push-notifications-web", "npm:1.1.0"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:13.4.0"],\
-            ["@types/jest", "npm:29.2.2"],\
+            ["@types/jest", "npm:29.2.3"],\
             ["@types/node", "npm:18.11.9"],\
             ["@types/react", "npm:18.0.25"],\
             ["@types/react-dom", "npm:18.0.8"],\
