@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:13.0.4"],\
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.7.0"],\
             ["postcss", "npm:8.4.19"],\
-            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.1"],\
+            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.2"],\
             ["prettier", "npm:2.8.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:18.2.0"],\
@@ -9237,7 +9237,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:13.0.4"],\
             ["mini-css-extract-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:2.7.0"],\
             ["postcss", "npm:8.4.19"],\
-            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.1"],\
+            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.2"],\
             ["prettier", "npm:2.8.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:18.2.0"],\
@@ -17964,23 +17964,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["postcss-loader", [\
-        ["npm:7.0.1", {\
-          "packageLocation": "./.yarn/cache/postcss-loader-npm-7.0.1-444ecd58b4-2a3cbcaaad.zip/node_modules/postcss-loader/",\
+        ["npm:7.0.2", {\
+          "packageLocation": "./.yarn/cache/postcss-loader-npm-7.0.2-c3042b6114-2d251537d4.zip/node_modules/postcss-loader/",\
           "packageDependencies": [\
-            ["postcss-loader", "npm:7.0.1"]\
+            ["postcss-loader", "npm:7.0.2"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/postcss-loader-virtual-32dd1c7a3c/0/cache/postcss-loader-npm-7.0.1-444ecd58b4-2a3cbcaaad.zip/node_modules/postcss-loader/",\
+        ["virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/postcss-loader-virtual-82ab30a4b9/0/cache/postcss-loader-npm-7.0.2-c3042b6114-2d251537d4.zip/node_modules/postcss-loader/",\
           "packageDependencies": [\
-            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.1"],\
+            ["postcss-loader", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:7.0.2"],\
             ["@types/postcss", null],\
             ["@types/webpack", "npm:5.28.0"],\
             ["cosmiconfig", "npm:7.0.0"],\
             ["klona", "npm:2.0.5"],\
             ["postcss", "npm:8.4.19"],\
-            ["semver", "npm:7.3.7"],\
+            ["semver", "npm:7.3.8"],\
             ["webpack", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.75.0"]\
           ],\
           "packagePeers": [\
