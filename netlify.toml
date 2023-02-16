@@ -1,5 +1,5 @@
 [build.environment]
-  NODE_VERSION = "18.12.1"
+  NODE_VERSION = "19.6.0"
   YARN_VERSION = "3.3.0"
 
 # Catch All rule, always last redirect rule
