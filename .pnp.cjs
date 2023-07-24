@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.15.5"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.9"],\
             ["@types/webpack", "npm:5.28.0"],\
             ["@types/webpack-bundle-analyzer", "npm:4.6.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.44.0"],\
@@ -7684,10 +7684,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:5.14.5", {\
-          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.5-251c4c9d75-dcb0541675.zip/node_modules/@types/testing-library__jest-dom/",\
+        ["npm:5.14.9", {\
+          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.9-319d22d764-d364494fc2.zip/node_modules/@types/testing-library__jest-dom/",\
           "packageDependencies": [\
-            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.9"],\
             ["@types/jest", "npm:27.4.0"]\
           ],\
           "linkType": "HARD"\
@@ -9418,7 +9418,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.15.5"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.9"],\
             ["@types/webpack", "npm:5.28.0"],\
             ["@types/webpack-bundle-analyzer", "npm:4.6.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:d0d1c83cb0f00b570c3a159645ed5194738e2467e351a0af2263233a889d308278918968f4046da19e8b1a8723f430f430702603f0598874396a7c7e1956daf0#npm:5.44.0"],\
