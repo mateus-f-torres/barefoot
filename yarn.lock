@@ -4866,13 +4866,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:29.2.6":
-  version: 29.2.6
-  resolution: "@types/jest@npm:29.2.6"
+"@types/jest@npm:29.5.4":
+  version: 29.5.4
+  resolution: "@types/jest@npm:29.5.4"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 90190ac830334af1470d255853f9621fe657e5030b4d96773fc1f884833cd303c76580b00c1b86dc38a8db94f1c7141d462190437a10af31852b8845a57c48ba
+  checksum: 38ed5942f44336452efd0f071eab60aaa57cd8d46530348d0a3aa5a691dcbf1366c4ca8f6ee8364efb45b4413bfefae443e5d4f469246a472a03b21ac11cd4ed
   languageName: node
   linkType: hard
 
@@ -6379,7 +6379,7 @@ __metadata:
     "@pusher/push-notifications-web": 1.1.0
     "@testing-library/jest-dom": 5.16.5
     "@testing-library/react": 13.4.0
-    "@types/jest": 29.2.6
+    "@types/jest": 29.5.4
     "@types/node": 18.15.5
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
